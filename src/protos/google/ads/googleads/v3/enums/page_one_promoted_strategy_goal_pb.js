@@ -1,1 +1,16 @@
-var jspb=require("google-protobuf"),goog=jspb,global=Function("return this")(),google_api_annotations_pb=require("../../../../../google/api/annotations_pb.js");goog.object.extend(exports,proto.google.ads.googleads.v3.enums);
+// source: google/ads/googleads/v3/enums/page_one_promoted_strategy_goal.proto
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_api_annotations_pb = require('../../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);

@@ -19,12 +19,14 @@ export namespace TargetImpressionShareLocationEnum {
   export type AsObject = {
   }
 
-  export enum TargetImpressionShareLocation {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ANYWHERE_ON_PAGE = 2,
-    TOP_OF_PAGE = 3,
-    ABSOLUTE_TOP_OF_PAGE = 4,
+  export interface TargetImpressionShareLocationMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ANYWHERE_ON_PAGE: 2;
+    TOP_OF_PAGE: 3;
+    ABSOLUTE_TOP_OF_PAGE: 4;
   }
+
+  export const TargetImpressionShareLocation: TargetImpressionShareLocationMap;
 }
 

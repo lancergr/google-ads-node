@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_criterion_category_availability_pb from "../../../../../google/ads/googleads/v3/common/criterion_category_availability_pb";
 import * as google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb from "../../../../../google/ads/googleads/v3/enums/user_interest_taxonomy_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -12,8 +13,8 @@ export class UserInterest extends jspb.Message {
   getResourceName(): string;
   setResourceName(value: string): void;
 
-  getTaxonomyType(): google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyType;
-  setTaxonomyType(value: google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyType): void;
+  getTaxonomyType(): google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyTypeMap[keyof google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyTypeMap];
+  setTaxonomyType(value: google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyTypeMap[keyof google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyTypeMap]): void;
 
   hasUserInterestId(): boolean;
   clearUserInterestId(): void;
@@ -53,7 +54,7 @@ export class UserInterest extends jspb.Message {
 export namespace UserInterest {
   export type AsObject = {
     resourceName: string,
-    taxonomyType: google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyType,
+    taxonomyType: google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyTypeMap[keyof google_ads_googleads_v3_enums_user_interest_taxonomy_type_pb.UserInterestTaxonomyTypeEnum.UserInterestTaxonomyTypeMap],
     userInterestId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     userInterestParent?: google_protobuf_wrappers_pb.StringValue.AsObject,

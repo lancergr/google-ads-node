@@ -19,16 +19,18 @@ export namespace MediaUploadErrorEnum {
   export type AsObject = {
   }
 
-  export enum MediaUploadError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    FILE_TOO_BIG = 2,
-    UNPARSEABLE_IMAGE = 3,
-    ANIMATED_IMAGE_NOT_ALLOWED = 4,
-    FORMAT_NOT_ALLOWED = 5,
-    EXTERNAL_URL_NOT_ALLOWED = 6,
-    INVALID_URL_REFERENCE = 7,
-    MISSING_PRIMARY_MEDIA_BUNDLE_ENTRY = 8,
+  export interface MediaUploadErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    FILE_TOO_BIG: 2;
+    UNPARSEABLE_IMAGE: 3;
+    ANIMATED_IMAGE_NOT_ALLOWED: 4;
+    FORMAT_NOT_ALLOWED: 5;
+    EXTERNAL_URL_NOT_ALLOWED: 6;
+    INVALID_URL_REFERENCE: 7;
+    MISSING_PRIMARY_MEDIA_BUNDLE_ENTRY: 8;
   }
+
+  export const MediaUploadError: MediaUploadErrorMap;
 }
 

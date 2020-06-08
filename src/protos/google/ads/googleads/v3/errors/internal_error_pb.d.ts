@@ -19,13 +19,15 @@ export namespace InternalErrorEnum {
   export type AsObject = {
   }
 
-  export enum InternalError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INTERNAL_ERROR = 2,
-    ERROR_CODE_NOT_PUBLISHED = 3,
-    TRANSIENT_ERROR = 4,
-    DEADLINE_EXCEEDED = 5,
+  export interface InternalErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INTERNAL_ERROR: 2;
+    ERROR_CODE_NOT_PUBLISHED: 3;
+    TRANSIENT_ERROR: 4;
+    DEADLINE_EXCEEDED: 5;
   }
+
+  export const InternalError: InternalErrorMap;
 }
 

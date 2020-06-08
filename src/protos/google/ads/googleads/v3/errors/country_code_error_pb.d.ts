@@ -19,10 +19,12 @@ export namespace CountryCodeErrorEnum {
   export type AsObject = {
   }
 
-  export enum CountryCodeError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_COUNTRY_CODE = 2,
+  export interface CountryCodeErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_COUNTRY_CODE: 2;
   }
+
+  export const CountryCodeError: CountryCodeErrorMap;
 }
 

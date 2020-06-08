@@ -19,10 +19,12 @@ export namespace BudgetPeriodEnum {
   export type AsObject = {
   }
 
-  export enum BudgetPeriod {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DAILY = 2,
+  export interface BudgetPeriodMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DAILY: 2;
   }
+
+  export const BudgetPeriod: BudgetPeriodMap;
 }
 

@@ -19,12 +19,14 @@ export namespace CustomerMatchUploadKeyTypeEnum {
   export type AsObject = {
   }
 
-  export enum CustomerMatchUploadKeyType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CONTACT_INFO = 2,
-    CRM_ID = 3,
-    MOBILE_ADVERTISING_ID = 4,
+  export interface CustomerMatchUploadKeyTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CONTACT_INFO: 2;
+    CRM_ID: 3;
+    MOBILE_ADVERTISING_ID: 4;
   }
+
+  export const CustomerMatchUploadKeyType: CustomerMatchUploadKeyTypeMap;
 }
 

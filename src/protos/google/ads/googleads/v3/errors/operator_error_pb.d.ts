@@ -19,10 +19,12 @@ export namespace OperatorErrorEnum {
   export type AsObject = {
   }
 
-  export enum OperatorError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OPERATOR_NOT_SUPPORTED = 2,
+  export interface OperatorErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OPERATOR_NOT_SUPPORTED: 2;
   }
+
+  export const OperatorError: OperatorErrorMap;
 }
 

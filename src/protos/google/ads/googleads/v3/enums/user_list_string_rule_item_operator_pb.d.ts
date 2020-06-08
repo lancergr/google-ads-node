@@ -19,17 +19,19 @@ export namespace UserListStringRuleItemOperatorEnum {
   export type AsObject = {
   }
 
-  export enum UserListStringRuleItemOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CONTAINS = 2,
-    EQUALS = 3,
-    STARTS_WITH = 4,
-    ENDS_WITH = 5,
-    NOT_EQUALS = 6,
-    NOT_CONTAINS = 7,
-    NOT_STARTS_WITH = 8,
-    NOT_ENDS_WITH = 9,
+  export interface UserListStringRuleItemOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CONTAINS: 2;
+    EQUALS: 3;
+    STARTS_WITH: 4;
+    ENDS_WITH: 5;
+    NOT_EQUALS: 6;
+    NOT_CONTAINS: 7;
+    NOT_STARTS_WITH: 8;
+    NOT_ENDS_WITH: 9;
   }
+
+  export const UserListStringRuleItemOperator: UserListStringRuleItemOperatorMap;
 }
 

@@ -5,6 +5,7 @@ import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_criteria_pb from "../../../../../google/ads/googleads/v3/common/criteria_pb";
 import * as google_ads_googleads_v3_enums_campaign_criterion_status_pb from "../../../../../google/ads/googleads/v3/enums/campaign_criterion_status_pb";
 import * as google_ads_googleads_v3_enums_criterion_type_pb from "../../../../../google/ads/googleads/v3/enums/criterion_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -33,11 +34,11 @@ export class CampaignCriterion extends jspb.Message {
   getNegative(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setNegative(value?: google_protobuf_wrappers_pb.BoolValue): void;
 
-  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType;
-  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType): void;
+  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap]): void;
 
-  getStatus(): google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatus;
-  setStatus(value: google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatusMap[keyof google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatusMap[keyof google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatusMap]): void;
 
   hasKeyword(): boolean;
   clearKeyword(): void;
@@ -192,8 +193,8 @@ export namespace CampaignCriterion {
     criterionId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     bidModifier?: google_protobuf_wrappers_pb.FloatValue.AsObject,
     negative?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType,
-    status: google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatus,
+    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap],
+    status: google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatusMap[keyof google_ads_googleads_v3_enums_campaign_criterion_status_pb.CampaignCriterionStatusEnum.CampaignCriterionStatusMap],
     keyword?: google_ads_googleads_v3_common_criteria_pb.KeywordInfo.AsObject,
     placement?: google_ads_googleads_v3_common_criteria_pb.PlacementInfo.AsObject,
     mobileAppCategory?: google_ads_googleads_v3_common_criteria_pb.MobileAppCategoryInfo.AsObject,

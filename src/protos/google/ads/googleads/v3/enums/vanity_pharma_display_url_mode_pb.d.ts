@@ -19,11 +19,13 @@ export namespace VanityPharmaDisplayUrlModeEnum {
   export type AsObject = {
   }
 
-  export enum VanityPharmaDisplayUrlMode {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MANUFACTURER_WEBSITE_URL = 2,
-    WEBSITE_DESCRIPTION = 3,
+  export interface VanityPharmaDisplayUrlModeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MANUFACTURER_WEBSITE_URL: 2;
+    WEBSITE_DESCRIPTION: 3;
   }
+
+  export const VanityPharmaDisplayUrlMode: VanityPharmaDisplayUrlModeMap;
 }
 

@@ -19,9 +19,11 @@ export namespace ReachPlanErrorEnum {
   export type AsObject = {
   }
 
-  export enum ReachPlanError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
+  export interface ReachPlanErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
   }
+
+  export const ReachPlanError: ReachPlanErrorMap;
 }
 

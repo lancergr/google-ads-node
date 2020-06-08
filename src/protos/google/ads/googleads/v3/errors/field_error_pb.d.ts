@@ -19,16 +19,18 @@ export namespace FieldErrorEnum {
   export type AsObject = {
   }
 
-  export enum FieldError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    REQUIRED = 2,
-    IMMUTABLE_FIELD = 3,
-    INVALID_VALUE = 4,
-    VALUE_MUST_BE_UNSET = 5,
-    REQUIRED_NONEMPTY_LIST = 6,
-    FIELD_CANNOT_BE_CLEARED = 7,
-    BLACKLISTED_VALUE = 8,
+  export interface FieldErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    REQUIRED: 2;
+    IMMUTABLE_FIELD: 3;
+    INVALID_VALUE: 4;
+    VALUE_MUST_BE_UNSET: 5;
+    REQUIRED_NONEMPTY_LIST: 6;
+    FIELD_CANNOT_BE_CLEARED: 7;
+    BLACKLISTED_VALUE: 8;
   }
+
+  export const FieldError: FieldErrorMap;
 }
 

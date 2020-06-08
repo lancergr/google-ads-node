@@ -19,15 +19,17 @@ export namespace MediaTypeEnum {
   export type AsObject = {
   }
 
-  export enum MediaType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    IMAGE = 2,
-    ICON = 3,
-    MEDIA_BUNDLE = 4,
-    AUDIO = 5,
-    VIDEO = 6,
-    DYNAMIC_IMAGE = 7,
+  export interface MediaTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    IMAGE: 2;
+    ICON: 3;
+    MEDIA_BUNDLE: 4;
+    AUDIO: 5;
+    VIDEO: 6;
+    DYNAMIC_IMAGE: 7;
   }
+
+  export const MediaType: MediaTypeMap;
 }
 

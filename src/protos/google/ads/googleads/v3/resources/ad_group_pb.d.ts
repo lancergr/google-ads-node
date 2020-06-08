@@ -10,6 +10,7 @@ import * as google_ads_googleads_v3_enums_ad_group_status_pb from "../../../../.
 import * as google_ads_googleads_v3_enums_ad_group_type_pb from "../../../../../google/ads/googleads/v3/enums/ad_group_type_pb";
 import * as google_ads_googleads_v3_enums_bidding_source_pb from "../../../../../google/ads/googleads/v3/enums/bidding_source_pb";
 import * as google_ads_googleads_v3_enums_targeting_dimension_pb from "../../../../../google/ads/googleads/v3/enums/targeting_dimension_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -28,14 +29,14 @@ export class AdGroup extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatus;
-  setStatus(value: google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatusMap[keyof google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatusMap[keyof google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatusMap]): void;
 
-  getType(): google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupType;
-  setType(value: google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupType): void;
+  getType(): google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupTypeMap[keyof google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupTypeMap];
+  setType(value: google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupTypeMap[keyof google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupTypeMap]): void;
 
-  getAdRotationMode(): google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationMode;
-  setAdRotationMode(value: google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationMode): void;
+  getAdRotationMode(): google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationModeMap[keyof google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationModeMap];
+  setAdRotationMode(value: google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationModeMap[keyof google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationModeMap]): void;
 
   hasBaseAdGroup(): boolean;
   clearBaseAdGroup(): void;
@@ -97,8 +98,8 @@ export class AdGroup extends jspb.Message {
   getExplorerAutoOptimizerSetting(): google_ads_googleads_v3_common_explorer_auto_optimizer_setting_pb.ExplorerAutoOptimizerSetting | undefined;
   setExplorerAutoOptimizerSetting(value?: google_ads_googleads_v3_common_explorer_auto_optimizer_setting_pb.ExplorerAutoOptimizerSetting): void;
 
-  getDisplayCustomBidDimension(): google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimension;
-  setDisplayCustomBidDimension(value: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimension): void;
+  getDisplayCustomBidDimension(): google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap[keyof google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap];
+  setDisplayCustomBidDimension(value: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap[keyof google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap]): void;
 
   hasFinalUrlSuffix(): boolean;
   clearFinalUrlSuffix(): void;
@@ -115,16 +116,16 @@ export class AdGroup extends jspb.Message {
   getEffectiveTargetCpaMicros(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setEffectiveTargetCpaMicros(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getEffectiveTargetCpaSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource;
-  setEffectiveTargetCpaSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource): void;
+  getEffectiveTargetCpaSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap];
+  setEffectiveTargetCpaSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap]): void;
 
   hasEffectiveTargetRoas(): boolean;
   clearEffectiveTargetRoas(): void;
   getEffectiveTargetRoas(): google_protobuf_wrappers_pb.DoubleValue | undefined;
   setEffectiveTargetRoas(value?: google_protobuf_wrappers_pb.DoubleValue): void;
 
-  getEffectiveTargetRoasSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource;
-  setEffectiveTargetRoasSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource): void;
+  getEffectiveTargetRoasSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap];
+  setEffectiveTargetRoasSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap]): void;
 
   clearLabelsList(): void;
   getLabelsList(): Array<google_protobuf_wrappers_pb.StringValue>;
@@ -146,9 +147,9 @@ export namespace AdGroup {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatus,
-    type: google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupType,
-    adRotationMode: google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationMode,
+    status: google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatusMap[keyof google_ads_googleads_v3_enums_ad_group_status_pb.AdGroupStatusEnum.AdGroupStatusMap],
+    type: google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupTypeMap[keyof google_ads_googleads_v3_enums_ad_group_type_pb.AdGroupTypeEnum.AdGroupTypeMap],
+    adRotationMode: google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationModeMap[keyof google_ads_googleads_v3_enums_ad_group_ad_rotation_mode_pb.AdGroupAdRotationModeEnum.AdGroupAdRotationModeMap],
     baseAdGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
     trackingUrlTemplate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     urlCustomParametersList: Array<google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter.AsObject>,
@@ -161,13 +162,13 @@ export namespace AdGroup {
     targetRoas?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     percentCpcBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     explorerAutoOptimizerSetting?: google_ads_googleads_v3_common_explorer_auto_optimizer_setting_pb.ExplorerAutoOptimizerSetting.AsObject,
-    displayCustomBidDimension: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimension,
+    displayCustomBidDimension: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap[keyof google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap],
     finalUrlSuffix?: google_protobuf_wrappers_pb.StringValue.AsObject,
     targetingSetting?: google_ads_googleads_v3_common_targeting_setting_pb.TargetingSetting.AsObject,
     effectiveTargetCpaMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    effectiveTargetCpaSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource,
+    effectiveTargetCpaSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap],
     effectiveTargetRoas?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
-    effectiveTargetRoasSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource,
+    effectiveTargetRoasSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap],
     labelsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
   }
 }

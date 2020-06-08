@@ -19,12 +19,14 @@ export namespace FeedItemTargetTypeEnum {
   export type AsObject = {
   }
 
-  export enum FeedItemTargetType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CAMPAIGN = 2,
-    AD_GROUP = 3,
-    CRITERION = 4,
+  export interface FeedItemTargetTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CAMPAIGN: 2;
+    AD_GROUP: 3;
+    CRITERION: 4;
   }
+
+  export const FeedItemTargetType: FeedItemTargetTypeMap;
 }
 

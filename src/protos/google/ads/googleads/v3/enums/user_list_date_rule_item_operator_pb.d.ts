@@ -19,13 +19,15 @@ export namespace UserListDateRuleItemOperatorEnum {
   export type AsObject = {
   }
 
-  export enum UserListDateRuleItemOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EQUALS = 2,
-    NOT_EQUALS = 3,
-    BEFORE = 4,
-    AFTER = 5,
+  export interface UserListDateRuleItemOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EQUALS: 2;
+    NOT_EQUALS: 3;
+    BEFORE: 4;
+    AFTER: 5;
   }
+
+  export const UserListDateRuleItemOperator: UserListDateRuleItemOperatorMap;
 }
 

@@ -19,10 +19,12 @@ export namespace ChangeStatusErrorEnum {
   export type AsObject = {
   }
 
-  export enum ChangeStatusError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    START_DATE_TOO_OLD = 3,
+  export interface ChangeStatusErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    START_DATE_TOO_OLD: 3;
   }
+
+  export const ChangeStatusError: ChangeStatusErrorMap;
 }
 

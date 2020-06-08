@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_mutate_job_status_pb from "../../../../../google/ads/googleads/v3/enums/mutate_job_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -26,8 +27,8 @@ export class MutateJob extends jspb.Message {
   getMetadata(): MutateJob.MutateJobMetadata | undefined;
   setMetadata(value?: MutateJob.MutateJobMetadata): void;
 
-  getStatus(): google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatus;
-  setStatus(value: google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatusMap[keyof google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatusMap[keyof google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatusMap]): void;
 
   hasLongRunningOperation(): boolean;
   clearLongRunningOperation(): void;
@@ -50,7 +51,7 @@ export namespace MutateJob {
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     nextAddSequenceToken?: google_protobuf_wrappers_pb.StringValue.AsObject,
     metadata?: MutateJob.MutateJobMetadata.AsObject,
-    status: google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatus,
+    status: google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatusMap[keyof google_ads_googleads_v3_enums_mutate_job_status_pb.MutateJobStatusEnum.MutateJobStatusMap],
     longRunningOperation?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 

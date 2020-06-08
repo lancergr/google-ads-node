@@ -19,12 +19,14 @@ export namespace UserListCrmDataSourceTypeEnum {
   export type AsObject = {
   }
 
-  export enum UserListCrmDataSourceType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    FIRST_PARTY = 2,
-    THIRD_PARTY_CREDIT_BUREAU = 3,
-    THIRD_PARTY_VOTER_FILE = 4,
+  export interface UserListCrmDataSourceTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    FIRST_PARTY: 2;
+    THIRD_PARTY_CREDIT_BUREAU: 3;
+    THIRD_PARTY_VOTER_FILE: 4;
   }
+
+  export const UserListCrmDataSourceType: UserListCrmDataSourceTypeMap;
 }
 

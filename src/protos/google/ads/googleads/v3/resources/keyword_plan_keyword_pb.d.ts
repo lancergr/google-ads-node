@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_keyword_match_type_pb from "../../../../../google/ads/googleads/v3/enums/keyword_match_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -26,8 +27,8 @@ export class KeywordPlanKeyword extends jspb.Message {
   getText(): google_protobuf_wrappers_pb.StringValue | undefined;
   setText(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getMatchType(): google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchType;
-  setMatchType(value: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchType): void;
+  getMatchType(): google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap[keyof google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap];
+  setMatchType(value: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap[keyof google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap]): void;
 
   hasCpcBidMicros(): boolean;
   clearCpcBidMicros(): void;
@@ -50,7 +51,7 @@ export namespace KeywordPlanKeyword {
     keywordPlanAdGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     text?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    matchType: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchType,
+    matchType: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap[keyof google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap],
     cpcBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
   }
 }

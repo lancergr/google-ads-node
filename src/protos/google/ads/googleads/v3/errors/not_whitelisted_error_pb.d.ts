@@ -19,10 +19,12 @@ export namespace NotWhitelistedErrorEnum {
   export type AsObject = {
   }
 
-  export enum NotWhitelistedError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CUSTOMER_NOT_WHITELISTED_FOR_THIS_FEATURE = 2,
+  export interface NotWhitelistedErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CUSTOMER_NOT_WHITELISTED_FOR_THIS_FEATURE: 2;
   }
+
+  export const NotWhitelistedError: NotWhitelistedErrorMap;
 }
 

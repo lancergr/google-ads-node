@@ -19,11 +19,13 @@ export namespace BiddingStrategyStatusEnum {
   export type AsObject = {
   }
 
-  export enum BiddingStrategyStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 4,
+  export interface BiddingStrategyStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 4;
   }
+
+  export const BiddingStrategyStatus: BiddingStrategyStatusMap;
 }
 

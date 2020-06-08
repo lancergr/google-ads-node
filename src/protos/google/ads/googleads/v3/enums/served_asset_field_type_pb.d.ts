@@ -19,14 +19,16 @@ export namespace ServedAssetFieldTypeEnum {
   export type AsObject = {
   }
 
-  export enum ServedAssetFieldType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    HEADLINE_1 = 2,
-    HEADLINE_2 = 3,
-    HEADLINE_3 = 4,
-    DESCRIPTION_1 = 5,
-    DESCRIPTION_2 = 6,
+  export interface ServedAssetFieldTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    HEADLINE_1: 2;
+    HEADLINE_2: 3;
+    HEADLINE_3: 4;
+    DESCRIPTION_1: 5;
+    DESCRIPTION_2: 6;
   }
+
+  export const ServedAssetFieldType: ServedAssetFieldTypeMap;
 }
 

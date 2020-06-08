@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_campaign_shared_set_status_pb from "../../../../../google/ads/googleads/v3/enums/campaign_shared_set_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -21,8 +22,8 @@ export class CampaignSharedSet extends jspb.Message {
   getSharedSet(): google_protobuf_wrappers_pb.StringValue | undefined;
   setSharedSet(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatus;
-  setStatus(value: google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatusMap[keyof google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatusMap[keyof google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatusMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CampaignSharedSet.AsObject;
@@ -39,7 +40,7 @@ export namespace CampaignSharedSet {
     resourceName: string,
     campaign?: google_protobuf_wrappers_pb.StringValue.AsObject,
     sharedSet?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatus,
+    status: google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatusMap[keyof google_ads_googleads_v3_enums_campaign_shared_set_status_pb.CampaignSharedSetStatusEnum.CampaignSharedSetStatusMap],
   }
 }
 

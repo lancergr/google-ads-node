@@ -19,11 +19,13 @@ export namespace ContextErrorEnum {
   export type AsObject = {
   }
 
-  export enum ContextError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OPERATION_NOT_PERMITTED_FOR_CONTEXT = 2,
-    OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE = 3,
+  export interface ContextErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OPERATION_NOT_PERMITTED_FOR_CONTEXT: 2;
+    OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE: 3;
   }
+
+  export const ContextError: ContextErrorMap;
 }
 

@@ -19,14 +19,16 @@ export namespace KeywordPlanCampaignErrorEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanCampaignError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_NAME = 2,
-    INVALID_LANGUAGES = 3,
-    INVALID_GEOS = 4,
-    DUPLICATE_NAME = 5,
-    MAX_GEOS_EXCEEDED = 6,
+  export interface KeywordPlanCampaignErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_NAME: 2;
+    INVALID_LANGUAGES: 3;
+    INVALID_GEOS: 4;
+    DUPLICATE_NAME: 5;
+    MAX_GEOS_EXCEEDED: 6;
   }
+
+  export const KeywordPlanCampaignError: KeywordPlanCampaignErrorMap;
 }
 

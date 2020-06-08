@@ -19,11 +19,13 @@ export namespace WebpageConditionOperatorEnum {
   export type AsObject = {
   }
 
-  export enum WebpageConditionOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EQUALS = 2,
-    CONTAINS = 3,
+  export interface WebpageConditionOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EQUALS: 2;
+    CONTAINS: 3;
   }
+
+  export const WebpageConditionOperator: WebpageConditionOperatorMap;
 }
 

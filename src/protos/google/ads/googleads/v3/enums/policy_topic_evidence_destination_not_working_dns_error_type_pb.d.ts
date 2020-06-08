@@ -19,11 +19,13 @@ export namespace PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeEnum {
   export type AsObject = {
   }
 
-  export enum PolicyTopicEvidenceDestinationNotWorkingDnsErrorType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    HOSTNAME_NOT_FOUND = 2,
-    GOOGLE_CRAWLER_DNS_ISSUE = 3,
+  export interface PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    HOSTNAME_NOT_FOUND: 2;
+    GOOGLE_CRAWLER_DNS_ISSUE: 3;
   }
+
+  export const PolicyTopicEvidenceDestinationNotWorkingDnsErrorType: PolicyTopicEvidenceDestinationNotWorkingDnsErrorTypeMap;
 }
 

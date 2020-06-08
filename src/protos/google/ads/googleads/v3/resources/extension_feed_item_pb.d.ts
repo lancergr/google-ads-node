@@ -7,6 +7,7 @@ import * as google_ads_googleads_v3_common_extensions_pb from "../../../../../go
 import * as google_ads_googleads_v3_enums_extension_type_pb from "../../../../../google/ads/googleads/v3/enums/extension_type_pb";
 import * as google_ads_googleads_v3_enums_feed_item_status_pb from "../../../../../google/ads/googleads/v3/enums/feed_item_status_pb";
 import * as google_ads_googleads_v3_enums_feed_item_target_device_pb from "../../../../../google/ads/googleads/v3/enums/feed_item_target_device_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -20,8 +21,8 @@ export class ExtensionFeedItem extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getExtensionType(): google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionType;
-  setExtensionType(value: google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionType): void;
+  getExtensionType(): google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionTypeMap[keyof google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionTypeMap];
+  setExtensionType(value: google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionTypeMap[keyof google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionTypeMap]): void;
 
   hasStartDateTime(): boolean;
   clearStartDateTime(): void;
@@ -38,8 +39,8 @@ export class ExtensionFeedItem extends jspb.Message {
   setAdSchedulesList(value: Array<google_ads_googleads_v3_common_criteria_pb.AdScheduleInfo>): void;
   addAdSchedules(value?: google_ads_googleads_v3_common_criteria_pb.AdScheduleInfo, index?: number): google_ads_googleads_v3_common_criteria_pb.AdScheduleInfo;
 
-  getDevice(): google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDevice;
-  setDevice(value: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDevice): void;
+  getDevice(): google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap[keyof google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap];
+  setDevice(value: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap[keyof google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap]): void;
 
   hasTargetedGeoTargetConstant(): boolean;
   clearTargetedGeoTargetConstant(): void;
@@ -51,8 +52,8 @@ export class ExtensionFeedItem extends jspb.Message {
   getTargetedKeyword(): google_ads_googleads_v3_common_criteria_pb.KeywordInfo | undefined;
   setTargetedKeyword(value?: google_ads_googleads_v3_common_criteria_pb.KeywordInfo): void;
 
-  getStatus(): google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatus;
-  setStatus(value: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap[keyof google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap[keyof google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap]): void;
 
   hasSitelinkFeedItem(): boolean;
   clearSitelinkFeedItem(): void;
@@ -135,14 +136,14 @@ export namespace ExtensionFeedItem {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    extensionType: google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionType,
+    extensionType: google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionTypeMap[keyof google_ads_googleads_v3_enums_extension_type_pb.ExtensionTypeEnum.ExtensionTypeMap],
     startDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     endDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     adSchedulesList: Array<google_ads_googleads_v3_common_criteria_pb.AdScheduleInfo.AsObject>,
-    device: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDevice,
+    device: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap[keyof google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap],
     targetedGeoTargetConstant?: google_protobuf_wrappers_pb.StringValue.AsObject,
     targetedKeyword?: google_ads_googleads_v3_common_criteria_pb.KeywordInfo.AsObject,
-    status: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatus,
+    status: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap[keyof google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap],
     sitelinkFeedItem?: google_ads_googleads_v3_common_extensions_pb.SitelinkFeedItem.AsObject,
     structuredSnippetFeedItem?: google_ads_googleads_v3_common_extensions_pb.StructuredSnippetFeedItem.AsObject,
     appFeedItem?: google_ads_googleads_v3_common_extensions_pb.AppFeedItem.AsObject,

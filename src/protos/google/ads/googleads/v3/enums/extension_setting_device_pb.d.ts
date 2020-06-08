@@ -19,11 +19,13 @@ export namespace ExtensionSettingDeviceEnum {
   export type AsObject = {
   }
 
-  export enum ExtensionSettingDevice {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MOBILE = 2,
-    DESKTOP = 3,
+  export interface ExtensionSettingDeviceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MOBILE: 2;
+    DESKTOP: 3;
   }
+
+  export const ExtensionSettingDevice: ExtensionSettingDeviceMap;
 }
 

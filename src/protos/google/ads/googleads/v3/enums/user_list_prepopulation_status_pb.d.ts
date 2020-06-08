@@ -19,12 +19,14 @@ export namespace UserListPrepopulationStatusEnum {
   export type AsObject = {
   }
 
-  export enum UserListPrepopulationStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    REQUESTED = 2,
-    FINISHED = 3,
-    FAILED = 4,
+  export interface UserListPrepopulationStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    REQUESTED: 2;
+    FINISHED: 3;
+    FAILED: 4;
   }
+
+  export const UserListPrepopulationStatus: UserListPrepopulationStatusMap;
 }
 

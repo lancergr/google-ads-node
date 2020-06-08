@@ -19,10 +19,12 @@ export namespace PartialFailureErrorEnum {
   export type AsObject = {
   }
 
-  export enum PartialFailureError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PARTIAL_FAILURE_MODE_REQUIRED = 2,
+  export interface PartialFailureErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PARTIAL_FAILURE_MODE_REQUIRED: 2;
   }
+
+  export const PartialFailureError: PartialFailureErrorMap;
 }
 

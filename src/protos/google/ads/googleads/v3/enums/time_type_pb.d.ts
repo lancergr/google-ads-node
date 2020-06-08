@@ -19,11 +19,13 @@ export namespace TimeTypeEnum {
   export type AsObject = {
   }
 
-  export enum TimeType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NOW = 2,
-    FOREVER = 3,
+  export interface TimeTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NOW: 2;
+    FOREVER: 3;
   }
+
+  export const TimeType: TimeTypeMap;
 }
 

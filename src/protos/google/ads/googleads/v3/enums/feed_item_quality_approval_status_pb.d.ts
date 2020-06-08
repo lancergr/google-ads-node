@@ -19,11 +19,13 @@ export namespace FeedItemQualityApprovalStatusEnum {
   export type AsObject = {
   }
 
-  export enum FeedItemQualityApprovalStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    APPROVED = 2,
-    DISAPPROVED = 3,
+  export interface FeedItemQualityApprovalStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    APPROVED: 2;
+    DISAPPROVED: 3;
   }
+
+  export const FeedItemQualityApprovalStatus: FeedItemQualityApprovalStatusMap;
 }
 

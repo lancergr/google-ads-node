@@ -19,11 +19,13 @@ export namespace FeedMappingCriterionTypeEnum {
   export type AsObject = {
   }
 
-  export enum FeedMappingCriterionType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LOCATION_EXTENSION_TARGETING = 4,
-    DSA_PAGE_FEED = 3,
+  export interface FeedMappingCriterionTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LOCATION_EXTENSION_TARGETING: 4;
+    DSA_PAGE_FEED: 3;
   }
+
+  export const FeedMappingCriterionType: FeedMappingCriterionTypeMap;
 }
 

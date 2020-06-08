@@ -19,11 +19,13 @@ export namespace FeedOriginEnum {
   export type AsObject = {
   }
 
-  export enum FeedOrigin {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    USER = 2,
-    GOOGLE = 3,
+  export interface FeedOriginMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    USER: 2;
+    GOOGLE: 3;
   }
+
+  export const FeedOrigin: FeedOriginMap;
 }
 

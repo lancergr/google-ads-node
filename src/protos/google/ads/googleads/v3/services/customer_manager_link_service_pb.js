@@ -1,1 +1,1339 @@
-var jspb=require("google-protobuf"),goog=jspb,global=Function("return this")(),google_ads_googleads_v3_resources_customer_manager_link_pb=require("../../../../../google/ads/googleads/v3/resources/customer_manager_link_pb.js"),google_api_annotations_pb=require("../../../../../google/api/annotations_pb.js"),google_api_client_pb=require("../../../../../google/api/client_pb.js"),google_api_field_behavior_pb=require("../../../../../google/api/field_behavior_pb.js"),google_protobuf_field_mask_pb=require("google-protobuf/google/protobuf/field_mask_pb.js");goog.exportSymbol("proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MoveManagerLinkRequest",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MoveManagerLinkResponse",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult",null,global),proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.displayName="proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.toObject=function(includeInstance,msg){var obj={resourceName:jspb.Message.getFieldWithDefault(msg,1,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest;return proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setResourceName(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.serializeBinaryToWriter=function(message,writer){var f;0<(f=message.getResourceName()).length&&writer.writeString(1,f)},proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.getResourceName=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.setResourceName=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.repeatedFields_,null)},goog.inherits(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.displayName="proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest"),proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.repeatedFields_=[2],jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.toObject=function(includeInstance,msg){var obj={customerId:jspb.Message.getFieldWithDefault(msg,1,""),operationsList:jspb.Message.toObjectList(msg.getOperationsList(),proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.toObject,includeInstance)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest;return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setCustomerId(value);break;case 2:value=new proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation,reader.readMessage(value,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinaryFromReader),msg.addOperations(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.serializeBinaryToWriter=function(message,writer){var f=void 0;0<(f=message.getCustomerId()).length&&writer.writeString(1,f),0<(f=message.getOperationsList()).length&&writer.writeRepeatedMessage(2,f,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.serializeBinaryToWriter)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.getCustomerId=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.setCustomerId=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.getOperationsList=function(){return jspb.Message.getRepeatedWrapperField(this,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation,2)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.setOperationsList=function(value){jspb.Message.setRepeatedWrapperField(this,2,value)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.addOperations=function(opt_value,opt_index){return jspb.Message.addToRepeatedWrapperField(this,2,opt_value,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation,opt_index)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.clearOperationsList=function(){this.setOperationsList([])},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.services.MoveManagerLinkRequest,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.displayName="proto.google.ads.googleads.v3.services.MoveManagerLinkRequest"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.toObject=function(includeInstance,msg){var obj={customerId:jspb.Message.getFieldWithDefault(msg,1,""),previousCustomerManagerLink:jspb.Message.getFieldWithDefault(msg,2,""),newManager:jspb.Message.getFieldWithDefault(msg,3,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MoveManagerLinkRequest;return proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setCustomerId(value);break;case 2:value=reader.readString(),msg.setPreviousCustomerManagerLink(value);break;case 3:value=reader.readString(),msg.setNewManager(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.serializeBinaryToWriter=function(message,writer){var f=void 0;0<(f=message.getCustomerId()).length&&writer.writeString(1,f),0<(f=message.getPreviousCustomerManagerLink()).length&&writer.writeString(2,f),0<(f=message.getNewManager()).length&&writer.writeString(3,f)},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.getCustomerId=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.setCustomerId=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.getPreviousCustomerManagerLink=function(){return jspb.Message.getFieldWithDefault(this,2,"")},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.setPreviousCustomerManagerLink=function(value){jspb.Message.setProto3StringField(this,2,value)},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.getNewManager=function(){return jspb.Message.getFieldWithDefault(this,3,"")},proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.setNewManager=function(value){jspb.Message.setProto3StringField(this,3,value)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_)},goog.inherits(proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.displayName="proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation"),proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_=[[2]],proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.OperationCase={OPERATION_NOT_SET:0,UPDATE:2},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.getOperationCase=function(){return jspb.Message.computeOneofCase(this,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_[0])},jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.toObject=function(includeInstance,msg){var f,obj={updateMask:(f=msg.getUpdateMask())&&google_protobuf_field_mask_pb.FieldMask.toObject(includeInstance,f),update:(f=msg.getUpdate())&&google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation;return proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 4:var value=new google_protobuf_field_mask_pb.FieldMask;reader.readMessage(value,google_protobuf_field_mask_pb.FieldMask.deserializeBinaryFromReader),msg.setUpdateMask(value);break;case 2:value=new google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink,reader.readMessage(value,google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink.deserializeBinaryFromReader),msg.setUpdate(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getUpdateMask())&&writer.writeMessage(4,f,google_protobuf_field_mask_pb.FieldMask.serializeBinaryToWriter),null!=(f=message.getUpdate())&&writer.writeMessage(2,f,google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink.serializeBinaryToWriter)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.getUpdateMask=function(){return jspb.Message.getWrapperField(this,google_protobuf_field_mask_pb.FieldMask,4)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.setUpdateMask=function(value){jspb.Message.setWrapperField(this,4,value)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.clearUpdateMask=function(){this.setUpdateMask(void 0)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.hasUpdateMask=function(){return null!=jspb.Message.getField(this,4)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.getUpdate=function(){return jspb.Message.getWrapperField(this,google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink,2)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.setUpdate=function(value){jspb.Message.setOneofWrapperField(this,2,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_[0],value)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.clearUpdate=function(){this.setUpdate(void 0)},proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.hasUpdate=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.repeatedFields_,null)},goog.inherits(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.displayName="proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse"),proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.repeatedFields_=[1],jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.toObject=function(includeInstance,msg){var obj={resultsList:jspb.Message.toObjectList(msg.getResultsList(),proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.toObject,includeInstance)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse;return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult;reader.readMessage(value,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinaryFromReader),msg.addResults(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.serializeBinaryToWriter=function(message,writer){var f;0<(f=message.getResultsList()).length&&writer.writeRepeatedMessage(1,f,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.serializeBinaryToWriter)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.getResultsList=function(){return jspb.Message.getRepeatedWrapperField(this,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult,1)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.setResultsList=function(value){jspb.Message.setRepeatedWrapperField(this,1,value)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.addResults=function(opt_value,opt_index){return jspb.Message.addToRepeatedWrapperField(this,1,opt_value,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult,opt_index)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.clearResultsList=function(){this.setResultsList([])},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.services.MoveManagerLinkResponse,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.displayName="proto.google.ads.googleads.v3.services.MoveManagerLinkResponse"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.toObject=function(includeInstance,msg){var obj={resourceName:jspb.Message.getFieldWithDefault(msg,1,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MoveManagerLinkResponse;return proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setResourceName(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.serializeBinaryToWriter=function(message,writer){var f;0<(f=message.getResourceName()).length&&writer.writeString(1,f)},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.getResourceName=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.setResourceName=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.displayName="proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.toObject=function(includeInstance,msg){var obj={resourceName:jspb.Message.getFieldWithDefault(msg,1,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult;return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setResourceName(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.serializeBinaryToWriter=function(message,writer){var f;0<(f=message.getResourceName()).length&&writer.writeString(1,f)},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.getResourceName=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.setResourceName=function(value){jspb.Message.setProto3StringField(this,1,value)},goog.object.extend(exports,proto.google.ads.googleads.v3.services);
+// source: google/ads/googleads/v3/services/customer_manager_link_service.proto
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_ads_googleads_v3_resources_customer_manager_link_pb = require('../../../../../google/ads/googleads/v3/resources/customer_manager_link_pb.js');
+goog.object.extend(proto, google_ads_googleads_v3_resources_customer_manager_link_pb);
+var google_api_annotations_pb = require('../../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);
+var google_api_client_pb = require('../../../../../google/api/client_pb.js');
+goog.object.extend(proto, google_api_client_pb);
+var google_api_field_behavior_pb = require('../../../../../google/api/field_behavior_pb.js');
+goog.object.extend(proto, google_api_field_behavior_pb);
+var google_api_resource_pb = require('../../../../../google/api/resource_pb.js');
+goog.object.extend(proto, google_api_resource_pb);
+var google_protobuf_field_mask_pb = require('google-protobuf/google/protobuf/field_mask_pb.js');
+goog.object.extend(proto, google_protobuf_field_mask_pb);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.OperationCase', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MoveManagerLinkRequest', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MoveManagerLinkResponse', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult', null, global);
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.displayName = 'proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.repeatedFields_, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.displayName = 'proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MoveManagerLinkRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.displayName = 'proto.google.ads.googleads.v3.services.MoveManagerLinkRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.displayName = 'proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.repeatedFields_, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.displayName = 'proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MoveManagerLinkResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.displayName = 'proto.google.ads.googleads.v3.services.MoveManagerLinkResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.displayName = 'proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult';
+}
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resourceName: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest}
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest;
+  return proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest}
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResourceName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResourceName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string resource_name = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.getResourceName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.GetCustomerManagerLinkRequest.prototype.setResourceName = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    customerId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    operationsList: jspb.Message.toObjectList(msg.getOperationsList(),
+    proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest;
+  return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCustomerId(value);
+      break;
+    case 2:
+      var value = new proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation;
+      reader.readMessage(value,proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinaryFromReader);
+      msg.addOperations(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCustomerId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getOperationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string customer_id = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.getCustomerId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.setCustomerId = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated CustomerManagerLinkOperation operations = 2;
+ * @return {!Array<!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation>}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.getOperationsList = function() {
+  return /** @type{!Array<!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation, 2));
+};
+
+
+/**
+ * @param {!Array<!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation>} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest} returns this
+*/
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.setOperationsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.addOperations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkRequest.prototype.clearOperationsList = function() {
+  return this.setOperationsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    customerId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    previousCustomerManagerLink: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    newManager: jspb.Message.getFieldWithDefault(msg, 3, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MoveManagerLinkRequest;
+  return proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCustomerId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPreviousCustomerManagerLink(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setNewManager(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCustomerId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getPreviousCustomerManagerLink();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getNewManager();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string customer_id = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.getCustomerId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.setCustomerId = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string previous_customer_manager_link = 2;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.getPreviousCustomerManagerLink = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.setPreviousCustomerManagerLink = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string new_manager = 3;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.getNewManager = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkRequest.prototype.setNewManager = function(value) {
+  return jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_ = [[2]];
+
+/**
+ * @enum {number}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.OperationCase = {
+  OPERATION_NOT_SET: 0,
+  UPDATE: 2
+};
+
+/**
+ * @return {proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.OperationCase}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.getOperationCase = function() {
+  return /** @type {proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.OperationCase} */(jspb.Message.computeOneofCase(this, proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    updateMask: (f = msg.getUpdateMask()) && google_protobuf_field_mask_pb.FieldMask.toObject(includeInstance, f),
+    update: (f = msg.getUpdate()) && google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation;
+  return proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 4:
+      var value = new google_protobuf_field_mask_pb.FieldMask;
+      reader.readMessage(value,google_protobuf_field_mask_pb.FieldMask.deserializeBinaryFromReader);
+      msg.setUpdateMask(value);
+      break;
+    case 2:
+      var value = new google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink;
+      reader.readMessage(value,google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink.deserializeBinaryFromReader);
+      msg.setUpdate(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getUpdateMask();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_field_mask_pb.FieldMask.serializeBinaryToWriter
+    );
+  }
+  f = message.getUpdate();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.FieldMask update_mask = 4;
+ * @return {?proto.google.protobuf.FieldMask}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.getUpdateMask = function() {
+  return /** @type{?proto.google.protobuf.FieldMask} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_field_mask_pb.FieldMask, 4));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.FieldMask|undefined} value
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} returns this
+*/
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.setUpdateMask = function(value) {
+  return jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.clearUpdateMask = function() {
+  return this.setUpdateMask(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.hasUpdateMask = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.ads.googleads.v3.resources.CustomerManagerLink update = 2;
+ * @return {?proto.google.ads.googleads.v3.resources.CustomerManagerLink}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.getUpdate = function() {
+  return /** @type{?proto.google.ads.googleads.v3.resources.CustomerManagerLink} */ (
+    jspb.Message.getWrapperField(this, google_ads_googleads_v3_resources_customer_manager_link_pb.CustomerManagerLink, 2));
+};
+
+
+/**
+ * @param {?proto.google.ads.googleads.v3.resources.CustomerManagerLink|undefined} value
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} returns this
+*/
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.setUpdate = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 2, proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.clearUpdate = function() {
+  return this.setUpdate(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.CustomerManagerLinkOperation.prototype.hasUpdate = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resultsList: jspb.Message.toObjectList(msg.getResultsList(),
+    proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse;
+  return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult;
+      reader.readMessage(value,proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinaryFromReader);
+      msg.addResults(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResultsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated MutateCustomerManagerLinkResult results = 1;
+ * @return {!Array<!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult>}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.getResultsList = function() {
+  return /** @type{!Array<!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult, 1));
+};
+
+
+/**
+ * @param {!Array<!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult>} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse} returns this
+*/
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.setResultsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.addResults = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResponse.prototype.clearResultsList = function() {
+  return this.setResultsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MoveManagerLinkResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resourceName: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkResponse}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MoveManagerLinkResponse;
+  return proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MoveManagerLinkResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkResponse}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResourceName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MoveManagerLinkResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResourceName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string resource_name = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.getResourceName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MoveManagerLinkResponse} returns this
+ */
+proto.google.ads.googleads.v3.services.MoveManagerLinkResponse.prototype.setResourceName = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resourceName: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult;
+  return proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResourceName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResourceName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string resource_name = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.getResourceName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateCustomerManagerLinkResult.prototype.setResourceName = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+goog.object.extend(exports, proto.google.ads.googleads.v3.services);

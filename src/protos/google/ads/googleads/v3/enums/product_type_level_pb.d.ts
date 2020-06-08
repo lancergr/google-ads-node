@@ -19,14 +19,16 @@ export namespace ProductTypeLevelEnum {
   export type AsObject = {
   }
 
-  export enum ProductTypeLevel {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LEVEL1 = 7,
-    LEVEL2 = 8,
-    LEVEL3 = 9,
-    LEVEL4 = 10,
-    LEVEL5 = 11,
+  export interface ProductTypeLevelMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LEVEL1: 7;
+    LEVEL2: 8;
+    LEVEL3: 9;
+    LEVEL4: 10;
+    LEVEL5: 11;
   }
+
+  export const ProductTypeLevel: ProductTypeLevelMap;
 }
 

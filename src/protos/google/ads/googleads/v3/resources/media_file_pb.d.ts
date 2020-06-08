@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_media_type_pb from "../../../../../google/ads/googleads/v3/enums/media_type_pb";
 import * as google_ads_googleads_v3_enums_mime_type_pb from "../../../../../google/ads/googleads/v3/enums/mime_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,11 +18,11 @@ export class MediaFile extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getType(): google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaType;
-  setType(value: google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaType): void;
+  getType(): google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaTypeMap[keyof google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaTypeMap];
+  setType(value: google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaTypeMap[keyof google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaTypeMap]): void;
 
-  getMimeType(): google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType;
-  setMimeType(value: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType): void;
+  getMimeType(): google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap];
+  setMimeType(value: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap]): void;
 
   hasSourceUrl(): boolean;
   clearSourceUrl(): void;
@@ -73,8 +74,8 @@ export namespace MediaFile {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    type: google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaType,
-    mimeType: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType,
+    type: google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaTypeMap[keyof google_ads_googleads_v3_enums_media_type_pb.MediaTypeEnum.MediaTypeMap],
+    mimeType: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap],
     sourceUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     fileSize?: google_protobuf_wrappers_pb.Int64Value.AsObject,

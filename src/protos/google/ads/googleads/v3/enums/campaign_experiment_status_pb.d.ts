@@ -19,18 +19,20 @@ export namespace CampaignExperimentStatusEnum {
   export type AsObject = {
   }
 
-  export enum CampaignExperimentStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INITIALIZING = 2,
-    INITIALIZATION_FAILED = 8,
-    ENABLED = 3,
-    GRADUATED = 4,
-    REMOVED = 5,
-    PROMOTING = 6,
-    PROMOTION_FAILED = 9,
-    PROMOTED = 7,
-    ENDED_MANUALLY = 10,
+  export interface CampaignExperimentStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INITIALIZING: 2;
+    INITIALIZATION_FAILED: 8;
+    ENABLED: 3;
+    GRADUATED: 4;
+    REMOVED: 5;
+    PROMOTING: 6;
+    PROMOTION_FAILED: 9;
+    PROMOTED: 7;
+    ENDED_MANUALLY: 10;
   }
+
+  export const CampaignExperimentStatus: CampaignExperimentStatusMap;
 }
 

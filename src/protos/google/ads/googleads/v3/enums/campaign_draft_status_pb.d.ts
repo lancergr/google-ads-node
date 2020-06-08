@@ -19,14 +19,16 @@ export namespace CampaignDraftStatusEnum {
   export type AsObject = {
   }
 
-  export enum CampaignDraftStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PROPOSED = 2,
-    REMOVED = 3,
-    PROMOTING = 5,
-    PROMOTED = 4,
-    PROMOTE_FAILED = 6,
+  export interface CampaignDraftStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PROPOSED: 2;
+    REMOVED: 3;
+    PROMOTING: 5;
+    PROMOTED: 4;
+    PROMOTE_FAILED: 6;
   }
+
+  export const CampaignDraftStatus: CampaignDraftStatusMap;
 }
 

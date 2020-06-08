@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_keyword_plan_network_pb from "../../../../../google/ads/googleads/v3/enums/keyword_plan_network_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -31,8 +32,8 @@ export class KeywordPlanCampaign extends jspb.Message {
   setLanguageConstantsList(value: Array<google_protobuf_wrappers_pb.StringValue>): void;
   addLanguageConstants(value?: google_protobuf_wrappers_pb.StringValue, index?: number): google_protobuf_wrappers_pb.StringValue;
 
-  getKeywordPlanNetwork(): google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetwork;
-  setKeywordPlanNetwork(value: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetwork): void;
+  getKeywordPlanNetwork(): google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap[keyof google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap];
+  setKeywordPlanNetwork(value: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap[keyof google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap]): void;
 
   hasCpcBidMicros(): boolean;
   clearCpcBidMicros(): void;
@@ -61,7 +62,7 @@ export namespace KeywordPlanCampaign {
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     languageConstantsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
-    keywordPlanNetwork: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetwork,
+    keywordPlanNetwork: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap[keyof google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap],
     cpcBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     geoTargetsList: Array<KeywordPlanGeoTarget.AsObject>,
   }

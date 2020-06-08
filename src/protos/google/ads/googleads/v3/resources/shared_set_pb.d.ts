@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_shared_set_status_pb from "../../../../../google/ads/googleads/v3/enums/shared_set_status_pb";
 import * as google_ads_googleads_v3_enums_shared_set_type_pb from "../../../../../google/ads/googleads/v3/enums/shared_set_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,16 +18,16 @@ export class SharedSet extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getType(): google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetType;
-  setType(value: google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetType): void;
+  getType(): google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetTypeMap[keyof google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetTypeMap];
+  setType(value: google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetTypeMap[keyof google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetTypeMap]): void;
 
   hasName(): boolean;
   clearName(): void;
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatus;
-  setStatus(value: google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatusMap[keyof google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatusMap[keyof google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatusMap]): void;
 
   hasMemberCount(): boolean;
   clearMemberCount(): void;
@@ -52,9 +53,9 @@ export namespace SharedSet {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    type: google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetType,
+    type: google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetTypeMap[keyof google_ads_googleads_v3_enums_shared_set_type_pb.SharedSetTypeEnum.SharedSetTypeMap],
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatus,
+    status: google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatusMap[keyof google_ads_googleads_v3_enums_shared_set_status_pb.SharedSetStatusEnum.SharedSetStatusMap],
     memberCount?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     referenceCount?: google_protobuf_wrappers_pb.Int64Value.AsObject,
   }

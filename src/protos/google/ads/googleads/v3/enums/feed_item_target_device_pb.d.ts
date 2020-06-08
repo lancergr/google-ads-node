@@ -19,10 +19,12 @@ export namespace FeedItemTargetDeviceEnum {
   export type AsObject = {
   }
 
-  export enum FeedItemTargetDevice {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MOBILE = 2,
+  export interface FeedItemTargetDeviceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MOBILE: 2;
   }
+
+  export const FeedItemTargetDevice: FeedItemTargetDeviceMap;
 }
 

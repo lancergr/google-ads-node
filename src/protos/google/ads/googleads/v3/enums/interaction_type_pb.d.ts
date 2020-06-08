@@ -19,10 +19,12 @@ export namespace InteractionTypeEnum {
   export type AsObject = {
   }
 
-  export enum InteractionType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CALLS = 8000,
+  export interface InteractionTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CALLS: 8000;
   }
+
+  export const InteractionType: InteractionTypeMap;
 }
 

@@ -19,11 +19,13 @@ export namespace ConversionAttributionEventTypeEnum {
   export type AsObject = {
   }
 
-  export enum ConversionAttributionEventType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    IMPRESSION = 2,
-    INTERACTION = 3,
+  export interface ConversionAttributionEventTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    IMPRESSION: 2;
+    INTERACTION: 3;
   }
+
+  export const ConversionAttributionEventType: ConversionAttributionEventTypeMap;
 }
 

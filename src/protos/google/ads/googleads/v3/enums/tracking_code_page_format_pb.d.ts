@@ -19,11 +19,13 @@ export namespace TrackingCodePageFormatEnum {
   export type AsObject = {
   }
 
-  export enum TrackingCodePageFormat {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    HTML = 2,
-    AMP = 3,
+  export interface TrackingCodePageFormatMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    HTML: 2;
+    AMP: 3;
   }
+
+  export const TrackingCodePageFormat: TrackingCodePageFormatMap;
 }
 

@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_campaign_experiment_status_pb from "../../../../../google/ads/googleads/v3/enums/campaign_experiment_status_pb";
 import * as google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb from "../../../../../google/ads/googleads/v3/enums/campaign_experiment_traffic_split_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -37,16 +38,16 @@ export class CampaignExperiment extends jspb.Message {
   getTrafficSplitPercent(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setTrafficSplitPercent(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getTrafficSplitType(): google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitType;
-  setTrafficSplitType(value: google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitType): void;
+  getTrafficSplitType(): google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitTypeMap[keyof google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitTypeMap];
+  setTrafficSplitType(value: google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitTypeMap[keyof google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitTypeMap]): void;
 
   hasExperimentCampaign(): boolean;
   clearExperimentCampaign(): void;
   getExperimentCampaign(): google_protobuf_wrappers_pb.StringValue | undefined;
   setExperimentCampaign(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatus;
-  setStatus(value: google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatusMap[keyof google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatusMap[keyof google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatusMap]): void;
 
   hasLongRunningOperation(): boolean;
   clearLongRunningOperation(): void;
@@ -81,9 +82,9 @@ export namespace CampaignExperiment {
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     description?: google_protobuf_wrappers_pb.StringValue.AsObject,
     trafficSplitPercent?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    trafficSplitType: google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitType,
+    trafficSplitType: google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitTypeMap[keyof google_ads_googleads_v3_enums_campaign_experiment_traffic_split_type_pb.CampaignExperimentTrafficSplitTypeEnum.CampaignExperimentTrafficSplitTypeMap],
     experimentCampaign?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatus,
+    status: google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatusMap[keyof google_ads_googleads_v3_enums_campaign_experiment_status_pb.CampaignExperimentStatusEnum.CampaignExperimentStatusMap],
     longRunningOperation?: google_protobuf_wrappers_pb.StringValue.AsObject,
     startDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     endDate?: google_protobuf_wrappers_pb.StringValue.AsObject,

@@ -19,12 +19,14 @@ export namespace KeywordMatchTypeEnum {
   export type AsObject = {
   }
 
-  export enum KeywordMatchType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EXACT = 2,
-    PHRASE = 3,
-    BROAD = 4,
+  export interface KeywordMatchTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EXACT: 2;
+    PHRASE: 3;
+    BROAD: 4;
   }
+
+  export const KeywordMatchType: KeywordMatchTypeMap;
 }
 

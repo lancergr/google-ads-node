@@ -37,14 +37,14 @@ export namespace FrequencyCapEntry {
 }
 
 export class FrequencyCapKey extends jspb.Message {
-  getLevel(): google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevel;
-  setLevel(value: google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevel): void;
+  getLevel(): google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevelMap[keyof google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevelMap];
+  setLevel(value: google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevelMap[keyof google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevelMap]): void;
 
-  getEventType(): google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventType;
-  setEventType(value: google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventType): void;
+  getEventType(): google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventTypeMap[keyof google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventTypeMap];
+  setEventType(value: google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventTypeMap[keyof google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventTypeMap]): void;
 
-  getTimeUnit(): google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnit;
-  setTimeUnit(value: google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnit): void;
+  getTimeUnit(): google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnitMap[keyof google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnitMap];
+  setTimeUnit(value: google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnitMap[keyof google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnitMap]): void;
 
   hasTimeLength(): boolean;
   clearTimeLength(): void;
@@ -63,9 +63,9 @@ export class FrequencyCapKey extends jspb.Message {
 
 export namespace FrequencyCapKey {
   export type AsObject = {
-    level: google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevel,
-    eventType: google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventType,
-    timeUnit: google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnit,
+    level: google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevelMap[keyof google_ads_googleads_v3_enums_frequency_cap_level_pb.FrequencyCapLevelEnum.FrequencyCapLevelMap],
+    eventType: google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventTypeMap[keyof google_ads_googleads_v3_enums_frequency_cap_event_type_pb.FrequencyCapEventTypeEnum.FrequencyCapEventTypeMap],
+    timeUnit: google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnitMap[keyof google_ads_googleads_v3_enums_frequency_cap_time_unit_pb.FrequencyCapTimeUnitEnum.FrequencyCapTimeUnitMap],
     timeLength?: google_protobuf_wrappers_pb.Int32Value.AsObject,
   }
 }

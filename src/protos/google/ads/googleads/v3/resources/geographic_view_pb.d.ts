@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_geo_targeting_type_pb from "../../../../../google/ads/googleads/v3/enums/geo_targeting_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -11,8 +12,8 @@ export class GeographicView extends jspb.Message {
   getResourceName(): string;
   setResourceName(value: string): void;
 
-  getLocationType(): google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingType;
-  setLocationType(value: google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingType): void;
+  getLocationType(): google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingTypeMap[keyof google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingTypeMap];
+  setLocationType(value: google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingTypeMap[keyof google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingTypeMap]): void;
 
   hasCountryCriterionId(): boolean;
   clearCountryCriterionId(): void;
@@ -32,7 +33,7 @@ export class GeographicView extends jspb.Message {
 export namespace GeographicView {
   export type AsObject = {
     resourceName: string,
-    locationType: google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingType,
+    locationType: google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingTypeMap[keyof google_ads_googleads_v3_enums_geo_targeting_type_pb.GeoTargetingTypeEnum.GeoTargetingTypeMap],
     countryCriterionId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
   }
 }

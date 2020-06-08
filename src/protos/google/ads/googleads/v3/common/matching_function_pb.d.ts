@@ -13,8 +13,8 @@ export class MatchingFunction extends jspb.Message {
   getFunctionString(): google_protobuf_wrappers_pb.StringValue | undefined;
   setFunctionString(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getOperator(): google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperator;
-  setOperator(value: google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperator): void;
+  getOperator(): google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperatorMap[keyof google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperatorMap];
+  setOperator(value: google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperatorMap[keyof google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperatorMap]): void;
 
   clearLeftOperandsList(): void;
   getLeftOperandsList(): Array<Operand>;
@@ -39,7 +39,7 @@ export class MatchingFunction extends jspb.Message {
 export namespace MatchingFunction {
   export type AsObject = {
     functionString?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    operator: google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperator,
+    operator: google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperatorMap[keyof google_ads_googleads_v3_enums_matching_function_operator_pb.MatchingFunctionOperatorEnum.MatchingFunctionOperatorMap],
     leftOperandsList: Array<Operand.AsObject>,
     rightOperandsList: Array<Operand.AsObject>,
   }
@@ -185,8 +185,8 @@ export namespace Operand {
   }
 
   export class RequestContextOperand extends jspb.Message {
-    getContextType(): google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextType;
-    setContextType(value: google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextType): void;
+    getContextType(): google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextTypeMap[keyof google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextTypeMap];
+    setContextType(value: google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextTypeMap[keyof google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextTypeMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): RequestContextOperand.AsObject;
@@ -200,7 +200,7 @@ export namespace Operand {
 
   export namespace RequestContextOperand {
     export type AsObject = {
-      contextType: google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextType,
+      contextType: google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextTypeMap[keyof google_ads_googleads_v3_enums_matching_function_context_type_pb.MatchingFunctionContextTypeEnum.MatchingFunctionContextTypeMap],
     }
   }
 

@@ -19,11 +19,13 @@ export namespace DistinctErrorEnum {
   export type AsObject = {
   }
 
-  export enum DistinctError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DUPLICATE_ELEMENT = 2,
-    DUPLICATE_TYPE = 3,
+  export interface DistinctErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DUPLICATE_ELEMENT: 2;
+    DUPLICATE_TYPE: 3;
   }
+
+  export const DistinctError: DistinctErrorMap;
 }
 

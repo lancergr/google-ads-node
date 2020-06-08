@@ -19,11 +19,13 @@ export namespace CustomInterestStatusEnum {
   export type AsObject = {
   }
 
-  export enum CustomInterestStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
+  export interface CustomInterestStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
   }
+
+  export const CustomInterestStatus: CustomInterestStatusMap;
 }
 

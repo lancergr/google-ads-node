@@ -19,17 +19,19 @@ export namespace AppPlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum AppPlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    STORE = 2,
-    ID = 3,
-    LINK_TEXT = 4,
-    URL = 5,
-    FINAL_URLS = 6,
-    FINAL_MOBILE_URLS = 7,
-    TRACKING_URL = 8,
-    FINAL_URL_SUFFIX = 9,
+  export interface AppPlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    STORE: 2;
+    ID: 3;
+    LINK_TEXT: 4;
+    URL: 5;
+    FINAL_URLS: 6;
+    FINAL_MOBILE_URLS: 7;
+    TRACKING_URL: 8;
+    FINAL_URL_SUFFIX: 9;
   }
+
+  export const AppPlaceholderField: AppPlaceholderFieldMap;
 }
 

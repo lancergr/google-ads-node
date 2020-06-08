@@ -19,12 +19,14 @@ export namespace PriceExtensionPriceQualifierEnum {
   export type AsObject = {
   }
 
-  export enum PriceExtensionPriceQualifier {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    FROM = 2,
-    UP_TO = 3,
-    AVERAGE = 4,
+  export interface PriceExtensionPriceQualifierMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    FROM: 2;
+    UP_TO: 3;
+    AVERAGE: 4;
   }
+
+  export const PriceExtensionPriceQualifier: PriceExtensionPriceQualifierMap;
 }
 

@@ -19,12 +19,14 @@ export namespace ConversionActionStatusEnum {
   export type AsObject = {
   }
 
-  export enum ConversionActionStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
-    HIDDEN = 4,
+  export interface ConversionActionStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
+    HIDDEN: 4;
   }
+
+  export const ConversionActionStatus: ConversionActionStatusMap;
 }
 

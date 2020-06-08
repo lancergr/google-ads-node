@@ -19,22 +19,24 @@ export namespace FeedAttributeTypeEnum {
   export type AsObject = {
   }
 
-  export enum FeedAttributeType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INT64 = 2,
-    DOUBLE = 3,
-    STRING = 4,
-    BOOLEAN = 5,
-    URL = 6,
-    DATE_TIME = 7,
-    INT64_LIST = 8,
-    DOUBLE_LIST = 9,
-    STRING_LIST = 10,
-    BOOLEAN_LIST = 11,
-    URL_LIST = 12,
-    DATE_TIME_LIST = 13,
-    PRICE = 14,
+  export interface FeedAttributeTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INT64: 2;
+    DOUBLE: 3;
+    STRING: 4;
+    BOOLEAN: 5;
+    URL: 6;
+    DATE_TIME: 7;
+    INT64_LIST: 8;
+    DOUBLE_LIST: 9;
+    STRING_LIST: 10;
+    BOOLEAN_LIST: 11;
+    URL_LIST: 12;
+    DATE_TIME_LIST: 13;
+    PRICE: 14;
   }
+
+  export const FeedAttributeType: FeedAttributeTypeMap;
 }
 

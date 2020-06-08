@@ -19,9 +19,11 @@ export namespace KeywordPlanNegativeKeywordErrorEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanNegativeKeywordError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
+  export interface KeywordPlanNegativeKeywordErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
   }
+
+  export const KeywordPlanNegativeKeywordError: KeywordPlanNegativeKeywordErrorMap;
 }
 

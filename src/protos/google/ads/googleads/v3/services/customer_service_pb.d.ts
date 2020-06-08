@@ -7,6 +7,7 @@ import * as google_ads_googleads_v3_resources_customer_pb from "../../../../../g
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 import * as google_api_client_pb from "../../../../../google/api/client_pb";
 import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
+import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_field_mask_pb from "google-protobuf/google/protobuf/field_mask_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 
@@ -74,8 +75,8 @@ export class CreateCustomerClientRequest extends jspb.Message {
   getEmailAddress(): google_protobuf_wrappers_pb.StringValue | undefined;
   setEmailAddress(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getAccessRole(): google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRole;
-  setAccessRole(value: google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRole): void;
+  getAccessRole(): google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRoleMap[keyof google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRoleMap];
+  setAccessRole(value: google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRoleMap[keyof google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRoleMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CreateCustomerClientRequest.AsObject;
@@ -92,7 +93,7 @@ export namespace CreateCustomerClientRequest {
     customerId: string,
     customerClient?: google_ads_googleads_v3_resources_customer_pb.Customer.AsObject,
     emailAddress?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    accessRole: google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRole,
+    accessRole: google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRoleMap[keyof google_ads_googleads_v3_enums_access_role_pb.AccessRoleEnum.AccessRoleMap],
   }
 }
 

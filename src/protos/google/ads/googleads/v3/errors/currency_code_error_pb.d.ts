@@ -19,10 +19,12 @@ export namespace CurrencyCodeErrorEnum {
   export type AsObject = {
   }
 
-  export enum CurrencyCodeError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    UNSUPPORTED = 2,
+  export interface CurrencyCodeErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    UNSUPPORTED: 2;
   }
+
+  export const CurrencyCodeError: CurrencyCodeErrorMap;
 }
 

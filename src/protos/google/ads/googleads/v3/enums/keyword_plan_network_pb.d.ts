@@ -19,11 +19,13 @@ export namespace KeywordPlanNetworkEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanNetwork {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    GOOGLE_SEARCH = 2,
-    GOOGLE_SEARCH_AND_PARTNERS = 3,
+  export interface KeywordPlanNetworkMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    GOOGLE_SEARCH: 2;
+    GOOGLE_SEARCH_AND_PARTNERS: 3;
   }
+
+  export const KeywordPlanNetwork: KeywordPlanNetworkMap;
 }
 

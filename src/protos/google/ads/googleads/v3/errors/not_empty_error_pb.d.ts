@@ -19,10 +19,12 @@ export namespace NotEmptyErrorEnum {
   export type AsObject = {
   }
 
-  export enum NotEmptyError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EMPTY_LIST = 2,
+  export interface NotEmptyErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EMPTY_LIST: 2;
   }
+
+  export const NotEmptyError: NotEmptyErrorMap;
 }
 

@@ -19,11 +19,13 @@ export namespace InvoiceErrorEnum {
   export type AsObject = {
   }
 
-  export enum InvoiceError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    YEAR_MONTH_TOO_OLD = 2,
-    NOT_INVOICED_CUSTOMER = 3,
+  export interface InvoiceErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    YEAR_MONTH_TOO_OLD: 2;
+    NOT_INVOICED_CUSTOMER: 3;
   }
+
+  export const InvoiceError: InvoiceErrorMap;
 }
 

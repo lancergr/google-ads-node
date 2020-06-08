@@ -12,8 +12,8 @@ export class AdTextAsset extends jspb.Message {
   getText(): google_protobuf_wrappers_pb.StringValue | undefined;
   setText(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getPinnedField(): google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldType;
-  setPinnedField(value: google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldType): void;
+  getPinnedField(): google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldTypeMap[keyof google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldTypeMap];
+  setPinnedField(value: google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldTypeMap[keyof google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AdTextAsset.AsObject;
@@ -28,7 +28,7 @@ export class AdTextAsset extends jspb.Message {
 export namespace AdTextAsset {
   export type AsObject = {
     text?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    pinnedField: google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldType,
+    pinnedField: google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldTypeMap[keyof google_ads_googleads_v3_enums_served_asset_field_type_pb.ServedAssetFieldTypeEnum.ServedAssetFieldTypeMap],
   }
 }
 

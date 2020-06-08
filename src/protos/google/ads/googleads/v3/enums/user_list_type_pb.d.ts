@@ -19,15 +19,17 @@ export namespace UserListTypeEnum {
   export type AsObject = {
   }
 
-  export enum UserListType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    REMARKETING = 2,
-    LOGICAL = 3,
-    EXTERNAL_REMARKETING = 4,
-    RULE_BASED = 5,
-    SIMILAR = 6,
-    CRM_BASED = 7,
+  export interface UserListTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    REMARKETING: 2;
+    LOGICAL: 3;
+    EXTERNAL_REMARKETING: 4;
+    RULE_BASED: 5;
+    SIMILAR: 6;
+    CRM_BASED: 7;
   }
+
+  export const UserListType: UserListTypeMap;
 }
 

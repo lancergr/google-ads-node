@@ -19,12 +19,14 @@ export namespace UserListLogicalRuleOperatorEnum {
   export type AsObject = {
   }
 
-  export enum UserListLogicalRuleOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ALL = 2,
-    ANY = 3,
-    NONE = 4,
+  export interface UserListLogicalRuleOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ALL: 2;
+    ANY: 3;
+    NONE: 4;
   }
+
+  export const UserListLogicalRuleOperator: UserListLogicalRuleOperatorMap;
 }
 

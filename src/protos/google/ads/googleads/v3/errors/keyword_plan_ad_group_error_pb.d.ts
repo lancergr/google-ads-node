@@ -19,11 +19,13 @@ export namespace KeywordPlanAdGroupErrorEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanAdGroupError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_NAME = 2,
-    DUPLICATE_NAME = 3,
+  export interface KeywordPlanAdGroupErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_NAME: 2;
+    DUPLICATE_NAME: 3;
   }
+
+  export const KeywordPlanAdGroupError: KeywordPlanAdGroupErrorMap;
 }
 

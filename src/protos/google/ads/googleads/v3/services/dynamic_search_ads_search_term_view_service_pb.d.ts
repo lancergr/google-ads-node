@@ -6,6 +6,7 @@ import * as google_ads_googleads_v3_resources_dynamic_search_ads_search_term_vie
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 import * as google_api_client_pb from "../../../../../google/api/client_pb";
 import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
+import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 
 export class GetDynamicSearchAdsSearchTermViewRequest extends jspb.Message {
   getResourceName(): string;

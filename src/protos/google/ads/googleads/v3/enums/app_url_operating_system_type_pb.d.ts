@@ -19,11 +19,13 @@ export namespace AppUrlOperatingSystemTypeEnum {
   export type AsObject = {
   }
 
-  export enum AppUrlOperatingSystemType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    IOS = 2,
-    ANDROID = 3,
+  export interface AppUrlOperatingSystemTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    IOS: 2;
+    ANDROID: 3;
   }
+
+  export const AppUrlOperatingSystemType: AppUrlOperatingSystemTypeMap;
 }
 

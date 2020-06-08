@@ -19,12 +19,14 @@ export namespace CampaignExperimentTypeEnum {
   export type AsObject = {
   }
 
-  export enum CampaignExperimentType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BASE = 2,
-    DRAFT = 3,
-    EXPERIMENT = 4,
+  export interface CampaignExperimentTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BASE: 2;
+    DRAFT: 3;
+    EXPERIMENT: 4;
   }
+
+  export const CampaignExperimentType: CampaignExperimentTypeMap;
 }
 

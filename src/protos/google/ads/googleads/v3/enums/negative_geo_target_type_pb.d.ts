@@ -19,11 +19,13 @@ export namespace NegativeGeoTargetTypeEnum {
   export type AsObject = {
   }
 
-  export enum NegativeGeoTargetType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PRESENCE_OR_INTEREST = 4,
-    PRESENCE = 5,
+  export interface NegativeGeoTargetTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PRESENCE_OR_INTEREST: 4;
+    PRESENCE: 5;
   }
+
+  export const NegativeGeoTargetType: NegativeGeoTargetTypeMap;
 }
 

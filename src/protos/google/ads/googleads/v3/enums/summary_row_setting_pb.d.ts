@@ -19,12 +19,14 @@ export namespace SummaryRowSettingEnum {
   export type AsObject = {
   }
 
-  export enum SummaryRowSetting {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NO_SUMMARY_ROW = 2,
-    SUMMARY_ROW_WITH_RESULTS = 3,
-    SUMMARY_ROW_ONLY = 4,
+  export interface SummaryRowSettingMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NO_SUMMARY_ROW: 2;
+    SUMMARY_ROW_WITH_RESULTS: 3;
+    SUMMARY_ROW_ONLY: 4;
   }
+
+  export const SummaryRowSetting: SummaryRowSettingMap;
 }
 

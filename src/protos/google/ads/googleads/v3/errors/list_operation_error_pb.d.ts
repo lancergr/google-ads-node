@@ -19,11 +19,13 @@ export namespace ListOperationErrorEnum {
   export type AsObject = {
   }
 
-  export enum ListOperationError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    REQUIRED_FIELD_MISSING = 7,
-    DUPLICATE_VALUES = 8,
+  export interface ListOperationErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    REQUIRED_FIELD_MISSING: 7;
+    DUPLICATE_VALUES: 8;
   }
+
+  export const ListOperationError: ListOperationErrorMap;
 }
 

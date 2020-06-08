@@ -19,14 +19,16 @@ export namespace PolicyTopicEvidenceDestinationMismatchUrlTypeEnum {
   export type AsObject = {
   }
 
-  export enum PolicyTopicEvidenceDestinationMismatchUrlType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DISPLAY_URL = 2,
-    FINAL_URL = 3,
-    FINAL_MOBILE_URL = 4,
-    TRACKING_URL = 5,
-    MOBILE_TRACKING_URL = 6,
+  export interface PolicyTopicEvidenceDestinationMismatchUrlTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DISPLAY_URL: 2;
+    FINAL_URL: 3;
+    FINAL_MOBILE_URL: 4;
+    TRACKING_URL: 5;
+    MOBILE_TRACKING_URL: 6;
   }
+
+  export const PolicyTopicEvidenceDestinationMismatchUrlType: PolicyTopicEvidenceDestinationMismatchUrlTypeMap;
 }
 

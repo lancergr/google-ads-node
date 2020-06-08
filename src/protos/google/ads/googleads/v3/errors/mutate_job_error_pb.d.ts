@@ -19,14 +19,16 @@ export namespace MutateJobErrorEnum {
   export type AsObject = {
   }
 
-  export enum MutateJobError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING = 2,
-    EMPTY_OPERATIONS = 3,
-    INVALID_SEQUENCE_TOKEN = 4,
-    RESULTS_NOT_READY = 5,
-    INVALID_PAGE_SIZE = 6,
+  export interface MutateJobErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CANNOT_MODIFY_JOB_AFTER_JOB_STARTS_RUNNING: 2;
+    EMPTY_OPERATIONS: 3;
+    INVALID_SEQUENCE_TOKEN: 4;
+    RESULTS_NOT_READY: 5;
+    INVALID_PAGE_SIZE: 6;
   }
+
+  export const MutateJobError: MutateJobErrorMap;
 }
 

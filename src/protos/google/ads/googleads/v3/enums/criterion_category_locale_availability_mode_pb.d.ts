@@ -19,13 +19,15 @@ export namespace CriterionCategoryLocaleAvailabilityModeEnum {
   export type AsObject = {
   }
 
-  export enum CriterionCategoryLocaleAvailabilityMode {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ALL_LOCALES = 2,
-    COUNTRY_AND_ALL_LANGUAGES = 3,
-    LANGUAGE_AND_ALL_COUNTRIES = 4,
-    COUNTRY_AND_LANGUAGE = 5,
+  export interface CriterionCategoryLocaleAvailabilityModeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ALL_LOCALES: 2;
+    COUNTRY_AND_ALL_LANGUAGES: 3;
+    LANGUAGE_AND_ALL_COUNTRIES: 4;
+    COUNTRY_AND_LANGUAGE: 5;
   }
+
+  export const CriterionCategoryLocaleAvailabilityMode: CriterionCategoryLocaleAvailabilityModeMap;
 }
 

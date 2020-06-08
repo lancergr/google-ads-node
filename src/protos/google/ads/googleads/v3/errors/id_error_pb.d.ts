@@ -19,10 +19,12 @@ export namespace IdErrorEnum {
   export type AsObject = {
   }
 
-  export enum IdError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NOT_FOUND = 2,
+  export interface IdErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NOT_FOUND: 2;
   }
+
+  export const IdError: IdErrorMap;
 }
 

@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_criteria_pb from "../../../../../google/ads/googleads/v3/common/criteria_pb";
 import * as google_ads_googleads_v3_enums_criterion_type_pb from "../../../../../google/ads/googleads/v3/enums/criterion_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -22,8 +23,8 @@ export class SharedCriterion extends jspb.Message {
   getCriterionId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setCriterionId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType;
-  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType): void;
+  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap]): void;
 
   hasKeyword(): boolean;
   clearKeyword(): void;
@@ -71,7 +72,7 @@ export namespace SharedCriterion {
     resourceName: string,
     sharedSet?: google_protobuf_wrappers_pb.StringValue.AsObject,
     criterionId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType,
+    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap],
     keyword?: google_ads_googleads_v3_common_criteria_pb.KeywordInfo.AsObject,
     youtubeVideo?: google_ads_googleads_v3_common_criteria_pb.YouTubeVideoInfo.AsObject,
     youtubeChannel?: google_ads_googleads_v3_common_criteria_pb.YouTubeChannelInfo.AsObject,

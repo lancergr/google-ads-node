@@ -19,10 +19,12 @@ export namespace HeaderErrorEnum {
   export type AsObject = {
   }
 
-  export enum HeaderError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_LOGIN_CUSTOMER_ID = 3,
+  export interface HeaderErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_LOGIN_CUSTOMER_ID: 3;
   }
+
+  export const HeaderError: HeaderErrorMap;
 }
 

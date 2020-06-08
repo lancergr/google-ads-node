@@ -19,15 +19,31 @@ export namespace ConversionActionCategoryEnum {
   export type AsObject = {
   }
 
-  export enum ConversionActionCategory {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DEFAULT = 2,
-    PAGE_VIEW = 3,
-    PURCHASE = 4,
-    SIGNUP = 5,
-    LEAD = 6,
-    DOWNLOAD = 7,
+  export interface ConversionActionCategoryMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DEFAULT: 2;
+    PAGE_VIEW: 3;
+    PURCHASE: 4;
+    SIGNUP: 5;
+    LEAD: 6;
+    DOWNLOAD: 7;
+    ADD_TO_CART: 8;
+    BEGIN_CHECKOUT: 9;
+    SUBSCRIBE_PAID: 10;
+    PHONE_CALL_LEAD: 11;
+    IMPORTED_LEAD: 12;
+    SUBMIT_LEAD_FORM: 13;
+    BOOK_APPOINTMENT: 14;
+    REQUEST_QUOTE: 15;
+    GET_DIRECTIONS: 16;
+    OUTBOUND_CLICK: 17;
+    CONTACT: 18;
+    ENGAGEMENT: 19;
+    STORE_VISIT: 20;
+    STORE_SALE: 21;
   }
+
+  export const ConversionActionCategory: ConversionActionCategoryMap;
 }
 

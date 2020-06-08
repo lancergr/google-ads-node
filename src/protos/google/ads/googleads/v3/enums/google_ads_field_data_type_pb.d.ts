@@ -19,20 +19,22 @@ export namespace GoogleAdsFieldDataTypeEnum {
   export type AsObject = {
   }
 
-  export enum GoogleAdsFieldDataType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BOOLEAN = 2,
-    DATE = 3,
-    DOUBLE = 4,
-    ENUM = 5,
-    FLOAT = 6,
-    INT32 = 7,
-    INT64 = 8,
-    MESSAGE = 9,
-    RESOURCE_NAME = 10,
-    STRING = 11,
-    UINT64 = 12,
+  export interface GoogleAdsFieldDataTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BOOLEAN: 2;
+    DATE: 3;
+    DOUBLE: 4;
+    ENUM: 5;
+    FLOAT: 6;
+    INT32: 7;
+    INT64: 8;
+    MESSAGE: 9;
+    RESOURCE_NAME: 10;
+    STRING: 11;
+    UINT64: 12;
   }
+
+  export const GoogleAdsFieldDataType: GoogleAdsFieldDataTypeMap;
 }
 

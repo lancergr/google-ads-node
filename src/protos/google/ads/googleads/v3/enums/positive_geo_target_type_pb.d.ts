@@ -19,12 +19,14 @@ export namespace PositiveGeoTargetTypeEnum {
   export type AsObject = {
   }
 
-  export enum PositiveGeoTargetType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PRESENCE_OR_INTEREST = 5,
-    SEARCH_INTEREST = 6,
-    PRESENCE = 7,
+  export interface PositiveGeoTargetTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PRESENCE_OR_INTEREST: 5;
+    SEARCH_INTEREST: 6;
+    PRESENCE: 7;
   }
+
+  export const PositiveGeoTargetType: PositiveGeoTargetTypeMap;
 }
 

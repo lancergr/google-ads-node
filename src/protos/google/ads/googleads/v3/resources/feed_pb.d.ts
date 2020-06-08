@@ -6,6 +6,7 @@ import * as google_ads_googleads_v3_enums_affiliate_location_feed_relationship_t
 import * as google_ads_googleads_v3_enums_feed_attribute_type_pb from "../../../../../google/ads/googleads/v3/enums/feed_attribute_type_pb";
 import * as google_ads_googleads_v3_enums_feed_origin_pb from "../../../../../google/ads/googleads/v3/enums/feed_origin_pb";
 import * as google_ads_googleads_v3_enums_feed_status_pb from "../../../../../google/ads/googleads/v3/enums/feed_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -34,11 +35,11 @@ export class Feed extends jspb.Message {
   setAttributeOperationsList(value: Array<FeedAttributeOperation>): void;
   addAttributeOperations(value?: FeedAttributeOperation, index?: number): FeedAttributeOperation;
 
-  getOrigin(): google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOrigin;
-  setOrigin(value: google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOrigin): void;
+  getOrigin(): google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOriginMap[keyof google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOriginMap];
+  setOrigin(value: google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOriginMap[keyof google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOriginMap]): void;
 
-  getStatus(): google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatus;
-  setStatus(value: google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatusMap[keyof google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatusMap[keyof google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatusMap]): void;
 
   hasPlacesLocationFeedData(): boolean;
   clearPlacesLocationFeedData(): void;
@@ -68,8 +69,8 @@ export namespace Feed {
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     attributesList: Array<FeedAttribute.AsObject>,
     attributeOperationsList: Array<FeedAttributeOperation.AsObject>,
-    origin: google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOrigin,
-    status: google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatus,
+    origin: google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOriginMap[keyof google_ads_googleads_v3_enums_feed_origin_pb.FeedOriginEnum.FeedOriginMap],
+    status: google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatusMap[keyof google_ads_googleads_v3_enums_feed_status_pb.FeedStatusEnum.FeedStatusMap],
     placesLocationFeedData?: Feed.PlacesLocationFeedData.AsObject,
     affiliateLocationFeedData?: Feed.AffiliateLocationFeedData.AsObject,
   }
@@ -166,8 +167,8 @@ export namespace Feed {
     setChainIdsList(value: Array<google_protobuf_wrappers_pb.Int64Value>): void;
     addChainIds(value?: google_protobuf_wrappers_pb.Int64Value, index?: number): google_protobuf_wrappers_pb.Int64Value;
 
-    getRelationshipType(): google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipType;
-    setRelationshipType(value: google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipType): void;
+    getRelationshipType(): google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipTypeMap[keyof google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipTypeMap];
+    setRelationshipType(value: google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipTypeMap[keyof google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipTypeMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): AffiliateLocationFeedData.AsObject;
@@ -182,7 +183,7 @@ export namespace Feed {
   export namespace AffiliateLocationFeedData {
     export type AsObject = {
       chainIdsList: Array<google_protobuf_wrappers_pb.Int64Value.AsObject>,
-      relationshipType: google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipType,
+      relationshipType: google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipTypeMap[keyof google_ads_googleads_v3_enums_affiliate_location_feed_relationship_type_pb.AffiliateLocationFeedRelationshipTypeEnum.AffiliateLocationFeedRelationshipTypeMap],
     }
   }
 
@@ -204,8 +205,8 @@ export class FeedAttribute extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeType;
-  setType(value: google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeType): void;
+  getType(): google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeTypeMap[keyof google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeTypeMap];
+  setType(value: google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeTypeMap[keyof google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeTypeMap]): void;
 
   hasIsPartOfKey(): boolean;
   clearIsPartOfKey(): void;
@@ -226,14 +227,14 @@ export namespace FeedAttribute {
   export type AsObject = {
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeType,
+    type: google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeTypeMap[keyof google_ads_googleads_v3_enums_feed_attribute_type_pb.FeedAttributeTypeEnum.FeedAttributeTypeMap],
     isPartOfKey?: google_protobuf_wrappers_pb.BoolValue.AsObject,
   }
 }
 
 export class FeedAttributeOperation extends jspb.Message {
-  getOperator(): FeedAttributeOperation.Operator;
-  setOperator(value: FeedAttributeOperation.Operator): void;
+  getOperator(): FeedAttributeOperation.OperatorMap[keyof FeedAttributeOperation.OperatorMap];
+  setOperator(value: FeedAttributeOperation.OperatorMap[keyof FeedAttributeOperation.OperatorMap]): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -252,14 +253,16 @@ export class FeedAttributeOperation extends jspb.Message {
 
 export namespace FeedAttributeOperation {
   export type AsObject = {
-    operator: FeedAttributeOperation.Operator,
+    operator: FeedAttributeOperation.OperatorMap[keyof FeedAttributeOperation.OperatorMap],
     value?: FeedAttribute.AsObject,
   }
 
-  export enum Operator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADD = 2,
+  export interface OperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADD: 2;
   }
+
+  export const Operator: OperatorMap;
 }
 

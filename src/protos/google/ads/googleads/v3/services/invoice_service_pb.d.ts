@@ -18,8 +18,8 @@ export class ListInvoicesRequest extends jspb.Message {
   getIssueYear(): string;
   setIssueYear(value: string): void;
 
-  getIssueMonth(): google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYear;
-  setIssueMonth(value: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYear): void;
+  getIssueMonth(): google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap[keyof google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap];
+  setIssueMonth(value: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap[keyof google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ListInvoicesRequest.AsObject;
@@ -36,7 +36,7 @@ export namespace ListInvoicesRequest {
     customerId: string,
     billingSetup: string,
     issueYear: string,
-    issueMonth: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYear,
+    issueMonth: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap[keyof google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap],
   }
 }
 

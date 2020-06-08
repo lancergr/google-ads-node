@@ -19,11 +19,13 @@ export namespace BidModifierSourceEnum {
   export type AsObject = {
   }
 
-  export enum BidModifierSource {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CAMPAIGN = 2,
-    AD_GROUP = 3,
+  export interface BidModifierSourceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CAMPAIGN: 2;
+    AD_GROUP: 3;
   }
+
+  export const BidModifierSource: BidModifierSourceMap;
 }
 

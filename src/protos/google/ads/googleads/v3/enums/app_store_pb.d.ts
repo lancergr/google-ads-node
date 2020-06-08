@@ -19,11 +19,13 @@ export namespace AppStoreEnum {
   export type AsObject = {
   }
 
-  export enum AppStore {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    APPLE_ITUNES = 2,
-    GOOGLE_PLAY = 3,
+  export interface AppStoreMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    APPLE_ITUNES: 2;
+    GOOGLE_PLAY: 3;
   }
+
+  export const AppStore: AppStoreMap;
 }
 

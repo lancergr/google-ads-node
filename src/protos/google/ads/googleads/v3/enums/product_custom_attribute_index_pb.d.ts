@@ -19,14 +19,16 @@ export namespace ProductCustomAttributeIndexEnum {
   export type AsObject = {
   }
 
-  export enum ProductCustomAttributeIndex {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INDEX0 = 7,
-    INDEX1 = 8,
-    INDEX2 = 9,
-    INDEX3 = 10,
-    INDEX4 = 11,
+  export interface ProductCustomAttributeIndexMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INDEX0: 7;
+    INDEX1: 8;
+    INDEX2: 9;
+    INDEX3: 10;
+    INDEX4: 11;
   }
+
+  export const ProductCustomAttributeIndex: ProductCustomAttributeIndexMap;
 }
 

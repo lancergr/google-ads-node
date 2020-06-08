@@ -19,11 +19,13 @@ export namespace MatchingFunctionContextTypeEnum {
   export type AsObject = {
   }
 
-  export enum MatchingFunctionContextType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    FEED_ITEM_ID = 2,
-    DEVICE_NAME = 3,
+  export interface MatchingFunctionContextTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    FEED_ITEM_ID: 2;
+    DEVICE_NAME: 3;
   }
+
+  export const MatchingFunctionContextType: MatchingFunctionContextTypeMap;
 }
 

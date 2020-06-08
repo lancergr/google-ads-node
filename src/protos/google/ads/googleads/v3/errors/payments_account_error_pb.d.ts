@@ -19,10 +19,12 @@ export namespace PaymentsAccountErrorEnum {
   export type AsObject = {
   }
 
-  export enum PaymentsAccountError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NOT_SUPPORTED_FOR_MANAGER_CUSTOMER = 2,
+  export interface PaymentsAccountErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NOT_SUPPORTED_FOR_MANAGER_CUSTOMER: 2;
   }
+
+  export const PaymentsAccountError: PaymentsAccountErrorMap;
 }
 

@@ -19,13 +19,15 @@ export namespace PolicyReviewStatusEnum {
   export type AsObject = {
   }
 
-  export enum PolicyReviewStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    REVIEW_IN_PROGRESS = 2,
-    REVIEWED = 3,
-    UNDER_APPEAL = 4,
-    ELIGIBLE_MAY_SERVE = 5,
+  export interface PolicyReviewStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    REVIEW_IN_PROGRESS: 2;
+    REVIEWED: 3;
+    UNDER_APPEAL: 4;
+    ELIGIBLE_MAY_SERVE: 5;
   }
+
+  export const PolicyReviewStatus: PolicyReviewStatusMap;
 }
 

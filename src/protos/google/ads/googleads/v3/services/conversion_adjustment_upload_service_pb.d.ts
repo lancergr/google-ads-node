@@ -82,8 +82,8 @@ export class ConversionAdjustment extends jspb.Message {
   getAdjustmentDateTime(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAdjustmentDateTime(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getAdjustmentType(): google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentType;
-  setAdjustmentType(value: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentType): void;
+  getAdjustmentType(): google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap[keyof google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap];
+  setAdjustmentType(value: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap[keyof google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap]): void;
 
   hasRestatementValue(): boolean;
   clearRestatementValue(): void;
@@ -115,7 +115,7 @@ export namespace ConversionAdjustment {
   export type AsObject = {
     conversionAction?: google_protobuf_wrappers_pb.StringValue.AsObject,
     adjustmentDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    adjustmentType: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentType,
+    adjustmentType: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap[keyof google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap],
     restatementValue?: RestatementValue.AsObject,
     gclidDateTimePair?: GclidDateTimePair.AsObject,
     orderId?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -195,8 +195,8 @@ export class ConversionAdjustmentResult extends jspb.Message {
   getAdjustmentDateTime(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAdjustmentDateTime(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getAdjustmentType(): google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentType;
-  setAdjustmentType(value: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentType): void;
+  getAdjustmentType(): google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap[keyof google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap];
+  setAdjustmentType(value: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap[keyof google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap]): void;
 
   hasGclidDateTimePair(): boolean;
   clearGclidDateTimePair(): void;
@@ -223,7 +223,7 @@ export namespace ConversionAdjustmentResult {
   export type AsObject = {
     conversionAction?: google_protobuf_wrappers_pb.StringValue.AsObject,
     adjustmentDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    adjustmentType: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentType,
+    adjustmentType: google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap[keyof google_ads_googleads_v3_enums_conversion_adjustment_type_pb.ConversionAdjustmentTypeEnum.ConversionAdjustmentTypeMap],
     gclidDateTimePair?: GclidDateTimePair.AsObject,
     orderId?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }

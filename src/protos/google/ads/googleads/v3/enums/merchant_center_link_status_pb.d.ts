@@ -19,11 +19,13 @@ export namespace MerchantCenterLinkStatusEnum {
   export type AsObject = {
   }
 
-  export enum MerchantCenterLinkStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    PENDING = 3,
+  export interface MerchantCenterLinkStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    PENDING: 3;
   }
+
+  export const MerchantCenterLinkStatus: MerchantCenterLinkStatusMap;
 }
 

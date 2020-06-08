@@ -19,12 +19,14 @@ export namespace YoutubeVideoRegistrationErrorEnum {
   export type AsObject = {
   }
 
-  export enum YoutubeVideoRegistrationError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    VIDEO_NOT_FOUND = 2,
-    VIDEO_NOT_ACCESSIBLE = 3,
-    VIDEO_NOT_ELIGIBLE = 4,
+  export interface YoutubeVideoRegistrationErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    VIDEO_NOT_FOUND: 2;
+    VIDEO_NOT_ACCESSIBLE: 3;
+    VIDEO_NOT_ELIGIBLE: 4;
   }
+
+  export const YoutubeVideoRegistrationError: YoutubeVideoRegistrationErrorMap;
 }
 

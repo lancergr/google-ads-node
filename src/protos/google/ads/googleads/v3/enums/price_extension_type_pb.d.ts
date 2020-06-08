@@ -19,18 +19,20 @@ export namespace PriceExtensionTypeEnum {
   export type AsObject = {
   }
 
-  export enum PriceExtensionType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BRANDS = 2,
-    EVENTS = 3,
-    LOCATIONS = 4,
-    NEIGHBORHOODS = 5,
-    PRODUCT_CATEGORIES = 6,
-    PRODUCT_TIERS = 7,
-    SERVICES = 8,
-    SERVICE_CATEGORIES = 9,
-    SERVICE_TIERS = 10,
+  export interface PriceExtensionTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BRANDS: 2;
+    EVENTS: 3;
+    LOCATIONS: 4;
+    NEIGHBORHOODS: 5;
+    PRODUCT_CATEGORIES: 6;
+    PRODUCT_TIERS: 7;
+    SERVICES: 8;
+    SERVICE_CATEGORIES: 9;
+    SERVICE_TIERS: 10;
   }
+
+  export const PriceExtensionType: PriceExtensionTypeMap;
 }
 

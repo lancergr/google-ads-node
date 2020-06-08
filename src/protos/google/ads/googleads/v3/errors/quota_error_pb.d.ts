@@ -19,12 +19,14 @@ export namespace QuotaErrorEnum {
   export type AsObject = {
   }
 
-  export enum QuotaError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    RESOURCE_EXHAUSTED = 2,
-    ACCESS_PROHIBITED = 3,
-    RESOURCE_TEMPORARILY_EXHAUSTED = 4,
+  export interface QuotaErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    RESOURCE_EXHAUSTED: 2;
+    ACCESS_PROHIBITED: 3;
+    RESOURCE_TEMPORARILY_EXHAUSTED: 4;
   }
+
+  export const QuotaError: QuotaErrorMap;
 }
 

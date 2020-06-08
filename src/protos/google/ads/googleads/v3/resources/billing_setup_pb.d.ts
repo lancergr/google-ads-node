@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_billing_setup_status_pb from "../../../../../google/ads/googleads/v3/enums/billing_setup_status_pb";
 import * as google_ads_googleads_v3_enums_time_type_pb from "../../../../../google/ads/googleads/v3/enums/time_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,8 +18,8 @@ export class BillingSetup extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getStatus(): google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatus;
-  setStatus(value: google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatusMap[keyof google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatusMap[keyof google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatusMap]): void;
 
   hasPaymentsAccount(): boolean;
   clearPaymentsAccount(): void;
@@ -37,8 +38,8 @@ export class BillingSetup extends jspb.Message {
 
   hasStartTimeType(): boolean;
   clearStartTimeType(): void;
-  getStartTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType;
-  setStartTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType): void;
+  getStartTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap];
+  setStartTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap]): void;
 
   hasEndDateTime(): boolean;
   clearEndDateTime(): void;
@@ -47,8 +48,8 @@ export class BillingSetup extends jspb.Message {
 
   hasEndTimeType(): boolean;
   clearEndTimeType(): void;
-  getEndTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType;
-  setEndTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType): void;
+  getEndTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap];
+  setEndTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap]): void;
 
   getStartTimeCase(): BillingSetup.StartTimeCase;
   getEndTimeCase(): BillingSetup.EndTimeCase;
@@ -66,13 +67,13 @@ export namespace BillingSetup {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    status: google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatus,
+    status: google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatusMap[keyof google_ads_googleads_v3_enums_billing_setup_status_pb.BillingSetupStatusEnum.BillingSetupStatusMap],
     paymentsAccount?: google_protobuf_wrappers_pb.StringValue.AsObject,
     paymentsAccountInfo?: BillingSetup.PaymentsAccountInfo.AsObject,
     startDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    startTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType,
+    startTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap],
     endDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    endTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType,
+    endTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap],
   }
 
   export class PaymentsAccountInfo extends jspb.Message {

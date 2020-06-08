@@ -19,16 +19,18 @@ export namespace IncomeRangeTypeEnum {
   export type AsObject = {
   }
 
-  export enum IncomeRangeType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INCOME_RANGE_0_50 = 510001,
-    INCOME_RANGE_50_60 = 510002,
-    INCOME_RANGE_60_70 = 510003,
-    INCOME_RANGE_70_80 = 510004,
-    INCOME_RANGE_80_90 = 510005,
-    INCOME_RANGE_90_UP = 510006,
-    INCOME_RANGE_UNDETERMINED = 510000,
+  export interface IncomeRangeTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INCOME_RANGE_0_50: 510001;
+    INCOME_RANGE_50_60: 510002;
+    INCOME_RANGE_60_70: 510003;
+    INCOME_RANGE_70_80: 510004;
+    INCOME_RANGE_80_90: 510005;
+    INCOME_RANGE_90_UP: 510006;
+    INCOME_RANGE_UNDETERMINED: 510000;
   }
+
+  export const IncomeRangeType: IncomeRangeTypeMap;
 }
 

@@ -8,11 +8,11 @@ import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wr
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 
 export class TagSnippet extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeType;
-  setType(value: google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeType): void;
+  getType(): google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeTypeMap[keyof google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeTypeMap];
+  setType(value: google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeTypeMap[keyof google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeTypeMap]): void;
 
-  getPageFormat(): google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormat;
-  setPageFormat(value: google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormat): void;
+  getPageFormat(): google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormatMap[keyof google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormatMap];
+  setPageFormat(value: google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormatMap[keyof google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormatMap]): void;
 
   hasGlobalSiteTag(): boolean;
   clearGlobalSiteTag(): void;
@@ -36,8 +36,8 @@ export class TagSnippet extends jspb.Message {
 
 export namespace TagSnippet {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeType,
-    pageFormat: google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormat,
+    type: google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeTypeMap[keyof google_ads_googleads_v3_enums_tracking_code_type_pb.TrackingCodeTypeEnum.TrackingCodeTypeMap],
+    pageFormat: google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormatMap[keyof google_ads_googleads_v3_enums_tracking_code_page_format_pb.TrackingCodePageFormatEnum.TrackingCodePageFormatMap],
     globalSiteTag?: google_protobuf_wrappers_pb.StringValue.AsObject,
     eventSnippet?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }

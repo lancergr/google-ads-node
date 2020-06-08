@@ -19,16 +19,18 @@ export namespace AgeRangeTypeEnum {
   export type AsObject = {
   }
 
-  export enum AgeRangeType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AGE_RANGE_18_24 = 503001,
-    AGE_RANGE_25_34 = 503002,
-    AGE_RANGE_35_44 = 503003,
-    AGE_RANGE_45_54 = 503004,
-    AGE_RANGE_55_64 = 503005,
-    AGE_RANGE_65_UP = 503006,
-    AGE_RANGE_UNDETERMINED = 503999,
+  export interface AgeRangeTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AGE_RANGE_18_24: 503001;
+    AGE_RANGE_25_34: 503002;
+    AGE_RANGE_35_44: 503003;
+    AGE_RANGE_45_54: 503004;
+    AGE_RANGE_55_64: 503005;
+    AGE_RANGE_65_UP: 503006;
+    AGE_RANGE_UNDETERMINED: 503999;
   }
+
+  export const AgeRangeType: AgeRangeTypeMap;
 }
 

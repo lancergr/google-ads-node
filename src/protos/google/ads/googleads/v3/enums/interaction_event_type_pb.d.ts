@@ -19,13 +19,15 @@ export namespace InteractionEventTypeEnum {
   export type AsObject = {
   }
 
-  export enum InteractionEventType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CLICK = 2,
-    ENGAGEMENT = 3,
-    VIDEO_VIEW = 4,
-    NONE = 5,
+  export interface InteractionEventTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CLICK: 2;
+    ENGAGEMENT: 3;
+    VIDEO_VIEW: 4;
+    NONE: 5;
   }
+
+  export const InteractionEventType: InteractionEventTypeMap;
 }
 

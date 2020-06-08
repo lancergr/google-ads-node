@@ -19,13 +19,15 @@ export namespace PaymentModeEnum {
   export type AsObject = {
   }
 
-  export enum PaymentMode {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CLICKS = 4,
-    CONVERSION_VALUE = 5,
-    CONVERSIONS = 6,
-    GUEST_STAY = 7,
+  export interface PaymentModeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CLICKS: 4;
+    CONVERSION_VALUE: 5;
+    CONVERSIONS: 6;
+    GUEST_STAY: 7;
   }
+
+  export const PaymentMode: PaymentModeMap;
 }
 

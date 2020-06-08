@@ -19,14 +19,16 @@ export namespace CampaignServingStatusEnum {
   export type AsObject = {
   }
 
-  export enum CampaignServingStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SERVING = 2,
-    NONE = 3,
-    ENDED = 4,
-    PENDING = 5,
-    SUSPENDED = 6,
+  export interface CampaignServingStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SERVING: 2;
+    NONE: 3;
+    ENDED: 4;
+    PENDING: 5;
+    SUSPENDED: 6;
   }
+
+  export const CampaignServingStatus: CampaignServingStatusMap;
 }
 

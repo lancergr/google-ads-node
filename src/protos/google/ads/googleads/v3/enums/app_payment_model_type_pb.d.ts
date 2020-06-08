@@ -19,10 +19,12 @@ export namespace AppPaymentModelTypeEnum {
   export type AsObject = {
   }
 
-  export enum AppPaymentModelType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PAID = 30,
+  export interface AppPaymentModelTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PAID: 30;
   }
+
+  export const AppPaymentModelType: AppPaymentModelTypeMap;
 }
 

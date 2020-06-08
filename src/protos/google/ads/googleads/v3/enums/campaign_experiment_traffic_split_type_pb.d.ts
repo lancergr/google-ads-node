@@ -19,11 +19,13 @@ export namespace CampaignExperimentTrafficSplitTypeEnum {
   export type AsObject = {
   }
 
-  export enum CampaignExperimentTrafficSplitType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    RANDOM_QUERY = 2,
-    COOKIE = 3,
+  export interface CampaignExperimentTrafficSplitTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    RANDOM_QUERY: 2;
+    COOKIE: 3;
   }
+
+  export const CampaignExperimentTrafficSplitType: CampaignExperimentTrafficSplitTypeMap;
 }
 

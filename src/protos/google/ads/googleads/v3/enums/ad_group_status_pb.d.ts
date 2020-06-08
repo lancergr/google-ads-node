@@ -19,12 +19,14 @@ export namespace AdGroupStatusEnum {
   export type AsObject = {
   }
 
-  export enum AdGroupStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    PAUSED = 3,
-    REMOVED = 4,
+  export interface AdGroupStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    PAUSED: 3;
+    REMOVED: 4;
   }
+
+  export const AdGroupStatus: AdGroupStatusMap;
 }
 

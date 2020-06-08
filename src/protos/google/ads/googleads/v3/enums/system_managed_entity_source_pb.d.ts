@@ -19,10 +19,12 @@ export namespace SystemManagedResourceSourceEnum {
   export type AsObject = {
   }
 
-  export enum SystemManagedResourceSource {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AD_VARIATIONS = 2,
+  export interface SystemManagedResourceSourceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AD_VARIATIONS: 2;
   }
+
+  export const SystemManagedResourceSource: SystemManagedResourceSourceMap;
 }
 

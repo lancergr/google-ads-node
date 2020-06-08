@@ -157,9 +157,9 @@ export namespace ProductMetadata {
 
 export class PlannableTargeting extends jspb.Message {
   clearAgeRangesList(): void;
-  getAgeRangesList(): Array<google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange>;
-  setAgeRangesList(value: Array<google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange>): void;
-  addAgeRanges(value: google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange, index?: number): google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange;
+  getAgeRangesList(): Array<google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap]>;
+  setAgeRangesList(value: Array<google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap]>): void;
+  addAgeRanges(value: google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap], index?: number): google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap];
 
   clearGendersList(): void;
   getGendersList(): Array<google_ads_googleads_v3_common_criteria_pb.GenderInfo>;
@@ -172,9 +172,9 @@ export class PlannableTargeting extends jspb.Message {
   addDevices(value?: google_ads_googleads_v3_common_criteria_pb.DeviceInfo, index?: number): google_ads_googleads_v3_common_criteria_pb.DeviceInfo;
 
   clearNetworksList(): void;
-  getNetworksList(): Array<google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork>;
-  setNetworksList(value: Array<google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork>): void;
-  addNetworks(value: google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork, index?: number): google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork;
+  getNetworksList(): Array<google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap]>;
+  setNetworksList(value: Array<google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap]>): void;
+  addNetworks(value: google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap], index?: number): google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap];
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PlannableTargeting.AsObject;
@@ -188,10 +188,10 @@ export class PlannableTargeting extends jspb.Message {
 
 export namespace PlannableTargeting {
   export type AsObject = {
-    ageRangesList: Array<google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange>,
+    ageRangesList: Array<google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap]>,
     gendersList: Array<google_ads_googleads_v3_common_criteria_pb.GenderInfo.AsObject>,
     devicesList: Array<google_ads_googleads_v3_common_criteria_pb.DeviceInfo.AsObject>,
-    networksList: Array<google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork>,
+    networksList: Array<google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap]>,
   }
 }
 
@@ -250,8 +250,8 @@ export class Preferences extends jspb.Message {
   getStartsWithSound(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setStartsWithSound(value?: google_protobuf_wrappers_pb.BoolValue): void;
 
-  getAdLength(): google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLength;
-  setAdLength(value: google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLength): void;
+  getAdLength(): google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLengthMap[keyof google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLengthMap];
+  setAdLength(value: google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLengthMap[keyof google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLengthMap]): void;
 
   hasTopContentOnly(): boolean;
   clearTopContentOnly(): void;
@@ -277,7 +277,7 @@ export namespace Preferences {
   export type AsObject = {
     isSkippable?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     startsWithSound?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    adLength: google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLength,
+    adLength: google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLengthMap[keyof google_ads_googleads_v3_enums_reach_plan_ad_length_pb.ReachPlanAdLengthEnum.ReachPlanAdLengthMap],
     topContentOnly?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     hasGuaranteedPrice?: google_protobuf_wrappers_pb.BoolValue.AsObject,
   }
@@ -395,8 +395,8 @@ export class Targeting extends jspb.Message {
   getPlannableLocationId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setPlannableLocationId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getAgeRange(): google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange;
-  setAgeRange(value: google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange): void;
+  getAgeRange(): google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap];
+  setAgeRange(value: google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap]): void;
 
   clearGendersList(): void;
   getGendersList(): Array<google_ads_googleads_v3_common_criteria_pb.GenderInfo>;
@@ -408,8 +408,8 @@ export class Targeting extends jspb.Message {
   setDevicesList(value: Array<google_ads_googleads_v3_common_criteria_pb.DeviceInfo>): void;
   addDevices(value?: google_ads_googleads_v3_common_criteria_pb.DeviceInfo, index?: number): google_ads_googleads_v3_common_criteria_pb.DeviceInfo;
 
-  getNetwork(): google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork;
-  setNetwork(value: google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork): void;
+  getNetwork(): google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap];
+  setNetwork(value: google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Targeting.AsObject;
@@ -424,10 +424,10 @@ export class Targeting extends jspb.Message {
 export namespace Targeting {
   export type AsObject = {
     plannableLocationId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    ageRange: google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRange,
+    ageRange: google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap[keyof google_ads_googleads_v3_enums_reach_plan_age_range_pb.ReachPlanAgeRangeEnum.ReachPlanAgeRangeMap],
     gendersList: Array<google_ads_googleads_v3_common_criteria_pb.GenderInfo.AsObject>,
     devicesList: Array<google_ads_googleads_v3_common_criteria_pb.DeviceInfo.AsObject>,
-    network: google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetwork,
+    network: google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap[keyof google_ads_googleads_v3_enums_reach_plan_network_pb.ReachPlanNetworkEnum.ReachPlanNetworkMap],
   }
 }
 

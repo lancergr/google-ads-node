@@ -19,12 +19,14 @@ export namespace FrequencyCapLevelEnum {
   export type AsObject = {
   }
 
-  export enum FrequencyCapLevel {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AD_GROUP_AD = 2,
-    AD_GROUP = 3,
-    CAMPAIGN = 4,
+  export interface FrequencyCapLevelMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AD_GROUP_AD: 2;
+    AD_GROUP: 3;
+    CAMPAIGN: 4;
   }
+
+  export const FrequencyCapLevel: FrequencyCapLevelMap;
 }
 

@@ -19,11 +19,13 @@ export namespace ConversionAdjustmentTypeEnum {
   export type AsObject = {
   }
 
-  export enum ConversionAdjustmentType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    RETRACTION = 2,
-    RESTATEMENT = 3,
+  export interface ConversionAdjustmentTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    RETRACTION: 2;
+    RESTATEMENT: 3;
   }
+
+  export const ConversionAdjustmentType: ConversionAdjustmentTypeMap;
 }
 

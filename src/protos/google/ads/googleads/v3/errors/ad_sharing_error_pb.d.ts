@@ -19,12 +19,14 @@ export namespace AdSharingErrorEnum {
   export type AsObject = {
   }
 
-  export enum AdSharingError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AD_GROUP_ALREADY_CONTAINS_AD = 2,
-    INCOMPATIBLE_AD_UNDER_AD_GROUP = 3,
-    CANNOT_SHARE_INACTIVE_AD = 4,
+  export interface AdSharingErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AD_GROUP_ALREADY_CONTAINS_AD: 2;
+    INCOMPATIBLE_AD_UNDER_AD_GROUP: 3;
+    CANNOT_SHARE_INACTIVE_AD: 4;
   }
+
+  export const AdSharingError: AdSharingErrorMap;
 }
 

@@ -19,14 +19,16 @@ export namespace AccessReasonEnum {
   export type AsObject = {
   }
 
-  export enum AccessReason {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OWNED = 2,
-    SHARED = 3,
-    LICENSED = 4,
-    SUBSCRIBED = 5,
-    AFFILIATED = 6,
+  export interface AccessReasonMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OWNED: 2;
+    SHARED: 3;
+    LICENSED: 4;
+    SUBSCRIBED: 5;
+    AFFILIATED: 6;
   }
+
+  export const AccessReason: AccessReasonMap;
 }
 

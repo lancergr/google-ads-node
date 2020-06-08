@@ -19,10 +19,12 @@ export namespace AffiliateLocationFeedRelationshipTypeEnum {
   export type AsObject = {
   }
 
-  export enum AffiliateLocationFeedRelationshipType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    GENERAL_RETAILER = 2,
+  export interface AffiliateLocationFeedRelationshipTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    GENERAL_RETAILER: 2;
   }
+
+  export const AffiliateLocationFeedRelationshipType: AffiliateLocationFeedRelationshipTypeMap;
 }
 

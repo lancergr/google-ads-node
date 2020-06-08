@@ -19,10 +19,12 @@ export namespace PromotionExtensionDiscountModifierEnum {
   export type AsObject = {
   }
 
-  export enum PromotionExtensionDiscountModifier {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    UP_TO = 2,
+  export interface PromotionExtensionDiscountModifierMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    UP_TO: 2;
   }
+
+  export const PromotionExtensionDiscountModifier: PromotionExtensionDiscountModifierMap;
 }
 

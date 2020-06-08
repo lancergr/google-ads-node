@@ -19,12 +19,14 @@ export namespace PolicyTopicEvidenceDestinationNotWorkingDeviceEnum {
   export type AsObject = {
   }
 
-  export enum PolicyTopicEvidenceDestinationNotWorkingDevice {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DESKTOP = 2,
-    ANDROID = 3,
-    IOS = 4,
+  export interface PolicyTopicEvidenceDestinationNotWorkingDeviceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DESKTOP: 2;
+    ANDROID: 3;
+    IOS: 4;
   }
+
+  export const PolicyTopicEvidenceDestinationNotWorkingDevice: PolicyTopicEvidenceDestinationNotWorkingDeviceMap;
 }
 

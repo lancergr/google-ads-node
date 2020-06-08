@@ -19,10 +19,12 @@ export namespace RegionCodeErrorEnum {
   export type AsObject = {
   }
 
-  export enum RegionCodeError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_REGION_CODE = 2,
+  export interface RegionCodeErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_REGION_CODE: 2;
   }
+
+  export const RegionCodeError: RegionCodeErrorMap;
 }
 

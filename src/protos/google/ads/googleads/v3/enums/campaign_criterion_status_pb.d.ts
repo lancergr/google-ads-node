@@ -19,12 +19,14 @@ export namespace CampaignCriterionStatusEnum {
   export type AsObject = {
   }
 
-  export enum CampaignCriterionStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    PAUSED = 3,
-    REMOVED = 4,
+  export interface CampaignCriterionStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    PAUSED: 3;
+    REMOVED: 4;
   }
+
+  export const CampaignCriterionStatus: CampaignCriterionStatusMap;
 }
 

@@ -19,12 +19,14 @@ export namespace BrandSafetySuitabilityEnum {
   export type AsObject = {
   }
 
-  export enum BrandSafetySuitability {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EXPANDED_INVENTORY = 2,
-    STANDARD_INVENTORY = 3,
-    LIMITED_INVENTORY = 4,
+  export interface BrandSafetySuitabilityMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EXPANDED_INVENTORY: 2;
+    STANDARD_INVENTORY: 3;
+    LIMITED_INVENTORY: 4;
   }
+
+  export const BrandSafetySuitability: BrandSafetySuitabilityMap;
 }
 

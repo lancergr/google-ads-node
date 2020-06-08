@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_criteria_pb from "../../../../../google/ads/googleads/v3/common/criteria_pb";
 import * as google_ads_googleads_v3_enums_bid_modifier_source_pb from "../../../../../google/ads/googleads/v3/enums/bid_modifier_source_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -32,8 +33,8 @@ export class AdGroupBidModifier extends jspb.Message {
   getBaseAdGroup(): google_protobuf_wrappers_pb.StringValue | undefined;
   setBaseAdGroup(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getBidModifierSource(): google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSource;
-  setBidModifierSource(value: google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSource): void;
+  getBidModifierSource(): google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSourceMap[keyof google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSourceMap];
+  setBidModifierSource(value: google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSourceMap[keyof google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSourceMap]): void;
 
   hasHotelDateSelectionType(): boolean;
   clearHotelDateSelectionType(): void;
@@ -83,7 +84,7 @@ export namespace AdGroupBidModifier {
     criterionId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     bidModifier?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     baseAdGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    bidModifierSource: google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSource,
+    bidModifierSource: google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSourceMap[keyof google_ads_googleads_v3_enums_bid_modifier_source_pb.BidModifierSourceEnum.BidModifierSourceMap],
     hotelDateSelectionType?: google_ads_googleads_v3_common_criteria_pb.HotelDateSelectionTypeInfo.AsObject,
     hotelAdvanceBookingWindow?: google_ads_googleads_v3_common_criteria_pb.HotelAdvanceBookingWindowInfo.AsObject,
     hotelLengthOfStay?: google_ads_googleads_v3_common_criteria_pb.HotelLengthOfStayInfo.AsObject,

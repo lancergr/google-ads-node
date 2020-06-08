@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_criteria_pb from "../../../../../google/ads/googleads/v3/common/criteria_pb";
 import * as google_ads_googleads_v3_enums_criterion_type_pb from "../../../../../google/ads/googleads/v3/enums/criterion_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,8 +18,8 @@ export class CustomerNegativeCriterion extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType;
-  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType): void;
+  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap]): void;
 
   hasContentLabel(): boolean;
   clearContentLabel(): void;
@@ -65,7 +66,7 @@ export namespace CustomerNegativeCriterion {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType,
+    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap],
     contentLabel?: google_ads_googleads_v3_common_criteria_pb.ContentLabelInfo.AsObject,
     mobileApplication?: google_ads_googleads_v3_common_criteria_pb.MobileApplicationInfo.AsObject,
     mobileAppCategory?: google_ads_googleads_v3_common_criteria_pb.MobileAppCategoryInfo.AsObject,

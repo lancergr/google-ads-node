@@ -1,1 +1,1189 @@
-var jspb=require("google-protobuf"),goog=jspb,global=Function("return this")(),google_ads_googleads_v3_resources_feed_item_pb=require("../../../../../google/ads/googleads/v3/resources/feed_item_pb.js"),google_api_annotations_pb=require("../../../../../google/api/annotations_pb.js"),google_api_client_pb=require("../../../../../google/api/client_pb.js"),google_api_field_behavior_pb=require("../../../../../google/api/field_behavior_pb.js"),google_protobuf_field_mask_pb=require("google-protobuf/google/protobuf/field_mask_pb.js"),google_rpc_status_pb=require("../../../../../google/rpc/status_pb.js");goog.exportSymbol("proto.google.ads.googleads.v3.services.FeedItemOperation",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.GetFeedItemRequest",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MutateFeedItemResult",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MutateFeedItemsRequest",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.services.MutateFeedItemsResponse",null,global),proto.google.ads.googleads.v3.services.GetFeedItemRequest=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.services.GetFeedItemRequest,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.GetFeedItemRequest.displayName="proto.google.ads.googleads.v3.services.GetFeedItemRequest"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.GetFeedItemRequest.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.GetFeedItemRequest.toObject=function(includeInstance,msg){var obj={resourceName:jspb.Message.getFieldWithDefault(msg,1,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.GetFeedItemRequest.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.GetFeedItemRequest;return proto.google.ads.googleads.v3.services.GetFeedItemRequest.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.GetFeedItemRequest.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setResourceName(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.GetFeedItemRequest.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.GetFeedItemRequest.serializeBinaryToWriter=function(message,writer){var f;0<(f=message.getResourceName()).length&&writer.writeString(1,f)},proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.getResourceName=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.setResourceName=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.repeatedFields_,null)},goog.inherits(proto.google.ads.googleads.v3.services.MutateFeedItemsRequest,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.displayName="proto.google.ads.googleads.v3.services.MutateFeedItemsRequest"),proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.repeatedFields_=[2],jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.toObject=function(includeInstance,msg){var obj={customerId:jspb.Message.getFieldWithDefault(msg,1,""),operationsList:jspb.Message.toObjectList(msg.getOperationsList(),proto.google.ads.googleads.v3.services.FeedItemOperation.toObject,includeInstance),partialFailure:jspb.Message.getFieldWithDefault(msg,3,!1),validateOnly:jspb.Message.getFieldWithDefault(msg,4,!1)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MutateFeedItemsRequest;return proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setCustomerId(value);break;case 2:value=new proto.google.ads.googleads.v3.services.FeedItemOperation,reader.readMessage(value,proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinaryFromReader),msg.addOperations(value);break;case 3:value=reader.readBool(),msg.setPartialFailure(value);break;case 4:value=reader.readBool(),msg.setValidateOnly(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.serializeBinaryToWriter=function(message,writer){var f=void 0;0<(f=message.getCustomerId()).length&&writer.writeString(1,f),0<(f=message.getOperationsList()).length&&writer.writeRepeatedMessage(2,f,proto.google.ads.googleads.v3.services.FeedItemOperation.serializeBinaryToWriter),(f=message.getPartialFailure())&&writer.writeBool(3,f),(f=message.getValidateOnly())&&writer.writeBool(4,f)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getCustomerId=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setCustomerId=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getOperationsList=function(){return jspb.Message.getRepeatedWrapperField(this,proto.google.ads.googleads.v3.services.FeedItemOperation,2)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setOperationsList=function(value){jspb.Message.setRepeatedWrapperField(this,2,value)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.addOperations=function(opt_value,opt_index){return jspb.Message.addToRepeatedWrapperField(this,2,opt_value,proto.google.ads.googleads.v3.services.FeedItemOperation,opt_index)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.clearOperationsList=function(){this.setOperationsList([])},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getPartialFailure=function(){return jspb.Message.getFieldWithDefault(this,3,!1)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setPartialFailure=function(value){jspb.Message.setProto3BooleanField(this,3,value)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getValidateOnly=function(){return jspb.Message.getFieldWithDefault(this,4,!1)},proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setValidateOnly=function(value){jspb.Message.setProto3BooleanField(this,4,value)},proto.google.ads.googleads.v3.services.FeedItemOperation=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_)},goog.inherits(proto.google.ads.googleads.v3.services.FeedItemOperation,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.FeedItemOperation.displayName="proto.google.ads.googleads.v3.services.FeedItemOperation"),proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_=[[1,2,3]],proto.google.ads.googleads.v3.services.FeedItemOperation.OperationCase={OPERATION_NOT_SET:0,CREATE:1,UPDATE:2,REMOVE:3},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getOperationCase=function(){return jspb.Message.computeOneofCase(this,proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0])},jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.FeedItemOperation.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.FeedItemOperation.toObject=function(includeInstance,msg){var f,obj={updateMask:(f=msg.getUpdateMask())&&google_protobuf_field_mask_pb.FieldMask.toObject(includeInstance,f),create:(f=msg.getCreate())&&google_ads_googleads_v3_resources_feed_item_pb.FeedItem.toObject(includeInstance,f),update:(f=msg.getUpdate())&&google_ads_googleads_v3_resources_feed_item_pb.FeedItem.toObject(includeInstance,f),remove:jspb.Message.getFieldWithDefault(msg,3,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.FeedItemOperation;return proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 4:var value=new google_protobuf_field_mask_pb.FieldMask;reader.readMessage(value,google_protobuf_field_mask_pb.FieldMask.deserializeBinaryFromReader),msg.setUpdateMask(value);break;case 1:value=new google_ads_googleads_v3_resources_feed_item_pb.FeedItem,reader.readMessage(value,google_ads_googleads_v3_resources_feed_item_pb.FeedItem.deserializeBinaryFromReader),msg.setCreate(value);break;case 2:value=new google_ads_googleads_v3_resources_feed_item_pb.FeedItem,reader.readMessage(value,google_ads_googleads_v3_resources_feed_item_pb.FeedItem.deserializeBinaryFromReader),msg.setUpdate(value);break;case 3:value=reader.readString(),msg.setRemove(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.FeedItemOperation.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.FeedItemOperation.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getUpdateMask())&&writer.writeMessage(4,f,google_protobuf_field_mask_pb.FieldMask.serializeBinaryToWriter),null!=(f=message.getCreate())&&writer.writeMessage(1,f,google_ads_googleads_v3_resources_feed_item_pb.FeedItem.serializeBinaryToWriter),null!=(f=message.getUpdate())&&writer.writeMessage(2,f,google_ads_googleads_v3_resources_feed_item_pb.FeedItem.serializeBinaryToWriter),null!=(f=jspb.Message.getField(message,3))&&writer.writeString(3,f)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getUpdateMask=function(){return jspb.Message.getWrapperField(this,google_protobuf_field_mask_pb.FieldMask,4)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setUpdateMask=function(value){jspb.Message.setWrapperField(this,4,value)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearUpdateMask=function(){this.setUpdateMask(void 0)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasUpdateMask=function(){return null!=jspb.Message.getField(this,4)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getCreate=function(){return jspb.Message.getWrapperField(this,google_ads_googleads_v3_resources_feed_item_pb.FeedItem,1)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setCreate=function(value){jspb.Message.setOneofWrapperField(this,1,proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0],value)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearCreate=function(){this.setCreate(void 0)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasCreate=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getUpdate=function(){return jspb.Message.getWrapperField(this,google_ads_googleads_v3_resources_feed_item_pb.FeedItem,2)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setUpdate=function(value){jspb.Message.setOneofWrapperField(this,2,proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0],value)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearUpdate=function(){this.setUpdate(void 0)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasUpdate=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getRemove=function(){return jspb.Message.getFieldWithDefault(this,3,"")},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setRemove=function(value){jspb.Message.setOneofField(this,3,proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0],value)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearRemove=function(){jspb.Message.setOneofField(this,3,proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0],void 0)},proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasRemove=function(){return null!=jspb.Message.getField(this,3)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.repeatedFields_,null)},goog.inherits(proto.google.ads.googleads.v3.services.MutateFeedItemsResponse,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.displayName="proto.google.ads.googleads.v3.services.MutateFeedItemsResponse"),proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.repeatedFields_=[2],jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.toObject=function(includeInstance,msg){var f,obj={partialFailureError:(f=msg.getPartialFailureError())&&google_rpc_status_pb.Status.toObject(includeInstance,f),resultsList:jspb.Message.toObjectList(msg.getResultsList(),proto.google.ads.googleads.v3.services.MutateFeedItemResult.toObject,includeInstance)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MutateFeedItemsResponse;return proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 3:var value=new google_rpc_status_pb.Status;reader.readMessage(value,google_rpc_status_pb.Status.deserializeBinaryFromReader),msg.setPartialFailureError(value);break;case 2:value=new proto.google.ads.googleads.v3.services.MutateFeedItemResult,reader.readMessage(value,proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinaryFromReader),msg.addResults(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getPartialFailureError())&&writer.writeMessage(3,f,google_rpc_status_pb.Status.serializeBinaryToWriter),0<(f=message.getResultsList()).length&&writer.writeRepeatedMessage(2,f,proto.google.ads.googleads.v3.services.MutateFeedItemResult.serializeBinaryToWriter)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.getPartialFailureError=function(){return jspb.Message.getWrapperField(this,google_rpc_status_pb.Status,3)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.setPartialFailureError=function(value){jspb.Message.setWrapperField(this,3,value)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.clearPartialFailureError=function(){this.setPartialFailureError(void 0)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.hasPartialFailureError=function(){return null!=jspb.Message.getField(this,3)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.getResultsList=function(){return jspb.Message.getRepeatedWrapperField(this,proto.google.ads.googleads.v3.services.MutateFeedItemResult,2)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.setResultsList=function(value){jspb.Message.setRepeatedWrapperField(this,2,value)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.addResults=function(opt_value,opt_index){return jspb.Message.addToRepeatedWrapperField(this,2,opt_value,proto.google.ads.googleads.v3.services.MutateFeedItemResult,opt_index)},proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.clearResultsList=function(){this.setResultsList([])},proto.google.ads.googleads.v3.services.MutateFeedItemResult=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.services.MutateFeedItemResult,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.services.MutateFeedItemResult.displayName="proto.google.ads.googleads.v3.services.MutateFeedItemResult"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.services.MutateFeedItemResult.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.services.MutateFeedItemResult.toObject=function(includeInstance,msg){var obj={resourceName:jspb.Message.getFieldWithDefault(msg,1,"")};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.services.MutateFeedItemResult;return proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setResourceName(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.services.MutateFeedItemResult.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.services.MutateFeedItemResult.serializeBinaryToWriter=function(message,writer){var f;0<(f=message.getResourceName()).length&&writer.writeString(1,f)},proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.getResourceName=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.setResourceName=function(value){jspb.Message.setProto3StringField(this,1,value)},goog.object.extend(exports,proto.google.ads.googleads.v3.services);
+// source: google/ads/googleads/v3/services/feed_item_service.proto
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_ads_googleads_v3_resources_feed_item_pb = require('../../../../../google/ads/googleads/v3/resources/feed_item_pb.js');
+goog.object.extend(proto, google_ads_googleads_v3_resources_feed_item_pb);
+var google_api_annotations_pb = require('../../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);
+var google_api_client_pb = require('../../../../../google/api/client_pb.js');
+goog.object.extend(proto, google_api_client_pb);
+var google_api_field_behavior_pb = require('../../../../../google/api/field_behavior_pb.js');
+goog.object.extend(proto, google_api_field_behavior_pb);
+var google_api_resource_pb = require('../../../../../google/api/resource_pb.js');
+goog.object.extend(proto, google_api_resource_pb);
+var google_protobuf_field_mask_pb = require('google-protobuf/google/protobuf/field_mask_pb.js');
+goog.object.extend(proto, google_protobuf_field_mask_pb);
+var google_rpc_status_pb = require('../../../../../google/rpc/status_pb.js');
+goog.object.extend(proto, google_rpc_status_pb);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.FeedItemOperation', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.FeedItemOperation.OperationCase', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.GetFeedItemRequest', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MutateFeedItemResult', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MutateFeedItemsRequest', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.services.MutateFeedItemsResponse', null, global);
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.GetFeedItemRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.GetFeedItemRequest.displayName = 'proto.google.ads.googleads.v3.services.GetFeedItemRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.repeatedFields_, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MutateFeedItemsRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.displayName = 'proto.google.ads.googleads.v3.services.MutateFeedItemsRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.FeedItemOperation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.FeedItemOperation.displayName = 'proto.google.ads.googleads.v3.services.FeedItemOperation';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.repeatedFields_, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MutateFeedItemsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.displayName = 'proto.google.ads.googleads.v3.services.MutateFeedItemsResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.services.MutateFeedItemResult, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.services.MutateFeedItemResult.displayName = 'proto.google.ads.googleads.v3.services.MutateFeedItemResult';
+}
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.GetFeedItemRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.GetFeedItemRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resourceName: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.GetFeedItemRequest}
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.GetFeedItemRequest;
+  return proto.google.ads.googleads.v3.services.GetFeedItemRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.GetFeedItemRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.GetFeedItemRequest}
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResourceName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.GetFeedItemRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.GetFeedItemRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResourceName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string resource_name = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.getResourceName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.GetFeedItemRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.GetFeedItemRequest.prototype.setResourceName = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    customerId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    operationsList: jspb.Message.toObjectList(msg.getOperationsList(),
+    proto.google.ads.googleads.v3.services.FeedItemOperation.toObject, includeInstance),
+    partialFailure: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+    validateOnly: jspb.Message.getBooleanFieldWithDefault(msg, 4, false)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MutateFeedItemsRequest;
+  return proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCustomerId(value);
+      break;
+    case 2:
+      var value = new proto.google.ads.googleads.v3.services.FeedItemOperation;
+      reader.readMessage(value,proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinaryFromReader);
+      msg.addOperations(value);
+      break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setPartialFailure(value);
+      break;
+    case 4:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setValidateOnly(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCustomerId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getOperationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.ads.googleads.v3.services.FeedItemOperation.serializeBinaryToWriter
+    );
+  }
+  f = message.getPartialFailure();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
+    );
+  }
+  f = message.getValidateOnly();
+  if (f) {
+    writer.writeBool(
+      4,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string customer_id = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getCustomerId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setCustomerId = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated FeedItemOperation operations = 2;
+ * @return {!Array<!proto.google.ads.googleads.v3.services.FeedItemOperation>}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getOperationsList = function() {
+  return /** @type{!Array<!proto.google.ads.googleads.v3.services.FeedItemOperation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.ads.googleads.v3.services.FeedItemOperation, 2));
+};
+
+
+/**
+ * @param {!Array<!proto.google.ads.googleads.v3.services.FeedItemOperation>} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} returns this
+*/
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setOperationsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.services.FeedItemOperation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.addOperations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.ads.googleads.v3.services.FeedItemOperation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.clearOperationsList = function() {
+  return this.setOperationsList([]);
+};
+
+
+/**
+ * optional bool partial_failure = 3;
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getPartialFailure = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setPartialFailure = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 3, value);
+};
+
+
+/**
+ * optional bool validate_only = 4;
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.getValidateOnly = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsRequest} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsRequest.prototype.setValidateOnly = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 4, value);
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_ = [[1,2,3]];
+
+/**
+ * @enum {number}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.OperationCase = {
+  OPERATION_NOT_SET: 0,
+  CREATE: 1,
+  UPDATE: 2,
+  REMOVE: 3
+};
+
+/**
+ * @return {proto.google.ads.googleads.v3.services.FeedItemOperation.OperationCase}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getOperationCase = function() {
+  return /** @type {proto.google.ads.googleads.v3.services.FeedItemOperation.OperationCase} */(jspb.Message.computeOneofCase(this, proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.FeedItemOperation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.FeedItemOperation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    updateMask: (f = msg.getUpdateMask()) && google_protobuf_field_mask_pb.FieldMask.toObject(includeInstance, f),
+    create: (f = msg.getCreate()) && google_ads_googleads_v3_resources_feed_item_pb.FeedItem.toObject(includeInstance, f),
+    update: (f = msg.getUpdate()) && google_ads_googleads_v3_resources_feed_item_pb.FeedItem.toObject(includeInstance, f),
+    remove: jspb.Message.getFieldWithDefault(msg, 3, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.FeedItemOperation;
+  return proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.FeedItemOperation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 4:
+      var value = new google_protobuf_field_mask_pb.FieldMask;
+      reader.readMessage(value,google_protobuf_field_mask_pb.FieldMask.deserializeBinaryFromReader);
+      msg.setUpdateMask(value);
+      break;
+    case 1:
+      var value = new google_ads_googleads_v3_resources_feed_item_pb.FeedItem;
+      reader.readMessage(value,google_ads_googleads_v3_resources_feed_item_pb.FeedItem.deserializeBinaryFromReader);
+      msg.setCreate(value);
+      break;
+    case 2:
+      var value = new google_ads_googleads_v3_resources_feed_item_pb.FeedItem;
+      reader.readMessage(value,google_ads_googleads_v3_resources_feed_item_pb.FeedItem.deserializeBinaryFromReader);
+      msg.setUpdate(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setRemove(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.FeedItemOperation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.FeedItemOperation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getUpdateMask();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_field_mask_pb.FieldMask.serializeBinaryToWriter
+    );
+  }
+  f = message.getCreate();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_ads_googleads_v3_resources_feed_item_pb.FeedItem.serializeBinaryToWriter
+    );
+  }
+  f = message.getUpdate();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_ads_googleads_v3_resources_feed_item_pb.FeedItem.serializeBinaryToWriter
+    );
+  }
+  f = /** @type {string} */ (jspb.Message.getField(message, 3));
+  if (f != null) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.FieldMask update_mask = 4;
+ * @return {?proto.google.protobuf.FieldMask}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getUpdateMask = function() {
+  return /** @type{?proto.google.protobuf.FieldMask} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_field_mask_pb.FieldMask, 4));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.FieldMask|undefined} value
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+*/
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setUpdateMask = function(value) {
+  return jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearUpdateMask = function() {
+  return this.setUpdateMask(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasUpdateMask = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.ads.googleads.v3.resources.FeedItem create = 1;
+ * @return {?proto.google.ads.googleads.v3.resources.FeedItem}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getCreate = function() {
+  return /** @type{?proto.google.ads.googleads.v3.resources.FeedItem} */ (
+    jspb.Message.getWrapperField(this, google_ads_googleads_v3_resources_feed_item_pb.FeedItem, 1));
+};
+
+
+/**
+ * @param {?proto.google.ads.googleads.v3.resources.FeedItem|undefined} value
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+*/
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setCreate = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 1, proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearCreate = function() {
+  return this.setCreate(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasCreate = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.ads.googleads.v3.resources.FeedItem update = 2;
+ * @return {?proto.google.ads.googleads.v3.resources.FeedItem}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getUpdate = function() {
+  return /** @type{?proto.google.ads.googleads.v3.resources.FeedItem} */ (
+    jspb.Message.getWrapperField(this, google_ads_googleads_v3_resources_feed_item_pb.FeedItem, 2));
+};
+
+
+/**
+ * @param {?proto.google.ads.googleads.v3.resources.FeedItem|undefined} value
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+*/
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setUpdate = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 2, proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearUpdate = function() {
+  return this.setUpdate(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasUpdate = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional string remove = 3;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.getRemove = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.setRemove = function(value) {
+  return jspb.Message.setOneofField(this, 3, proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.FeedItemOperation} returns this
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.clearRemove = function() {
+  return jspb.Message.setOneofField(this, 3, proto.google.ads.googleads.v3.services.FeedItemOperation.oneofGroups_[0], undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.FeedItemOperation.prototype.hasRemove = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    partialFailureError: (f = msg.getPartialFailureError()) && google_rpc_status_pb.Status.toObject(includeInstance, f),
+    resultsList: jspb.Message.toObjectList(msg.getResultsList(),
+    proto.google.ads.googleads.v3.services.MutateFeedItemResult.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MutateFeedItemsResponse;
+  return proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 3:
+      var value = new google_rpc_status_pb.Status;
+      reader.readMessage(value,google_rpc_status_pb.Status.deserializeBinaryFromReader);
+      msg.setPartialFailureError(value);
+      break;
+    case 2:
+      var value = new proto.google.ads.googleads.v3.services.MutateFeedItemResult;
+      reader.readMessage(value,proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinaryFromReader);
+      msg.addResults(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPartialFailureError();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_rpc_status_pb.Status.serializeBinaryToWriter
+    );
+  }
+  f = message.getResultsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.ads.googleads.v3.services.MutateFeedItemResult.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.rpc.Status partial_failure_error = 3;
+ * @return {?proto.google.rpc.Status}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.getPartialFailureError = function() {
+  return /** @type{?proto.google.rpc.Status} */ (
+    jspb.Message.getWrapperField(this, google_rpc_status_pb.Status, 3));
+};
+
+
+/**
+ * @param {?proto.google.rpc.Status|undefined} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} returns this
+*/
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.setPartialFailureError = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.clearPartialFailureError = function() {
+  return this.setPartialFailureError(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.hasPartialFailureError = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * repeated MutateFeedItemResult results = 2;
+ * @return {!Array<!proto.google.ads.googleads.v3.services.MutateFeedItemResult>}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.getResultsList = function() {
+  return /** @type{!Array<!proto.google.ads.googleads.v3.services.MutateFeedItemResult>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.ads.googleads.v3.services.MutateFeedItemResult, 2));
+};
+
+
+/**
+ * @param {!Array<!proto.google.ads.googleads.v3.services.MutateFeedItemResult>} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} returns this
+*/
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.setResultsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemResult=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemResult}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.addResults = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.ads.googleads.v3.services.MutateFeedItemResult, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemsResponse} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemsResponse.prototype.clearResultsList = function() {
+  return this.setResultsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.services.MutateFeedItemResult.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemResult} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resourceName: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemResult}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.services.MutateFeedItemResult;
+  return proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemResult} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemResult}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResourceName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.services.MutateFeedItemResult.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.services.MutateFeedItemResult} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResourceName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string resource_name = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.getResourceName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.services.MutateFeedItemResult} returns this
+ */
+proto.google.ads.googleads.v3.services.MutateFeedItemResult.prototype.setResourceName = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+goog.object.extend(exports, proto.google.ads.googleads.v3.services);

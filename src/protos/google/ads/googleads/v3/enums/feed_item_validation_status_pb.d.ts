@@ -19,12 +19,14 @@ export namespace FeedItemValidationStatusEnum {
   export type AsObject = {
   }
 
-  export enum FeedItemValidationStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PENDING = 2,
-    INVALID = 3,
-    VALID = 4,
+  export interface FeedItemValidationStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PENDING: 2;
+    INVALID: 3;
+    VALID: 4;
   }
+
+  export const FeedItemValidationStatus: FeedItemValidationStatusMap;
 }
 

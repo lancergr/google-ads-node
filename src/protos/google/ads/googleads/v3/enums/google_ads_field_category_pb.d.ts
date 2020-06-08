@@ -19,13 +19,15 @@ export namespace GoogleAdsFieldCategoryEnum {
   export type AsObject = {
   }
 
-  export enum GoogleAdsFieldCategory {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    RESOURCE = 2,
-    ATTRIBUTE = 3,
-    SEGMENT = 5,
-    METRIC = 6,
+  export interface GoogleAdsFieldCategoryMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    RESOURCE: 2;
+    ATTRIBUTE: 3;
+    SEGMENT: 5;
+    METRIC: 6;
   }
+
+  export const GoogleAdsFieldCategory: GoogleAdsFieldCategoryMap;
 }
 

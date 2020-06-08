@@ -5,6 +5,7 @@ import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_simulation_pb from "../../../../../google/ads/googleads/v3/common/simulation_pb";
 import * as google_ads_googleads_v3_enums_simulation_modification_method_pb from "../../../../../google/ads/googleads/v3/enums/simulation_modification_method_pb";
 import * as google_ads_googleads_v3_enums_simulation_type_pb from "../../../../../google/ads/googleads/v3/enums/simulation_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -18,11 +19,11 @@ export class AdGroupSimulation extends jspb.Message {
   getAdGroupId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setAdGroupId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getType(): google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationType;
-  setType(value: google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationType): void;
+  getType(): google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationTypeMap[keyof google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationTypeMap];
+  setType(value: google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationTypeMap[keyof google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationTypeMap]): void;
 
-  getModificationMethod(): google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethod;
-  setModificationMethod(value: google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethod): void;
+  getModificationMethod(): google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethodMap[keyof google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethodMap];
+  setModificationMethod(value: google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethodMap[keyof google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethodMap]): void;
 
   hasStartDate(): boolean;
   clearStartDate(): void;
@@ -64,8 +65,8 @@ export namespace AdGroupSimulation {
   export type AsObject = {
     resourceName: string,
     adGroupId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    type: google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationType,
-    modificationMethod: google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethod,
+    type: google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationTypeMap[keyof google_ads_googleads_v3_enums_simulation_type_pb.SimulationTypeEnum.SimulationTypeMap],
+    modificationMethod: google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethodMap[keyof google_ads_googleads_v3_enums_simulation_modification_method_pb.SimulationModificationMethodEnum.SimulationModificationMethodMap],
     startDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     endDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     cpcBidPointList?: google_ads_googleads_v3_common_simulation_pb.CpcBidSimulationPointList.AsObject,

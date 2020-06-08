@@ -19,11 +19,13 @@ export namespace ListingGroupTypeEnum {
   export type AsObject = {
   }
 
-  export enum ListingGroupType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SUBDIVISION = 2,
-    UNIT = 3,
+  export interface ListingGroupTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SUBDIVISION: 2;
+    UNIT: 3;
   }
+
+  export const ListingGroupType: ListingGroupTypeMap;
 }
 

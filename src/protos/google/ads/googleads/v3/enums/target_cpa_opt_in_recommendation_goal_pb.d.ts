@@ -19,13 +19,15 @@ export namespace TargetCpaOptInRecommendationGoalEnum {
   export type AsObject = {
   }
 
-  export enum TargetCpaOptInRecommendationGoal {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SAME_COST = 2,
-    SAME_CONVERSIONS = 3,
-    SAME_CPA = 4,
-    CLOSEST_CPA = 5,
+  export interface TargetCpaOptInRecommendationGoalMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SAME_COST: 2;
+    SAME_CONVERSIONS: 3;
+    SAME_CPA: 4;
+    CLOSEST_CPA: 5;
   }
+
+  export const TargetCpaOptInRecommendationGoal: TargetCpaOptInRecommendationGoalMap;
 }
 

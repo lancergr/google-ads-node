@@ -19,10 +19,12 @@ export namespace PreferredContentTypeEnum {
   export type AsObject = {
   }
 
-  export enum PreferredContentType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    YOUTUBE_TOP_CONTENT = 400,
+  export interface PreferredContentTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    YOUTUBE_TOP_CONTENT: 400;
   }
+
+  export const PreferredContentType: PreferredContentTypeMap;
 }
 

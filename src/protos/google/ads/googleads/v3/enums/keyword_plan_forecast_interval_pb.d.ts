@@ -19,12 +19,14 @@ export namespace KeywordPlanForecastIntervalEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanForecastInterval {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NEXT_WEEK = 3,
-    NEXT_MONTH = 4,
-    NEXT_QUARTER = 5,
+  export interface KeywordPlanForecastIntervalMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NEXT_WEEK: 3;
+    NEXT_MONTH: 4;
+    NEXT_QUARTER: 5;
   }
+
+  export const KeywordPlanForecastInterval: KeywordPlanForecastIntervalMap;
 }
 

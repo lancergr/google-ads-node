@@ -19,11 +19,13 @@ export namespace CustomerErrorEnum {
   export type AsObject = {
   }
 
-  export enum CustomerError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    STATUS_CHANGE_DISALLOWED = 2,
-    ACCOUNT_NOT_SET_UP = 3,
+  export interface CustomerErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    STATUS_CHANGE_DISALLOWED: 2;
+    ACCOUNT_NOT_SET_UP: 3;
   }
+
+  export const CustomerError: CustomerErrorMap;
 }
 

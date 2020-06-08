@@ -19,13 +19,15 @@ export namespace AdCustomizerPlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum AdCustomizerPlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INTEGER = 2,
-    PRICE = 3,
-    DATE = 4,
-    STRING = 5,
+  export interface AdCustomizerPlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INTEGER: 2;
+    PRICE: 3;
+    DATE: 4;
+    STRING: 5;
   }
+
+  export const AdCustomizerPlaceholderField: AdCustomizerPlaceholderFieldMap;
 }
 

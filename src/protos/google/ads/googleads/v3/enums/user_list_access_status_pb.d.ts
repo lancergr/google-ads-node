@@ -19,11 +19,13 @@ export namespace UserListAccessStatusEnum {
   export type AsObject = {
   }
 
-  export enum UserListAccessStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    DISABLED = 3,
+  export interface UserListAccessStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    DISABLED: 3;
   }
+
+  export const UserListAccessStatus: UserListAccessStatusMap;
 }
 

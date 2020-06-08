@@ -19,15 +19,17 @@ export namespace UserListNumberRuleItemOperatorEnum {
   export type AsObject = {
   }
 
-  export enum UserListNumberRuleItemOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    GREATER_THAN = 2,
-    GREATER_THAN_OR_EQUAL = 3,
-    EQUALS = 4,
-    NOT_EQUALS = 5,
-    LESS_THAN = 6,
-    LESS_THAN_OR_EQUAL = 7,
+  export interface UserListNumberRuleItemOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    GREATER_THAN: 2;
+    GREATER_THAN_OR_EQUAL: 3;
+    EQUALS: 4;
+    NOT_EQUALS: 5;
+    LESS_THAN: 6;
+    LESS_THAN_OR_EQUAL: 7;
   }
+
+  export const UserListNumberRuleItemOperator: UserListNumberRuleItemOperatorMap;
 }
 

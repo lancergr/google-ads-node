@@ -19,14 +19,16 @@ export namespace AdCustomizerErrorEnum {
   export type AsObject = {
   }
 
-  export enum AdCustomizerError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    COUNTDOWN_INVALID_DATE_FORMAT = 2,
-    COUNTDOWN_DATE_IN_PAST = 3,
-    COUNTDOWN_INVALID_LOCALE = 4,
-    COUNTDOWN_INVALID_START_DAYS_BEFORE = 5,
-    UNKNOWN_USER_LIST = 6,
+  export interface AdCustomizerErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    COUNTDOWN_INVALID_DATE_FORMAT: 2;
+    COUNTDOWN_DATE_IN_PAST: 3;
+    COUNTDOWN_INVALID_LOCALE: 4;
+    COUNTDOWN_INVALID_START_DAYS_BEFORE: 5;
+    UNKNOWN_USER_LIST: 6;
   }
+
+  export const AdCustomizerError: AdCustomizerErrorMap;
 }
 

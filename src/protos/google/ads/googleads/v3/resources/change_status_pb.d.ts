@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_change_status_operation_pb from "../../../../../google/ads/googleads/v3/enums/change_status_operation_pb";
 import * as google_ads_googleads_v3_enums_change_status_resource_type_pb from "../../../../../google/ads/googleads/v3/enums/change_status_resource_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,8 +18,8 @@ export class ChangeStatus extends jspb.Message {
   getLastChangeDateTime(): google_protobuf_wrappers_pb.StringValue | undefined;
   setLastChangeDateTime(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getResourceType(): google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceType;
-  setResourceType(value: google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceType): void;
+  getResourceType(): google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceTypeMap[keyof google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceTypeMap];
+  setResourceType(value: google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceTypeMap[keyof google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceTypeMap]): void;
 
   hasCampaign(): boolean;
   clearCampaign(): void;
@@ -30,8 +31,8 @@ export class ChangeStatus extends jspb.Message {
   getAdGroup(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAdGroup(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getResourceStatus(): google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperation;
-  setResourceStatus(value: google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperation): void;
+  getResourceStatus(): google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperationMap[keyof google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperationMap];
+  setResourceStatus(value: google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperationMap[keyof google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperationMap]): void;
 
   hasAdGroupAd(): boolean;
   clearAdGroupAd(): void;
@@ -87,10 +88,10 @@ export namespace ChangeStatus {
   export type AsObject = {
     resourceName: string,
     lastChangeDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    resourceType: google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceType,
+    resourceType: google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceTypeMap[keyof google_ads_googleads_v3_enums_change_status_resource_type_pb.ChangeStatusResourceTypeEnum.ChangeStatusResourceTypeMap],
     campaign?: google_protobuf_wrappers_pb.StringValue.AsObject,
     adGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    resourceStatus: google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperation,
+    resourceStatus: google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperationMap[keyof google_ads_googleads_v3_enums_change_status_operation_pb.ChangeStatusOperationEnum.ChangeStatusOperationMap],
     adGroupAd?: google_protobuf_wrappers_pb.StringValue.AsObject,
     adGroupCriterion?: google_protobuf_wrappers_pb.StringValue.AsObject,
     campaignCriterion?: google_protobuf_wrappers_pb.StringValue.AsObject,

@@ -22,6 +22,7 @@ import * as google_ads_googleads_v3_enums_payment_mode_pb from "../../../../../g
 import * as google_ads_googleads_v3_enums_positive_geo_target_type_pb from "../../../../../google/ads/googleads/v3/enums/positive_geo_target_type_pb";
 import * as google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb from "../../../../../google/ads/googleads/v3/enums/vanity_pharma_display_url_mode_pb";
 import * as google_ads_googleads_v3_enums_vanity_pharma_text_pb from "../../../../../google/ads/googleads/v3/enums/vanity_pharma_text_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -40,20 +41,20 @@ export class Campaign extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatus;
-  setStatus(value: google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatusMap[keyof google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatusMap[keyof google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatusMap]): void;
 
-  getServingStatus(): google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatus;
-  setServingStatus(value: google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatus): void;
+  getServingStatus(): google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatusMap[keyof google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatusMap];
+  setServingStatus(value: google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatusMap[keyof google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatusMap]): void;
 
-  getAdServingOptimizationStatus(): google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatus;
-  setAdServingOptimizationStatus(value: google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatus): void;
+  getAdServingOptimizationStatus(): google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatusMap[keyof google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatusMap];
+  setAdServingOptimizationStatus(value: google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatusMap[keyof google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatusMap]): void;
 
-  getAdvertisingChannelType(): google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelType;
-  setAdvertisingChannelType(value: google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelType): void;
+  getAdvertisingChannelType(): google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelTypeMap[keyof google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelTypeMap];
+  setAdvertisingChannelType(value: google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelTypeMap[keyof google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelTypeMap]): void;
 
-  getAdvertisingChannelSubType(): google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubType;
-  setAdvertisingChannelSubType(value: google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubType): void;
+  getAdvertisingChannelSubType(): google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubTypeMap[keyof google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubTypeMap];
+  setAdvertisingChannelSubType(value: google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubTypeMap[keyof google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubTypeMap]): void;
 
   hasTrackingUrlTemplate(): boolean;
   clearTrackingUrlTemplate(): void;
@@ -110,8 +111,8 @@ export class Campaign extends jspb.Message {
   setLabelsList(value: Array<google_protobuf_wrappers_pb.StringValue>): void;
   addLabels(value?: google_protobuf_wrappers_pb.StringValue, index?: number): google_protobuf_wrappers_pb.StringValue;
 
-  getExperimentType(): google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentType;
-  setExperimentType(value: google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentType): void;
+  getExperimentType(): google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentTypeMap[keyof google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentTypeMap];
+  setExperimentType(value: google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentTypeMap[keyof google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentTypeMap]): void;
 
   hasBaseCampaign(): boolean;
   clearBaseCampaign(): void;
@@ -123,8 +124,8 @@ export class Campaign extends jspb.Message {
   getCampaignBudget(): google_protobuf_wrappers_pb.StringValue | undefined;
   setCampaignBudget(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getBiddingStrategyType(): google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyType;
-  setBiddingStrategyType(value: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyType): void;
+  getBiddingStrategyType(): google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap[keyof google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap];
+  setBiddingStrategyType(value: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap[keyof google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap]): void;
 
   hasStartDate(): boolean;
   clearStartDate(): void;
@@ -146,8 +147,8 @@ export class Campaign extends jspb.Message {
   setFrequencyCapsList(value: Array<google_ads_googleads_v3_common_frequency_cap_pb.FrequencyCapEntry>): void;
   addFrequencyCaps(value?: google_ads_googleads_v3_common_frequency_cap_pb.FrequencyCapEntry, index?: number): google_ads_googleads_v3_common_frequency_cap_pb.FrequencyCapEntry;
 
-  getVideoBrandSafetySuitability(): google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitability;
-  setVideoBrandSafetySuitability(value: google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitability): void;
+  getVideoBrandSafetySuitability(): google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitabilityMap[keyof google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitabilityMap];
+  setVideoBrandSafetySuitability(value: google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitabilityMap[keyof google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitabilityMap]): void;
 
   hasVanityPharma(): boolean;
   clearVanityPharma(): void;
@@ -164,8 +165,13 @@ export class Campaign extends jspb.Message {
   getTrackingSetting(): Campaign.TrackingSetting | undefined;
   setTrackingSetting(value?: Campaign.TrackingSetting): void;
 
-  getPaymentMode(): google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentMode;
-  setPaymentMode(value: google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentMode): void;
+  getPaymentMode(): google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentModeMap[keyof google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentModeMap];
+  setPaymentMode(value: google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentModeMap[keyof google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentModeMap]): void;
+
+  hasOptimizationScore(): boolean;
+  clearOptimizationScore(): void;
+  getOptimizationScore(): google_protobuf_wrappers_pb.DoubleValue | undefined;
+  setOptimizationScore(value?: google_protobuf_wrappers_pb.DoubleValue): void;
 
   hasBiddingStrategy(): boolean;
   clearBiddingStrategy(): void;
@@ -248,11 +254,11 @@ export namespace Campaign {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatus,
-    servingStatus: google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatus,
-    adServingOptimizationStatus: google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatus,
-    advertisingChannelType: google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelType,
-    advertisingChannelSubType: google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubType,
+    status: google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatusMap[keyof google_ads_googleads_v3_enums_campaign_status_pb.CampaignStatusEnum.CampaignStatusMap],
+    servingStatus: google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatusMap[keyof google_ads_googleads_v3_enums_campaign_serving_status_pb.CampaignServingStatusEnum.CampaignServingStatusMap],
+    adServingOptimizationStatus: google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatusMap[keyof google_ads_googleads_v3_enums_ad_serving_optimization_status_pb.AdServingOptimizationStatusEnum.AdServingOptimizationStatusMap],
+    advertisingChannelType: google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelTypeMap[keyof google_ads_googleads_v3_enums_advertising_channel_type_pb.AdvertisingChannelTypeEnum.AdvertisingChannelTypeMap],
+    advertisingChannelSubType: google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubTypeMap[keyof google_ads_googleads_v3_enums_advertising_channel_sub_type_pb.AdvertisingChannelSubTypeEnum.AdvertisingChannelSubTypeMap],
     trackingUrlTemplate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     urlCustomParametersList: Array<google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter.AsObject>,
     realTimeBiddingSetting?: google_ads_googleads_v3_common_real_time_bidding_setting_pb.RealTimeBiddingSetting.AsObject,
@@ -264,19 +270,20 @@ export namespace Campaign {
     geoTargetTypeSetting?: Campaign.GeoTargetTypeSetting.AsObject,
     appCampaignSetting?: Campaign.AppCampaignSetting.AsObject,
     labelsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
-    experimentType: google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentType,
+    experimentType: google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentTypeMap[keyof google_ads_googleads_v3_enums_campaign_experiment_type_pb.CampaignExperimentTypeEnum.CampaignExperimentTypeMap],
     baseCampaign?: google_protobuf_wrappers_pb.StringValue.AsObject,
     campaignBudget?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    biddingStrategyType: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyType,
+    biddingStrategyType: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap[keyof google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap],
     startDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     endDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     finalUrlSuffix?: google_protobuf_wrappers_pb.StringValue.AsObject,
     frequencyCapsList: Array<google_ads_googleads_v3_common_frequency_cap_pb.FrequencyCapEntry.AsObject>,
-    videoBrandSafetySuitability: google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitability,
+    videoBrandSafetySuitability: google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitabilityMap[keyof google_ads_googleads_v3_enums_brand_safety_suitability_pb.BrandSafetySuitabilityEnum.BrandSafetySuitabilityMap],
     vanityPharma?: Campaign.VanityPharma.AsObject,
     selectiveOptimization?: Campaign.SelectiveOptimization.AsObject,
     trackingSetting?: Campaign.TrackingSetting.AsObject,
-    paymentMode: google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentMode,
+    paymentMode: google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentModeMap[keyof google_ads_googleads_v3_enums_payment_mode_pb.PaymentModeEnum.PaymentModeMap],
+    optimizationScore?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     biddingStrategy?: google_protobuf_wrappers_pb.StringValue.AsObject,
     commission?: google_ads_googleads_v3_common_bidding_pb.Commission.AsObject,
     manualCpc?: google_ads_googleads_v3_common_bidding_pb.ManualCpc.AsObject,
@@ -355,16 +362,16 @@ export namespace Campaign {
   }
 
   export class AppCampaignSetting extends jspb.Message {
-    getBiddingStrategyGoalType(): google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalType;
-    setBiddingStrategyGoalType(value: google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalType): void;
+    getBiddingStrategyGoalType(): google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalTypeMap[keyof google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalTypeMap];
+    setBiddingStrategyGoalType(value: google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalTypeMap[keyof google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalTypeMap]): void;
 
     hasAppId(): boolean;
     clearAppId(): void;
     getAppId(): google_protobuf_wrappers_pb.StringValue | undefined;
     setAppId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-    getAppStore(): google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStore;
-    setAppStore(value: google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStore): void;
+    getAppStore(): google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStoreMap[keyof google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStoreMap];
+    setAppStore(value: google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStoreMap[keyof google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStoreMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): AppCampaignSetting.AsObject;
@@ -378,9 +385,9 @@ export namespace Campaign {
 
   export namespace AppCampaignSetting {
     export type AsObject = {
-      biddingStrategyGoalType: google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalType,
+      biddingStrategyGoalType: google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalTypeMap[keyof google_ads_googleads_v3_enums_app_campaign_bidding_strategy_goal_type_pb.AppCampaignBiddingStrategyGoalTypeEnum.AppCampaignBiddingStrategyGoalTypeMap],
       appId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-      appStore: google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStore,
+      appStore: google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStoreMap[keyof google_ads_googleads_v3_enums_app_campaign_app_store_pb.AppCampaignAppStoreEnum.AppCampaignAppStoreMap],
     }
   }
 
@@ -465,11 +472,11 @@ export namespace Campaign {
   }
 
   export class VanityPharma extends jspb.Message {
-    getVanityPharmaDisplayUrlMode(): google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlMode;
-    setVanityPharmaDisplayUrlMode(value: google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlMode): void;
+    getVanityPharmaDisplayUrlMode(): google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlModeMap[keyof google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlModeMap];
+    setVanityPharmaDisplayUrlMode(value: google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlModeMap[keyof google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlModeMap]): void;
 
-    getVanityPharmaText(): google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaText;
-    setVanityPharmaText(value: google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaText): void;
+    getVanityPharmaText(): google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaTextMap[keyof google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaTextMap];
+    setVanityPharmaText(value: google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaTextMap[keyof google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaTextMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): VanityPharma.AsObject;
@@ -483,54 +490,8 @@ export namespace Campaign {
 
   export namespace VanityPharma {
     export type AsObject = {
-      vanityPharmaDisplayUrlMode: google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlMode,
-      vanityPharmaText: google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaText,
-    }
-  }
-
-  export class SelectiveOptimization extends jspb.Message {
-    clearConversionActionsList(): void;
-    getConversionActionsList(): Array<google_protobuf_wrappers_pb.StringValue>;
-    setConversionActionsList(value: Array<google_protobuf_wrappers_pb.StringValue>): void;
-    addConversionActions(value?: google_protobuf_wrappers_pb.StringValue, index?: number): google_protobuf_wrappers_pb.StringValue;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): SelectiveOptimization.AsObject;
-    static toObject(includeInstance: boolean, msg: SelectiveOptimization): SelectiveOptimization.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: SelectiveOptimization, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): SelectiveOptimization;
-    static deserializeBinaryFromReader(message: SelectiveOptimization, reader: jspb.BinaryReader): SelectiveOptimization;
-  }
-
-  export namespace SelectiveOptimization {
-    export type AsObject = {
-      conversionActionsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
-    }
-  }
-
-  export class GeoTargetTypeSetting extends jspb.Message {
-    getPositiveGeoTargetType(): google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetType;
-    setPositiveGeoTargetType(value: google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetType): void;
-
-    getNegativeGeoTargetType(): google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetType;
-    setNegativeGeoTargetType(value: google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetType): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): GeoTargetTypeSetting.AsObject;
-    static toObject(includeInstance: boolean, msg: GeoTargetTypeSetting): GeoTargetTypeSetting.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: GeoTargetTypeSetting, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): GeoTargetTypeSetting;
-    static deserializeBinaryFromReader(message: GeoTargetTypeSetting, reader: jspb.BinaryReader): GeoTargetTypeSetting;
-  }
-
-  export namespace GeoTargetTypeSetting {
-    export type AsObject = {
-      positiveGeoTargetType: google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetType,
-      negativeGeoTargetType: google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetType,
+      vanityPharmaDisplayUrlMode: google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlModeMap[keyof google_ads_googleads_v3_enums_vanity_pharma_display_url_mode_pb.VanityPharmaDisplayUrlModeEnum.VanityPharmaDisplayUrlModeMap],
+      vanityPharmaText: google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaTextMap[keyof google_ads_googleads_v3_enums_vanity_pharma_text_pb.VanityPharmaTextEnum.VanityPharmaTextMap],
     }
   }
 
@@ -553,6 +514,52 @@ export namespace Campaign {
   export namespace TrackingSetting {
     export type AsObject = {
       trackingUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
+    }
+  }
+
+  export class GeoTargetTypeSetting extends jspb.Message {
+    getPositiveGeoTargetType(): google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetTypeMap[keyof google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetTypeMap];
+    setPositiveGeoTargetType(value: google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetTypeMap[keyof google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetTypeMap]): void;
+
+    getNegativeGeoTargetType(): google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetTypeMap[keyof google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetTypeMap];
+    setNegativeGeoTargetType(value: google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetTypeMap[keyof google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetTypeMap]): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): GeoTargetTypeSetting.AsObject;
+    static toObject(includeInstance: boolean, msg: GeoTargetTypeSetting): GeoTargetTypeSetting.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: GeoTargetTypeSetting, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): GeoTargetTypeSetting;
+    static deserializeBinaryFromReader(message: GeoTargetTypeSetting, reader: jspb.BinaryReader): GeoTargetTypeSetting;
+  }
+
+  export namespace GeoTargetTypeSetting {
+    export type AsObject = {
+      positiveGeoTargetType: google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetTypeMap[keyof google_ads_googleads_v3_enums_positive_geo_target_type_pb.PositiveGeoTargetTypeEnum.PositiveGeoTargetTypeMap],
+      negativeGeoTargetType: google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetTypeMap[keyof google_ads_googleads_v3_enums_negative_geo_target_type_pb.NegativeGeoTargetTypeEnum.NegativeGeoTargetTypeMap],
+    }
+  }
+
+  export class SelectiveOptimization extends jspb.Message {
+    clearConversionActionsList(): void;
+    getConversionActionsList(): Array<google_protobuf_wrappers_pb.StringValue>;
+    setConversionActionsList(value: Array<google_protobuf_wrappers_pb.StringValue>): void;
+    addConversionActions(value?: google_protobuf_wrappers_pb.StringValue, index?: number): google_protobuf_wrappers_pb.StringValue;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): SelectiveOptimization.AsObject;
+    static toObject(includeInstance: boolean, msg: SelectiveOptimization): SelectiveOptimization.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: SelectiveOptimization, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): SelectiveOptimization;
+    static deserializeBinaryFromReader(message: SelectiveOptimization, reader: jspb.BinaryReader): SelectiveOptimization;
+  }
+
+  export namespace SelectiveOptimization {
+    export type AsObject = {
+      conversionActionsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     }
   }
 

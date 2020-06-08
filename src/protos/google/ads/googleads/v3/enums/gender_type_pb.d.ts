@@ -19,12 +19,14 @@ export namespace GenderTypeEnum {
   export type AsObject = {
   }
 
-  export enum GenderType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MALE = 10,
-    FEMALE = 11,
-    UNDETERMINED = 20,
+  export interface GenderTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MALE: 10;
+    FEMALE: 11;
+    UNDETERMINED: 20;
   }
+
+  export const GenderType: GenderTypeMap;
 }
 

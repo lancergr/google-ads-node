@@ -7,8 +7,8 @@ import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wr
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 
 export class FinalAppUrl extends jspb.Message {
-  getOsType(): google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemType;
-  setOsType(value: google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemType): void;
+  getOsType(): google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemTypeMap[keyof google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemTypeMap];
+  setOsType(value: google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemTypeMap[keyof google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemTypeMap]): void;
 
   hasUrl(): boolean;
   clearUrl(): void;
@@ -27,7 +27,7 @@ export class FinalAppUrl extends jspb.Message {
 
 export namespace FinalAppUrl {
   export type AsObject = {
-    osType: google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemType,
+    osType: google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemTypeMap[keyof google_ads_googleads_v3_enums_app_url_operating_system_type_pb.AppUrlOperatingSystemTypeEnum.AppUrlOperatingSystemTypeMap],
     url?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 }

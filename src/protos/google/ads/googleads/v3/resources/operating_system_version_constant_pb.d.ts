@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_operating_system_version_operator_type_pb from "../../../../../google/ads/googleads/v3/enums/operating_system_version_operator_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -31,8 +32,8 @@ export class OperatingSystemVersionConstant extends jspb.Message {
   getOsMinorVersion(): google_protobuf_wrappers_pb.Int32Value | undefined;
   setOsMinorVersion(value?: google_protobuf_wrappers_pb.Int32Value): void;
 
-  getOperatorType(): google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorType;
-  setOperatorType(value: google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorType): void;
+  getOperatorType(): google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorTypeMap[keyof google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorTypeMap];
+  setOperatorType(value: google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorTypeMap[keyof google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): OperatingSystemVersionConstant.AsObject;
@@ -51,7 +52,7 @@ export namespace OperatingSystemVersionConstant {
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     osMajorVersion?: google_protobuf_wrappers_pb.Int32Value.AsObject,
     osMinorVersion?: google_protobuf_wrappers_pb.Int32Value.AsObject,
-    operatorType: google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorType,
+    operatorType: google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorTypeMap[keyof google_ads_googleads_v3_enums_operating_system_version_operator_type_pb.OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorTypeMap],
   }
 }
 

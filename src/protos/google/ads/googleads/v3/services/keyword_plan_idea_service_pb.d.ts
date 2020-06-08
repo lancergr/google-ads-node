@@ -5,6 +5,7 @@ import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_keyword_plan_common_pb from "../../../../../google/ads/googleads/v3/common/keyword_plan_common_pb";
 import * as google_ads_googleads_v3_enums_keyword_plan_network_pb from "../../../../../google/ads/googleads/v3/enums/keyword_plan_network_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_client_pb from "../../../../../google/api/client_pb";
 
@@ -22,8 +23,8 @@ export class GenerateKeywordIdeasRequest extends jspb.Message {
   setGeoTargetConstantsList(value: Array<google_protobuf_wrappers_pb.StringValue>): void;
   addGeoTargetConstants(value?: google_protobuf_wrappers_pb.StringValue, index?: number): google_protobuf_wrappers_pb.StringValue;
 
-  getKeywordPlanNetwork(): google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetwork;
-  setKeywordPlanNetwork(value: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetwork): void;
+  getKeywordPlanNetwork(): google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap[keyof google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap];
+  setKeywordPlanNetwork(value: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap[keyof google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap]): void;
 
   hasKeywordAndUrlSeed(): boolean;
   clearKeywordAndUrlSeed(): void;
@@ -56,7 +57,7 @@ export namespace GenerateKeywordIdeasRequest {
     customerId: string,
     language?: google_protobuf_wrappers_pb.StringValue.AsObject,
     geoTargetConstantsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
-    keywordPlanNetwork: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetwork,
+    keywordPlanNetwork: google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap[keyof google_ads_googleads_v3_enums_keyword_plan_network_pb.KeywordPlanNetworkEnum.KeywordPlanNetworkMap],
     keywordAndUrlSeed?: KeywordAndUrlSeed.AsObject,
     keywordSeed?: KeywordSeed.AsObject,
     urlSeed?: UrlSeed.AsObject,

@@ -19,11 +19,13 @@ export namespace StringFormatErrorEnum {
   export type AsObject = {
   }
 
-  export enum StringFormatError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ILLEGAL_CHARS = 2,
-    INVALID_FORMAT = 3,
+  export interface StringFormatErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ILLEGAL_CHARS: 2;
+    INVALID_FORMAT: 3;
   }
+
+  export const StringFormatError: StringFormatErrorMap;
 }
 

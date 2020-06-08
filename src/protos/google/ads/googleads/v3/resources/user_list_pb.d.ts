@@ -9,6 +9,7 @@ import * as google_ads_googleads_v3_enums_user_list_closing_reason_pb from "../.
 import * as google_ads_googleads_v3_enums_user_list_membership_status_pb from "../../../../../google/ads/googleads/v3/enums/user_list_membership_status_pb";
 import * as google_ads_googleads_v3_enums_user_list_size_range_pb from "../../../../../google/ads/googleads/v3/enums/user_list_size_range_pb";
 import * as google_ads_googleads_v3_enums_user_list_type_pb from "../../../../../google/ads/googleads/v3/enums/user_list_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -37,8 +38,8 @@ export class UserList extends jspb.Message {
   getDescription(): google_protobuf_wrappers_pb.StringValue | undefined;
   setDescription(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getMembershipStatus(): google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatus;
-  setMembershipStatus(value: google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatus): void;
+  getMembershipStatus(): google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatusMap[keyof google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatusMap];
+  setMembershipStatus(value: google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatusMap[keyof google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatusMap]): void;
 
   hasIntegrationCode(): boolean;
   clearIntegrationCode(): void;
@@ -55,28 +56,28 @@ export class UserList extends jspb.Message {
   getSizeForDisplay(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setSizeForDisplay(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getSizeRangeForDisplay(): google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRange;
-  setSizeRangeForDisplay(value: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRange): void;
+  getSizeRangeForDisplay(): google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap[keyof google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap];
+  setSizeRangeForDisplay(value: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap[keyof google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap]): void;
 
   hasSizeForSearch(): boolean;
   clearSizeForSearch(): void;
   getSizeForSearch(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setSizeForSearch(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getSizeRangeForSearch(): google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRange;
-  setSizeRangeForSearch(value: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRange): void;
+  getSizeRangeForSearch(): google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap[keyof google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap];
+  setSizeRangeForSearch(value: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap[keyof google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap]): void;
 
-  getType(): google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListType;
-  setType(value: google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListType): void;
+  getType(): google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListTypeMap[keyof google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListTypeMap];
+  setType(value: google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListTypeMap[keyof google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListTypeMap]): void;
 
-  getClosingReason(): google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReason;
-  setClosingReason(value: google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReason): void;
+  getClosingReason(): google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReasonMap[keyof google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReasonMap];
+  setClosingReason(value: google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReasonMap[keyof google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReasonMap]): void;
 
-  getAccessReason(): google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReason;
-  setAccessReason(value: google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReason): void;
+  getAccessReason(): google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReasonMap[keyof google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReasonMap];
+  setAccessReason(value: google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReasonMap[keyof google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReasonMap]): void;
 
-  getAccountUserListStatus(): google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatus;
-  setAccountUserListStatus(value: google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatus): void;
+  getAccountUserListStatus(): google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatusMap[keyof google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatusMap];
+  setAccountUserListStatus(value: google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatusMap[keyof google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatusMap]): void;
 
   hasEligibleForSearch(): boolean;
   clearEligibleForSearch(): void;
@@ -131,17 +132,17 @@ export namespace UserList {
     readOnly?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     description?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    membershipStatus: google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatus,
+    membershipStatus: google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatusMap[keyof google_ads_googleads_v3_enums_user_list_membership_status_pb.UserListMembershipStatusEnum.UserListMembershipStatusMap],
     integrationCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
     membershipLifeSpan?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     sizeForDisplay?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    sizeRangeForDisplay: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRange,
+    sizeRangeForDisplay: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap[keyof google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap],
     sizeForSearch?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    sizeRangeForSearch: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRange,
-    type: google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListType,
-    closingReason: google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReason,
-    accessReason: google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReason,
-    accountUserListStatus: google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatus,
+    sizeRangeForSearch: google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap[keyof google_ads_googleads_v3_enums_user_list_size_range_pb.UserListSizeRangeEnum.UserListSizeRangeMap],
+    type: google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListTypeMap[keyof google_ads_googleads_v3_enums_user_list_type_pb.UserListTypeEnum.UserListTypeMap],
+    closingReason: google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReasonMap[keyof google_ads_googleads_v3_enums_user_list_closing_reason_pb.UserListClosingReasonEnum.UserListClosingReasonMap],
+    accessReason: google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReasonMap[keyof google_ads_googleads_v3_enums_access_reason_pb.AccessReasonEnum.AccessReasonMap],
+    accountUserListStatus: google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatusMap[keyof google_ads_googleads_v3_enums_user_list_access_status_pb.UserListAccessStatusEnum.UserListAccessStatusMap],
     eligibleForSearch?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     eligibleForDisplay?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     crmBasedUserList?: google_ads_googleads_v3_common_user_lists_pb.CrmBasedUserListInfo.AsObject,

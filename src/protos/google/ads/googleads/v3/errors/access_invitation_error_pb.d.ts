@@ -19,11 +19,13 @@ export namespace AccessInvitationErrorEnum {
   export type AsObject = {
   }
 
-  export enum AccessInvitationError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_EMAIL_ADDRESS = 2,
-    EMAIL_ADDRESS_ALREADY_HAS_ACCESS = 3,
+  export interface AccessInvitationErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_EMAIL_ADDRESS: 2;
+    EMAIL_ADDRESS_ALREADY_HAS_ACCESS: 3;
   }
+
+  export const AccessInvitationError: AccessInvitationErrorMap;
 }
 

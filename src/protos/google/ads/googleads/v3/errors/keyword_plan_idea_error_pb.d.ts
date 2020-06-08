@@ -19,11 +19,13 @@ export namespace KeywordPlanIdeaErrorEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanIdeaError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    URL_CRAWL_ERROR = 2,
-    INVALID_VALUE = 3,
+  export interface KeywordPlanIdeaErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    URL_CRAWL_ERROR: 2;
+    INVALID_VALUE: 3;
   }
+
+  export const KeywordPlanIdeaError: KeywordPlanIdeaErrorMap;
 }
 

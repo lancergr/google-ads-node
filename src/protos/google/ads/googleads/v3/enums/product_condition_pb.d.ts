@@ -19,12 +19,14 @@ export namespace ProductConditionEnum {
   export type AsObject = {
   }
 
-  export enum ProductCondition {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NEW = 3,
-    REFURBISHED = 4,
-    USED = 5,
+  export interface ProductConditionMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NEW: 3;
+    REFURBISHED: 4;
+    USED: 5;
   }
+
+  export const ProductCondition: ProductConditionMap;
 }
 

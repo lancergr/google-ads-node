@@ -19,13 +19,15 @@ export namespace FieldMaskErrorEnum {
   export type AsObject = {
   }
 
-  export enum FieldMaskError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    FIELD_MASK_MISSING = 5,
-    FIELD_MASK_NOT_ALLOWED = 4,
-    FIELD_NOT_FOUND = 2,
-    FIELD_HAS_SUBFIELDS = 3,
+  export interface FieldMaskErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    FIELD_MASK_MISSING: 5;
+    FIELD_MASK_NOT_ALLOWED: 4;
+    FIELD_NOT_FOUND: 2;
+    FIELD_HAS_SUBFIELDS: 3;
   }
+
+  export const FieldMaskError: FieldMaskErrorMap;
 }
 

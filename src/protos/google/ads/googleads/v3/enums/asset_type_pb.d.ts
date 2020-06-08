@@ -19,13 +19,15 @@ export namespace AssetTypeEnum {
   export type AsObject = {
   }
 
-  export enum AssetType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    YOUTUBE_VIDEO = 2,
-    MEDIA_BUNDLE = 3,
-    IMAGE = 4,
-    TEXT = 5,
+  export interface AssetTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    YOUTUBE_VIDEO: 2;
+    MEDIA_BUNDLE: 3;
+    IMAGE: 4;
+    TEXT: 5;
   }
+
+  export const AssetType: AssetTypeMap;
 }
 

@@ -19,12 +19,14 @@ export namespace AccountBudgetStatusEnum {
   export type AsObject = {
   }
 
-  export enum AccountBudgetStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PENDING = 2,
-    APPROVED = 3,
-    CANCELLED = 4,
+  export interface AccountBudgetStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PENDING: 2;
+    APPROVED: 3;
+    CANCELLED: 4;
   }
+
+  export const AccountBudgetStatus: AccountBudgetStatusMap;
 }
 

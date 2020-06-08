@@ -19,13 +19,15 @@ export namespace AdGroupCriterionApprovalStatusEnum {
   export type AsObject = {
   }
 
-  export enum AdGroupCriterionApprovalStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    APPROVED = 2,
-    DISAPPROVED = 3,
-    PENDING_REVIEW = 4,
-    UNDER_REVIEW = 5,
+  export interface AdGroupCriterionApprovalStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    APPROVED: 2;
+    DISAPPROVED: 3;
+    PENDING_REVIEW: 4;
+    UNDER_REVIEW: 5;
   }
+
+  export const AdGroupCriterionApprovalStatus: AdGroupCriterionApprovalStatusMap;
 }
 

@@ -19,15 +19,17 @@ export namespace PriceExtensionPriceUnitEnum {
   export type AsObject = {
   }
 
-  export enum PriceExtensionPriceUnit {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PER_HOUR = 2,
-    PER_DAY = 3,
-    PER_WEEK = 4,
-    PER_MONTH = 5,
-    PER_YEAR = 6,
-    PER_NIGHT = 7,
+  export interface PriceExtensionPriceUnitMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PER_HOUR: 2;
+    PER_DAY: 3;
+    PER_WEEK: 4;
+    PER_MONTH: 5;
+    PER_YEAR: 6;
+    PER_NIGHT: 7;
   }
+
+  export const PriceExtensionPriceUnit: PriceExtensionPriceUnitMap;
 }
 

@@ -9,6 +9,7 @@ import * as google_ads_googleads_v3_common_url_collection_pb from "../../../../.
 import * as google_ads_googleads_v3_enums_ad_type_pb from "../../../../../google/ads/googleads/v3/enums/ad_type_pb";
 import * as google_ads_googleads_v3_enums_device_pb from "../../../../../google/ads/googleads/v3/enums/device_pb";
 import * as google_ads_googleads_v3_enums_system_managed_entity_source_pb from "../../../../../google/ads/googleads/v3/enums/system_managed_entity_source_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -57,16 +58,16 @@ export class Ad extends jspb.Message {
   getDisplayUrl(): google_protobuf_wrappers_pb.StringValue | undefined;
   setDisplayUrl(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdType;
-  setType(value: google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdType): void;
+  getType(): google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdTypeMap[keyof google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdTypeMap];
+  setType(value: google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdTypeMap[keyof google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdTypeMap]): void;
 
   hasAddedByGoogleAds(): boolean;
   clearAddedByGoogleAds(): void;
   getAddedByGoogleAds(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setAddedByGoogleAds(value?: google_protobuf_wrappers_pb.BoolValue): void;
 
-  getDevicePreference(): google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device;
-  setDevicePreference(value: google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device): void;
+  getDevicePreference(): google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap];
+  setDevicePreference(value: google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap]): void;
 
   clearUrlCollectionsList(): void;
   getUrlCollectionsList(): Array<google_ads_googleads_v3_common_url_collection_pb.UrlCollection>;
@@ -78,8 +79,8 @@ export class Ad extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getSystemManagedResourceSource(): google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSource;
-  setSystemManagedResourceSource(value: google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSource): void;
+  getSystemManagedResourceSource(): google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSourceMap[keyof google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSourceMap];
+  setSystemManagedResourceSource(value: google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSourceMap[keyof google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSourceMap]): void;
 
   hasTextAd(): boolean;
   clearTextAd(): void;
@@ -193,12 +194,12 @@ export namespace Ad {
     finalUrlSuffix?: google_protobuf_wrappers_pb.StringValue.AsObject,
     urlCustomParametersList: Array<google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter.AsObject>,
     displayUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdType,
+    type: google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdTypeMap[keyof google_ads_googleads_v3_enums_ad_type_pb.AdTypeEnum.AdTypeMap],
     addedByGoogleAds?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    devicePreference: google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device,
+    devicePreference: google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap],
     urlCollectionsList: Array<google_ads_googleads_v3_common_url_collection_pb.UrlCollection.AsObject>,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    systemManagedResourceSource: google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSource,
+    systemManagedResourceSource: google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSourceMap[keyof google_ads_googleads_v3_enums_system_managed_entity_source_pb.SystemManagedResourceSourceEnum.SystemManagedResourceSourceMap],
     textAd?: google_ads_googleads_v3_common_ad_type_infos_pb.TextAdInfo.AsObject,
     expandedTextAd?: google_ads_googleads_v3_common_ad_type_infos_pb.ExpandedTextAdInfo.AsObject,
     callOnlyAd?: google_ads_googleads_v3_common_ad_type_infos_pb.CallOnlyAdInfo.AsObject,

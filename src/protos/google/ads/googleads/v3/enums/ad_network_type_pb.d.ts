@@ -19,15 +19,17 @@ export namespace AdNetworkTypeEnum {
   export type AsObject = {
   }
 
-  export enum AdNetworkType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SEARCH = 2,
-    SEARCH_PARTNERS = 3,
-    CONTENT = 4,
-    YOUTUBE_SEARCH = 5,
-    YOUTUBE_WATCH = 6,
-    MIXED = 7,
+  export interface AdNetworkTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SEARCH: 2;
+    SEARCH_PARTNERS: 3;
+    CONTENT: 4;
+    YOUTUBE_SEARCH: 5;
+    YOUTUBE_WATCH: 6;
+    MIXED: 7;
   }
+
+  export const AdNetworkType: AdNetworkTypeMap;
 }
 

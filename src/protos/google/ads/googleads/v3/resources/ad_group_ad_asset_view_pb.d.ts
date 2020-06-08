@@ -7,6 +7,7 @@ import * as google_ads_googleads_v3_enums_asset_field_type_pb from "../../../../
 import * as google_ads_googleads_v3_enums_asset_performance_label_pb from "../../../../../google/ads/googleads/v3/enums/asset_performance_label_pb";
 import * as google_ads_googleads_v3_enums_policy_approval_status_pb from "../../../../../google/ads/googleads/v3/enums/policy_approval_status_pb";
 import * as google_ads_googleads_v3_enums_policy_review_status_pb from "../../../../../google/ads/googleads/v3/enums/policy_review_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -25,16 +26,16 @@ export class AdGroupAdAssetView extends jspb.Message {
   getAsset(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAsset(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getFieldType(): google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldType;
-  setFieldType(value: google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldType): void;
+  getFieldType(): google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldTypeMap[keyof google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldTypeMap];
+  setFieldType(value: google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldTypeMap[keyof google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldTypeMap]): void;
 
   hasPolicySummary(): boolean;
   clearPolicySummary(): void;
   getPolicySummary(): AdGroupAdAssetPolicySummary | undefined;
   setPolicySummary(value?: AdGroupAdAssetPolicySummary): void;
 
-  getPerformanceLabel(): google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabel;
-  setPerformanceLabel(value: google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabel): void;
+  getPerformanceLabel(): google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabelMap[keyof google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabelMap];
+  setPerformanceLabel(value: google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabelMap[keyof google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabelMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AdGroupAdAssetView.AsObject;
@@ -51,9 +52,9 @@ export namespace AdGroupAdAssetView {
     resourceName: string,
     adGroupAd?: google_protobuf_wrappers_pb.StringValue.AsObject,
     asset?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    fieldType: google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldType,
+    fieldType: google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldTypeMap[keyof google_ads_googleads_v3_enums_asset_field_type_pb.AssetFieldTypeEnum.AssetFieldTypeMap],
     policySummary?: AdGroupAdAssetPolicySummary.AsObject,
-    performanceLabel: google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabel,
+    performanceLabel: google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabelMap[keyof google_ads_googleads_v3_enums_asset_performance_label_pb.AssetPerformanceLabelEnum.AssetPerformanceLabelMap],
   }
 }
 
@@ -63,11 +64,11 @@ export class AdGroupAdAssetPolicySummary extends jspb.Message {
   setPolicyTopicEntriesList(value: Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry>): void;
   addPolicyTopicEntries(value?: google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry, index?: number): google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry;
 
-  getReviewStatus(): google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus;
-  setReviewStatus(value: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus): void;
+  getReviewStatus(): google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap];
+  setReviewStatus(value: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap]): void;
 
-  getApprovalStatus(): google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus;
-  setApprovalStatus(value: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus): void;
+  getApprovalStatus(): google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap];
+  setApprovalStatus(value: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AdGroupAdAssetPolicySummary.AsObject;
@@ -82,8 +83,8 @@ export class AdGroupAdAssetPolicySummary extends jspb.Message {
 export namespace AdGroupAdAssetPolicySummary {
   export type AsObject = {
     policyTopicEntriesList: Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry.AsObject>,
-    reviewStatus: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus,
-    approvalStatus: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus,
+    reviewStatus: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap],
+    approvalStatus: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap],
   }
 }
 

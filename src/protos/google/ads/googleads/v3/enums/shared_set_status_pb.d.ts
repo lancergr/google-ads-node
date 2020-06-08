@@ -19,11 +19,13 @@ export namespace SharedSetStatusEnum {
   export type AsObject = {
   }
 
-  export enum SharedSetStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
+  export interface SharedSetStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
   }
+
+  export const SharedSetStatus: SharedSetStatusMap;
 }
 

@@ -19,12 +19,14 @@ export namespace FrequencyCapTimeUnitEnum {
   export type AsObject = {
   }
 
-  export enum FrequencyCapTimeUnit {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DAY = 2,
-    WEEK = 3,
-    MONTH = 4,
+  export interface FrequencyCapTimeUnitMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DAY: 2;
+    WEEK: 3;
+    MONTH: 4;
   }
+
+  export const FrequencyCapTimeUnit: FrequencyCapTimeUnitMap;
 }
 

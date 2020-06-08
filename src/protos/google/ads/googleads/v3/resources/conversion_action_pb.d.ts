@@ -9,6 +9,7 @@ import * as google_ads_googleads_v3_enums_conversion_action_counting_type_pb fro
 import * as google_ads_googleads_v3_enums_conversion_action_status_pb from "../../../../../google/ads/googleads/v3/enums/conversion_action_status_pb";
 import * as google_ads_googleads_v3_enums_conversion_action_type_pb from "../../../../../google/ads/googleads/v3/enums/conversion_action_type_pb";
 import * as google_ads_googleads_v3_enums_data_driven_model_status_pb from "../../../../../google/ads/googleads/v3/enums/data_driven_model_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -27,14 +28,14 @@ export class ConversionAction extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatus;
-  setStatus(value: google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatusMap[keyof google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatusMap[keyof google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatusMap]): void;
 
-  getType(): google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionType;
-  setType(value: google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionType): void;
+  getType(): google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionTypeMap[keyof google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionTypeMap[keyof google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionTypeMap]): void;
 
-  getCategory(): google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategory;
-  setCategory(value: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategory): void;
+  getCategory(): google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap[keyof google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap];
+  setCategory(value: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap[keyof google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap]): void;
 
   hasOwnerCustomer(): boolean;
   clearOwnerCustomer(): void;
@@ -61,8 +62,8 @@ export class ConversionAction extends jspb.Message {
   getValueSettings(): ConversionAction.ValueSettings | undefined;
   setValueSettings(value?: ConversionAction.ValueSettings): void;
 
-  getCountingType(): google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingType;
-  setCountingType(value: google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingType): void;
+  getCountingType(): google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingTypeMap[keyof google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingTypeMap];
+  setCountingType(value: google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingTypeMap[keyof google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingTypeMap]): void;
 
   hasAttributionModelSettings(): boolean;
   clearAttributionModelSettings(): void;
@@ -99,15 +100,15 @@ export namespace ConversionAction {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatus,
-    type: google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionType,
-    category: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategory,
+    status: google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatusMap[keyof google_ads_googleads_v3_enums_conversion_action_status_pb.ConversionActionStatusEnum.ConversionActionStatusMap],
+    type: google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionTypeMap[keyof google_ads_googleads_v3_enums_conversion_action_type_pb.ConversionActionTypeEnum.ConversionActionTypeMap],
+    category: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap[keyof google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap],
     ownerCustomer?: google_protobuf_wrappers_pb.StringValue.AsObject,
     includeInConversionsMetric?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     clickThroughLookbackWindowDays?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     viewThroughLookbackWindowDays?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     valueSettings?: ConversionAction.ValueSettings.AsObject,
-    countingType: google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingType,
+    countingType: google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingTypeMap[keyof google_ads_googleads_v3_enums_conversion_action_counting_type_pb.ConversionActionCountingTypeEnum.ConversionActionCountingTypeMap],
     attributionModelSettings?: ConversionAction.AttributionModelSettings.AsObject,
     tagSnippetsList: Array<google_ads_googleads_v3_common_tag_snippet_pb.TagSnippet.AsObject>,
     phoneCallDurationSeconds?: google_protobuf_wrappers_pb.Int64Value.AsObject,
@@ -115,11 +116,11 @@ export namespace ConversionAction {
   }
 
   export class AttributionModelSettings extends jspb.Message {
-    getAttributionModel(): google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModel;
-    setAttributionModel(value: google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModel): void;
+    getAttributionModel(): google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModelMap[keyof google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModelMap];
+    setAttributionModel(value: google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModelMap[keyof google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModelMap]): void;
 
-    getDataDrivenModelStatus(): google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatus;
-    setDataDrivenModelStatus(value: google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatus): void;
+    getDataDrivenModelStatus(): google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatusMap[keyof google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatusMap];
+    setDataDrivenModelStatus(value: google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatusMap[keyof google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatusMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): AttributionModelSettings.AsObject;
@@ -133,8 +134,8 @@ export namespace ConversionAction {
 
   export namespace AttributionModelSettings {
     export type AsObject = {
-      attributionModel: google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModel,
-      dataDrivenModelStatus: google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatus,
+      attributionModel: google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModelMap[keyof google_ads_googleads_v3_enums_attribution_model_pb.AttributionModelEnum.AttributionModelMap],
+      dataDrivenModelStatus: google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatusMap[keyof google_ads_googleads_v3_enums_data_driven_model_status_pb.DataDrivenModelStatusEnum.DataDrivenModelStatusMap],
     }
   }
 

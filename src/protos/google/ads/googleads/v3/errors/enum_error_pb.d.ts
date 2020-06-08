@@ -19,10 +19,12 @@ export namespace EnumErrorEnum {
   export type AsObject = {
   }
 
-  export enum EnumError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENUM_VALUE_NOT_PERMITTED = 3,
+  export interface EnumErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENUM_VALUE_NOT_PERMITTED: 3;
   }
+
+  export const EnumError: EnumErrorMap;
 }
 

@@ -19,14 +19,16 @@ export namespace PlacementTypeEnum {
   export type AsObject = {
   }
 
-  export enum PlacementType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    WEBSITE = 2,
-    MOBILE_APP_CATEGORY = 3,
-    MOBILE_APPLICATION = 4,
-    YOUTUBE_VIDEO = 5,
-    YOUTUBE_CHANNEL = 6,
+  export interface PlacementTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    WEBSITE: 2;
+    MOBILE_APP_CATEGORY: 3;
+    MOBILE_APPLICATION: 4;
+    YOUTUBE_VIDEO: 5;
+    YOUTUBE_CHANNEL: 6;
   }
+
+  export const PlacementType: PlacementTypeMap;
 }
 

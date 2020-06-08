@@ -19,11 +19,13 @@ export namespace UserListRuleTypeEnum {
   export type AsObject = {
   }
 
-  export enum UserListRuleType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AND_OF_ORS = 2,
-    OR_OF_ANDS = 3,
+  export interface UserListRuleTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AND_OF_ORS: 2;
+    OR_OF_ANDS: 3;
   }
+
+  export const UserListRuleType: UserListRuleTypeMap;
 }
 

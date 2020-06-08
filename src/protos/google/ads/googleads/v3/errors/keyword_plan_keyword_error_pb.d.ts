@@ -19,15 +19,17 @@ export namespace KeywordPlanKeywordErrorEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanKeywordError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_KEYWORD_MATCH_TYPE = 2,
-    DUPLICATE_KEYWORD = 3,
-    KEYWORD_TEXT_TOO_LONG = 4,
-    KEYWORD_HAS_INVALID_CHARS = 5,
-    KEYWORD_HAS_TOO_MANY_WORDS = 6,
-    INVALID_KEYWORD_TEXT = 7,
+  export interface KeywordPlanKeywordErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_KEYWORD_MATCH_TYPE: 2;
+    DUPLICATE_KEYWORD: 3;
+    KEYWORD_TEXT_TOO_LONG: 4;
+    KEYWORD_HAS_INVALID_CHARS: 5;
+    KEYWORD_HAS_TOO_MANY_WORDS: 6;
+    INVALID_KEYWORD_TEXT: 7;
   }
+
+  export const KeywordPlanKeywordError: KeywordPlanKeywordErrorMap;
 }
 

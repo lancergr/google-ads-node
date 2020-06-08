@@ -35,8 +35,8 @@ export class KeywordInfo extends jspb.Message {
   getText(): google_protobuf_wrappers_pb.StringValue | undefined;
   setText(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getMatchType(): google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchType;
-  setMatchType(value: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchType): void;
+  getMatchType(): google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap[keyof google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap];
+  setMatchType(value: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap[keyof google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): KeywordInfo.AsObject;
@@ -51,7 +51,7 @@ export class KeywordInfo extends jspb.Message {
 export namespace KeywordInfo {
   export type AsObject = {
     text?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    matchType: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchType,
+    matchType: google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap[keyof google_ads_googleads_v3_enums_keyword_match_type_pb.KeywordMatchTypeEnum.KeywordMatchTypeMap],
   }
 }
 
@@ -150,8 +150,8 @@ export namespace LocationInfo {
 }
 
 export class DeviceInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device;
-  setType(value: google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device): void;
+  getType(): google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap];
+  setType(value: google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): DeviceInfo.AsObject;
@@ -165,13 +165,13 @@ export class DeviceInfo extends jspb.Message {
 
 export namespace DeviceInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device,
+    type: google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap],
   }
 }
 
 export class PreferredContentInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentType;
-  setType(value: google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentType): void;
+  getType(): google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentTypeMap[keyof google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentTypeMap];
+  setType(value: google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentTypeMap[keyof google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PreferredContentInfo.AsObject;
@@ -185,13 +185,13 @@ export class PreferredContentInfo extends jspb.Message {
 
 export namespace PreferredContentInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentType,
+    type: google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentTypeMap[keyof google_ads_googleads_v3_enums_preferred_content_type_pb.PreferredContentTypeEnum.PreferredContentTypeMap],
   }
 }
 
 export class ListingGroupInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupType;
-  setType(value: google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupType): void;
+  getType(): google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupTypeMap[keyof google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupTypeMap];
+  setType(value: google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupTypeMap[keyof google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupTypeMap]): void;
 
   hasCaseValue(): boolean;
   clearCaseValue(): void;
@@ -215,7 +215,7 @@ export class ListingGroupInfo extends jspb.Message {
 
 export namespace ListingGroupInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupType,
+    type: google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupTypeMap[keyof google_ads_googleads_v3_enums_listing_group_type_pb.ListingGroupTypeEnum.ListingGroupTypeMap],
     caseValue?: ListingDimensionInfo.AsObject,
     parentAdGroupCriterion?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
@@ -483,8 +483,8 @@ export class ProductBiddingCategoryInfo extends jspb.Message {
   getCountryCode(): google_protobuf_wrappers_pb.StringValue | undefined;
   setCountryCode(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getLevel(): google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevel;
-  setLevel(value: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevel): void;
+  getLevel(): google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap[keyof google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap];
+  setLevel(value: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap[keyof google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductBiddingCategoryInfo.AsObject;
@@ -500,7 +500,7 @@ export namespace ProductBiddingCategoryInfo {
   export type AsObject = {
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     countryCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    level: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevel,
+    level: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap[keyof google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap],
   }
 }
 
@@ -527,8 +527,8 @@ export namespace ProductBrandInfo {
 }
 
 export class ProductChannelInfo extends jspb.Message {
-  getChannel(): google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannel;
-  setChannel(value: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannel): void;
+  getChannel(): google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap[keyof google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap];
+  setChannel(value: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap[keyof google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductChannelInfo.AsObject;
@@ -542,13 +542,13 @@ export class ProductChannelInfo extends jspb.Message {
 
 export namespace ProductChannelInfo {
   export type AsObject = {
-    channel: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannel,
+    channel: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap[keyof google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap],
   }
 }
 
 export class ProductChannelExclusivityInfo extends jspb.Message {
-  getChannelExclusivity(): google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivity;
-  setChannelExclusivity(value: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivity): void;
+  getChannelExclusivity(): google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap[keyof google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap];
+  setChannelExclusivity(value: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap[keyof google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductChannelExclusivityInfo.AsObject;
@@ -562,13 +562,13 @@ export class ProductChannelExclusivityInfo extends jspb.Message {
 
 export namespace ProductChannelExclusivityInfo {
   export type AsObject = {
-    channelExclusivity: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivity,
+    channelExclusivity: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap[keyof google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap],
   }
 }
 
 export class ProductConditionInfo extends jspb.Message {
-  getCondition(): google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductCondition;
-  setCondition(value: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductCondition): void;
+  getCondition(): google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap[keyof google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap];
+  setCondition(value: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap[keyof google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductConditionInfo.AsObject;
@@ -582,7 +582,7 @@ export class ProductConditionInfo extends jspb.Message {
 
 export namespace ProductConditionInfo {
   export type AsObject = {
-    condition: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductCondition,
+    condition: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap[keyof google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap],
   }
 }
 
@@ -592,8 +592,8 @@ export class ProductCustomAttributeInfo extends jspb.Message {
   getValue(): google_protobuf_wrappers_pb.StringValue | undefined;
   setValue(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getIndex(): google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndex;
-  setIndex(value: google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndex): void;
+  getIndex(): google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndexMap[keyof google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndexMap];
+  setIndex(value: google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndexMap[keyof google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndexMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductCustomAttributeInfo.AsObject;
@@ -608,7 +608,7 @@ export class ProductCustomAttributeInfo extends jspb.Message {
 export namespace ProductCustomAttributeInfo {
   export type AsObject = {
     value?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    index: google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndex,
+    index: google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndexMap[keyof google_ads_googleads_v3_enums_product_custom_attribute_index_pb.ProductCustomAttributeIndexEnum.ProductCustomAttributeIndexMap],
   }
 }
 
@@ -640,8 +640,8 @@ export class ProductTypeInfo extends jspb.Message {
   getValue(): google_protobuf_wrappers_pb.StringValue | undefined;
   setValue(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getLevel(): google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevel;
-  setLevel(value: google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevel): void;
+  getLevel(): google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevelMap[keyof google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevelMap];
+  setLevel(value: google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevelMap[keyof google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevelMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductTypeInfo.AsObject;
@@ -656,7 +656,7 @@ export class ProductTypeInfo extends jspb.Message {
 export namespace ProductTypeInfo {
   export type AsObject = {
     value?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    level: google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevel,
+    level: google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevelMap[keyof google_ads_googleads_v3_enums_product_type_level_pb.ProductTypeLevelEnum.ProductTypeLevelMap],
   }
 }
 
@@ -677,8 +677,8 @@ export namespace UnknownListingDimensionInfo {
 }
 
 export class HotelDateSelectionTypeInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionType;
-  setType(value: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionType): void;
+  getType(): google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap[keyof google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap[keyof google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): HotelDateSelectionTypeInfo.AsObject;
@@ -692,7 +692,7 @@ export class HotelDateSelectionTypeInfo extends jspb.Message {
 
 export namespace HotelDateSelectionTypeInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionType,
+    type: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap[keyof google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap],
   }
 }
 
@@ -753,8 +753,8 @@ export namespace HotelLengthOfStayInfo {
 }
 
 export class HotelCheckInDayInfo extends jspb.Message {
-  getDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek;
-  setDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek): void;
+  getDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap];
+  setDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): HotelCheckInDayInfo.AsObject;
@@ -768,13 +768,13 @@ export class HotelCheckInDayInfo extends jspb.Message {
 
 export namespace HotelCheckInDayInfo {
   export type AsObject = {
-    dayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek,
+    dayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap],
   }
 }
 
 export class InteractionTypeInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionType;
-  setType(value: google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionType): void;
+  getType(): google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionTypeMap[keyof google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionTypeMap[keyof google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): InteractionTypeInfo.AsObject;
@@ -788,16 +788,16 @@ export class InteractionTypeInfo extends jspb.Message {
 
 export namespace InteractionTypeInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionType,
+    type: google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionTypeMap[keyof google_ads_googleads_v3_enums_interaction_type_pb.InteractionTypeEnum.InteractionTypeMap],
   }
 }
 
 export class AdScheduleInfo extends jspb.Message {
-  getStartMinute(): google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHour;
-  setStartMinute(value: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHour): void;
+  getStartMinute(): google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap[keyof google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap];
+  setStartMinute(value: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap[keyof google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap]): void;
 
-  getEndMinute(): google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHour;
-  setEndMinute(value: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHour): void;
+  getEndMinute(): google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap[keyof google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap];
+  setEndMinute(value: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap[keyof google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap]): void;
 
   hasStartHour(): boolean;
   clearStartHour(): void;
@@ -809,8 +809,8 @@ export class AdScheduleInfo extends jspb.Message {
   getEndHour(): google_protobuf_wrappers_pb.Int32Value | undefined;
   setEndHour(value?: google_protobuf_wrappers_pb.Int32Value): void;
 
-  getDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek;
-  setDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek): void;
+  getDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap];
+  setDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AdScheduleInfo.AsObject;
@@ -824,17 +824,17 @@ export class AdScheduleInfo extends jspb.Message {
 
 export namespace AdScheduleInfo {
   export type AsObject = {
-    startMinute: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHour,
-    endMinute: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHour,
+    startMinute: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap[keyof google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap],
+    endMinute: google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap[keyof google_ads_googleads_v3_enums_minute_of_hour_pb.MinuteOfHourEnum.MinuteOfHourMap],
     startHour?: google_protobuf_wrappers_pb.Int32Value.AsObject,
     endHour?: google_protobuf_wrappers_pb.Int32Value.AsObject,
-    dayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek,
+    dayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap],
   }
 }
 
 export class AgeRangeInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeType;
-  setType(value: google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeType): void;
+  getType(): google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeTypeMap[keyof google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeTypeMap];
+  setType(value: google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeTypeMap[keyof google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AgeRangeInfo.AsObject;
@@ -848,13 +848,13 @@ export class AgeRangeInfo extends jspb.Message {
 
 export namespace AgeRangeInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeType,
+    type: google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeTypeMap[keyof google_ads_googleads_v3_enums_age_range_type_pb.AgeRangeTypeEnum.AgeRangeTypeMap],
   }
 }
 
 export class GenderInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderType;
-  setType(value: google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderType): void;
+  getType(): google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderTypeMap[keyof google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderTypeMap];
+  setType(value: google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderTypeMap[keyof google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GenderInfo.AsObject;
@@ -868,13 +868,13 @@ export class GenderInfo extends jspb.Message {
 
 export namespace GenderInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderType,
+    type: google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderTypeMap[keyof google_ads_googleads_v3_enums_gender_type_pb.GenderTypeEnum.GenderTypeMap],
   }
 }
 
 export class IncomeRangeInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeType;
-  setType(value: google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeType): void;
+  getType(): google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeTypeMap[keyof google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeTypeMap];
+  setType(value: google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeTypeMap[keyof google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): IncomeRangeInfo.AsObject;
@@ -888,13 +888,13 @@ export class IncomeRangeInfo extends jspb.Message {
 
 export namespace IncomeRangeInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeType,
+    type: google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeTypeMap[keyof google_ads_googleads_v3_enums_income_range_type_pb.IncomeRangeTypeEnum.IncomeRangeTypeMap],
   }
 }
 
 export class ParentalStatusInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusType;
-  setType(value: google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusType): void;
+  getType(): google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusTypeMap[keyof google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusTypeMap];
+  setType(value: google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusTypeMap[keyof google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ParentalStatusInfo.AsObject;
@@ -908,7 +908,7 @@ export class ParentalStatusInfo extends jspb.Message {
 
 export namespace ParentalStatusInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusType,
+    type: google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusTypeMap[keyof google_ads_googleads_v3_enums_parental_status_type_pb.ParentalStatusTypeEnum.ParentalStatusTypeMap],
   }
 }
 
@@ -989,8 +989,8 @@ export class ProximityInfo extends jspb.Message {
   getRadius(): google_protobuf_wrappers_pb.DoubleValue | undefined;
   setRadius(value?: google_protobuf_wrappers_pb.DoubleValue): void;
 
-  getRadiusUnits(): google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnits;
-  setRadiusUnits(value: google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnits): void;
+  getRadiusUnits(): google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnitsMap[keyof google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnitsMap];
+  setRadiusUnits(value: google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnitsMap[keyof google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnitsMap]): void;
 
   hasAddress(): boolean;
   clearAddress(): void;
@@ -1011,7 +1011,7 @@ export namespace ProximityInfo {
   export type AsObject = {
     geoPoint?: GeoPointInfo.AsObject,
     radius?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
-    radiusUnits: google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnits,
+    radiusUnits: google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnitsMap[keyof google_ads_googleads_v3_enums_proximity_radius_units_pb.ProximityRadiusUnitsEnum.ProximityRadiusUnitsMap],
     address?: AddressInfo.AsObject,
   }
 }
@@ -1175,8 +1175,8 @@ export namespace IpBlockInfo {
 }
 
 export class ContentLabelInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelType;
-  setType(value: google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelType): void;
+  getType(): google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelTypeMap[keyof google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelTypeMap];
+  setType(value: google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelTypeMap[keyof google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ContentLabelInfo.AsObject;
@@ -1190,7 +1190,7 @@ export class ContentLabelInfo extends jspb.Message {
 
 export namespace ContentLabelInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelType,
+    type: google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelTypeMap[keyof google_ads_googleads_v3_enums_content_label_type_pb.ContentLabelTypeEnum.ContentLabelTypeMap],
   }
 }
 
@@ -1267,11 +1267,11 @@ export namespace WebpageInfo {
 }
 
 export class WebpageConditionInfo extends jspb.Message {
-  getOperand(): google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperand;
-  setOperand(value: google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperand): void;
+  getOperand(): google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperandMap[keyof google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperandMap];
+  setOperand(value: google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperandMap[keyof google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperandMap]): void;
 
-  getOperator(): google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperator;
-  setOperator(value: google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperator): void;
+  getOperator(): google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperatorMap[keyof google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperatorMap];
+  setOperator(value: google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperatorMap[keyof google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperatorMap]): void;
 
   hasArgument(): boolean;
   clearArgument(): void;
@@ -1290,8 +1290,8 @@ export class WebpageConditionInfo extends jspb.Message {
 
 export namespace WebpageConditionInfo {
   export type AsObject = {
-    operand: google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperand,
-    operator: google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperator,
+    operand: google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperandMap[keyof google_ads_googleads_v3_enums_webpage_condition_operand_pb.WebpageConditionOperandEnum.WebpageConditionOperandMap],
+    operator: google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperatorMap[keyof google_ads_googleads_v3_enums_webpage_condition_operator_pb.WebpageConditionOperatorEnum.WebpageConditionOperatorMap],
     argument?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 }
@@ -1319,8 +1319,8 @@ export namespace OperatingSystemVersionInfo {
 }
 
 export class AppPaymentModelInfo extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelType;
-  setType(value: google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelType): void;
+  getType(): google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelTypeMap[keyof google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelTypeMap];
+  setType(value: google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelTypeMap[keyof google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AppPaymentModelInfo.AsObject;
@@ -1334,7 +1334,7 @@ export class AppPaymentModelInfo extends jspb.Message {
 
 export namespace AppPaymentModelInfo {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelType,
+    type: google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelTypeMap[keyof google_ads_googleads_v3_enums_app_payment_model_type_pb.AppPaymentModelTypeEnum.AppPaymentModelTypeMap],
   }
 }
 
@@ -1420,8 +1420,8 @@ export class LocationGroupInfo extends jspb.Message {
   getRadius(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setRadius(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getRadiusUnits(): google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnits;
-  setRadiusUnits(value: google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnits): void;
+  getRadiusUnits(): google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnitsMap[keyof google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnitsMap];
+  setRadiusUnits(value: google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnitsMap[keyof google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnitsMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): LocationGroupInfo.AsObject;
@@ -1438,7 +1438,7 @@ export namespace LocationGroupInfo {
     feed?: google_protobuf_wrappers_pb.StringValue.AsObject,
     geoTargetConstantsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     radius?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    radiusUnits: google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnits,
+    radiusUnits: google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnitsMap[keyof google_ads_googleads_v3_enums_location_group_radius_units_pb.LocationGroupRadiusUnitsEnum.LocationGroupRadiusUnitsMap],
   }
 }
 

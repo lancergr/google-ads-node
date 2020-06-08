@@ -19,12 +19,14 @@ export namespace BudgetTypeEnum {
   export type AsObject = {
   }
 
-  export enum BudgetType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    STANDARD = 2,
-    HOTEL_ADS_COMMISSION = 3,
-    FIXED_CPA = 4,
+  export interface BudgetTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    STANDARD: 2;
+    HOTEL_ADS_COMMISSION: 3;
+    FIXED_CPA: 4;
   }
+
+  export const BudgetType: BudgetTypeMap;
 }
 

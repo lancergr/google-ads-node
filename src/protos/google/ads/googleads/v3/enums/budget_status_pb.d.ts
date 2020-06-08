@@ -19,11 +19,13 @@ export namespace BudgetStatusEnum {
   export type AsObject = {
   }
 
-  export enum BudgetStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
+  export interface BudgetStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
   }
+
+  export const BudgetStatus: BudgetStatusMap;
 }
 

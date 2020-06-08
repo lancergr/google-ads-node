@@ -19,12 +19,14 @@ export namespace FeedAttributeReferenceErrorEnum {
   export type AsObject = {
   }
 
-  export enum FeedAttributeReferenceError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CANNOT_REFERENCE_REMOVED_FEED = 2,
-    INVALID_FEED_NAME = 3,
-    INVALID_FEED_ATTRIBUTE_NAME = 4,
+  export interface FeedAttributeReferenceErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CANNOT_REFERENCE_REMOVED_FEED: 2;
+    INVALID_FEED_NAME: 3;
+    INVALID_FEED_ATTRIBUTE_NAME: 4;
   }
+
+  export const FeedAttributeReferenceError: FeedAttributeReferenceErrorMap;
 }
 

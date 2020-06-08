@@ -19,14 +19,16 @@ export namespace MatchingFunctionOperatorEnum {
   export type AsObject = {
   }
 
-  export enum MatchingFunctionOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    IN = 2,
-    IDENTITY = 3,
-    EQUALS = 4,
-    AND = 5,
-    CONTAINS_ANY = 6,
+  export interface MatchingFunctionOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    IN: 2;
+    IDENTITY: 3;
+    EQUALS: 4;
+    AND: 5;
+    CONTAINS_ANY: 6;
   }
+
+  export const MatchingFunctionOperator: MatchingFunctionOperatorMap;
 }
 

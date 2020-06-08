@@ -19,11 +19,13 @@ export namespace ProximityRadiusUnitsEnum {
   export type AsObject = {
   }
 
-  export enum ProximityRadiusUnits {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MILES = 2,
-    KILOMETERS = 3,
+  export interface ProximityRadiusUnitsMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MILES: 2;
+    KILOMETERS: 3;
   }
+
+  export const ProximityRadiusUnits: ProximityRadiusUnitsMap;
 }
 

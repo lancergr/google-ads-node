@@ -19,12 +19,14 @@ export namespace CriterionCategoryChannelAvailabilityModeEnum {
   export type AsObject = {
   }
 
-  export enum CriterionCategoryChannelAvailabilityMode {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ALL_CHANNELS = 2,
-    CHANNEL_TYPE_AND_ALL_SUBTYPES = 3,
-    CHANNEL_TYPE_AND_SUBSET_SUBTYPES = 4,
+  export interface CriterionCategoryChannelAvailabilityModeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ALL_CHANNELS: 2;
+    CHANNEL_TYPE_AND_ALL_SUBTYPES: 3;
+    CHANNEL_TYPE_AND_SUBSET_SUBTYPES: 4;
   }
+
+  export const CriterionCategoryChannelAvailabilityMode: CriterionCategoryChannelAvailabilityModeMap;
 }
 

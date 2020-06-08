@@ -19,12 +19,14 @@ export namespace ChangeStatusOperationEnum {
   export type AsObject = {
   }
 
-  export enum ChangeStatusOperation {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADDED = 2,
-    CHANGED = 3,
-    REMOVED = 4,
+  export interface ChangeStatusOperationMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADDED: 2;
+    CHANGED: 3;
+    REMOVED: 4;
   }
+
+  export const ChangeStatusOperation: ChangeStatusOperationMap;
 }
 

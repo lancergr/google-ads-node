@@ -19,12 +19,14 @@ export namespace DatabaseErrorEnum {
   export type AsObject = {
   }
 
-  export enum DatabaseError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CONCURRENT_MODIFICATION = 2,
-    DATA_CONSTRAINT_VIOLATION = 3,
-    REQUEST_TOO_LARGE = 4,
+  export interface DatabaseErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CONCURRENT_MODIFICATION: 2;
+    DATA_CONSTRAINT_VIOLATION: 3;
+    REQUEST_TOO_LARGE: 4;
   }
+
+  export const DatabaseError: DatabaseErrorMap;
 }
 

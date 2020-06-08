@@ -19,10 +19,12 @@ export namespace GeoTargetingRestrictionEnum {
   export type AsObject = {
   }
 
-  export enum GeoTargetingRestriction {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LOCATION_OF_PRESENCE = 2,
+  export interface GeoTargetingRestrictionMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LOCATION_OF_PRESENCE: 2;
   }
+
+  export const GeoTargetingRestriction: GeoTargetingRestrictionMap;
 }
 

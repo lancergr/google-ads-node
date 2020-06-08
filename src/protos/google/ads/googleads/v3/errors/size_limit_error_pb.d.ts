@@ -19,11 +19,13 @@ export namespace SizeLimitErrorEnum {
   export type AsObject = {
   }
 
-  export enum SizeLimitError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    REQUEST_SIZE_LIMIT_EXCEEDED = 2,
-    RESPONSE_SIZE_LIMIT_EXCEEDED = 3,
+  export interface SizeLimitErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    REQUEST_SIZE_LIMIT_EXCEEDED: 2;
+    RESPONSE_SIZE_LIMIT_EXCEEDED: 3;
   }
+
+  export const SizeLimitError: SizeLimitErrorMap;
 }
 

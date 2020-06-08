@@ -19,11 +19,13 @@ export namespace CustomInterestTypeEnum {
   export type AsObject = {
   }
 
-  export enum CustomInterestType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CUSTOM_AFFINITY = 2,
-    CUSTOM_INTENT = 3,
+  export interface CustomInterestTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CUSTOM_AFFINITY: 2;
+    CUSTOM_INTENT: 3;
   }
+
+  export const CustomInterestType: CustomInterestTypeMap;
 }
 

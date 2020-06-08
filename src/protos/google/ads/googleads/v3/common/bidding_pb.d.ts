@@ -187,8 +187,8 @@ export namespace TargetCpm {
 }
 
 export class TargetImpressionShare extends jspb.Message {
-  getLocation(): google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocation;
-  setLocation(value: google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocation): void;
+  getLocation(): google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocationMap[keyof google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocationMap];
+  setLocation(value: google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocationMap[keyof google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocationMap]): void;
 
   hasLocationFractionMicros(): boolean;
   clearLocationFractionMicros(): void;
@@ -212,7 +212,7 @@ export class TargetImpressionShare extends jspb.Message {
 
 export namespace TargetImpressionShare {
   export type AsObject = {
-    location: google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocation,
+    location: google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocationMap[keyof google_ads_googleads_v3_enums_target_impression_share_location_pb.TargetImpressionShareLocationEnum.TargetImpressionShareLocationMap],
     locationFractionMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     cpcBidCeilingMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
   }

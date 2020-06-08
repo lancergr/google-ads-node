@@ -19,10 +19,12 @@ export namespace SpendingLimitTypeEnum {
   export type AsObject = {
   }
 
-  export enum SpendingLimitType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INFINITE = 2,
+  export interface SpendingLimitTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INFINITE: 2;
   }
+
+  export const SpendingLimitType: SpendingLimitTypeMap;
 }
 

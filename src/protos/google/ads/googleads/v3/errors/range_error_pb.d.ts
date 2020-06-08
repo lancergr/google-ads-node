@@ -19,11 +19,13 @@ export namespace RangeErrorEnum {
   export type AsObject = {
   }
 
-  export enum RangeError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    TOO_LOW = 2,
-    TOO_HIGH = 3,
+  export interface RangeErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    TOO_LOW: 2;
+    TOO_HIGH: 3;
   }
+
+  export const RangeError: RangeErrorMap;
 }
 

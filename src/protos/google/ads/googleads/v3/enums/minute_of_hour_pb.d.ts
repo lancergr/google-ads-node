@@ -19,13 +19,15 @@ export namespace MinuteOfHourEnum {
   export type AsObject = {
   }
 
-  export enum MinuteOfHour {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ZERO = 2,
-    FIFTEEN = 3,
-    THIRTY = 4,
-    FORTY_FIVE = 5,
+  export interface MinuteOfHourMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ZERO: 2;
+    FIFTEEN: 3;
+    THIRTY: 4;
+    FORTY_FIVE: 5;
   }
+
+  export const MinuteOfHour: MinuteOfHourMap;
 }
 

@@ -19,11 +19,13 @@ export namespace CollectionSizeErrorEnum {
   export type AsObject = {
   }
 
-  export enum CollectionSizeError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    TOO_FEW = 2,
-    TOO_MANY = 3,
+  export interface CollectionSizeErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    TOO_FEW: 2;
+    TOO_MANY: 3;
   }
+
+  export const CollectionSizeError: CollectionSizeErrorMap;
 }
 

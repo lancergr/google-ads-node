@@ -19,11 +19,13 @@ export namespace SharedSetTypeEnum {
   export type AsObject = {
   }
 
-  export enum SharedSetType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NEGATIVE_KEYWORDS = 2,
-    NEGATIVE_PLACEMENTS = 3,
+  export interface SharedSetTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NEGATIVE_KEYWORDS: 2;
+    NEGATIVE_PLACEMENTS: 3;
   }
+
+  export const SharedSetType: SharedSetTypeMap;
 }
 

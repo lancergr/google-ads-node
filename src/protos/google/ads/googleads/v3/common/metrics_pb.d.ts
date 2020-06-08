@@ -303,19 +303,19 @@ export class Metrics extends jspb.Message {
   getHotelPriceDifferencePercentage(): google_protobuf_wrappers_pb.DoubleValue | undefined;
   setHotelPriceDifferencePercentage(value?: google_protobuf_wrappers_pb.DoubleValue): void;
 
-  getHistoricalCreativeQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket;
-  setHistoricalCreativeQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket): void;
+  getHistoricalCreativeQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap];
+  setHistoricalCreativeQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap]): void;
 
-  getHistoricalLandingPageQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket;
-  setHistoricalLandingPageQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket): void;
+  getHistoricalLandingPageQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap];
+  setHistoricalLandingPageQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap]): void;
 
   hasHistoricalQualityScore(): boolean;
   clearHistoricalQualityScore(): void;
   getHistoricalQualityScore(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setHistoricalQualityScore(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getHistoricalSearchPredictedCtr(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket;
-  setHistoricalSearchPredictedCtr(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket): void;
+  getHistoricalSearchPredictedCtr(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap];
+  setHistoricalSearchPredictedCtr(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap]): void;
 
   hasGmailForwards(): boolean;
   clearGmailForwards(): void;
@@ -353,9 +353,9 @@ export class Metrics extends jspb.Message {
   setInteractions(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
   clearInteractionEventTypesList(): void;
-  getInteractionEventTypesList(): Array<google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventType>;
-  setInteractionEventTypesList(value: Array<google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventType>): void;
-  addInteractionEventTypes(value: google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventType, index?: number): google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventType;
+  getInteractionEventTypesList(): Array<google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap[keyof google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap]>;
+  setInteractionEventTypesList(value: Array<google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap[keyof google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap]>): void;
+  addInteractionEventTypes(value: google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap[keyof google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap], index?: number): google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap[keyof google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap];
 
   hasInvalidClickRate(): boolean;
   clearInvalidClickRate(): void;
@@ -628,10 +628,10 @@ export namespace Metrics {
     engagements?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     hotelAverageLeadValueMicros?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     hotelPriceDifferencePercentage?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
-    historicalCreativeQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket,
-    historicalLandingPageQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket,
+    historicalCreativeQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap],
+    historicalLandingPageQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap],
     historicalQualityScore?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    historicalSearchPredictedCtr: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket,
+    historicalSearchPredictedCtr: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap],
     gmailForwards?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     gmailSaves?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     gmailSecondaryClicks?: google_protobuf_wrappers_pb.Int64Value.AsObject,
@@ -639,7 +639,7 @@ export namespace Metrics {
     impressions?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     interactionRate?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     interactions?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    interactionEventTypesList: Array<google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventType>,
+    interactionEventTypesList: Array<google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap[keyof google_ads_googleads_v3_enums_interaction_event_type_pb.InteractionEventTypeEnum.InteractionEventTypeMap]>,
     invalidClickRate?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     invalidClicks?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     messageChats?: google_protobuf_wrappers_pb.Int64Value.AsObject,

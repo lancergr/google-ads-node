@@ -19,12 +19,14 @@ export namespace MutateJobStatusEnum {
   export type AsObject = {
   }
 
-  export enum MutateJobStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PENDING = 2,
-    RUNNING = 3,
-    DONE = 4,
+  export interface MutateJobStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PENDING: 2;
+    RUNNING: 3;
+    DONE: 4;
   }
+
+  export const MutateJobStatus: MutateJobStatusMap;
 }
 

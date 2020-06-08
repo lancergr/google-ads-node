@@ -19,13 +19,15 @@ export namespace BillingSetupStatusEnum {
   export type AsObject = {
   }
 
-  export enum BillingSetupStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PENDING = 2,
-    APPROVED_HELD = 3,
-    APPROVED = 4,
-    CANCELLED = 5,
+  export interface BillingSetupStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PENDING: 2;
+    APPROVED_HELD: 3;
+    APPROVED: 4;
+    CANCELLED: 5;
   }
+
+  export const BillingSetupStatus: BillingSetupStatusMap;
 }
 

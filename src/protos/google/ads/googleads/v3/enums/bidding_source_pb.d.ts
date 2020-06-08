@@ -19,12 +19,14 @@ export namespace BiddingSourceEnum {
   export type AsObject = {
   }
 
-  export enum BiddingSource {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CAMPAIGN_BIDDING_STRATEGY = 5,
-    AD_GROUP = 6,
-    AD_GROUP_CRITERION = 7,
+  export interface BiddingSourceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CAMPAIGN_BIDDING_STRATEGY: 5;
+    AD_GROUP: 6;
+    AD_GROUP_CRITERION: 7;
   }
+
+  export const BiddingSource: BiddingSourceMap;
 }
 

@@ -19,13 +19,15 @@ export namespace HotelRateTypeEnum {
   export type AsObject = {
   }
 
-  export enum HotelRateType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    UNAVAILABLE = 2,
-    PUBLIC_RATE = 3,
-    QUALIFIED_RATE = 4,
-    PRIVATE_RATE = 5,
+  export interface HotelRateTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    UNAVAILABLE: 2;
+    PUBLIC_RATE: 3;
+    QUALIFIED_RATE: 4;
+    PRIVATE_RATE: 5;
   }
+
+  export const HotelRateType: HotelRateTypeMap;
 }
 

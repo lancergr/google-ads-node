@@ -19,13 +19,15 @@ export namespace AccountBudgetProposalTypeEnum {
   export type AsObject = {
   }
 
-  export enum AccountBudgetProposalType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CREATE = 2,
-    UPDATE = 3,
-    END = 4,
-    REMOVE = 5,
+  export interface AccountBudgetProposalTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CREATE: 2;
+    UPDATE: 3;
+    END: 4;
+    REMOVE: 5;
   }
+
+  export const AccountBudgetProposalType: AccountBudgetProposalTypeMap;
 }
 

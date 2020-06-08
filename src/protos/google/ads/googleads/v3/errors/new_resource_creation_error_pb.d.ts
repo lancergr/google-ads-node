@@ -19,12 +19,14 @@ export namespace NewResourceCreationErrorEnum {
   export type AsObject = {
   }
 
-  export enum NewResourceCreationError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CANNOT_SET_ID_FOR_CREATE = 2,
-    DUPLICATE_TEMP_IDS = 3,
-    TEMP_ID_RESOURCE_HAD_ERRORS = 4,
+  export interface NewResourceCreationErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CANNOT_SET_ID_FOR_CREATE: 2;
+    DUPLICATE_TEMP_IDS: 3;
+    TEMP_ID_RESOURCE_HAD_ERRORS: 4;
   }
+
+  export const NewResourceCreationError: NewResourceCreationErrorMap;
 }
 

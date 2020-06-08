@@ -19,14 +19,16 @@ export namespace SearchTermMatchTypeEnum {
   export type AsObject = {
   }
 
-  export enum SearchTermMatchType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BROAD = 2,
-    EXACT = 3,
-    PHRASE = 4,
-    NEAR_EXACT = 5,
-    NEAR_PHRASE = 6,
+  export interface SearchTermMatchTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BROAD: 2;
+    EXACT: 3;
+    PHRASE: 4;
+    NEAR_EXACT: 5;
+    NEAR_PHRASE: 6;
   }
+
+  export const SearchTermMatchType: SearchTermMatchTypeMap;
 }
 

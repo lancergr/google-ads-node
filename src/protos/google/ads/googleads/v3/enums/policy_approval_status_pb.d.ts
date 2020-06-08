@@ -19,13 +19,15 @@ export namespace PolicyApprovalStatusEnum {
   export type AsObject = {
   }
 
-  export enum PolicyApprovalStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DISAPPROVED = 2,
-    APPROVED_LIMITED = 3,
-    APPROVED = 4,
-    AREA_OF_INTEREST_ONLY = 5,
+  export interface PolicyApprovalStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DISAPPROVED: 2;
+    APPROVED_LIMITED: 3;
+    APPROVED: 4;
+    AREA_OF_INTEREST_ONLY: 5;
   }
+
+  export const PolicyApprovalStatus: PolicyApprovalStatusMap;
 }
 

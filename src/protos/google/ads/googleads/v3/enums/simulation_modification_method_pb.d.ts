@@ -19,11 +19,13 @@ export namespace SimulationModificationMethodEnum {
   export type AsObject = {
   }
 
-  export enum SimulationModificationMethod {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    UNIFORM = 2,
-    DEFAULT = 3,
+  export interface SimulationModificationMethodMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    UNIFORM: 2;
+    DEFAULT: 3;
   }
+
+  export const SimulationModificationMethod: SimulationModificationMethodMap;
 }
 

@@ -27,19 +27,19 @@ import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wr
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 
 export class Segments extends jspb.Message {
-  getAdNetworkType(): google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkType;
-  setAdNetworkType(value: google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkType): void;
+  getAdNetworkType(): google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkTypeMap[keyof google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkTypeMap];
+  setAdNetworkType(value: google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkTypeMap[keyof google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkTypeMap]): void;
 
-  getClickType(): google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickType;
-  setClickType(value: google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickType): void;
+  getClickType(): google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickTypeMap[keyof google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickTypeMap];
+  setClickType(value: google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickTypeMap[keyof google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickTypeMap]): void;
 
   hasConversionAction(): boolean;
   clearConversionAction(): void;
   getConversionAction(): google_protobuf_wrappers_pb.StringValue | undefined;
   setConversionAction(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getConversionActionCategory(): google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategory;
-  setConversionActionCategory(value: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategory): void;
+  getConversionActionCategory(): google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap[keyof google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap];
+  setConversionActionCategory(value: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap[keyof google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap]): void;
 
   hasConversionActionName(): boolean;
   clearConversionActionName(): void;
@@ -51,28 +51,28 @@ export class Segments extends jspb.Message {
   getConversionAdjustment(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setConversionAdjustment(value?: google_protobuf_wrappers_pb.BoolValue): void;
 
-  getConversionAttributionEventType(): google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventType;
-  setConversionAttributionEventType(value: google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventType): void;
+  getConversionAttributionEventType(): google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventTypeMap[keyof google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventTypeMap];
+  setConversionAttributionEventType(value: google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventTypeMap[keyof google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventTypeMap]): void;
 
-  getConversionLagBucket(): google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucket;
-  setConversionLagBucket(value: google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucket): void;
+  getConversionLagBucket(): google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucketMap[keyof google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucketMap];
+  setConversionLagBucket(value: google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucketMap[keyof google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucketMap]): void;
 
-  getConversionOrAdjustmentLagBucket(): google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucket;
-  setConversionOrAdjustmentLagBucket(value: google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucket): void;
+  getConversionOrAdjustmentLagBucket(): google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucketMap[keyof google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucketMap];
+  setConversionOrAdjustmentLagBucket(value: google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucketMap[keyof google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucketMap]): void;
 
   hasDate(): boolean;
   clearDate(): void;
   getDate(): google_protobuf_wrappers_pb.StringValue | undefined;
   setDate(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek;
-  setDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek): void;
+  getDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap];
+  setDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap]): void;
 
-  getDevice(): google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device;
-  setDevice(value: google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device): void;
+  getDevice(): google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap];
+  setDevice(value: google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap]): void;
 
-  getExternalConversionSource(): google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSource;
-  setExternalConversionSource(value: google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSource): void;
+  getExternalConversionSource(): google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSourceMap[keyof google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSourceMap];
+  setExternalConversionSource(value: google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSourceMap[keyof google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSourceMap]): void;
 
   hasGeoTargetAirport(): boolean;
   clearGeoTargetAirport(): void;
@@ -149,8 +149,8 @@ export class Segments extends jspb.Message {
   getHotelCheckInDate(): google_protobuf_wrappers_pb.StringValue | undefined;
   setHotelCheckInDate(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getHotelCheckInDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek;
-  setHotelCheckInDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek): void;
+  getHotelCheckInDayOfWeek(): google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap];
+  setHotelCheckInDayOfWeek(value: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap]): void;
 
   hasHotelCity(): boolean;
   clearHotelCity(): void;
@@ -167,8 +167,8 @@ export class Segments extends jspb.Message {
   getHotelCountry(): google_protobuf_wrappers_pb.StringValue | undefined;
   setHotelCountry(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getHotelDateSelectionType(): google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionType;
-  setHotelDateSelectionType(value: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionType): void;
+  getHotelDateSelectionType(): google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap[keyof google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap];
+  setHotelDateSelectionType(value: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap[keyof google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap]): void;
 
   hasHotelLengthOfStay(): boolean;
   clearHotelLengthOfStay(): void;
@@ -180,11 +180,11 @@ export class Segments extends jspb.Message {
   getHotelRateRuleId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setHotelRateRuleId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getHotelRateType(): google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateType;
-  setHotelRateType(value: google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateType): void;
+  getHotelRateType(): google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateTypeMap[keyof google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateTypeMap];
+  setHotelRateType(value: google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateTypeMap[keyof google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateTypeMap]): void;
 
-  getHotelPriceBucket(): google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucket;
-  setHotelPriceBucket(value: google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucket): void;
+  getHotelPriceBucket(): google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucketMap[keyof google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucketMap];
+  setHotelPriceBucket(value: google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucketMap[keyof google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucketMap]): void;
 
   hasHotelState(): boolean;
   clearHotelState(): void;
@@ -211,16 +211,16 @@ export class Segments extends jspb.Message {
   getMonth(): google_protobuf_wrappers_pb.StringValue | undefined;
   setMonth(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getMonthOfYear(): google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYear;
-  setMonthOfYear(value: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYear): void;
+  getMonthOfYear(): google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap[keyof google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap];
+  setMonthOfYear(value: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap[keyof google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap]): void;
 
   hasPartnerHotelId(): boolean;
   clearPartnerHotelId(): void;
   getPartnerHotelId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setPartnerHotelId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getPlaceholderType(): google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType;
-  setPlaceholderType(value: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType): void;
+  getPlaceholderType(): google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap];
+  setPlaceholderType(value: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap]): void;
 
   hasProductAggregatorId(): boolean;
   clearProductAggregatorId(): void;
@@ -257,14 +257,14 @@ export class Segments extends jspb.Message {
   getProductBrand(): google_protobuf_wrappers_pb.StringValue | undefined;
   setProductBrand(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getProductChannel(): google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannel;
-  setProductChannel(value: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannel): void;
+  getProductChannel(): google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap[keyof google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap];
+  setProductChannel(value: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap[keyof google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap]): void;
 
-  getProductChannelExclusivity(): google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivity;
-  setProductChannelExclusivity(value: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivity): void;
+  getProductChannelExclusivity(): google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap[keyof google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap];
+  setProductChannelExclusivity(value: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap[keyof google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap]): void;
 
-  getProductCondition(): google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductCondition;
-  setProductCondition(value: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductCondition): void;
+  getProductCondition(): google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap[keyof google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap];
+  setProductCondition(value: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap[keyof google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap]): void;
 
   hasProductCountry(): boolean;
   clearProductCountry(): void;
@@ -351,14 +351,14 @@ export class Segments extends jspb.Message {
   getQuarter(): google_protobuf_wrappers_pb.StringValue | undefined;
   setQuarter(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getSearchEngineResultsPageType(): google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageType;
-  setSearchEngineResultsPageType(value: google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageType): void;
+  getSearchEngineResultsPageType(): google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageTypeMap[keyof google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageTypeMap];
+  setSearchEngineResultsPageType(value: google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageTypeMap[keyof google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageTypeMap]): void;
 
-  getSearchTermMatchType(): google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchType;
-  setSearchTermMatchType(value: google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchType): void;
+  getSearchTermMatchType(): google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchTypeMap[keyof google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchTypeMap];
+  setSearchTermMatchType(value: google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchTypeMap[keyof google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchTypeMap]): void;
 
-  getSlot(): google_ads_googleads_v3_enums_slot_pb.SlotEnum.Slot;
-  setSlot(value: google_ads_googleads_v3_enums_slot_pb.SlotEnum.Slot): void;
+  getSlot(): google_ads_googleads_v3_enums_slot_pb.SlotEnum.SlotMap[keyof google_ads_googleads_v3_enums_slot_pb.SlotEnum.SlotMap];
+  setSlot(value: google_ads_googleads_v3_enums_slot_pb.SlotEnum.SlotMap[keyof google_ads_googleads_v3_enums_slot_pb.SlotEnum.SlotMap]): void;
 
   hasWebpage(): boolean;
   clearWebpage(): void;
@@ -387,19 +387,19 @@ export class Segments extends jspb.Message {
 
 export namespace Segments {
   export type AsObject = {
-    adNetworkType: google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkType,
-    clickType: google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickType,
+    adNetworkType: google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkTypeMap[keyof google_ads_googleads_v3_enums_ad_network_type_pb.AdNetworkTypeEnum.AdNetworkTypeMap],
+    clickType: google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickTypeMap[keyof google_ads_googleads_v3_enums_click_type_pb.ClickTypeEnum.ClickTypeMap],
     conversionAction?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    conversionActionCategory: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategory,
+    conversionActionCategory: google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap[keyof google_ads_googleads_v3_enums_conversion_action_category_pb.ConversionActionCategoryEnum.ConversionActionCategoryMap],
     conversionActionName?: google_protobuf_wrappers_pb.StringValue.AsObject,
     conversionAdjustment?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    conversionAttributionEventType: google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventType,
-    conversionLagBucket: google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucket,
-    conversionOrAdjustmentLagBucket: google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucket,
+    conversionAttributionEventType: google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventTypeMap[keyof google_ads_googleads_v3_enums_conversion_attribution_event_type_pb.ConversionAttributionEventTypeEnum.ConversionAttributionEventTypeMap],
+    conversionLagBucket: google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucketMap[keyof google_ads_googleads_v3_enums_conversion_lag_bucket_pb.ConversionLagBucketEnum.ConversionLagBucketMap],
+    conversionOrAdjustmentLagBucket: google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucketMap[keyof google_ads_googleads_v3_enums_conversion_or_adjustment_lag_bucket_pb.ConversionOrAdjustmentLagBucketEnum.ConversionOrAdjustmentLagBucketMap],
     date?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    dayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek,
-    device: google_ads_googleads_v3_enums_device_pb.DeviceEnum.Device,
-    externalConversionSource: google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSource,
+    dayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap],
+    device: google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap[keyof google_ads_googleads_v3_enums_device_pb.DeviceEnum.DeviceMap],
+    externalConversionSource: google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSourceMap[keyof google_ads_googleads_v3_enums_external_conversion_source_pb.ExternalConversionSourceEnum.ExternalConversionSourceMap],
     geoTargetAirport?: google_protobuf_wrappers_pb.StringValue.AsObject,
     geoTargetCanton?: google_protobuf_wrappers_pb.StringValue.AsObject,
     geoTargetCity?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -415,23 +415,23 @@ export namespace Segments {
     hotelBookingWindowDays?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     hotelCenterId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     hotelCheckInDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    hotelCheckInDayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeek,
+    hotelCheckInDayOfWeek: google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap[keyof google_ads_googleads_v3_enums_day_of_week_pb.DayOfWeekEnum.DayOfWeekMap],
     hotelCity?: google_protobuf_wrappers_pb.StringValue.AsObject,
     hotelClass?: google_protobuf_wrappers_pb.Int32Value.AsObject,
     hotelCountry?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    hotelDateSelectionType: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionType,
+    hotelDateSelectionType: google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap[keyof google_ads_googleads_v3_enums_hotel_date_selection_type_pb.HotelDateSelectionTypeEnum.HotelDateSelectionTypeMap],
     hotelLengthOfStay?: google_protobuf_wrappers_pb.Int32Value.AsObject,
     hotelRateRuleId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    hotelRateType: google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateType,
-    hotelPriceBucket: google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucket,
+    hotelRateType: google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateTypeMap[keyof google_ads_googleads_v3_enums_hotel_rate_type_pb.HotelRateTypeEnum.HotelRateTypeMap],
+    hotelPriceBucket: google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucketMap[keyof google_ads_googleads_v3_enums_hotel_price_bucket_pb.HotelPriceBucketEnum.HotelPriceBucketMap],
     hotelState?: google_protobuf_wrappers_pb.StringValue.AsObject,
     hour?: google_protobuf_wrappers_pb.Int32Value.AsObject,
     interactionOnThisExtension?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     keyword?: Keyword.AsObject,
     month?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    monthOfYear: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYear,
+    monthOfYear: google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap[keyof google_ads_googleads_v3_enums_month_of_year_pb.MonthOfYearEnum.MonthOfYearMap],
     partnerHotelId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    placeholderType: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType,
+    placeholderType: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap],
     productAggregatorId?: google_protobuf_wrappers_pb.UInt64Value.AsObject,
     productBiddingCategoryLevel1?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productBiddingCategoryLevel2?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -439,9 +439,9 @@ export namespace Segments {
     productBiddingCategoryLevel4?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productBiddingCategoryLevel5?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productBrand?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    productChannel: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannel,
-    productChannelExclusivity: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivity,
-    productCondition: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductCondition,
+    productChannel: google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap[keyof google_ads_googleads_v3_enums_product_channel_pb.ProductChannelEnum.ProductChannelMap],
+    productChannelExclusivity: google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap[keyof google_ads_googleads_v3_enums_product_channel_exclusivity_pb.ProductChannelExclusivityEnum.ProductChannelExclusivityMap],
+    productCondition: google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap[keyof google_ads_googleads_v3_enums_product_condition_pb.ProductConditionEnum.ProductConditionMap],
     productCountry?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productCustomAttribute0?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productCustomAttribute1?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -459,9 +459,9 @@ export namespace Segments {
     productTypeL4?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productTypeL5?: google_protobuf_wrappers_pb.StringValue.AsObject,
     quarter?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    searchEngineResultsPageType: google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageType,
-    searchTermMatchType: google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchType,
-    slot: google_ads_googleads_v3_enums_slot_pb.SlotEnum.Slot,
+    searchEngineResultsPageType: google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageTypeMap[keyof google_ads_googleads_v3_enums_search_engine_results_page_type_pb.SearchEngineResultsPageTypeEnum.SearchEngineResultsPageTypeMap],
+    searchTermMatchType: google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchTypeMap[keyof google_ads_googleads_v3_enums_search_term_match_type_pb.SearchTermMatchTypeEnum.SearchTermMatchTypeMap],
+    slot: google_ads_googleads_v3_enums_slot_pb.SlotEnum.SlotMap[keyof google_ads_googleads_v3_enums_slot_pb.SlotEnum.SlotMap],
     webpage?: google_protobuf_wrappers_pb.StringValue.AsObject,
     week?: google_protobuf_wrappers_pb.StringValue.AsObject,
     year?: google_protobuf_wrappers_pb.Int32Value.AsObject,

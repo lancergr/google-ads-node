@@ -19,15 +19,17 @@ export namespace LocationExtensionTargetingCriterionFieldEnum {
   export type AsObject = {
   }
 
-  export enum LocationExtensionTargetingCriterionField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADDRESS_LINE_1 = 2,
-    ADDRESS_LINE_2 = 3,
-    CITY = 4,
-    PROVINCE = 5,
-    POSTAL_CODE = 6,
-    COUNTRY_CODE = 7,
+  export interface LocationExtensionTargetingCriterionFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADDRESS_LINE_1: 2;
+    ADDRESS_LINE_2: 3;
+    CITY: 4;
+    PROVINCE: 5;
+    POSTAL_CODE: 6;
+    COUNTRY_CODE: 7;
   }
+
+  export const LocationExtensionTargetingCriterionField: LocationExtensionTargetingCriterionFieldMap;
 }
 

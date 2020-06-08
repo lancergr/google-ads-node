@@ -19,14 +19,16 @@ export namespace CallPlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum CallPlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PHONE_NUMBER = 2,
-    COUNTRY_CODE = 3,
-    TRACKED = 4,
-    CONVERSION_TYPE_ID = 5,
-    CONVERSION_REPORTING_STATE = 6,
+  export interface CallPlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PHONE_NUMBER: 2;
+    COUNTRY_CODE: 3;
+    TRACKED: 4;
+    CONVERSION_TYPE_ID: 5;
+    CONVERSION_REPORTING_STATE: 6;
   }
+
+  export const CallPlaceholderField: CallPlaceholderFieldMap;
 }
 

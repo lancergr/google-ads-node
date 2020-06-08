@@ -14,6 +14,7 @@ import * as google_ads_googleads_v3_enums_placeholder_type_pb from "../../../../
 import * as google_ads_googleads_v3_enums_policy_approval_status_pb from "../../../../../google/ads/googleads/v3/enums/policy_approval_status_pb";
 import * as google_ads_googleads_v3_enums_policy_review_status_pb from "../../../../../google/ads/googleads/v3/enums/policy_review_status_pb";
 import * as google_ads_googleads_v3_errors_feed_item_validation_error_pb from "../../../../../google/ads/googleads/v3/errors/feed_item_validation_error_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -47,16 +48,16 @@ export class FeedItem extends jspb.Message {
   setAttributeValuesList(value: Array<FeedItemAttributeValue>): void;
   addAttributeValues(value?: FeedItemAttributeValue, index?: number): FeedItemAttributeValue;
 
-  getGeoTargetingRestriction(): google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestriction;
-  setGeoTargetingRestriction(value: google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestriction): void;
+  getGeoTargetingRestriction(): google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestrictionMap[keyof google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestrictionMap];
+  setGeoTargetingRestriction(value: google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestrictionMap[keyof google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestrictionMap]): void;
 
   clearUrlCustomParametersList(): void;
   getUrlCustomParametersList(): Array<google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter>;
   setUrlCustomParametersList(value: Array<google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter>): void;
   addUrlCustomParameters(value?: google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter, index?: number): google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter;
 
-  getStatus(): google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatus;
-  setStatus(value: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap[keyof google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap[keyof google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap]): void;
 
   clearPolicyInfosList(): void;
   getPolicyInfosList(): Array<FeedItemPlaceholderPolicyInfo>;
@@ -81,9 +82,9 @@ export namespace FeedItem {
     startDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     endDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     attributeValuesList: Array<FeedItemAttributeValue.AsObject>,
-    geoTargetingRestriction: google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestriction,
+    geoTargetingRestriction: google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestrictionMap[keyof google_ads_googleads_v3_enums_geo_targeting_restriction_pb.GeoTargetingRestrictionEnum.GeoTargetingRestrictionMap],
     urlCustomParametersList: Array<google_ads_googleads_v3_common_custom_parameter_pb.CustomParameter.AsObject>,
-    status: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatus,
+    status: google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap[keyof google_ads_googleads_v3_enums_feed_item_status_pb.FeedItemStatusEnum.FeedItemStatusMap],
     policyInfosList: Array<FeedItemPlaceholderPolicyInfo.AsObject>,
   }
 }
@@ -165,40 +166,40 @@ export namespace FeedItemAttributeValue {
 }
 
 export class FeedItemPlaceholderPolicyInfo extends jspb.Message {
-  getPlaceholderTypeEnum(): google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType;
-  setPlaceholderTypeEnum(value: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType): void;
+  getPlaceholderTypeEnum(): google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap];
+  setPlaceholderTypeEnum(value: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap]): void;
 
   hasFeedMappingResourceName(): boolean;
   clearFeedMappingResourceName(): void;
   getFeedMappingResourceName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setFeedMappingResourceName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getReviewStatus(): google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus;
-  setReviewStatus(value: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus): void;
+  getReviewStatus(): google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap];
+  setReviewStatus(value: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap]): void;
 
-  getApprovalStatus(): google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus;
-  setApprovalStatus(value: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus): void;
+  getApprovalStatus(): google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap];
+  setApprovalStatus(value: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap]): void;
 
   clearPolicyTopicEntriesList(): void;
   getPolicyTopicEntriesList(): Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry>;
   setPolicyTopicEntriesList(value: Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry>): void;
   addPolicyTopicEntries(value?: google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry, index?: number): google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry;
 
-  getValidationStatus(): google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatus;
-  setValidationStatus(value: google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatus): void;
+  getValidationStatus(): google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatusMap[keyof google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatusMap];
+  setValidationStatus(value: google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatusMap[keyof google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatusMap]): void;
 
   clearValidationErrorsList(): void;
   getValidationErrorsList(): Array<FeedItemValidationError>;
   setValidationErrorsList(value: Array<FeedItemValidationError>): void;
   addValidationErrors(value?: FeedItemValidationError, index?: number): FeedItemValidationError;
 
-  getQualityApprovalStatus(): google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatus;
-  setQualityApprovalStatus(value: google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatus): void;
+  getQualityApprovalStatus(): google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatusMap[keyof google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatusMap];
+  setQualityApprovalStatus(value: google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatusMap[keyof google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatusMap]): void;
 
   clearQualityDisapprovalReasonsList(): void;
-  getQualityDisapprovalReasonsList(): Array<google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReason>;
-  setQualityDisapprovalReasonsList(value: Array<google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReason>): void;
-  addQualityDisapprovalReasons(value: google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReason, index?: number): google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReason;
+  getQualityDisapprovalReasonsList(): Array<google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap[keyof google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap]>;
+  setQualityDisapprovalReasonsList(value: Array<google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap[keyof google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap]>): void;
+  addQualityDisapprovalReasons(value: google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap[keyof google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap], index?: number): google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap[keyof google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap];
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FeedItemPlaceholderPolicyInfo.AsObject;
@@ -212,21 +213,21 @@ export class FeedItemPlaceholderPolicyInfo extends jspb.Message {
 
 export namespace FeedItemPlaceholderPolicyInfo {
   export type AsObject = {
-    placeholderTypeEnum: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType,
+    placeholderTypeEnum: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap],
     feedMappingResourceName?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    reviewStatus: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus,
-    approvalStatus: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus,
+    reviewStatus: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap],
+    approvalStatus: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap],
     policyTopicEntriesList: Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry.AsObject>,
-    validationStatus: google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatus,
+    validationStatus: google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatusMap[keyof google_ads_googleads_v3_enums_feed_item_validation_status_pb.FeedItemValidationStatusEnum.FeedItemValidationStatusMap],
     validationErrorsList: Array<FeedItemValidationError.AsObject>,
-    qualityApprovalStatus: google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatus,
-    qualityDisapprovalReasonsList: Array<google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReason>,
+    qualityApprovalStatus: google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatusMap[keyof google_ads_googleads_v3_enums_feed_item_quality_approval_status_pb.FeedItemQualityApprovalStatusEnum.FeedItemQualityApprovalStatusMap],
+    qualityDisapprovalReasonsList: Array<google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap[keyof google_ads_googleads_v3_enums_feed_item_quality_disapproval_reason_pb.FeedItemQualityDisapprovalReasonEnum.FeedItemQualityDisapprovalReasonMap]>,
   }
 }
 
 export class FeedItemValidationError extends jspb.Message {
-  getValidationError(): google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationError;
-  setValidationError(value: google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationError): void;
+  getValidationError(): google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationErrorMap[keyof google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationErrorMap];
+  setValidationError(value: google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationErrorMap[keyof google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationErrorMap]): void;
 
   hasDescription(): boolean;
   clearDescription(): void;
@@ -255,7 +256,7 @@ export class FeedItemValidationError extends jspb.Message {
 
 export namespace FeedItemValidationError {
   export type AsObject = {
-    validationError: google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationError,
+    validationError: google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationErrorMap[keyof google_ads_googleads_v3_errors_feed_item_validation_error_pb.FeedItemValidationErrorEnum.FeedItemValidationErrorMap],
     description?: google_protobuf_wrappers_pb.StringValue.AsObject,
     feedAttributeIdsList: Array<google_protobuf_wrappers_pb.Int64Value.AsObject>,
     extraInfo?: google_protobuf_wrappers_pb.StringValue.AsObject,

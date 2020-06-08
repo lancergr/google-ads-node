@@ -19,10 +19,12 @@ export namespace PolicyViolationErrorEnum {
   export type AsObject = {
   }
 
-  export enum PolicyViolationError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    POLICY_ERROR = 2,
+  export interface PolicyViolationErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    POLICY_ERROR: 2;
   }
+
+  export const PolicyViolationError: PolicyViolationErrorMap;
 }
 

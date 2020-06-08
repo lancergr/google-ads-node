@@ -19,11 +19,13 @@ export namespace DsaPageFeedCriterionFieldEnum {
   export type AsObject = {
   }
 
-  export enum DsaPageFeedCriterionField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PAGE_URL = 2,
-    LABEL = 3,
+  export interface DsaPageFeedCriterionFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PAGE_URL: 2;
+    LABEL: 3;
   }
+
+  export const DsaPageFeedCriterionField: DsaPageFeedCriterionFieldMap;
 }
 

@@ -19,11 +19,13 @@ export namespace CriterionSystemServingStatusEnum {
   export type AsObject = {
   }
 
-  export enum CriterionSystemServingStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ELIGIBLE = 2,
-    RARELY_SERVED = 3,
+  export interface CriterionSystemServingStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ELIGIBLE: 2;
+    RARELY_SERVED: 3;
   }
+
+  export const CriterionSystemServingStatus: CriterionSystemServingStatusMap;
 }
 

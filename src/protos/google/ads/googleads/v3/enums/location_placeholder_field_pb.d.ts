@@ -19,17 +19,19 @@ export namespace LocationPlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum LocationPlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BUSINESS_NAME = 2,
-    ADDRESS_LINE_1 = 3,
-    ADDRESS_LINE_2 = 4,
-    CITY = 5,
-    PROVINCE = 6,
-    POSTAL_CODE = 7,
-    COUNTRY_CODE = 8,
-    PHONE_NUMBER = 9,
+  export interface LocationPlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BUSINESS_NAME: 2;
+    ADDRESS_LINE_1: 3;
+    ADDRESS_LINE_2: 4;
+    CITY: 5;
+    PROVINCE: 6;
+    POSTAL_CODE: 7;
+    COUNTRY_CODE: 8;
+    PHONE_NUMBER: 9;
   }
+
+  export const LocationPlaceholderField: LocationPlaceholderFieldMap;
 }
 

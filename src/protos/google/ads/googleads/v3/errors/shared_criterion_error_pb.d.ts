@@ -19,10 +19,12 @@ export namespace SharedCriterionErrorEnum {
   export type AsObject = {
   }
 
-  export enum SharedCriterionError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CRITERION_TYPE_NOT_ALLOWED_FOR_SHARED_SET_TYPE = 2,
+  export interface SharedCriterionErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CRITERION_TYPE_NOT_ALLOWED_FOR_SHARED_SET_TYPE: 2;
   }
+
+  export const SharedCriterionError: SharedCriterionErrorMap;
 }
 

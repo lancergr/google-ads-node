@@ -5,6 +5,7 @@ import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_bidding_pb from "../../../../../google/ads/googleads/v3/common/bidding_pb";
 import * as google_ads_googleads_v3_enums_bidding_strategy_status_pb from "../../../../../google/ads/googleads/v3/enums/bidding_strategy_status_pb";
 import * as google_ads_googleads_v3_enums_bidding_strategy_type_pb from "../../../../../google/ads/googleads/v3/enums/bidding_strategy_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -23,11 +24,11 @@ export class BiddingStrategy extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatus;
-  setStatus(value: google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatusMap[keyof google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatusMap[keyof google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatusMap]): void;
 
-  getType(): google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyType;
-  setType(value: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyType): void;
+  getType(): google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap[keyof google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap];
+  setType(value: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap[keyof google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap]): void;
 
   hasCampaignCount(): boolean;
   clearCampaignCount(): void;
@@ -80,8 +81,8 @@ export namespace BiddingStrategy {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatus,
-    type: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyType,
+    status: google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatusMap[keyof google_ads_googleads_v3_enums_bidding_strategy_status_pb.BiddingStrategyStatusEnum.BiddingStrategyStatusMap],
+    type: google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap[keyof google_ads_googleads_v3_enums_bidding_strategy_type_pb.BiddingStrategyTypeEnum.BiddingStrategyTypeMap],
     campaignCount?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     nonRemovedCampaignCount?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     enhancedCpc?: google_ads_googleads_v3_common_bidding_pb.EnhancedCpc.AsObject,

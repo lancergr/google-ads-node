@@ -19,11 +19,13 @@ export namespace MobileDeviceTypeEnum {
   export type AsObject = {
   }
 
-  export enum MobileDeviceType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MOBILE = 2,
-    TABLET = 3,
+  export interface MobileDeviceTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MOBILE: 2;
+    TABLET: 3;
   }
+
+  export const MobileDeviceType: MobileDeviceTypeMap;
 }
 

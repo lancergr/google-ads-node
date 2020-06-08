@@ -10,6 +10,7 @@ import * as google_ads_googleads_v3_enums_bidding_source_pb from "../../../../..
 import * as google_ads_googleads_v3_enums_criterion_system_serving_status_pb from "../../../../../google/ads/googleads/v3/enums/criterion_system_serving_status_pb";
 import * as google_ads_googleads_v3_enums_criterion_type_pb from "../../../../../google/ads/googleads/v3/enums/criterion_type_pb";
 import * as google_ads_googleads_v3_enums_quality_score_bucket_pb from "../../../../../google/ads/googleads/v3/enums/quality_score_bucket_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -23,8 +24,8 @@ export class AdGroupCriterion extends jspb.Message {
   getCriterionId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setCriterionId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getStatus(): google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatus;
-  setStatus(value: google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatusMap[keyof google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatusMap[keyof google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatusMap]): void;
 
   hasQualityInfo(): boolean;
   clearQualityInfo(): void;
@@ -36,19 +37,19 @@ export class AdGroupCriterion extends jspb.Message {
   getAdGroup(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAdGroup(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType;
-  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType): void;
+  getType(): google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap]): void;
 
   hasNegative(): boolean;
   clearNegative(): void;
   getNegative(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setNegative(value?: google_protobuf_wrappers_pb.BoolValue): void;
 
-  getSystemServingStatus(): google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatus;
-  setSystemServingStatus(value: google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatus): void;
+  getSystemServingStatus(): google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatusMap[keyof google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatusMap];
+  setSystemServingStatus(value: google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatusMap[keyof google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatusMap]): void;
 
-  getApprovalStatus(): google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatus;
-  setApprovalStatus(value: google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatus): void;
+  getApprovalStatus(): google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatusMap[keyof google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatusMap];
+  setApprovalStatus(value: google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatusMap[keyof google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatusMap]): void;
 
   hasBidModifier(): boolean;
   clearBidModifier(): void;
@@ -95,17 +96,17 @@ export class AdGroupCriterion extends jspb.Message {
   getEffectivePercentCpcBidMicros(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setEffectivePercentCpcBidMicros(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getEffectiveCpcBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource;
-  setEffectiveCpcBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource): void;
+  getEffectiveCpcBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap];
+  setEffectiveCpcBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap]): void;
 
-  getEffectiveCpmBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource;
-  setEffectiveCpmBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource): void;
+  getEffectiveCpmBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap];
+  setEffectiveCpmBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap]): void;
 
-  getEffectiveCpvBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource;
-  setEffectiveCpvBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource): void;
+  getEffectiveCpvBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap];
+  setEffectiveCpvBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap]): void;
 
-  getEffectivePercentCpcBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource;
-  setEffectivePercentCpcBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource): void;
+  getEffectivePercentCpcBidSource(): google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap];
+  setEffectivePercentCpcBidSource(value: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap]): void;
 
   hasPositionEstimates(): boolean;
   clearPositionEstimates(): void;
@@ -242,13 +243,13 @@ export namespace AdGroupCriterion {
   export type AsObject = {
     resourceName: string,
     criterionId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    status: google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatus,
+    status: google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatusMap[keyof google_ads_googleads_v3_enums_ad_group_criterion_status_pb.AdGroupCriterionStatusEnum.AdGroupCriterionStatusMap],
     qualityInfo?: AdGroupCriterion.QualityInfo.AsObject,
     adGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionType,
+    type: google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap[keyof google_ads_googleads_v3_enums_criterion_type_pb.CriterionTypeEnum.CriterionTypeMap],
     negative?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    systemServingStatus: google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatus,
-    approvalStatus: google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatus,
+    systemServingStatus: google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatusMap[keyof google_ads_googleads_v3_enums_criterion_system_serving_status_pb.CriterionSystemServingStatusEnum.CriterionSystemServingStatusMap],
+    approvalStatus: google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatusMap[keyof google_ads_googleads_v3_enums_ad_group_criterion_approval_status_pb.AdGroupCriterionApprovalStatusEnum.AdGroupCriterionApprovalStatusMap],
     bidModifier?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
     cpcBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     cpmBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
@@ -258,10 +259,10 @@ export namespace AdGroupCriterion {
     effectiveCpmBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     effectiveCpvBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     effectivePercentCpcBidMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    effectiveCpcBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource,
-    effectiveCpmBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource,
-    effectiveCpvBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource,
-    effectivePercentCpcBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSource,
+    effectiveCpcBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap],
+    effectiveCpmBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap],
+    effectiveCpvBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap],
+    effectivePercentCpcBidSource: google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap[keyof google_ads_googleads_v3_enums_bidding_source_pb.BiddingSourceEnum.BiddingSourceMap],
     positionEstimates?: AdGroupCriterion.PositionEstimates.AsObject,
     finalUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     finalMobileUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
@@ -294,14 +295,14 @@ export namespace AdGroupCriterion {
     getQualityScore(): google_protobuf_wrappers_pb.Int32Value | undefined;
     setQualityScore(value?: google_protobuf_wrappers_pb.Int32Value): void;
 
-    getCreativeQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket;
-    setCreativeQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket): void;
+    getCreativeQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap];
+    setCreativeQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap]): void;
 
-    getPostClickQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket;
-    setPostClickQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket): void;
+    getPostClickQualityScore(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap];
+    setPostClickQualityScore(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap]): void;
 
-    getSearchPredictedCtr(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket;
-    setSearchPredictedCtr(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket): void;
+    getSearchPredictedCtr(): google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap];
+    setSearchPredictedCtr(value: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): QualityInfo.AsObject;
@@ -316,9 +317,9 @@ export namespace AdGroupCriterion {
   export namespace QualityInfo {
     export type AsObject = {
       qualityScore?: google_protobuf_wrappers_pb.Int32Value.AsObject,
-      creativeQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket,
-      postClickQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket,
-      searchPredictedCtr: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucket,
+      creativeQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap],
+      postClickQualityScore: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap],
+      searchPredictedCtr: google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap[keyof google_ads_googleads_v3_enums_quality_score_bucket_pb.QualityScoreBucketEnum.QualityScoreBucketMap],
     }
   }
 

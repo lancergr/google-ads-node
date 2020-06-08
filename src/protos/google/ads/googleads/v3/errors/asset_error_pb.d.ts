@@ -19,14 +19,16 @@ export namespace AssetErrorEnum {
   export type AsObject = {
   }
 
-  export enum AssetError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CUSTOMER_NOT_WHITELISTED_FOR_ASSET_TYPE = 2,
-    DUPLICATE_ASSET = 3,
-    DUPLICATE_ASSET_NAME = 4,
-    ASSET_DATA_IS_MISSING = 5,
-    CANNOT_MODIFY_ASSET_NAME = 6,
+  export interface AssetErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CUSTOMER_NOT_WHITELISTED_FOR_ASSET_TYPE: 2;
+    DUPLICATE_ASSET: 3;
+    DUPLICATE_ASSET_NAME: 4;
+    ASSET_DATA_IS_MISSING: 5;
+    CANNOT_MODIFY_ASSET_NAME: 6;
   }
+
+  export const AssetError: AssetErrorMap;
 }
 

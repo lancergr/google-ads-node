@@ -19,11 +19,13 @@ export namespace FrequencyCapEventTypeEnum {
   export type AsObject = {
   }
 
-  export enum FrequencyCapEventType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    IMPRESSION = 2,
-    VIDEO_VIEW = 3,
+  export interface FrequencyCapEventTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    IMPRESSION: 2;
+    VIDEO_VIEW: 3;
   }
+
+  export const FrequencyCapEventType: FrequencyCapEventTypeMap;
 }
 

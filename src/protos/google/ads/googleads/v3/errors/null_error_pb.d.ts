@@ -19,10 +19,12 @@ export namespace NullErrorEnum {
   export type AsObject = {
   }
 
-  export enum NullError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    NULL_CONTENT = 2,
+  export interface NullErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    NULL_CONTENT: 2;
   }
+
+  export const NullError: NullErrorMap;
 }
 

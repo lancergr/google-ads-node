@@ -19,11 +19,13 @@ export namespace ProductChannelExclusivityEnum {
   export type AsObject = {
   }
 
-  export enum ProductChannelExclusivity {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SINGLE_CHANNEL = 2,
-    MULTI_CHANNEL = 3,
+  export interface ProductChannelExclusivityMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SINGLE_CHANNEL: 2;
+    MULTI_CHANNEL: 3;
   }
+
+  export const ProductChannelExclusivity: ProductChannelExclusivityMap;
 }
 

@@ -19,11 +19,13 @@ export namespace LanguageCodeErrorEnum {
   export type AsObject = {
   }
 
-  export enum LanguageCodeError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LANGUAGE_CODE_NOT_FOUND = 2,
-    INVALID_LANGUAGE_CODE = 3,
+  export interface LanguageCodeErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LANGUAGE_CODE_NOT_FOUND: 2;
+    INVALID_LANGUAGE_CODE: 3;
   }
+
+  export const LanguageCodeError: LanguageCodeErrorMap;
 }
 

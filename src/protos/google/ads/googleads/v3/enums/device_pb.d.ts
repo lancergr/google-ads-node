@@ -19,14 +19,16 @@ export namespace DeviceEnum {
   export type AsObject = {
   }
 
-  export enum Device {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    MOBILE = 2,
-    TABLET = 3,
-    DESKTOP = 4,
-    CONNECTED_TV = 6,
-    OTHER = 5,
+  export interface DeviceMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    MOBILE: 2;
+    TABLET: 3;
+    DESKTOP: 4;
+    CONNECTED_TV: 6;
+    OTHER: 5;
   }
+
+  export const Device: DeviceMap;
 }
 

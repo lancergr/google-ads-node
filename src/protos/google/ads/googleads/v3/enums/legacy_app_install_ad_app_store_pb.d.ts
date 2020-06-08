@@ -19,14 +19,16 @@ export namespace LegacyAppInstallAdAppStoreEnum {
   export type AsObject = {
   }
 
-  export enum LegacyAppInstallAdAppStore {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    APPLE_APP_STORE = 2,
-    GOOGLE_PLAY = 3,
-    WINDOWS_STORE = 4,
-    WINDOWS_PHONE_STORE = 5,
-    CN_APP_STORE = 6,
+  export interface LegacyAppInstallAdAppStoreMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    APPLE_APP_STORE: 2;
+    GOOGLE_PLAY: 3;
+    WINDOWS_STORE: 4;
+    WINDOWS_PHONE_STORE: 5;
+    CN_APP_STORE: 6;
   }
+
+  export const LegacyAppInstallAdAppStore: LegacyAppInstallAdAppStoreMap;
 }
 

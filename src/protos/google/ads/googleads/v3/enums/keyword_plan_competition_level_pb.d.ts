@@ -19,12 +19,14 @@ export namespace KeywordPlanCompetitionLevelEnum {
   export type AsObject = {
   }
 
-  export enum KeywordPlanCompetitionLevel {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LOW = 2,
-    MEDIUM = 3,
-    HIGH = 4,
+  export interface KeywordPlanCompetitionLevelMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LOW: 2;
+    MEDIUM: 3;
+    HIGH: 4;
   }
+
+  export const KeywordPlanCompetitionLevel: KeywordPlanCompetitionLevelMap;
 }
 

@@ -19,13 +19,15 @@ export namespace SearchTermTargetingStatusEnum {
   export type AsObject = {
   }
 
-  export enum SearchTermTargetingStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADDED = 2,
-    EXCLUDED = 3,
-    ADDED_EXCLUDED = 4,
-    NONE = 5,
+  export interface SearchTermTargetingStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADDED: 2;
+    EXCLUDED: 3;
+    ADDED_EXCLUDED: 4;
+    NONE: 5;
   }
+
+  export const SearchTermTargetingStatus: SearchTermTargetingStatusMap;
 }
 

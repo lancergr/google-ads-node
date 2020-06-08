@@ -19,11 +19,13 @@ export namespace HotelPriceBucketEnum {
   export type AsObject = {
   }
 
-  export enum HotelPriceBucket {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LOWEST_TIED = 3,
-    NOT_LOWEST = 4,
+  export interface HotelPriceBucketMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LOWEST_TIED: 3;
+    NOT_LOWEST: 4;
   }
+
+  export const HotelPriceBucket: HotelPriceBucketMap;
 }
 

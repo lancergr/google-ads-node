@@ -19,10 +19,12 @@ export namespace UserListClosingReasonEnum {
   export type AsObject = {
   }
 
-  export enum UserListClosingReason {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    UNUSED = 2,
+  export interface UserListClosingReasonMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    UNUSED: 2;
   }
+
+  export const UserListClosingReason: UserListClosingReasonMap;
 }
 

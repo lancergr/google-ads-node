@@ -19,12 +19,14 @@ export namespace StringLengthErrorEnum {
   export type AsObject = {
   }
 
-  export enum StringLengthError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EMPTY = 4,
-    TOO_SHORT = 2,
-    TOO_LONG = 3,
+  export interface StringLengthErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EMPTY: 4;
+    TOO_SHORT: 2;
+    TOO_LONG: 3;
   }
+
+  export const StringLengthError: StringLengthErrorMap;
 }
 

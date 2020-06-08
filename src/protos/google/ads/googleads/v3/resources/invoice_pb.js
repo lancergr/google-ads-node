@@ -1,1 +1,1617 @@
-var jspb=require("google-protobuf"),goog=jspb,global=Function("return this")(),google_ads_googleads_v3_common_dates_pb=require("../../../../../google/ads/googleads/v3/common/dates_pb.js"),google_ads_googleads_v3_enums_invoice_type_pb=require("../../../../../google/ads/googleads/v3/enums/invoice_type_pb.js"),google_api_resource_pb=require("../../../../../google/api/resource_pb.js"),google_protobuf_wrappers_pb=require("google-protobuf/google/protobuf/wrappers_pb.js"),google_api_annotations_pb=require("../../../../../google/api/annotations_pb.js");goog.exportSymbol("proto.google.ads.googleads.v3.resources.Invoice",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary",null,global),proto.google.ads.googleads.v3.resources.Invoice=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,proto.google.ads.googleads.v3.resources.Invoice.repeatedFields_,null)},goog.inherits(proto.google.ads.googleads.v3.resources.Invoice,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.resources.Invoice.displayName="proto.google.ads.googleads.v3.resources.Invoice"),proto.google.ads.googleads.v3.resources.Invoice.repeatedFields_=[16,18],jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.resources.Invoice.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.resources.Invoice.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.resources.Invoice.toObject=function(includeInstance,msg){var f,obj={resourceName:jspb.Message.getFieldWithDefault(msg,1,""),id:(f=msg.getId())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),type:jspb.Message.getFieldWithDefault(msg,3,0),billingSetup:(f=msg.getBillingSetup())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),paymentsAccountId:(f=msg.getPaymentsAccountId())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),paymentsProfileId:(f=msg.getPaymentsProfileId())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),issueDate:(f=msg.getIssueDate())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),dueDate:(f=msg.getDueDate())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),serviceDateRange:(f=msg.getServiceDateRange())&&google_ads_googleads_v3_common_dates_pb.DateRange.toObject(includeInstance,f),currencyCode:(f=msg.getCurrencyCode())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),invoiceLevelAdjustmentsMicros:(f=msg.getInvoiceLevelAdjustmentsMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),subtotalAmountMicros:(f=msg.getSubtotalAmountMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),taxAmountMicros:(f=msg.getTaxAmountMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),totalAmountMicros:(f=msg.getTotalAmountMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),correctedInvoice:(f=msg.getCorrectedInvoice())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),replacedInvoicesList:jspb.Message.toObjectList(msg.getReplacedInvoicesList(),google_protobuf_wrappers_pb.StringValue.toObject,includeInstance),pdfUrl:(f=msg.getPdfUrl())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),accountBudgetSummariesList:jspb.Message.toObjectList(msg.getAccountBudgetSummariesList(),proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.toObject,includeInstance)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.resources.Invoice.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.resources.Invoice;return proto.google.ads.googleads.v3.resources.Invoice.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.resources.Invoice.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readString();msg.setResourceName(value);break;case 2:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setId(value);break;case 3:value=reader.readEnum(),msg.setType(value);break;case 4:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setBillingSetup(value);break;case 5:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setPaymentsAccountId(value);break;case 6:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setPaymentsProfileId(value);break;case 7:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setIssueDate(value);break;case 8:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setDueDate(value);break;case 9:value=new google_ads_googleads_v3_common_dates_pb.DateRange,reader.readMessage(value,google_ads_googleads_v3_common_dates_pb.DateRange.deserializeBinaryFromReader),msg.setServiceDateRange(value);break;case 10:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setCurrencyCode(value);break;case 11:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setInvoiceLevelAdjustmentsMicros(value);break;case 12:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setSubtotalAmountMicros(value);break;case 13:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setTaxAmountMicros(value);break;case 14:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setTotalAmountMicros(value);break;case 15:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setCorrectedInvoice(value);break;case 16:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.addReplacedInvoices(value);break;case 17:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setPdfUrl(value);break;case 18:value=new proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary,reader.readMessage(value,proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinaryFromReader),msg.addAccountBudgetSummaries(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.resources.Invoice.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.resources.Invoice.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.resources.Invoice.serializeBinaryToWriter=function(message,writer){var f=void 0;0<(f=message.getResourceName()).length&&writer.writeString(1,f),null!=(f=message.getId())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),0!==(f=message.getType())&&writer.writeEnum(3,f),null!=(f=message.getBillingSetup())&&writer.writeMessage(4,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getPaymentsAccountId())&&writer.writeMessage(5,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getPaymentsProfileId())&&writer.writeMessage(6,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getIssueDate())&&writer.writeMessage(7,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getDueDate())&&writer.writeMessage(8,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getServiceDateRange())&&writer.writeMessage(9,f,google_ads_googleads_v3_common_dates_pb.DateRange.serializeBinaryToWriter),null!=(f=message.getCurrencyCode())&&writer.writeMessage(10,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getInvoiceLevelAdjustmentsMicros())&&writer.writeMessage(11,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getSubtotalAmountMicros())&&writer.writeMessage(12,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getTaxAmountMicros())&&writer.writeMessage(13,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getTotalAmountMicros())&&writer.writeMessage(14,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getCorrectedInvoice())&&writer.writeMessage(15,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),0<(f=message.getReplacedInvoicesList()).length&&writer.writeRepeatedMessage(16,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getPdfUrl())&&writer.writeMessage(17,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),0<(f=message.getAccountBudgetSummariesList()).length&&writer.writeRepeatedMessage(18,f,proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.serializeBinaryToWriter)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.displayName="proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.toObject=function(includeInstance,msg){var f,obj={customer:(f=msg.getCustomer())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),customerDescriptiveName:(f=msg.getCustomerDescriptiveName())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),accountBudget:(f=msg.getAccountBudget())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),accountBudgetName:(f=msg.getAccountBudgetName())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),purchaseOrderNumber:(f=msg.getPurchaseOrderNumber())&&google_protobuf_wrappers_pb.StringValue.toObject(includeInstance,f),subtotalAmountMicros:(f=msg.getSubtotalAmountMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),taxAmountMicros:(f=msg.getTaxAmountMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),totalAmountMicros:(f=msg.getTotalAmountMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),billableActivityDateRange:(f=msg.getBillableActivityDateRange())&&google_ads_googleads_v3_common_dates_pb.DateRange.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary;return proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.StringValue;reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setCustomer(value);break;case 2:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setCustomerDescriptiveName(value);break;case 3:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setAccountBudget(value);break;case 4:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setAccountBudgetName(value);break;case 5:value=new google_protobuf_wrappers_pb.StringValue,reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader),msg.setPurchaseOrderNumber(value);break;case 6:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setSubtotalAmountMicros(value);break;case 7:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setTaxAmountMicros(value);break;case 8:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setTotalAmountMicros(value);break;case 9:value=new google_ads_googleads_v3_common_dates_pb.DateRange,reader.readMessage(value,google_ads_googleads_v3_common_dates_pb.DateRange.deserializeBinaryFromReader),msg.setBillableActivityDateRange(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getCustomer())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getCustomerDescriptiveName())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getAccountBudget())&&writer.writeMessage(3,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getAccountBudgetName())&&writer.writeMessage(4,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getPurchaseOrderNumber())&&writer.writeMessage(5,f,google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter),null!=(f=message.getSubtotalAmountMicros())&&writer.writeMessage(6,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getTaxAmountMicros())&&writer.writeMessage(7,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getTotalAmountMicros())&&writer.writeMessage(8,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getBillableActivityDateRange())&&writer.writeMessage(9,f,google_ads_googleads_v3_common_dates_pb.DateRange.serializeBinaryToWriter)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getCustomer=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,1)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setCustomer=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearCustomer=function(){this.setCustomer(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasCustomer=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getCustomerDescriptiveName=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,2)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setCustomerDescriptiveName=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearCustomerDescriptiveName=function(){this.setCustomerDescriptiveName(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasCustomerDescriptiveName=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getAccountBudget=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,3)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setAccountBudget=function(value){jspb.Message.setWrapperField(this,3,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearAccountBudget=function(){this.setAccountBudget(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasAccountBudget=function(){return null!=jspb.Message.getField(this,3)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getAccountBudgetName=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,4)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setAccountBudgetName=function(value){jspb.Message.setWrapperField(this,4,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearAccountBudgetName=function(){this.setAccountBudgetName(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasAccountBudgetName=function(){return null!=jspb.Message.getField(this,4)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getPurchaseOrderNumber=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,5)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setPurchaseOrderNumber=function(value){jspb.Message.setWrapperField(this,5,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearPurchaseOrderNumber=function(){this.setPurchaseOrderNumber(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasPurchaseOrderNumber=function(){return null!=jspb.Message.getField(this,5)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getSubtotalAmountMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,6)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setSubtotalAmountMicros=function(value){jspb.Message.setWrapperField(this,6,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearSubtotalAmountMicros=function(){this.setSubtotalAmountMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasSubtotalAmountMicros=function(){return null!=jspb.Message.getField(this,6)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getTaxAmountMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,7)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setTaxAmountMicros=function(value){jspb.Message.setWrapperField(this,7,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearTaxAmountMicros=function(){this.setTaxAmountMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasTaxAmountMicros=function(){return null!=jspb.Message.getField(this,7)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getTotalAmountMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,8)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setTotalAmountMicros=function(value){jspb.Message.setWrapperField(this,8,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearTotalAmountMicros=function(){this.setTotalAmountMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasTotalAmountMicros=function(){return null!=jspb.Message.getField(this,8)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getBillableActivityDateRange=function(){return jspb.Message.getWrapperField(this,google_ads_googleads_v3_common_dates_pb.DateRange,9)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setBillableActivityDateRange=function(value){jspb.Message.setWrapperField(this,9,value)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearBillableActivityDateRange=function(){this.setBillableActivityDateRange(void 0)},proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasBillableActivityDateRange=function(){return null!=jspb.Message.getField(this,9)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getResourceName=function(){return jspb.Message.getFieldWithDefault(this,1,"")},proto.google.ads.googleads.v3.resources.Invoice.prototype.setResourceName=function(value){jspb.Message.setProto3StringField(this,1,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getId=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,2)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setId=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearId=function(){this.setId(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasId=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getType=function(){return jspb.Message.getFieldWithDefault(this,3,0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setType=function(value){jspb.Message.setProto3EnumField(this,3,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getBillingSetup=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,4)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setBillingSetup=function(value){jspb.Message.setWrapperField(this,4,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearBillingSetup=function(){this.setBillingSetup(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasBillingSetup=function(){return null!=jspb.Message.getField(this,4)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getPaymentsAccountId=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,5)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setPaymentsAccountId=function(value){jspb.Message.setWrapperField(this,5,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearPaymentsAccountId=function(){this.setPaymentsAccountId(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasPaymentsAccountId=function(){return null!=jspb.Message.getField(this,5)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getPaymentsProfileId=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,6)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setPaymentsProfileId=function(value){jspb.Message.setWrapperField(this,6,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearPaymentsProfileId=function(){this.setPaymentsProfileId(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasPaymentsProfileId=function(){return null!=jspb.Message.getField(this,6)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getIssueDate=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,7)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setIssueDate=function(value){jspb.Message.setWrapperField(this,7,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearIssueDate=function(){this.setIssueDate(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasIssueDate=function(){return null!=jspb.Message.getField(this,7)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getDueDate=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,8)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setDueDate=function(value){jspb.Message.setWrapperField(this,8,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearDueDate=function(){this.setDueDate(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasDueDate=function(){return null!=jspb.Message.getField(this,8)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getServiceDateRange=function(){return jspb.Message.getWrapperField(this,google_ads_googleads_v3_common_dates_pb.DateRange,9)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setServiceDateRange=function(value){jspb.Message.setWrapperField(this,9,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearServiceDateRange=function(){this.setServiceDateRange(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasServiceDateRange=function(){return null!=jspb.Message.getField(this,9)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getCurrencyCode=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,10)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setCurrencyCode=function(value){jspb.Message.setWrapperField(this,10,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearCurrencyCode=function(){this.setCurrencyCode(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasCurrencyCode=function(){return null!=jspb.Message.getField(this,10)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getInvoiceLevelAdjustmentsMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,11)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setInvoiceLevelAdjustmentsMicros=function(value){jspb.Message.setWrapperField(this,11,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearInvoiceLevelAdjustmentsMicros=function(){this.setInvoiceLevelAdjustmentsMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasInvoiceLevelAdjustmentsMicros=function(){return null!=jspb.Message.getField(this,11)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getSubtotalAmountMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,12)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setSubtotalAmountMicros=function(value){jspb.Message.setWrapperField(this,12,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearSubtotalAmountMicros=function(){this.setSubtotalAmountMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasSubtotalAmountMicros=function(){return null!=jspb.Message.getField(this,12)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getTaxAmountMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,13)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setTaxAmountMicros=function(value){jspb.Message.setWrapperField(this,13,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearTaxAmountMicros=function(){this.setTaxAmountMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasTaxAmountMicros=function(){return null!=jspb.Message.getField(this,13)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getTotalAmountMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,14)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setTotalAmountMicros=function(value){jspb.Message.setWrapperField(this,14,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearTotalAmountMicros=function(){this.setTotalAmountMicros(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasTotalAmountMicros=function(){return null!=jspb.Message.getField(this,14)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getCorrectedInvoice=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,15)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setCorrectedInvoice=function(value){jspb.Message.setWrapperField(this,15,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearCorrectedInvoice=function(){this.setCorrectedInvoice(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasCorrectedInvoice=function(){return null!=jspb.Message.getField(this,15)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getReplacedInvoicesList=function(){return jspb.Message.getRepeatedWrapperField(this,google_protobuf_wrappers_pb.StringValue,16)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setReplacedInvoicesList=function(value){jspb.Message.setRepeatedWrapperField(this,16,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.addReplacedInvoices=function(opt_value,opt_index){return jspb.Message.addToRepeatedWrapperField(this,16,opt_value,proto.google.protobuf.StringValue,opt_index)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearReplacedInvoicesList=function(){this.setReplacedInvoicesList([])},proto.google.ads.googleads.v3.resources.Invoice.prototype.getPdfUrl=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.StringValue,17)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setPdfUrl=function(value){jspb.Message.setWrapperField(this,17,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearPdfUrl=function(){this.setPdfUrl(void 0)},proto.google.ads.googleads.v3.resources.Invoice.prototype.hasPdfUrl=function(){return null!=jspb.Message.getField(this,17)},proto.google.ads.googleads.v3.resources.Invoice.prototype.getAccountBudgetSummariesList=function(){return jspb.Message.getRepeatedWrapperField(this,proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary,18)},proto.google.ads.googleads.v3.resources.Invoice.prototype.setAccountBudgetSummariesList=function(value){jspb.Message.setRepeatedWrapperField(this,18,value)},proto.google.ads.googleads.v3.resources.Invoice.prototype.addAccountBudgetSummaries=function(opt_value,opt_index){return jspb.Message.addToRepeatedWrapperField(this,18,opt_value,proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary,opt_index)},proto.google.ads.googleads.v3.resources.Invoice.prototype.clearAccountBudgetSummariesList=function(){this.setAccountBudgetSummariesList([])},goog.object.extend(exports,proto.google.ads.googleads.v3.resources);
+// source: google/ads/googleads/v3/resources/invoice.proto
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_ads_googleads_v3_common_dates_pb = require('../../../../../google/ads/googleads/v3/common/dates_pb.js');
+goog.object.extend(proto, google_ads_googleads_v3_common_dates_pb);
+var google_ads_googleads_v3_enums_invoice_type_pb = require('../../../../../google/ads/googleads/v3/enums/invoice_type_pb.js');
+goog.object.extend(proto, google_ads_googleads_v3_enums_invoice_type_pb);
+var google_api_field_behavior_pb = require('../../../../../google/api/field_behavior_pb.js');
+goog.object.extend(proto, google_api_field_behavior_pb);
+var google_api_resource_pb = require('../../../../../google/api/resource_pb.js');
+goog.object.extend(proto, google_api_resource_pb);
+var google_protobuf_wrappers_pb = require('google-protobuf/google/protobuf/wrappers_pb.js');
+goog.object.extend(proto, google_protobuf_wrappers_pb);
+var google_api_annotations_pb = require('../../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);
+goog.exportSymbol('proto.google.ads.googleads.v3.resources.Invoice', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary', null, global);
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.resources.Invoice = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.ads.googleads.v3.resources.Invoice.repeatedFields_, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.resources.Invoice, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.resources.Invoice.displayName = 'proto.google.ads.googleads.v3.resources.Invoice';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.displayName = 'proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary';
+}
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.ads.googleads.v3.resources.Invoice.repeatedFields_ = [16,18];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.resources.Invoice.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.resources.Invoice.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    resourceName: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    id: (f = msg.getId()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    type: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    billingSetup: (f = msg.getBillingSetup()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    paymentsAccountId: (f = msg.getPaymentsAccountId()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    paymentsProfileId: (f = msg.getPaymentsProfileId()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    issueDate: (f = msg.getIssueDate()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    dueDate: (f = msg.getDueDate()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    serviceDateRange: (f = msg.getServiceDateRange()) && google_ads_googleads_v3_common_dates_pb.DateRange.toObject(includeInstance, f),
+    currencyCode: (f = msg.getCurrencyCode()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    invoiceLevelAdjustmentsMicros: (f = msg.getInvoiceLevelAdjustmentsMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    subtotalAmountMicros: (f = msg.getSubtotalAmountMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    taxAmountMicros: (f = msg.getTaxAmountMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    totalAmountMicros: (f = msg.getTotalAmountMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    correctedInvoice: (f = msg.getCorrectedInvoice()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    replacedInvoicesList: jspb.Message.toObjectList(msg.getReplacedInvoicesList(),
+    google_protobuf_wrappers_pb.StringValue.toObject, includeInstance),
+    pdfUrl: (f = msg.getPdfUrl()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    accountBudgetSummariesList: jspb.Message.toObjectList(msg.getAccountBudgetSummariesList(),
+    proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.resources.Invoice;
+  return proto.google.ads.googleads.v3.resources.Invoice.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResourceName(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setId(value);
+      break;
+    case 3:
+      var value = /** @type {!proto.google.ads.googleads.v3.enums.InvoiceTypeEnum.InvoiceType} */ (reader.readEnum());
+      msg.setType(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setBillingSetup(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setPaymentsAccountId(value);
+      break;
+    case 6:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setPaymentsProfileId(value);
+      break;
+    case 7:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setIssueDate(value);
+      break;
+    case 8:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setDueDate(value);
+      break;
+    case 9:
+      var value = new google_ads_googleads_v3_common_dates_pb.DateRange;
+      reader.readMessage(value,google_ads_googleads_v3_common_dates_pb.DateRange.deserializeBinaryFromReader);
+      msg.setServiceDateRange(value);
+      break;
+    case 10:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setCurrencyCode(value);
+      break;
+    case 11:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setInvoiceLevelAdjustmentsMicros(value);
+      break;
+    case 12:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setSubtotalAmountMicros(value);
+      break;
+    case 13:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTaxAmountMicros(value);
+      break;
+    case 14:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTotalAmountMicros(value);
+      break;
+    case 15:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setCorrectedInvoice(value);
+      break;
+    case 16:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.addReplacedInvoices(value);
+      break;
+    case 17:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setPdfUrl(value);
+      break;
+    case 18:
+      var value = new proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary;
+      reader.readMessage(value,proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinaryFromReader);
+      msg.addAccountBudgetSummaries(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.resources.Invoice.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.resources.Invoice.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getResourceName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getId();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      3,
+      f
+    );
+  }
+  f = message.getBillingSetup();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getPaymentsAccountId();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getPaymentsProfileId();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getIssueDate();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getDueDate();
+  if (f != null) {
+    writer.writeMessage(
+      8,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getServiceDateRange();
+  if (f != null) {
+    writer.writeMessage(
+      9,
+      f,
+      google_ads_googleads_v3_common_dates_pb.DateRange.serializeBinaryToWriter
+    );
+  }
+  f = message.getCurrencyCode();
+  if (f != null) {
+    writer.writeMessage(
+      10,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getInvoiceLevelAdjustmentsMicros();
+  if (f != null) {
+    writer.writeMessage(
+      11,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getSubtotalAmountMicros();
+  if (f != null) {
+    writer.writeMessage(
+      12,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getTaxAmountMicros();
+  if (f != null) {
+    writer.writeMessage(
+      13,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getTotalAmountMicros();
+  if (f != null) {
+    writer.writeMessage(
+      14,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getCorrectedInvoice();
+  if (f != null) {
+    writer.writeMessage(
+      15,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getReplacedInvoicesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      16,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getPdfUrl();
+  if (f != null) {
+    writer.writeMessage(
+      17,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getAccountBudgetSummariesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      18,
+      f,
+      proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    customer: (f = msg.getCustomer()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    customerDescriptiveName: (f = msg.getCustomerDescriptiveName()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    accountBudget: (f = msg.getAccountBudget()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    accountBudgetName: (f = msg.getAccountBudgetName()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    purchaseOrderNumber: (f = msg.getPurchaseOrderNumber()) && google_protobuf_wrappers_pb.StringValue.toObject(includeInstance, f),
+    subtotalAmountMicros: (f = msg.getSubtotalAmountMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    taxAmountMicros: (f = msg.getTaxAmountMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    totalAmountMicros: (f = msg.getTotalAmountMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    billableActivityDateRange: (f = msg.getBillableActivityDateRange()) && google_ads_googleads_v3_common_dates_pb.DateRange.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary;
+  return proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setCustomer(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setCustomerDescriptiveName(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setAccountBudget(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setAccountBudgetName(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.StringValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.StringValue.deserializeBinaryFromReader);
+      msg.setPurchaseOrderNumber(value);
+      break;
+    case 6:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setSubtotalAmountMicros(value);
+      break;
+    case 7:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTaxAmountMicros(value);
+      break;
+    case 8:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTotalAmountMicros(value);
+      break;
+    case 9:
+      var value = new google_ads_googleads_v3_common_dates_pb.DateRange;
+      reader.readMessage(value,google_ads_googleads_v3_common_dates_pb.DateRange.deserializeBinaryFromReader);
+      msg.setBillableActivityDateRange(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCustomer();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getCustomerDescriptiveName();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getAccountBudget();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getAccountBudgetName();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getPurchaseOrderNumber();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.StringValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getSubtotalAmountMicros();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getTaxAmountMicros();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getTotalAmountMicros();
+  if (f != null) {
+    writer.writeMessage(
+      8,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getBillableActivityDateRange();
+  if (f != null) {
+    writer.writeMessage(
+      9,
+      f,
+      google_ads_googleads_v3_common_dates_pb.DateRange.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.StringValue customer = 1;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getCustomer = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setCustomer = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearCustomer = function() {
+  return this.setCustomer(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasCustomer = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue customer_descriptive_name = 2;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getCustomerDescriptiveName = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setCustomerDescriptiveName = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearCustomerDescriptiveName = function() {
+  return this.setCustomerDescriptiveName(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasCustomerDescriptiveName = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue account_budget = 3;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getAccountBudget = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 3));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setAccountBudget = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearAccountBudget = function() {
+  return this.setAccountBudget(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasAccountBudget = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue account_budget_name = 4;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getAccountBudgetName = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 4));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setAccountBudgetName = function(value) {
+  return jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearAccountBudgetName = function() {
+  return this.setAccountBudgetName(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasAccountBudgetName = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue purchase_order_number = 5;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getPurchaseOrderNumber = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 5));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setPurchaseOrderNumber = function(value) {
+  return jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearPurchaseOrderNumber = function() {
+  return this.setPurchaseOrderNumber(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasPurchaseOrderNumber = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value subtotal_amount_micros = 6;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getSubtotalAmountMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 6));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setSubtotalAmountMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearSubtotalAmountMicros = function() {
+  return this.setSubtotalAmountMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasSubtotalAmountMicros = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value tax_amount_micros = 7;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getTaxAmountMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 7));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setTaxAmountMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearTaxAmountMicros = function() {
+  return this.setTaxAmountMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasTaxAmountMicros = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value total_amount_micros = 8;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getTotalAmountMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 8));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setTotalAmountMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 8, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearTotalAmountMicros = function() {
+  return this.setTotalAmountMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasTotalAmountMicros = function() {
+  return jspb.Message.getField(this, 8) != null;
+};
+
+
+/**
+ * optional google.ads.googleads.v3.common.DateRange billable_activity_date_range = 9;
+ * @return {?proto.google.ads.googleads.v3.common.DateRange}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.getBillableActivityDateRange = function() {
+  return /** @type{?proto.google.ads.googleads.v3.common.DateRange} */ (
+    jspb.Message.getWrapperField(this, google_ads_googleads_v3_common_dates_pb.DateRange, 9));
+};
+
+
+/**
+ * @param {?proto.google.ads.googleads.v3.common.DateRange|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.setBillableActivityDateRange = function(value) {
+  return jspb.Message.setWrapperField(this, 9, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.clearBillableActivityDateRange = function() {
+  return this.setBillableActivityDateRange(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary.prototype.hasBillableActivityDateRange = function() {
+  return jspb.Message.getField(this, 9) != null;
+};
+
+
+/**
+ * optional string resource_name = 1;
+ * @return {string}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getResourceName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setResourceName = function(value) {
+  return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional google.protobuf.StringValue id = 2;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getId = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setId = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearId = function() {
+  return this.setId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasId = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.ads.googleads.v3.enums.InvoiceTypeEnum.InvoiceType type = 3;
+ * @return {!proto.google.ads.googleads.v3.enums.InvoiceTypeEnum.InvoiceType}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getType = function() {
+  return /** @type {!proto.google.ads.googleads.v3.enums.InvoiceTypeEnum.InvoiceType} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.enums.InvoiceTypeEnum.InvoiceType} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setType = function(value) {
+  return jspb.Message.setProto3EnumField(this, 3, value);
+};
+
+
+/**
+ * optional google.protobuf.StringValue billing_setup = 4;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getBillingSetup = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 4));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setBillingSetup = function(value) {
+  return jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearBillingSetup = function() {
+  return this.setBillingSetup(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasBillingSetup = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue payments_account_id = 5;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getPaymentsAccountId = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 5));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setPaymentsAccountId = function(value) {
+  return jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearPaymentsAccountId = function() {
+  return this.setPaymentsAccountId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasPaymentsAccountId = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue payments_profile_id = 6;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getPaymentsProfileId = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 6));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setPaymentsProfileId = function(value) {
+  return jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearPaymentsProfileId = function() {
+  return this.setPaymentsProfileId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasPaymentsProfileId = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue issue_date = 7;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getIssueDate = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 7));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setIssueDate = function(value) {
+  return jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearIssueDate = function() {
+  return this.setIssueDate(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasIssueDate = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue due_date = 8;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getDueDate = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 8));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setDueDate = function(value) {
+  return jspb.Message.setWrapperField(this, 8, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearDueDate = function() {
+  return this.setDueDate(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasDueDate = function() {
+  return jspb.Message.getField(this, 8) != null;
+};
+
+
+/**
+ * optional google.ads.googleads.v3.common.DateRange service_date_range = 9;
+ * @return {?proto.google.ads.googleads.v3.common.DateRange}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getServiceDateRange = function() {
+  return /** @type{?proto.google.ads.googleads.v3.common.DateRange} */ (
+    jspb.Message.getWrapperField(this, google_ads_googleads_v3_common_dates_pb.DateRange, 9));
+};
+
+
+/**
+ * @param {?proto.google.ads.googleads.v3.common.DateRange|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setServiceDateRange = function(value) {
+  return jspb.Message.setWrapperField(this, 9, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearServiceDateRange = function() {
+  return this.setServiceDateRange(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasServiceDateRange = function() {
+  return jspb.Message.getField(this, 9) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue currency_code = 10;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getCurrencyCode = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 10));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setCurrencyCode = function(value) {
+  return jspb.Message.setWrapperField(this, 10, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearCurrencyCode = function() {
+  return this.setCurrencyCode(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasCurrencyCode = function() {
+  return jspb.Message.getField(this, 10) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value invoice_level_adjustments_micros = 11;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getInvoiceLevelAdjustmentsMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 11));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setInvoiceLevelAdjustmentsMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 11, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearInvoiceLevelAdjustmentsMicros = function() {
+  return this.setInvoiceLevelAdjustmentsMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasInvoiceLevelAdjustmentsMicros = function() {
+  return jspb.Message.getField(this, 11) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value subtotal_amount_micros = 12;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getSubtotalAmountMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 12));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setSubtotalAmountMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 12, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearSubtotalAmountMicros = function() {
+  return this.setSubtotalAmountMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasSubtotalAmountMicros = function() {
+  return jspb.Message.getField(this, 12) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value tax_amount_micros = 13;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getTaxAmountMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 13));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setTaxAmountMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 13, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearTaxAmountMicros = function() {
+  return this.setTaxAmountMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasTaxAmountMicros = function() {
+  return jspb.Message.getField(this, 13) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value total_amount_micros = 14;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getTotalAmountMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 14));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setTotalAmountMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 14, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearTotalAmountMicros = function() {
+  return this.setTotalAmountMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasTotalAmountMicros = function() {
+  return jspb.Message.getField(this, 14) != null;
+};
+
+
+/**
+ * optional google.protobuf.StringValue corrected_invoice = 15;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getCorrectedInvoice = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 15));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setCorrectedInvoice = function(value) {
+  return jspb.Message.setWrapperField(this, 15, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearCorrectedInvoice = function() {
+  return this.setCorrectedInvoice(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasCorrectedInvoice = function() {
+  return jspb.Message.getField(this, 15) != null;
+};
+
+
+/**
+ * repeated google.protobuf.StringValue replaced_invoices = 16;
+ * @return {!Array<!proto.google.protobuf.StringValue>}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getReplacedInvoicesList = function() {
+  return /** @type{!Array<!proto.google.protobuf.StringValue>} */ (
+    jspb.Message.getRepeatedWrapperField(this, google_protobuf_wrappers_pb.StringValue, 16));
+};
+
+
+/**
+ * @param {!Array<!proto.google.protobuf.StringValue>} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setReplacedInvoicesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 16, value);
+};
+
+
+/**
+ * @param {!proto.google.protobuf.StringValue=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.addReplacedInvoices = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 16, opt_value, proto.google.protobuf.StringValue, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearReplacedInvoicesList = function() {
+  return this.setReplacedInvoicesList([]);
+};
+
+
+/**
+ * optional google.protobuf.StringValue pdf_url = 17;
+ * @return {?proto.google.protobuf.StringValue}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getPdfUrl = function() {
+  return /** @type{?proto.google.protobuf.StringValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.StringValue, 17));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.StringValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setPdfUrl = function(value) {
+  return jspb.Message.setWrapperField(this, 17, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearPdfUrl = function() {
+  return this.setPdfUrl(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.hasPdfUrl = function() {
+  return jspb.Message.getField(this, 17) != null;
+};
+
+
+/**
+ * repeated AccountBudgetSummary account_budget_summaries = 18;
+ * @return {!Array<!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary>}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.getAccountBudgetSummariesList = function() {
+  return /** @type{!Array<!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary, 18));
+};
+
+
+/**
+ * @param {!Array<!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary>} value
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+*/
+proto.google.ads.googleads.v3.resources.Invoice.prototype.setAccountBudgetSummariesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 18, value);
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary}
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.addAccountBudgetSummaries = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 18, opt_value, proto.google.ads.googleads.v3.resources.Invoice.AccountBudgetSummary, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.google.ads.googleads.v3.resources.Invoice} returns this
+ */
+proto.google.ads.googleads.v3.resources.Invoice.prototype.clearAccountBudgetSummariesList = function() {
+  return this.setAccountBudgetSummariesList([]);
+};
+
+
+goog.object.extend(exports, proto.google.ads.googleads.v3.resources);

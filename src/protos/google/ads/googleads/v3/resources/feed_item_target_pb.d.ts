@@ -6,6 +6,7 @@ import * as google_ads_googleads_v3_common_criteria_pb from "../../../../../goog
 import * as google_ads_googleads_v3_enums_feed_item_target_device_pb from "../../../../../google/ads/googleads/v3/enums/feed_item_target_device_pb";
 import * as google_ads_googleads_v3_enums_feed_item_target_status_pb from "../../../../../google/ads/googleads/v3/enums/feed_item_target_status_pb";
 import * as google_ads_googleads_v3_enums_feed_item_target_type_pb from "../../../../../google/ads/googleads/v3/enums/feed_item_target_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -19,16 +20,16 @@ export class FeedItemTarget extends jspb.Message {
   getFeedItem(): google_protobuf_wrappers_pb.StringValue | undefined;
   setFeedItem(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getFeedItemTargetType(): google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetType;
-  setFeedItemTargetType(value: google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetType): void;
+  getFeedItemTargetType(): google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetTypeMap[keyof google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetTypeMap];
+  setFeedItemTargetType(value: google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetTypeMap[keyof google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetTypeMap]): void;
 
   hasFeedItemTargetId(): boolean;
   clearFeedItemTargetId(): void;
   getFeedItemTargetId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setFeedItemTargetId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getStatus(): google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatus;
-  setStatus(value: google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatusMap[keyof google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatusMap[keyof google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatusMap]): void;
 
   hasCampaign(): boolean;
   clearCampaign(): void;
@@ -52,8 +53,8 @@ export class FeedItemTarget extends jspb.Message {
 
   hasDevice(): boolean;
   clearDevice(): void;
-  getDevice(): google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDevice;
-  setDevice(value: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDevice): void;
+  getDevice(): google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap[keyof google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap];
+  setDevice(value: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap[keyof google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap]): void;
 
   hasAdSchedule(): boolean;
   clearAdSchedule(): void;
@@ -75,14 +76,14 @@ export namespace FeedItemTarget {
   export type AsObject = {
     resourceName: string,
     feedItem?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    feedItemTargetType: google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetType,
+    feedItemTargetType: google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetTypeMap[keyof google_ads_googleads_v3_enums_feed_item_target_type_pb.FeedItemTargetTypeEnum.FeedItemTargetTypeMap],
     feedItemTargetId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    status: google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatus,
+    status: google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatusMap[keyof google_ads_googleads_v3_enums_feed_item_target_status_pb.FeedItemTargetStatusEnum.FeedItemTargetStatusMap],
     campaign?: google_protobuf_wrappers_pb.StringValue.AsObject,
     adGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
     keyword?: google_ads_googleads_v3_common_criteria_pb.KeywordInfo.AsObject,
     geoTargetConstant?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    device: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDevice,
+    device: google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap[keyof google_ads_googleads_v3_enums_feed_item_target_device_pb.FeedItemTargetDeviceEnum.FeedItemTargetDeviceMap],
     adSchedule?: google_ads_googleads_v3_common_criteria_pb.AdScheduleInfo.AsObject,
   }
 

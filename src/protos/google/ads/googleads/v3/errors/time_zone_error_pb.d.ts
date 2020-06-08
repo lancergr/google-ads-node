@@ -19,10 +19,12 @@ export namespace TimeZoneErrorEnum {
   export type AsObject = {
   }
 
-  export enum TimeZoneError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    INVALID_TIME_ZONE = 5,
+  export interface TimeZoneErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    INVALID_TIME_ZONE: 5;
   }
+
+  export const TimeZoneError: TimeZoneErrorMap;
 }
 

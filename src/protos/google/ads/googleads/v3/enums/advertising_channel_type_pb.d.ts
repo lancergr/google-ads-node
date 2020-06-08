@@ -19,15 +19,17 @@ export namespace AdvertisingChannelTypeEnum {
   export type AsObject = {
   }
 
-  export enum AdvertisingChannelType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SEARCH = 2,
-    DISPLAY = 3,
-    SHOPPING = 4,
-    HOTEL = 5,
-    VIDEO = 6,
-    MULTI_CHANNEL = 7,
+  export interface AdvertisingChannelTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SEARCH: 2;
+    DISPLAY: 3;
+    SHOPPING: 4;
+    HOTEL: 5;
+    VIDEO: 6;
+    MULTI_CHANNEL: 7;
   }
+
+  export const AdvertisingChannelType: AdvertisingChannelTypeMap;
 }
 

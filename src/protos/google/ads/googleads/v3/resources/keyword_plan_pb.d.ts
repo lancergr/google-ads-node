@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_dates_pb from "../../../../../google/ads/googleads/v3/common/dates_pb";
 import * as google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb from "../../../../../google/ads/googleads/v3/enums/keyword_plan_forecast_interval_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -49,8 +50,8 @@ export namespace KeywordPlan {
 export class KeywordPlanForecastPeriod extends jspb.Message {
   hasDateInterval(): boolean;
   clearDateInterval(): void;
-  getDateInterval(): google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastInterval;
-  setDateInterval(value: google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastInterval): void;
+  getDateInterval(): google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastIntervalMap[keyof google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastIntervalMap];
+  setDateInterval(value: google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastIntervalMap[keyof google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastIntervalMap]): void;
 
   hasDateRange(): boolean;
   clearDateRange(): void;
@@ -70,7 +71,7 @@ export class KeywordPlanForecastPeriod extends jspb.Message {
 
 export namespace KeywordPlanForecastPeriod {
   export type AsObject = {
-    dateInterval: google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastInterval,
+    dateInterval: google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastIntervalMap[keyof google_ads_googleads_v3_enums_keyword_plan_forecast_interval_pb.KeywordPlanForecastIntervalEnum.KeywordPlanForecastIntervalMap],
     dateRange?: google_ads_googleads_v3_common_dates_pb.DateRange.AsObject,
   }
 

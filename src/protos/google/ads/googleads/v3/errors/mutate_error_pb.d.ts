@@ -19,15 +19,19 @@ export namespace MutateErrorEnum {
   export type AsObject = {
   }
 
-  export enum MutateError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    RESOURCE_NOT_FOUND = 3,
-    ID_EXISTS_IN_MULTIPLE_MUTATES = 7,
-    INCONSISTENT_FIELD_VALUES = 8,
-    MUTATE_NOT_ALLOWED = 9,
-    RESOURCE_NOT_IN_GOOGLE_ADS = 10,
-    RESOURCE_ALREADY_EXISTS = 11,
+  export interface MutateErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    RESOURCE_NOT_FOUND: 3;
+    ID_EXISTS_IN_MULTIPLE_MUTATES: 7;
+    INCONSISTENT_FIELD_VALUES: 8;
+    MUTATE_NOT_ALLOWED: 9;
+    RESOURCE_NOT_IN_GOOGLE_ADS: 10;
+    RESOURCE_ALREADY_EXISTS: 11;
+    RESOURCE_DOES_NOT_SUPPORT_VALIDATE_ONLY: 12;
+    RESOURCE_READ_ONLY: 13;
   }
+
+  export const MutateError: MutateErrorMap;
 }
 

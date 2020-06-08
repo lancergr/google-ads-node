@@ -19,11 +19,13 @@ export namespace BudgetDeliveryMethodEnum {
   export type AsObject = {
   }
 
-  export enum BudgetDeliveryMethod {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    STANDARD = 2,
-    ACCELERATED = 3,
+  export interface BudgetDeliveryMethodMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    STANDARD: 2;
+    ACCELERATED: 3;
   }
+
+  export const BudgetDeliveryMethod: BudgetDeliveryMethodMap;
 }
 

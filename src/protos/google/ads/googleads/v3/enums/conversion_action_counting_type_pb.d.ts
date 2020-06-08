@@ -19,11 +19,13 @@ export namespace ConversionActionCountingTypeEnum {
   export type AsObject = {
   }
 
-  export enum ConversionActionCountingType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ONE_PER_CLICK = 2,
-    MANY_PER_CLICK = 3,
+  export interface ConversionActionCountingTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ONE_PER_CLICK: 2;
+    MANY_PER_CLICK: 3;
   }
+
+  export const ConversionActionCountingType: ConversionActionCountingTypeMap;
 }
 

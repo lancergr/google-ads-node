@@ -19,11 +19,13 @@ export namespace AdGroupAdRotationModeEnum {
   export type AsObject = {
   }
 
-  export enum AdGroupAdRotationMode {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OPTIMIZE = 2,
-    ROTATE_FOREVER = 3,
+  export interface AdGroupAdRotationModeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OPTIMIZE: 2;
+    ROTATE_FOREVER: 3;
   }
+
+  export const AdGroupAdRotationMode: AdGroupAdRotationModeMap;
 }
 

@@ -19,11 +19,13 @@ export namespace UserListCombinedRuleOperatorEnum {
   export type AsObject = {
   }
 
-  export enum UserListCombinedRuleOperator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AND = 2,
-    AND_NOT = 3,
+  export interface UserListCombinedRuleOperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AND: 2;
+    AND_NOT: 3;
   }
+
+  export const UserListCombinedRuleOperator: UserListCombinedRuleOperatorMap;
 }
 

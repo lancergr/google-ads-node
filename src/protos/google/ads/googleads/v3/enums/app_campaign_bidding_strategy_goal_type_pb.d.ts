@@ -19,13 +19,15 @@ export namespace AppCampaignBiddingStrategyGoalTypeEnum {
   export type AsObject = {
   }
 
-  export enum AppCampaignBiddingStrategyGoalType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OPTIMIZE_INSTALLS_TARGET_INSTALL_COST = 2,
-    OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST = 3,
-    OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST = 4,
-    OPTIMIZE_RETURN_ON_ADVERTISING_SPEND = 5,
+  export interface AppCampaignBiddingStrategyGoalTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OPTIMIZE_INSTALLS_TARGET_INSTALL_COST: 2;
+    OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST: 3;
+    OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST: 4;
+    OPTIMIZE_RETURN_ON_ADVERTISING_SPEND: 5;
   }
+
+  export const AppCampaignBiddingStrategyGoalType: AppCampaignBiddingStrategyGoalTypeMap;
 }
 

@@ -19,11 +19,13 @@ export namespace ProductBiddingCategoryStatusEnum {
   export type AsObject = {
   }
 
-  export enum ProductBiddingCategoryStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ACTIVE = 2,
-    OBSOLETE = 3,
+  export interface ProductBiddingCategoryStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ACTIVE: 2;
+    OBSOLETE: 3;
   }
+
+  export const ProductBiddingCategoryStatus: ProductBiddingCategoryStatusMap;
 }
 

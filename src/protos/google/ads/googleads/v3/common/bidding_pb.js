@@ -1,1 +1,2407 @@
-var jspb=require("google-protobuf"),goog=jspb,global=Function("return this")(),google_ads_googleads_v3_enums_target_impression_share_location_pb=require("../../../../../google/ads/googleads/v3/enums/target_impression_share_location_pb.js"),google_protobuf_wrappers_pb=require("google-protobuf/google/protobuf/wrappers_pb.js"),google_api_annotations_pb=require("../../../../../google/api/annotations_pb.js");goog.exportSymbol("proto.google.ads.googleads.v3.common.Commission",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.EnhancedCpc",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.ManualCpc",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.ManualCpm",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.ManualCpv",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.MaximizeConversionValue",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.MaximizeConversions",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.PercentCpc",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.TargetCpa",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.TargetCpm",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.TargetImpressionShare",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.TargetRoas",null,global),goog.exportSymbol("proto.google.ads.googleads.v3.common.TargetSpend",null,global),proto.google.ads.googleads.v3.common.Commission=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.Commission,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.Commission.displayName="proto.google.ads.googleads.v3.common.Commission"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.Commission.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.Commission.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.Commission.toObject=function(includeInstance,msg){var f,obj={commissionRateMicros:(f=msg.getCommissionRateMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.Commission.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.Commission;return proto.google.ads.googleads.v3.common.Commission.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.Commission.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.Int64Value;reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCommissionRateMicros(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.Commission.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.Commission.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.Commission.serializeBinaryToWriter=function(message,writer){var f;null!=(f=message.getCommissionRateMicros())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.Commission.prototype.getCommissionRateMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,1)},proto.google.ads.googleads.v3.common.Commission.prototype.setCommissionRateMicros=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.Commission.prototype.clearCommissionRateMicros=function(){this.setCommissionRateMicros(void 0)},proto.google.ads.googleads.v3.common.Commission.prototype.hasCommissionRateMicros=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.EnhancedCpc=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.EnhancedCpc,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.EnhancedCpc.displayName="proto.google.ads.googleads.v3.common.EnhancedCpc"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.EnhancedCpc.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.EnhancedCpc.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.EnhancedCpc.toObject=function(includeInstance,msg){var obj={};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.EnhancedCpc.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.EnhancedCpc;return proto.google.ads.googleads.v3.common.EnhancedCpc.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.EnhancedCpc.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)reader.getFieldNumber(),reader.skipField();return msg},proto.google.ads.googleads.v3.common.EnhancedCpc.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.EnhancedCpc.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.EnhancedCpc.serializeBinaryToWriter=function(message,writer){},proto.google.ads.googleads.v3.common.ManualCpc=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.ManualCpc,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.ManualCpc.displayName="proto.google.ads.googleads.v3.common.ManualCpc"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.ManualCpc.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.ManualCpc.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.ManualCpc.toObject=function(includeInstance,msg){var f,obj={enhancedCpcEnabled:(f=msg.getEnhancedCpcEnabled())&&google_protobuf_wrappers_pb.BoolValue.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.ManualCpc.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.ManualCpc;return proto.google.ads.googleads.v3.common.ManualCpc.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.ManualCpc.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.BoolValue;reader.readMessage(value,google_protobuf_wrappers_pb.BoolValue.deserializeBinaryFromReader),msg.setEnhancedCpcEnabled(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.ManualCpc.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.ManualCpc.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.ManualCpc.serializeBinaryToWriter=function(message,writer){var f;null!=(f=message.getEnhancedCpcEnabled())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.BoolValue.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.ManualCpc.prototype.getEnhancedCpcEnabled=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.BoolValue,1)},proto.google.ads.googleads.v3.common.ManualCpc.prototype.setEnhancedCpcEnabled=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.ManualCpc.prototype.clearEnhancedCpcEnabled=function(){this.setEnhancedCpcEnabled(void 0)},proto.google.ads.googleads.v3.common.ManualCpc.prototype.hasEnhancedCpcEnabled=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.ManualCpm=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.ManualCpm,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.ManualCpm.displayName="proto.google.ads.googleads.v3.common.ManualCpm"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.ManualCpm.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.ManualCpm.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.ManualCpm.toObject=function(includeInstance,msg){var obj={};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.ManualCpm.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.ManualCpm;return proto.google.ads.googleads.v3.common.ManualCpm.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.ManualCpm.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)reader.getFieldNumber(),reader.skipField();return msg},proto.google.ads.googleads.v3.common.ManualCpm.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.ManualCpm.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.ManualCpm.serializeBinaryToWriter=function(message,writer){},proto.google.ads.googleads.v3.common.ManualCpv=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.ManualCpv,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.ManualCpv.displayName="proto.google.ads.googleads.v3.common.ManualCpv"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.ManualCpv.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.ManualCpv.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.ManualCpv.toObject=function(includeInstance,msg){var obj={};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.ManualCpv.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.ManualCpv;return proto.google.ads.googleads.v3.common.ManualCpv.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.ManualCpv.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)reader.getFieldNumber(),reader.skipField();return msg},proto.google.ads.googleads.v3.common.ManualCpv.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.ManualCpv.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.ManualCpv.serializeBinaryToWriter=function(message,writer){},proto.google.ads.googleads.v3.common.MaximizeConversions=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.MaximizeConversions,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.MaximizeConversions.displayName="proto.google.ads.googleads.v3.common.MaximizeConversions"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.MaximizeConversions.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.MaximizeConversions.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.MaximizeConversions.toObject=function(includeInstance,msg){var obj={};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.MaximizeConversions.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.MaximizeConversions;return proto.google.ads.googleads.v3.common.MaximizeConversions.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.MaximizeConversions.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)reader.getFieldNumber(),reader.skipField();return msg},proto.google.ads.googleads.v3.common.MaximizeConversions.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.MaximizeConversions.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.MaximizeConversions.serializeBinaryToWriter=function(message,writer){},proto.google.ads.googleads.v3.common.MaximizeConversionValue=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.MaximizeConversionValue,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.MaximizeConversionValue.displayName="proto.google.ads.googleads.v3.common.MaximizeConversionValue"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.MaximizeConversionValue.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.MaximizeConversionValue.toObject=function(includeInstance,msg){var f,obj={targetRoas:(f=msg.getTargetRoas())&&google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.MaximizeConversionValue.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.MaximizeConversionValue;return proto.google.ads.googleads.v3.common.MaximizeConversionValue.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.MaximizeConversionValue.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.DoubleValue;reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader),msg.setTargetRoas(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.MaximizeConversionValue.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.MaximizeConversionValue.serializeBinaryToWriter=function(message,writer){var f;null!=(f=message.getTargetRoas())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.getTargetRoas=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.DoubleValue,1)},proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.setTargetRoas=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.clearTargetRoas=function(){this.setTargetRoas(void 0)},proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.hasTargetRoas=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.TargetCpa=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.TargetCpa,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.TargetCpa.displayName="proto.google.ads.googleads.v3.common.TargetCpa"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.TargetCpa.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.TargetCpa.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.TargetCpa.toObject=function(includeInstance,msg){var f,obj={targetCpaMicros:(f=msg.getTargetCpaMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),cpcBidCeilingMicros:(f=msg.getCpcBidCeilingMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),cpcBidFloorMicros:(f=msg.getCpcBidFloorMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.TargetCpa.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.TargetCpa;return proto.google.ads.googleads.v3.common.TargetCpa.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.TargetCpa.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.Int64Value;reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setTargetCpaMicros(value);break;case 2:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidCeilingMicros(value);break;case 3:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidFloorMicros(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.TargetCpa.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.TargetCpa.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.TargetCpa.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getTargetCpaMicros())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getCpcBidCeilingMicros())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getCpcBidFloorMicros())&&writer.writeMessage(3,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.getTargetCpaMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,1)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.setTargetCpaMicros=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.clearTargetCpaMicros=function(){this.setTargetCpaMicros(void 0)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.hasTargetCpaMicros=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.getCpcBidCeilingMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,2)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.setCpcBidCeilingMicros=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.clearCpcBidCeilingMicros=function(){this.setCpcBidCeilingMicros(void 0)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.hasCpcBidCeilingMicros=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.getCpcBidFloorMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,3)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.setCpcBidFloorMicros=function(value){jspb.Message.setWrapperField(this,3,value)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.clearCpcBidFloorMicros=function(){this.setCpcBidFloorMicros(void 0)},proto.google.ads.googleads.v3.common.TargetCpa.prototype.hasCpcBidFloorMicros=function(){return null!=jspb.Message.getField(this,3)},proto.google.ads.googleads.v3.common.TargetCpm=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.TargetCpm,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.TargetCpm.displayName="proto.google.ads.googleads.v3.common.TargetCpm"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.TargetCpm.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.TargetCpm.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.TargetCpm.toObject=function(includeInstance,msg){var obj={};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.TargetCpm.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.TargetCpm;return proto.google.ads.googleads.v3.common.TargetCpm.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.TargetCpm.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)reader.getFieldNumber(),reader.skipField();return msg},proto.google.ads.googleads.v3.common.TargetCpm.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.TargetCpm.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.TargetCpm.serializeBinaryToWriter=function(message,writer){},proto.google.ads.googleads.v3.common.TargetImpressionShare=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.TargetImpressionShare,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.TargetImpressionShare.displayName="proto.google.ads.googleads.v3.common.TargetImpressionShare"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.TargetImpressionShare.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.TargetImpressionShare.toObject=function(includeInstance,msg){var f,obj={location:jspb.Message.getFieldWithDefault(msg,1,0),locationFractionMicros:(f=msg.getLocationFractionMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),cpcBidCeilingMicros:(f=msg.getCpcBidCeilingMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.TargetImpressionShare.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.TargetImpressionShare;return proto.google.ads.googleads.v3.common.TargetImpressionShare.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.TargetImpressionShare.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=reader.readEnum();msg.setLocation(value);break;case 2:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setLocationFractionMicros(value);break;case 3:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidCeilingMicros(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.TargetImpressionShare.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.TargetImpressionShare.serializeBinaryToWriter=function(message,writer){var f=void 0;0!==(f=message.getLocation())&&writer.writeEnum(1,f),null!=(f=message.getLocationFractionMicros())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getCpcBidCeilingMicros())&&writer.writeMessage(3,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.getLocation=function(){return jspb.Message.getFieldWithDefault(this,1,0)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.setLocation=function(value){jspb.Message.setProto3EnumField(this,1,value)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.getLocationFractionMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,2)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.setLocationFractionMicros=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.clearLocationFractionMicros=function(){this.setLocationFractionMicros(void 0)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.hasLocationFractionMicros=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.getCpcBidCeilingMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,3)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.setCpcBidCeilingMicros=function(value){jspb.Message.setWrapperField(this,3,value)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.clearCpcBidCeilingMicros=function(){this.setCpcBidCeilingMicros(void 0)},proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.hasCpcBidCeilingMicros=function(){return null!=jspb.Message.getField(this,3)},proto.google.ads.googleads.v3.common.TargetRoas=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.TargetRoas,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.TargetRoas.displayName="proto.google.ads.googleads.v3.common.TargetRoas"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.TargetRoas.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.TargetRoas.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.TargetRoas.toObject=function(includeInstance,msg){var f,obj={targetRoas:(f=msg.getTargetRoas())&&google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance,f),cpcBidCeilingMicros:(f=msg.getCpcBidCeilingMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),cpcBidFloorMicros:(f=msg.getCpcBidFloorMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.TargetRoas.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.TargetRoas;return proto.google.ads.googleads.v3.common.TargetRoas.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.TargetRoas.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.DoubleValue;reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader),msg.setTargetRoas(value);break;case 2:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidCeilingMicros(value);break;case 3:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidFloorMicros(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.TargetRoas.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.TargetRoas.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.TargetRoas.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getTargetRoas())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter),null!=(f=message.getCpcBidCeilingMicros())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getCpcBidFloorMicros())&&writer.writeMessage(3,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.getTargetRoas=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.DoubleValue,1)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.setTargetRoas=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.clearTargetRoas=function(){this.setTargetRoas(void 0)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.hasTargetRoas=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.getCpcBidCeilingMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,2)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.setCpcBidCeilingMicros=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.clearCpcBidCeilingMicros=function(){this.setCpcBidCeilingMicros(void 0)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.hasCpcBidCeilingMicros=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.getCpcBidFloorMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,3)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.setCpcBidFloorMicros=function(value){jspb.Message.setWrapperField(this,3,value)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.clearCpcBidFloorMicros=function(){this.setCpcBidFloorMicros(void 0)},proto.google.ads.googleads.v3.common.TargetRoas.prototype.hasCpcBidFloorMicros=function(){return null!=jspb.Message.getField(this,3)},proto.google.ads.googleads.v3.common.TargetSpend=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.TargetSpend,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.TargetSpend.displayName="proto.google.ads.googleads.v3.common.TargetSpend"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.TargetSpend.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.TargetSpend.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.TargetSpend.toObject=function(includeInstance,msg){var f,obj={targetSpendMicros:(f=msg.getTargetSpendMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),cpcBidCeilingMicros:(f=msg.getCpcBidCeilingMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.TargetSpend.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.TargetSpend;return proto.google.ads.googleads.v3.common.TargetSpend.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.TargetSpend.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.Int64Value;reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setTargetSpendMicros(value);break;case 2:value=new google_protobuf_wrappers_pb.Int64Value,reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidCeilingMicros(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.TargetSpend.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.TargetSpend.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.TargetSpend.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getTargetSpendMicros())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getCpcBidCeilingMicros())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.getTargetSpendMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,1)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.setTargetSpendMicros=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.clearTargetSpendMicros=function(){this.setTargetSpendMicros(void 0)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.hasTargetSpendMicros=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.getCpcBidCeilingMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,2)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.setCpcBidCeilingMicros=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.clearCpcBidCeilingMicros=function(){this.setCpcBidCeilingMicros(void 0)},proto.google.ads.googleads.v3.common.TargetSpend.prototype.hasCpcBidCeilingMicros=function(){return null!=jspb.Message.getField(this,2)},proto.google.ads.googleads.v3.common.PercentCpc=function(opt_data){jspb.Message.initialize(this,opt_data,0,-1,null,null)},goog.inherits(proto.google.ads.googleads.v3.common.PercentCpc,jspb.Message),goog.DEBUG&&!COMPILED&&(proto.google.ads.googleads.v3.common.PercentCpc.displayName="proto.google.ads.googleads.v3.common.PercentCpc"),jspb.Message.GENERATE_TO_OBJECT&&(proto.google.ads.googleads.v3.common.PercentCpc.prototype.toObject=function(opt_includeInstance){return proto.google.ads.googleads.v3.common.PercentCpc.toObject(opt_includeInstance,this)},proto.google.ads.googleads.v3.common.PercentCpc.toObject=function(includeInstance,msg){var f,obj={cpcBidCeilingMicros:(f=msg.getCpcBidCeilingMicros())&&google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance,f),enhancedCpcEnabled:(f=msg.getEnhancedCpcEnabled())&&google_protobuf_wrappers_pb.BoolValue.toObject(includeInstance,f)};return includeInstance&&(obj.$jspbMessageInstance=msg),obj}),proto.google.ads.googleads.v3.common.PercentCpc.deserializeBinary=function(bytes){var reader=new jspb.BinaryReader(bytes),msg=new proto.google.ads.googleads.v3.common.PercentCpc;return proto.google.ads.googleads.v3.common.PercentCpc.deserializeBinaryFromReader(msg,reader)},proto.google.ads.googleads.v3.common.PercentCpc.deserializeBinaryFromReader=function(msg,reader){for(;reader.nextField()&&!reader.isEndGroup();)switch(reader.getFieldNumber()){case 1:var value=new google_protobuf_wrappers_pb.Int64Value;reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader),msg.setCpcBidCeilingMicros(value);break;case 2:value=new google_protobuf_wrappers_pb.BoolValue,reader.readMessage(value,google_protobuf_wrappers_pb.BoolValue.deserializeBinaryFromReader),msg.setEnhancedCpcEnabled(value);break;default:reader.skipField()}return msg},proto.google.ads.googleads.v3.common.PercentCpc.prototype.serializeBinary=function(){var writer=new jspb.BinaryWriter;return proto.google.ads.googleads.v3.common.PercentCpc.serializeBinaryToWriter(this,writer),writer.getResultBuffer()},proto.google.ads.googleads.v3.common.PercentCpc.serializeBinaryToWriter=function(message,writer){var f=void 0;null!=(f=message.getCpcBidCeilingMicros())&&writer.writeMessage(1,f,google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter),null!=(f=message.getEnhancedCpcEnabled())&&writer.writeMessage(2,f,google_protobuf_wrappers_pb.BoolValue.serializeBinaryToWriter)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.getCpcBidCeilingMicros=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.Int64Value,1)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.setCpcBidCeilingMicros=function(value){jspb.Message.setWrapperField(this,1,value)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.clearCpcBidCeilingMicros=function(){this.setCpcBidCeilingMicros(void 0)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.hasCpcBidCeilingMicros=function(){return null!=jspb.Message.getField(this,1)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.getEnhancedCpcEnabled=function(){return jspb.Message.getWrapperField(this,google_protobuf_wrappers_pb.BoolValue,2)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.setEnhancedCpcEnabled=function(value){jspb.Message.setWrapperField(this,2,value)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.clearEnhancedCpcEnabled=function(){this.setEnhancedCpcEnabled(void 0)},proto.google.ads.googleads.v3.common.PercentCpc.prototype.hasEnhancedCpcEnabled=function(){return null!=jspb.Message.getField(this,2)},goog.object.extend(exports,proto.google.ads.googleads.v3.common);
+// source: google/ads/googleads/v3/common/bidding.proto
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_ads_googleads_v3_enums_target_impression_share_location_pb = require('../../../../../google/ads/googleads/v3/enums/target_impression_share_location_pb.js');
+goog.object.extend(proto, google_ads_googleads_v3_enums_target_impression_share_location_pb);
+var google_protobuf_wrappers_pb = require('google-protobuf/google/protobuf/wrappers_pb.js');
+goog.object.extend(proto, google_protobuf_wrappers_pb);
+var google_api_annotations_pb = require('../../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.Commission', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.EnhancedCpc', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.ManualCpc', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.ManualCpm', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.ManualCpv', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.MaximizeConversionValue', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.MaximizeConversions', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.PercentCpc', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.TargetCpa', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.TargetCpm', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.TargetImpressionShare', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.TargetRoas', null, global);
+goog.exportSymbol('proto.google.ads.googleads.v3.common.TargetSpend', null, global);
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.Commission = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.Commission, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.Commission.displayName = 'proto.google.ads.googleads.v3.common.Commission';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.EnhancedCpc, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.EnhancedCpc.displayName = 'proto.google.ads.googleads.v3.common.EnhancedCpc';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.ManualCpc = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.ManualCpc, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.ManualCpc.displayName = 'proto.google.ads.googleads.v3.common.ManualCpc';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.ManualCpm = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.ManualCpm, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.ManualCpm.displayName = 'proto.google.ads.googleads.v3.common.ManualCpm';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.ManualCpv = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.ManualCpv, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.ManualCpv.displayName = 'proto.google.ads.googleads.v3.common.ManualCpv';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.MaximizeConversions, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.MaximizeConversions.displayName = 'proto.google.ads.googleads.v3.common.MaximizeConversions';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.MaximizeConversionValue, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.MaximizeConversionValue.displayName = 'proto.google.ads.googleads.v3.common.MaximizeConversionValue';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.TargetCpa = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.TargetCpa, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.TargetCpa.displayName = 'proto.google.ads.googleads.v3.common.TargetCpa';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.TargetCpm = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.TargetCpm, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.TargetCpm.displayName = 'proto.google.ads.googleads.v3.common.TargetCpm';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.TargetImpressionShare, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.TargetImpressionShare.displayName = 'proto.google.ads.googleads.v3.common.TargetImpressionShare';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.TargetRoas = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.TargetRoas, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.TargetRoas.displayName = 'proto.google.ads.googleads.v3.common.TargetRoas';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.TargetSpend = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.TargetSpend, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.TargetSpend.displayName = 'proto.google.ads.googleads.v3.common.TargetSpend';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.ads.googleads.v3.common.PercentCpc = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.ads.googleads.v3.common.PercentCpc, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.ads.googleads.v3.common.PercentCpc.displayName = 'proto.google.ads.googleads.v3.common.PercentCpc';
+}
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.Commission.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.Commission.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.Commission} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.Commission.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    commissionRateMicros: (f = msg.getCommissionRateMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.Commission}
+ */
+proto.google.ads.googleads.v3.common.Commission.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.Commission;
+  return proto.google.ads.googleads.v3.common.Commission.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.Commission} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.Commission}
+ */
+proto.google.ads.googleads.v3.common.Commission.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCommissionRateMicros(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.Commission.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.Commission.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.Commission} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.Commission.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCommissionRateMicros();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Int64Value commission_rate_micros = 1;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.Commission.prototype.getCommissionRateMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.Commission} returns this
+*/
+proto.google.ads.googleads.v3.common.Commission.prototype.setCommissionRateMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.Commission} returns this
+ */
+proto.google.ads.googleads.v3.common.Commission.prototype.clearCommissionRateMicros = function() {
+  return this.setCommissionRateMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.Commission.prototype.hasCommissionRateMicros = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.EnhancedCpc.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.EnhancedCpc} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.EnhancedCpc}
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.EnhancedCpc;
+  return proto.google.ads.googleads.v3.common.EnhancedCpc.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.EnhancedCpc} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.EnhancedCpc}
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.EnhancedCpc.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.EnhancedCpc} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.EnhancedCpc.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.ManualCpc.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpc} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    enhancedCpcEnabled: (f = msg.getEnhancedCpcEnabled()) && google_protobuf_wrappers_pb.BoolValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpc}
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.ManualCpc;
+  return proto.google.ads.googleads.v3.common.ManualCpc.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpc} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpc}
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.BoolValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.BoolValue.deserializeBinaryFromReader);
+      msg.setEnhancedCpcEnabled(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.ManualCpc.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpc} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getEnhancedCpcEnabled();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.BoolValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.BoolValue enhanced_cpc_enabled = 1;
+ * @return {?proto.google.protobuf.BoolValue}
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.prototype.getEnhancedCpcEnabled = function() {
+  return /** @type{?proto.google.protobuf.BoolValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.BoolValue, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.BoolValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpc} returns this
+*/
+proto.google.ads.googleads.v3.common.ManualCpc.prototype.setEnhancedCpcEnabled = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpc} returns this
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.prototype.clearEnhancedCpcEnabled = function() {
+  return this.setEnhancedCpcEnabled(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.ManualCpc.prototype.hasEnhancedCpcEnabled = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.ManualCpm.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.ManualCpm.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpm} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.ManualCpm.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpm}
+ */
+proto.google.ads.googleads.v3.common.ManualCpm.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.ManualCpm;
+  return proto.google.ads.googleads.v3.common.ManualCpm.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpm} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpm}
+ */
+proto.google.ads.googleads.v3.common.ManualCpm.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.ManualCpm.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.ManualCpm.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpm} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.ManualCpm.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.ManualCpv.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.ManualCpv.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpv} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.ManualCpv.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpv}
+ */
+proto.google.ads.googleads.v3.common.ManualCpv.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.ManualCpv;
+  return proto.google.ads.googleads.v3.common.ManualCpv.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpv} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.ManualCpv}
+ */
+proto.google.ads.googleads.v3.common.ManualCpv.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.ManualCpv.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.ManualCpv.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.ManualCpv} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.ManualCpv.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.MaximizeConversions.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.MaximizeConversions} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.MaximizeConversions}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.MaximizeConversions;
+  return proto.google.ads.googleads.v3.common.MaximizeConversions.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.MaximizeConversions} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.MaximizeConversions}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.MaximizeConversions.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.MaximizeConversions} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversions.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.MaximizeConversionValue.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.MaximizeConversionValue} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    targetRoas: (f = msg.getTargetRoas()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.MaximizeConversionValue}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.MaximizeConversionValue;
+  return proto.google.ads.googleads.v3.common.MaximizeConversionValue.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.MaximizeConversionValue} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.MaximizeConversionValue}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setTargetRoas(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.MaximizeConversionValue.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.MaximizeConversionValue} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTargetRoas();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue target_roas = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.getTargetRoas = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.DoubleValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.MaximizeConversionValue} returns this
+*/
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.setTargetRoas = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.MaximizeConversionValue} returns this
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.clearTargetRoas = function() {
+  return this.setTargetRoas(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.MaximizeConversionValue.prototype.hasTargetRoas = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.TargetCpa.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.TargetCpa} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    targetCpaMicros: (f = msg.getTargetCpaMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    cpcBidCeilingMicros: (f = msg.getCpcBidCeilingMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    cpcBidFloorMicros: (f = msg.getCpcBidFloorMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.TargetCpa;
+  return proto.google.ads.googleads.v3.common.TargetCpa.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.TargetCpa} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTargetCpaMicros(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidCeilingMicros(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidFloorMicros(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.TargetCpa.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.TargetCpa} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTargetCpaMicros();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getCpcBidCeilingMicros();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getCpcBidFloorMicros();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Int64Value target_cpa_micros = 1;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.getTargetCpaMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.setTargetCpaMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.clearTargetCpaMicros = function() {
+  return this.setTargetCpaMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.hasTargetCpaMicros = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_ceiling_micros = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.getCpcBidCeilingMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.setCpcBidCeilingMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.clearCpcBidCeilingMicros = function() {
+  return this.setCpcBidCeilingMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.hasCpcBidCeilingMicros = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_floor_micros = 3;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.getCpcBidFloorMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 3));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.setCpcBidFloorMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpa} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.clearCpcBidFloorMicros = function() {
+  return this.setCpcBidFloorMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetCpa.prototype.hasCpcBidFloorMicros = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.TargetCpm.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.TargetCpm.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.TargetCpm} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetCpm.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpm}
+ */
+proto.google.ads.googleads.v3.common.TargetCpm.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.TargetCpm;
+  return proto.google.ads.googleads.v3.common.TargetCpm.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.TargetCpm} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.TargetCpm}
+ */
+proto.google.ads.googleads.v3.common.TargetCpm.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.TargetCpm.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.TargetCpm.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.TargetCpm} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetCpm.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.TargetImpressionShare.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.TargetImpressionShare} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    location: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    locationFractionMicros: (f = msg.getLocationFractionMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    cpcBidCeilingMicros: (f = msg.getCpcBidCeilingMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.TargetImpressionShare;
+  return proto.google.ads.googleads.v3.common.TargetImpressionShare.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.TargetImpressionShare} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {!proto.google.ads.googleads.v3.enums.TargetImpressionShareLocationEnum.TargetImpressionShareLocation} */ (reader.readEnum());
+      msg.setLocation(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setLocationFractionMicros(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidCeilingMicros(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.TargetImpressionShare.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.TargetImpressionShare} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getLocation();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      1,
+      f
+    );
+  }
+  f = message.getLocationFractionMicros();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getCpcBidCeilingMicros();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.ads.googleads.v3.enums.TargetImpressionShareLocationEnum.TargetImpressionShareLocation location = 1;
+ * @return {!proto.google.ads.googleads.v3.enums.TargetImpressionShareLocationEnum.TargetImpressionShareLocation}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.getLocation = function() {
+  return /** @type {!proto.google.ads.googleads.v3.enums.TargetImpressionShareLocationEnum.TargetImpressionShareLocation} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/**
+ * @param {!proto.google.ads.googleads.v3.enums.TargetImpressionShareLocationEnum.TargetImpressionShareLocation} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.setLocation = function(value) {
+  return jspb.Message.setProto3EnumField(this, 1, value);
+};
+
+
+/**
+ * optional google.protobuf.Int64Value location_fraction_micros = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.getLocationFractionMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.setLocationFractionMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.clearLocationFractionMicros = function() {
+  return this.setLocationFractionMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.hasLocationFractionMicros = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_ceiling_micros = 3;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.getCpcBidCeilingMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 3));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.setCpcBidCeilingMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetImpressionShare} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.clearCpcBidCeilingMicros = function() {
+  return this.setCpcBidCeilingMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetImpressionShare.prototype.hasCpcBidCeilingMicros = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.TargetRoas.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.TargetRoas} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    targetRoas: (f = msg.getTargetRoas()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    cpcBidCeilingMicros: (f = msg.getCpcBidCeilingMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    cpcBidFloorMicros: (f = msg.getCpcBidFloorMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.TargetRoas;
+  return proto.google.ads.googleads.v3.common.TargetRoas.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.TargetRoas} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setTargetRoas(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidCeilingMicros(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidFloorMicros(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.TargetRoas.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.TargetRoas} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTargetRoas();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getCpcBidCeilingMicros();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getCpcBidFloorMicros();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue target_roas = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.getTargetRoas = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.DoubleValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.setTargetRoas = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.clearTargetRoas = function() {
+  return this.setTargetRoas(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.hasTargetRoas = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_ceiling_micros = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.getCpcBidCeilingMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.setCpcBidCeilingMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.clearCpcBidCeilingMicros = function() {
+  return this.setCpcBidCeilingMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.hasCpcBidCeilingMicros = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_floor_micros = 3;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.getCpcBidFloorMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 3));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.setCpcBidFloorMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetRoas} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.clearCpcBidFloorMicros = function() {
+  return this.setCpcBidFloorMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetRoas.prototype.hasCpcBidFloorMicros = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.TargetSpend.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.TargetSpend} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    targetSpendMicros: (f = msg.getTargetSpendMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    cpcBidCeilingMicros: (f = msg.getCpcBidCeilingMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.TargetSpend}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.TargetSpend;
+  return proto.google.ads.googleads.v3.common.TargetSpend.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.TargetSpend} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.TargetSpend}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTargetSpendMicros(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidCeilingMicros(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.TargetSpend.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.TargetSpend} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTargetSpendMicros();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getCpcBidCeilingMicros();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Int64Value target_spend_micros = 1;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.getTargetSpendMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetSpend} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.setTargetSpendMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetSpend} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.clearTargetSpendMicros = function() {
+  return this.setTargetSpendMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.hasTargetSpendMicros = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_ceiling_micros = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.getCpcBidCeilingMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.TargetSpend} returns this
+*/
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.setCpcBidCeilingMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.TargetSpend} returns this
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.clearCpcBidCeilingMicros = function() {
+  return this.setCpcBidCeilingMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.TargetSpend.prototype.hasCpcBidCeilingMicros = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.ads.googleads.v3.common.PercentCpc.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.ads.googleads.v3.common.PercentCpc} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    cpcBidCeilingMicros: (f = msg.getCpcBidCeilingMicros()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    enhancedCpcEnabled: (f = msg.getEnhancedCpcEnabled()) && google_protobuf_wrappers_pb.BoolValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.ads.googleads.v3.common.PercentCpc}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.ads.googleads.v3.common.PercentCpc;
+  return proto.google.ads.googleads.v3.common.PercentCpc.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.ads.googleads.v3.common.PercentCpc} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.ads.googleads.v3.common.PercentCpc}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCpcBidCeilingMicros(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.BoolValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.BoolValue.deserializeBinaryFromReader);
+      msg.setEnhancedCpcEnabled(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.ads.googleads.v3.common.PercentCpc.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.ads.googleads.v3.common.PercentCpc} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCpcBidCeilingMicros();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getEnhancedCpcEnabled();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.BoolValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cpc_bid_ceiling_micros = 1;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.getCpcBidCeilingMicros = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 1));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.Int64Value|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.PercentCpc} returns this
+*/
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.setCpcBidCeilingMicros = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.PercentCpc} returns this
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.clearCpcBidCeilingMicros = function() {
+  return this.setCpcBidCeilingMicros(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.hasCpcBidCeilingMicros = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.BoolValue enhanced_cpc_enabled = 2;
+ * @return {?proto.google.protobuf.BoolValue}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.getEnhancedCpcEnabled = function() {
+  return /** @type{?proto.google.protobuf.BoolValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.BoolValue, 2));
+};
+
+
+/**
+ * @param {?proto.google.protobuf.BoolValue|undefined} value
+ * @return {!proto.google.ads.googleads.v3.common.PercentCpc} returns this
+*/
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.setEnhancedCpcEnabled = function(value) {
+  return jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.google.ads.googleads.v3.common.PercentCpc} returns this
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.clearEnhancedCpcEnabled = function() {
+  return this.setEnhancedCpcEnabled(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.ads.googleads.v3.common.PercentCpc.prototype.hasEnhancedCpcEnabled = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+goog.object.extend(exports, proto.google.ads.googleads.v3.common);

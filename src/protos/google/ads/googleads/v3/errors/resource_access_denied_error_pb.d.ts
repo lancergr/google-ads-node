@@ -19,10 +19,12 @@ export namespace ResourceAccessDeniedErrorEnum {
   export type AsObject = {
   }
 
-  export enum ResourceAccessDeniedError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    WRITE_ACCESS_DENIED = 3,
+  export interface ResourceAccessDeniedErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    WRITE_ACCESS_DENIED: 3;
   }
+
+  export const ResourceAccessDeniedError: ResourceAccessDeniedErrorMap;
 }
 

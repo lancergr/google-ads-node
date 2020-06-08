@@ -6,6 +6,7 @@ import * as google_ads_googleads_v3_enums_budget_delivery_method_pb from "../../
 import * as google_ads_googleads_v3_enums_budget_period_pb from "../../../../../google/ads/googleads/v3/enums/budget_period_pb";
 import * as google_ads_googleads_v3_enums_budget_status_pb from "../../../../../google/ads/googleads/v3/enums/budget_status_pb";
 import * as google_ads_googleads_v3_enums_budget_type_pb from "../../../../../google/ads/googleads/v3/enums/budget_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -34,11 +35,11 @@ export class CampaignBudget extends jspb.Message {
   getTotalAmountMicros(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setTotalAmountMicros(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getStatus(): google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatus;
-  setStatus(value: google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatusMap[keyof google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatusMap[keyof google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatusMap]): void;
 
-  getDeliveryMethod(): google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethod;
-  setDeliveryMethod(value: google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethod): void;
+  getDeliveryMethod(): google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethodMap[keyof google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethodMap];
+  setDeliveryMethod(value: google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethodMap[keyof google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethodMap]): void;
 
   hasExplicitlyShared(): boolean;
   clearExplicitlyShared(): void;
@@ -60,8 +61,8 @@ export class CampaignBudget extends jspb.Message {
   getRecommendedBudgetAmountMicros(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setRecommendedBudgetAmountMicros(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getPeriod(): google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriod;
-  setPeriod(value: google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriod): void;
+  getPeriod(): google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriodMap[keyof google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriodMap];
+  setPeriod(value: google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriodMap[keyof google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriodMap]): void;
 
   hasRecommendedBudgetEstimatedChangeWeeklyClicks(): boolean;
   clearRecommendedBudgetEstimatedChangeWeeklyClicks(): void;
@@ -83,8 +84,8 @@ export class CampaignBudget extends jspb.Message {
   getRecommendedBudgetEstimatedChangeWeeklyViews(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setRecommendedBudgetEstimatedChangeWeeklyViews(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getType(): google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetType;
-  setType(value: google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetType): void;
+  getType(): google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetTypeMap[keyof google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetTypeMap];
+  setType(value: google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetTypeMap[keyof google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CampaignBudget.AsObject;
@@ -103,18 +104,18 @@ export namespace CampaignBudget {
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     amountMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     totalAmountMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    status: google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatus,
-    deliveryMethod: google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethod,
+    status: google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatusMap[keyof google_ads_googleads_v3_enums_budget_status_pb.BudgetStatusEnum.BudgetStatusMap],
+    deliveryMethod: google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethodMap[keyof google_ads_googleads_v3_enums_budget_delivery_method_pb.BudgetDeliveryMethodEnum.BudgetDeliveryMethodMap],
     explicitlyShared?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     referenceCount?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     hasRecommendedBudget?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     recommendedBudgetAmountMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    period: google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriod,
+    period: google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriodMap[keyof google_ads_googleads_v3_enums_budget_period_pb.BudgetPeriodEnum.BudgetPeriodMap],
     recommendedBudgetEstimatedChangeWeeklyClicks?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     recommendedBudgetEstimatedChangeWeeklyCostMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     recommendedBudgetEstimatedChangeWeeklyInteractions?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     recommendedBudgetEstimatedChangeWeeklyViews?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    type: google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetType,
+    type: google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetTypeMap[keyof google_ads_googleads_v3_enums_budget_type_pb.BudgetTypeEnum.BudgetTypeMap],
   }
 }
 

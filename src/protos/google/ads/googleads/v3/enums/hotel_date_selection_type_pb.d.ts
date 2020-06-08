@@ -19,11 +19,13 @@ export namespace HotelDateSelectionTypeEnum {
   export type AsObject = {
   }
 
-  export enum HotelDateSelectionType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    DEFAULT_SELECTION = 50,
-    USER_SELECTED = 51,
+  export interface HotelDateSelectionTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    DEFAULT_SELECTION: 50;
+    USER_SELECTED: 51;
   }
+
+  export const HotelDateSelectionType: HotelDateSelectionTypeMap;
 }
 

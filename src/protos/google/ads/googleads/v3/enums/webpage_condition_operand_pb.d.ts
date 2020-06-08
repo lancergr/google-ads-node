@@ -19,14 +19,16 @@ export namespace WebpageConditionOperandEnum {
   export type AsObject = {
   }
 
-  export enum WebpageConditionOperand {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    URL = 2,
-    CATEGORY = 3,
-    PAGE_TITLE = 4,
-    PAGE_CONTENT = 5,
-    CUSTOM_LABEL = 6,
+  export interface WebpageConditionOperandMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    URL: 2;
+    CATEGORY: 3;
+    PAGE_TITLE: 4;
+    PAGE_CONTENT: 5;
+    CUSTOM_LABEL: 6;
   }
+
+  export const WebpageConditionOperand: WebpageConditionOperandMap;
 }
 

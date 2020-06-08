@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_google_ads_field_category_pb from "../../../../../google/ads/googleads/v3/enums/google_ads_field_category_pb";
 import * as google_ads_googleads_v3_enums_google_ads_field_data_type_pb from "../../../../../google/ads/googleads/v3/enums/google_ads_field_data_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,8 +18,8 @@ export class GoogleAdsField extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getCategory(): google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategory;
-  setCategory(value: google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategory): void;
+  getCategory(): google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategoryMap[keyof google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategoryMap];
+  setCategory(value: google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategoryMap[keyof google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategoryMap]): void;
 
   hasSelectable(): boolean;
   clearSelectable(): void;
@@ -60,8 +61,8 @@ export class GoogleAdsField extends jspb.Message {
   setEnumValuesList(value: Array<google_protobuf_wrappers_pb.StringValue>): void;
   addEnumValues(value?: google_protobuf_wrappers_pb.StringValue, index?: number): google_protobuf_wrappers_pb.StringValue;
 
-  getDataType(): google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataType;
-  setDataType(value: google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataType): void;
+  getDataType(): google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataTypeMap[keyof google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataTypeMap];
+  setDataType(value: google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataTypeMap[keyof google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataTypeMap]): void;
 
   hasTypeUrl(): boolean;
   clearTypeUrl(): void;
@@ -87,7 +88,7 @@ export namespace GoogleAdsField {
   export type AsObject = {
     resourceName: string,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    category: google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategory,
+    category: google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategoryMap[keyof google_ads_googleads_v3_enums_google_ads_field_category_pb.GoogleAdsFieldCategoryEnum.GoogleAdsFieldCategoryMap],
     selectable?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     filterable?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     sortable?: google_protobuf_wrappers_pb.BoolValue.AsObject,
@@ -96,7 +97,7 @@ export namespace GoogleAdsField {
     metricsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     segmentsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     enumValuesList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
-    dataType: google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataType,
+    dataType: google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataTypeMap[keyof google_ads_googleads_v3_enums_google_ads_field_data_type_pb.GoogleAdsFieldDataTypeEnum.GoogleAdsFieldDataTypeMap],
     typeUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
     isRepeated?: google_protobuf_wrappers_pb.BoolValue.AsObject,
   }

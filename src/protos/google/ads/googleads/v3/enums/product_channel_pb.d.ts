@@ -19,11 +19,13 @@ export namespace ProductChannelEnum {
   export type AsObject = {
   }
 
-  export enum ProductChannel {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ONLINE = 2,
-    LOCAL = 3,
+  export interface ProductChannelMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ONLINE: 2;
+    LOCAL: 3;
   }
+
+  export const ProductChannel: ProductChannelMap;
 }
 

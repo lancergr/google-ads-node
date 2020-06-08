@@ -2,6 +2,7 @@
 // file: google/ads/googleads/v3/resources/location_view.proto
 
 import * as jspb from "google-protobuf";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 

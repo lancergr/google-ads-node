@@ -19,11 +19,13 @@ export namespace LabelStatusEnum {
   export type AsObject = {
   }
 
-  export enum LabelStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
+  export interface LabelStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
   }
+
+  export const LabelStatus: LabelStatusMap;
 }
 

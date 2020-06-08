@@ -19,12 +19,14 @@ export namespace DisplayAdFormatSettingEnum {
   export type AsObject = {
   }
 
-  export enum DisplayAdFormatSetting {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ALL_FORMATS = 2,
-    NON_NATIVE = 3,
-    NATIVE = 4,
+  export interface DisplayAdFormatSettingMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ALL_FORMATS: 2;
+    NON_NATIVE: 3;
+    NATIVE: 4;
   }
+
+  export const DisplayAdFormatSetting: DisplayAdFormatSettingMap;
 }
 

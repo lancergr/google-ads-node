@@ -42,11 +42,11 @@ export class CrmBasedUserListInfo extends jspb.Message {
   getAppId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAppId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getUploadKeyType(): google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyType;
-  setUploadKeyType(value: google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyType): void;
+  getUploadKeyType(): google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyTypeMap[keyof google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyTypeMap];
+  setUploadKeyType(value: google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyTypeMap[keyof google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyTypeMap]): void;
 
-  getDataSourceType(): google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceType;
-  setDataSourceType(value: google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceType): void;
+  getDataSourceType(): google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceTypeMap[keyof google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceTypeMap];
+  setDataSourceType(value: google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceTypeMap[keyof google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CrmBasedUserListInfo.AsObject;
@@ -61,14 +61,14 @@ export class CrmBasedUserListInfo extends jspb.Message {
 export namespace CrmBasedUserListInfo {
   export type AsObject = {
     appId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    uploadKeyType: google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyType,
-    dataSourceType: google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceType,
+    uploadKeyType: google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyTypeMap[keyof google_ads_googleads_v3_enums_customer_match_upload_key_type_pb.CustomerMatchUploadKeyTypeEnum.CustomerMatchUploadKeyTypeMap],
+    dataSourceType: google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceTypeMap[keyof google_ads_googleads_v3_enums_user_list_crm_data_source_type_pb.UserListCrmDataSourceTypeEnum.UserListCrmDataSourceTypeMap],
   }
 }
 
 export class UserListRuleInfo extends jspb.Message {
-  getRuleType(): google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleType;
-  setRuleType(value: google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleType): void;
+  getRuleType(): google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleTypeMap[keyof google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleTypeMap];
+  setRuleType(value: google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleTypeMap[keyof google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleTypeMap]): void;
 
   clearRuleItemGroupsList(): void;
   getRuleItemGroupsList(): Array<UserListRuleItemGroupInfo>;
@@ -87,7 +87,7 @@ export class UserListRuleInfo extends jspb.Message {
 
 export namespace UserListRuleInfo {
   export type AsObject = {
-    ruleType: google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleType,
+    ruleType: google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleTypeMap[keyof google_ads_googleads_v3_enums_user_list_rule_type_pb.UserListRuleTypeEnum.UserListRuleTypeMap],
     ruleItemGroupsList: Array<UserListRuleItemGroupInfo.AsObject>,
   }
 }
@@ -163,8 +163,8 @@ export namespace UserListRuleItemInfo {
 }
 
 export class UserListDateRuleItemInfo extends jspb.Message {
-  getOperator(): google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperator;
-  setOperator(value: google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperator): void;
+  getOperator(): google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperatorMap];
+  setOperator(value: google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperatorMap]): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -188,15 +188,15 @@ export class UserListDateRuleItemInfo extends jspb.Message {
 
 export namespace UserListDateRuleItemInfo {
   export type AsObject = {
-    operator: google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperator,
+    operator: google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_date_rule_item_operator_pb.UserListDateRuleItemOperatorEnum.UserListDateRuleItemOperatorMap],
     value?: google_protobuf_wrappers_pb.StringValue.AsObject,
     offsetInDays?: google_protobuf_wrappers_pb.Int64Value.AsObject,
   }
 }
 
 export class UserListNumberRuleItemInfo extends jspb.Message {
-  getOperator(): google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperator;
-  setOperator(value: google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperator): void;
+  getOperator(): google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperatorMap];
+  setOperator(value: google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperatorMap]): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -215,14 +215,14 @@ export class UserListNumberRuleItemInfo extends jspb.Message {
 
 export namespace UserListNumberRuleItemInfo {
   export type AsObject = {
-    operator: google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperator,
+    operator: google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_number_rule_item_operator_pb.UserListNumberRuleItemOperatorEnum.UserListNumberRuleItemOperatorMap],
     value?: google_protobuf_wrappers_pb.DoubleValue.AsObject,
   }
 }
 
 export class UserListStringRuleItemInfo extends jspb.Message {
-  getOperator(): google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperator;
-  setOperator(value: google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperator): void;
+  getOperator(): google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperatorMap];
+  setOperator(value: google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperatorMap]): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -241,7 +241,7 @@ export class UserListStringRuleItemInfo extends jspb.Message {
 
 export namespace UserListStringRuleItemInfo {
   export type AsObject = {
-    operator: google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperator,
+    operator: google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperatorMap[keyof google_ads_googleads_v3_enums_user_list_string_rule_item_operator_pb.UserListStringRuleItemOperatorEnum.UserListStringRuleItemOperatorMap],
     value?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 }
@@ -257,8 +257,8 @@ export class CombinedRuleUserListInfo extends jspb.Message {
   getRightOperand(): UserListRuleInfo | undefined;
   setRightOperand(value?: UserListRuleInfo): void;
 
-  getRuleOperator(): google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperator;
-  setRuleOperator(value: google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperator): void;
+  getRuleOperator(): google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperatorMap[keyof google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperatorMap];
+  setRuleOperator(value: google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperatorMap[keyof google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperatorMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CombinedRuleUserListInfo.AsObject;
@@ -274,7 +274,7 @@ export namespace CombinedRuleUserListInfo {
   export type AsObject = {
     leftOperand?: UserListRuleInfo.AsObject,
     rightOperand?: UserListRuleInfo.AsObject,
-    ruleOperator: google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperator,
+    ruleOperator: google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperatorMap[keyof google_ads_googleads_v3_enums_user_list_combined_rule_operator_pb.UserListCombinedRuleOperatorEnum.UserListCombinedRuleOperatorMap],
   }
 }
 
@@ -335,8 +335,8 @@ export namespace ExpressionRuleUserListInfo {
 }
 
 export class RuleBasedUserListInfo extends jspb.Message {
-  getPrepopulationStatus(): google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatus;
-  setPrepopulationStatus(value: google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatus): void;
+  getPrepopulationStatus(): google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatusMap[keyof google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatusMap];
+  setPrepopulationStatus(value: google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatusMap[keyof google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatusMap]): void;
 
   hasCombinedRuleUserList(): boolean;
   clearCombinedRuleUserList(): void;
@@ -366,7 +366,7 @@ export class RuleBasedUserListInfo extends jspb.Message {
 
 export namespace RuleBasedUserListInfo {
   export type AsObject = {
-    prepopulationStatus: google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatus,
+    prepopulationStatus: google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatusMap[keyof google_ads_googleads_v3_enums_user_list_prepopulation_status_pb.UserListPrepopulationStatusEnum.UserListPrepopulationStatusMap],
     combinedRuleUserList?: CombinedRuleUserListInfo.AsObject,
     dateSpecificRuleUserList?: DateSpecificRuleUserListInfo.AsObject,
     expressionRuleUserList?: ExpressionRuleUserListInfo.AsObject,
@@ -403,8 +403,8 @@ export namespace LogicalUserListInfo {
 }
 
 export class UserListLogicalRuleInfo extends jspb.Message {
-  getOperator(): google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperator;
-  setOperator(value: google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperator): void;
+  getOperator(): google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperatorMap[keyof google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperatorMap];
+  setOperator(value: google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperatorMap[keyof google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperatorMap]): void;
 
   clearRuleOperandsList(): void;
   getRuleOperandsList(): Array<LogicalUserListOperandInfo>;
@@ -423,7 +423,7 @@ export class UserListLogicalRuleInfo extends jspb.Message {
 
 export namespace UserListLogicalRuleInfo {
   export type AsObject = {
-    operator: google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperator,
+    operator: google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperatorMap[keyof google_ads_googleads_v3_enums_user_list_logical_rule_operator_pb.UserListLogicalRuleOperatorEnum.UserListLogicalRuleOperatorMap],
     ruleOperandsList: Array<LogicalUserListOperandInfo.AsObject>,
   }
 }

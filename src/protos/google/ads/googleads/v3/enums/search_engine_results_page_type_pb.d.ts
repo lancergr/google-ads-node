@@ -19,12 +19,14 @@ export namespace SearchEngineResultsPageTypeEnum {
   export type AsObject = {
   }
 
-  export enum SearchEngineResultsPageType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADS_ONLY = 2,
-    ORGANIC_ONLY = 3,
-    ADS_AND_ORGANIC = 4,
+  export interface SearchEngineResultsPageTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADS_ONLY: 2;
+    ORGANIC_ONLY: 3;
+    ADS_AND_ORGANIC: 4;
   }
+
+  export const SearchEngineResultsPageType: SearchEngineResultsPageTypeMap;
 }
 

@@ -19,12 +19,14 @@ export namespace ParentalStatusTypeEnum {
   export type AsObject = {
   }
 
-  export enum ParentalStatusType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PARENT = 300,
-    NOT_A_PARENT = 301,
-    UNDETERMINED = 302,
+  export interface ParentalStatusTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PARENT: 300;
+    NOT_A_PARENT: 301;
+    UNDETERMINED: 302;
   }
+
+  export const ParentalStatusType: ParentalStatusTypeMap;
 }
 

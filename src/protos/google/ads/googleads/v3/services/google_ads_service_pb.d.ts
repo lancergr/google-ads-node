@@ -85,6 +85,7 @@ import * as google_ads_googleads_v3_resources_media_file_pb from "../../../../..
 import * as google_ads_googleads_v3_resources_mobile_app_category_constant_pb from "../../../../../google/ads/googleads/v3/resources/mobile_app_category_constant_pb";
 import * as google_ads_googleads_v3_resources_mobile_device_constant_pb from "../../../../../google/ads/googleads/v3/resources/mobile_device_constant_pb";
 import * as google_ads_googleads_v3_resources_mutate_job_pb from "../../../../../google/ads/googleads/v3/resources/mutate_job_pb";
+import * as google_ads_googleads_v3_resources_offline_user_data_job_pb from "../../../../../google/ads/googleads/v3/resources/offline_user_data_job_pb";
 import * as google_ads_googleads_v3_resources_operating_system_version_constant_pb from "../../../../../google/ads/googleads/v3/resources/operating_system_version_constant_pb";
 import * as google_ads_googleads_v3_resources_paid_organic_search_term_view_pb from "../../../../../google/ads/googleads/v3/resources/paid_organic_search_term_view_pb";
 import * as google_ads_googleads_v3_resources_parental_status_view_pb from "../../../../../google/ads/googleads/v3/resources/parental_status_view_pb";
@@ -112,6 +113,7 @@ import * as google_ads_googleads_v3_services_ad_group_feed_service_pb from "../.
 import * as google_ads_googleads_v3_services_ad_group_label_service_pb from "../../../../../google/ads/googleads/v3/services/ad_group_label_service_pb";
 import * as google_ads_googleads_v3_services_ad_group_service_pb from "../../../../../google/ads/googleads/v3/services/ad_group_service_pb";
 import * as google_ads_googleads_v3_services_ad_parameter_service_pb from "../../../../../google/ads/googleads/v3/services/ad_parameter_service_pb";
+import * as google_ads_googleads_v3_services_ad_service_pb from "../../../../../google/ads/googleads/v3/services/ad_service_pb";
 import * as google_ads_googleads_v3_services_asset_service_pb from "../../../../../google/ads/googleads/v3/services/asset_service_pb";
 import * as google_ads_googleads_v3_services_bidding_strategy_service_pb from "../../../../../google/ads/googleads/v3/services/bidding_strategy_service_pb";
 import * as google_ads_googleads_v3_services_campaign_bid_modifier_service_pb from "../../../../../google/ads/googleads/v3/services/campaign_bid_modifier_service_pb";
@@ -166,8 +168,8 @@ export class SearchGoogleAdsRequest extends jspb.Message {
   getReturnTotalResultsCount(): boolean;
   setReturnTotalResultsCount(value: boolean): void;
 
-  getSummaryRowSetting(): google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSetting;
-  setSummaryRowSetting(value: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSetting): void;
+  getSummaryRowSetting(): google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap[keyof google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap];
+  setSummaryRowSetting(value: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap[keyof google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SearchGoogleAdsRequest.AsObject;
@@ -187,7 +189,7 @@ export namespace SearchGoogleAdsRequest {
     pageSize: number,
     validateOnly: boolean,
     returnTotalResultsCount: boolean,
-    summaryRowSetting: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSetting,
+    summaryRowSetting: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap[keyof google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap],
   }
 }
 
@@ -240,8 +242,8 @@ export class SearchGoogleAdsStreamRequest extends jspb.Message {
   getQuery(): string;
   setQuery(value: string): void;
 
-  getSummaryRowSetting(): google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSetting;
-  setSummaryRowSetting(value: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSetting): void;
+  getSummaryRowSetting(): google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap[keyof google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap];
+  setSummaryRowSetting(value: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap[keyof google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SearchGoogleAdsStreamRequest.AsObject;
@@ -257,7 +259,7 @@ export namespace SearchGoogleAdsStreamRequest {
   export type AsObject = {
     customerId: string,
     query: string,
-    summaryRowSetting: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSetting,
+    summaryRowSetting: google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap[keyof google_ads_googleads_v3_enums_summary_row_setting_pb.SummaryRowSettingEnum.SummaryRowSettingMap],
   }
 }
 
@@ -696,6 +698,11 @@ export class GoogleAdsRow extends jspb.Message {
   getMutateJob(): google_ads_googleads_v3_resources_mutate_job_pb.MutateJob | undefined;
   setMutateJob(value?: google_ads_googleads_v3_resources_mutate_job_pb.MutateJob): void;
 
+  hasOfflineUserDataJob(): boolean;
+  clearOfflineUserDataJob(): void;
+  getOfflineUserDataJob(): google_ads_googleads_v3_resources_offline_user_data_job_pb.OfflineUserDataJob | undefined;
+  setOfflineUserDataJob(value?: google_ads_googleads_v3_resources_offline_user_data_job_pb.OfflineUserDataJob): void;
+
   hasOperatingSystemVersionConstant(): boolean;
   clearOperatingSystemVersionConstant(): void;
   getOperatingSystemVersionConstant(): google_ads_googleads_v3_resources_operating_system_version_constant_pb.OperatingSystemVersionConstant | undefined;
@@ -883,6 +890,7 @@ export namespace GoogleAdsRow {
     mobileAppCategoryConstant?: google_ads_googleads_v3_resources_mobile_app_category_constant_pb.MobileAppCategoryConstant.AsObject,
     mobileDeviceConstant?: google_ads_googleads_v3_resources_mobile_device_constant_pb.MobileDeviceConstant.AsObject,
     mutateJob?: google_ads_googleads_v3_resources_mutate_job_pb.MutateJob.AsObject,
+    offlineUserDataJob?: google_ads_googleads_v3_resources_offline_user_data_job_pb.OfflineUserDataJob.AsObject,
     operatingSystemVersionConstant?: google_ads_googleads_v3_resources_operating_system_version_constant_pb.OperatingSystemVersionConstant.AsObject,
     paidOrganicSearchTermView?: google_ads_googleads_v3_resources_paid_organic_search_term_view_pb.PaidOrganicSearchTermView.AsObject,
     parentalStatusView?: google_ads_googleads_v3_resources_parental_status_view_pb.ParentalStatusView.AsObject,
@@ -1012,6 +1020,11 @@ export class MutateOperation extends jspb.Message {
   clearAdGroupOperation(): void;
   getAdGroupOperation(): google_ads_googleads_v3_services_ad_group_service_pb.AdGroupOperation | undefined;
   setAdGroupOperation(value?: google_ads_googleads_v3_services_ad_group_service_pb.AdGroupOperation): void;
+
+  hasAdOperation(): boolean;
+  clearAdOperation(): void;
+  getAdOperation(): google_ads_googleads_v3_services_ad_service_pb.AdOperation | undefined;
+  setAdOperation(value?: google_ads_googleads_v3_services_ad_service_pb.AdOperation): void;
 
   hasAdParameterOperation(): boolean;
   clearAdParameterOperation(): void;
@@ -1185,6 +1198,7 @@ export namespace MutateOperation {
     adGroupFeedOperation?: google_ads_googleads_v3_services_ad_group_feed_service_pb.AdGroupFeedOperation.AsObject,
     adGroupLabelOperation?: google_ads_googleads_v3_services_ad_group_label_service_pb.AdGroupLabelOperation.AsObject,
     adGroupOperation?: google_ads_googleads_v3_services_ad_group_service_pb.AdGroupOperation.AsObject,
+    adOperation?: google_ads_googleads_v3_services_ad_service_pb.AdOperation.AsObject,
     adParameterOperation?: google_ads_googleads_v3_services_ad_parameter_service_pb.AdParameterOperation.AsObject,
     assetOperation?: google_ads_googleads_v3_services_asset_service_pb.AssetOperation.AsObject,
     biddingStrategyOperation?: google_ads_googleads_v3_services_bidding_strategy_service_pb.BiddingStrategyOperation.AsObject,
@@ -1228,6 +1242,7 @@ export namespace MutateOperation {
     AD_GROUP_FEED_OPERATION = 20,
     AD_GROUP_LABEL_OPERATION = 21,
     AD_GROUP_OPERATION = 5,
+    AD_OPERATION = 49,
     AD_PARAMETER_OPERATION = 22,
     ASSET_OPERATION = 23,
     BIDDING_STRATEGY_OPERATION = 6,
@@ -1311,6 +1326,11 @@ export class MutateOperationResponse extends jspb.Message {
   clearAdParameterResult(): void;
   getAdParameterResult(): google_ads_googleads_v3_services_ad_parameter_service_pb.MutateAdParameterResult | undefined;
   setAdParameterResult(value?: google_ads_googleads_v3_services_ad_parameter_service_pb.MutateAdParameterResult): void;
+
+  hasAdResult(): boolean;
+  clearAdResult(): void;
+  getAdResult(): google_ads_googleads_v3_services_ad_service_pb.MutateAdResult | undefined;
+  setAdResult(value?: google_ads_googleads_v3_services_ad_service_pb.MutateAdResult): void;
 
   hasAssetResult(): boolean;
   clearAssetResult(): void;
@@ -1480,6 +1500,7 @@ export namespace MutateOperationResponse {
     adGroupLabelResult?: google_ads_googleads_v3_services_ad_group_label_service_pb.MutateAdGroupLabelResult.AsObject,
     adGroupResult?: google_ads_googleads_v3_services_ad_group_service_pb.MutateAdGroupResult.AsObject,
     adParameterResult?: google_ads_googleads_v3_services_ad_parameter_service_pb.MutateAdParameterResult.AsObject,
+    adResult?: google_ads_googleads_v3_services_ad_service_pb.MutateAdResult.AsObject,
     assetResult?: google_ads_googleads_v3_services_asset_service_pb.MutateAssetResult.AsObject,
     biddingStrategyResult?: google_ads_googleads_v3_services_bidding_strategy_service_pb.MutateBiddingStrategyResult.AsObject,
     campaignBidModifierResult?: google_ads_googleads_v3_services_campaign_bid_modifier_service_pb.MutateCampaignBidModifierResult.AsObject,
@@ -1523,6 +1544,7 @@ export namespace MutateOperationResponse {
     AD_GROUP_LABEL_RESULT = 21,
     AD_GROUP_RESULT = 5,
     AD_PARAMETER_RESULT = 22,
+    AD_RESULT = 49,
     ASSET_RESULT = 23,
     BIDDING_STRATEGY_RESULT = 6,
     CAMPAIGN_BID_MODIFIER_RESULT = 7,

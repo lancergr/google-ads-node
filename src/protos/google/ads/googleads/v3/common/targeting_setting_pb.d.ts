@@ -35,8 +35,8 @@ export namespace TargetingSetting {
 }
 
 export class TargetRestriction extends jspb.Message {
-  getTargetingDimension(): google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimension;
-  setTargetingDimension(value: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimension): void;
+  getTargetingDimension(): google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap[keyof google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap];
+  setTargetingDimension(value: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap[keyof google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap]): void;
 
   hasBidOnly(): boolean;
   clearBidOnly(): void;
@@ -55,14 +55,14 @@ export class TargetRestriction extends jspb.Message {
 
 export namespace TargetRestriction {
   export type AsObject = {
-    targetingDimension: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimension,
+    targetingDimension: google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap[keyof google_ads_googleads_v3_enums_targeting_dimension_pb.TargetingDimensionEnum.TargetingDimensionMap],
     bidOnly?: google_protobuf_wrappers_pb.BoolValue.AsObject,
   }
 }
 
 export class TargetRestrictionOperation extends jspb.Message {
-  getOperator(): TargetRestrictionOperation.Operator;
-  setOperator(value: TargetRestrictionOperation.Operator): void;
+  getOperator(): TargetRestrictionOperation.OperatorMap[keyof TargetRestrictionOperation.OperatorMap];
+  setOperator(value: TargetRestrictionOperation.OperatorMap[keyof TargetRestrictionOperation.OperatorMap]): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -81,15 +81,17 @@ export class TargetRestrictionOperation extends jspb.Message {
 
 export namespace TargetRestrictionOperation {
   export type AsObject = {
-    operator: TargetRestrictionOperation.Operator,
+    operator: TargetRestrictionOperation.OperatorMap[keyof TargetRestrictionOperation.OperatorMap],
     value?: TargetRestriction.AsObject,
   }
 
-  export enum Operator {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADD = 2,
-    REMOVE = 3,
+  export interface OperatorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADD: 2;
+    REMOVE: 3;
   }
+
+  export const Operator: OperatorMap;
 }
 

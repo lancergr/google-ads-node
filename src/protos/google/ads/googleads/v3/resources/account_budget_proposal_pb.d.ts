@@ -6,6 +6,7 @@ import * as google_ads_googleads_v3_enums_account_budget_proposal_status_pb from
 import * as google_ads_googleads_v3_enums_account_budget_proposal_type_pb from "../../../../../google/ads/googleads/v3/enums/account_budget_proposal_type_pb";
 import * as google_ads_googleads_v3_enums_spending_limit_type_pb from "../../../../../google/ads/googleads/v3/enums/spending_limit_type_pb";
 import * as google_ads_googleads_v3_enums_time_type_pb from "../../../../../google/ads/googleads/v3/enums/time_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -29,11 +30,11 @@ export class AccountBudgetProposal extends jspb.Message {
   getAccountBudget(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAccountBudget(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getProposalType(): google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalType;
-  setProposalType(value: google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalType): void;
+  getProposalType(): google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalTypeMap[keyof google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalTypeMap];
+  setProposalType(value: google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalTypeMap[keyof google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalTypeMap]): void;
 
-  getStatus(): google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatus;
-  setStatus(value: google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatusMap[keyof google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatusMap[keyof google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatusMap]): void;
 
   hasProposedName(): boolean;
   clearProposedName(): void;
@@ -72,8 +73,8 @@ export class AccountBudgetProposal extends jspb.Message {
 
   hasProposedStartTimeType(): boolean;
   clearProposedStartTimeType(): void;
-  getProposedStartTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType;
-  setProposedStartTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType): void;
+  getProposedStartTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap];
+  setProposedStartTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap]): void;
 
   hasProposedEndDateTime(): boolean;
   clearProposedEndDateTime(): void;
@@ -82,8 +83,8 @@ export class AccountBudgetProposal extends jspb.Message {
 
   hasProposedEndTimeType(): boolean;
   clearProposedEndTimeType(): void;
-  getProposedEndTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType;
-  setProposedEndTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType): void;
+  getProposedEndTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap];
+  setProposedEndTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap]): void;
 
   hasApprovedEndDateTime(): boolean;
   clearApprovedEndDateTime(): void;
@@ -92,8 +93,8 @@ export class AccountBudgetProposal extends jspb.Message {
 
   hasApprovedEndTimeType(): boolean;
   clearApprovedEndTimeType(): void;
-  getApprovedEndTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType;
-  setApprovedEndTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType): void;
+  getApprovedEndTimeType(): google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap];
+  setApprovedEndTimeType(value: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap]): void;
 
   hasProposedSpendingLimitMicros(): boolean;
   clearProposedSpendingLimitMicros(): void;
@@ -102,8 +103,8 @@ export class AccountBudgetProposal extends jspb.Message {
 
   hasProposedSpendingLimitType(): boolean;
   clearProposedSpendingLimitType(): void;
-  getProposedSpendingLimitType(): google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitType;
-  setProposedSpendingLimitType(value: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitType): void;
+  getProposedSpendingLimitType(): google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap[keyof google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap];
+  setProposedSpendingLimitType(value: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap[keyof google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap]): void;
 
   hasApprovedSpendingLimitMicros(): boolean;
   clearApprovedSpendingLimitMicros(): void;
@@ -112,8 +113,8 @@ export class AccountBudgetProposal extends jspb.Message {
 
   hasApprovedSpendingLimitType(): boolean;
   clearApprovedSpendingLimitType(): void;
-  getApprovedSpendingLimitType(): google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitType;
-  setApprovedSpendingLimitType(value: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitType): void;
+  getApprovedSpendingLimitType(): google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap[keyof google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap];
+  setApprovedSpendingLimitType(value: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap[keyof google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap]): void;
 
   getProposedStartTimeCase(): AccountBudgetProposal.ProposedStartTimeCase;
   getProposedEndTimeCase(): AccountBudgetProposal.ProposedEndTimeCase;
@@ -136,8 +137,8 @@ export namespace AccountBudgetProposal {
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     billingSetup?: google_protobuf_wrappers_pb.StringValue.AsObject,
     accountBudget?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    proposalType: google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalType,
-    status: google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatus,
+    proposalType: google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalTypeMap[keyof google_ads_googleads_v3_enums_account_budget_proposal_type_pb.AccountBudgetProposalTypeEnum.AccountBudgetProposalTypeMap],
+    status: google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatusMap[keyof google_ads_googleads_v3_enums_account_budget_proposal_status_pb.AccountBudgetProposalStatusEnum.AccountBudgetProposalStatusMap],
     proposedName?: google_protobuf_wrappers_pb.StringValue.AsObject,
     approvedStartDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     proposedPurchaseOrderNumber?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -145,15 +146,15 @@ export namespace AccountBudgetProposal {
     creationDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     approvalDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
     proposedStartDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    proposedStartTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType,
+    proposedStartTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap],
     proposedEndDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    proposedEndTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType,
+    proposedEndTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap],
     approvedEndDateTime?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    approvedEndTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeType,
+    approvedEndTimeType: google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap[keyof google_ads_googleads_v3_enums_time_type_pb.TimeTypeEnum.TimeTypeMap],
     proposedSpendingLimitMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    proposedSpendingLimitType: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitType,
+    proposedSpendingLimitType: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap[keyof google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap],
     approvedSpendingLimitMicros?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    approvedSpendingLimitType: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitType,
+    approvedSpendingLimitType: google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap[keyof google_ads_googleads_v3_enums_spending_limit_type_pb.SpendingLimitTypeEnum.SpendingLimitTypeMap],
   }
 
   export enum ProposedStartTimeCase {

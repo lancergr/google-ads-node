@@ -19,11 +19,13 @@ export namespace CampaignSharedSetStatusEnum {
   export type AsObject = {
   }
 
-  export enum CampaignSharedSetStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
+  export interface CampaignSharedSetStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
   }
+
+  export const CampaignSharedSetStatus: CampaignSharedSetStatusMap;
 }
 

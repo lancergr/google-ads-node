@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_geo_target_constant_status_pb from "../../../../../google/ads/googleads/v3/enums/geo_target_constant_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -31,8 +32,8 @@ export class GeoTargetConstant extends jspb.Message {
   getTargetType(): google_protobuf_wrappers_pb.StringValue | undefined;
   setTargetType(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatus;
-  setStatus(value: google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatusMap[keyof google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatusMap[keyof google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatusMap]): void;
 
   hasCanonicalName(): boolean;
   clearCanonicalName(): void;
@@ -56,7 +57,7 @@ export namespace GeoTargetConstant {
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     countryCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
     targetType?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatus,
+    status: google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatusMap[keyof google_ads_googleads_v3_enums_geo_target_constant_status_pb.GeoTargetConstantStatusEnum.GeoTargetConstantStatusMap],
     canonicalName?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 }

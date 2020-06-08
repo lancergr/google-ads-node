@@ -19,11 +19,13 @@ export namespace StructuredSnippetPlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum StructuredSnippetPlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    HEADER = 2,
-    SNIPPETS = 3,
+  export interface StructuredSnippetPlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    HEADER: 2;
+    SNIPPETS: 3;
   }
+
+  export const StructuredSnippetPlaceholderField: StructuredSnippetPlaceholderFieldMap;
 }
 

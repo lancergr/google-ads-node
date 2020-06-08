@@ -8,6 +8,7 @@ import * as google_ads_googleads_v3_enums_ad_strength_pb from "../../../../../go
 import * as google_ads_googleads_v3_enums_policy_approval_status_pb from "../../../../../google/ads/googleads/v3/enums/policy_approval_status_pb";
 import * as google_ads_googleads_v3_enums_policy_review_status_pb from "../../../../../google/ads/googleads/v3/enums/policy_review_status_pb";
 import * as google_ads_googleads_v3_resources_ad_pb from "../../../../../google/ads/googleads/v3/resources/ad_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -16,8 +17,8 @@ export class AdGroupAd extends jspb.Message {
   getResourceName(): string;
   setResourceName(value: string): void;
 
-  getStatus(): google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatus;
-  setStatus(value: google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatusMap[keyof google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatusMap[keyof google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatusMap]): void;
 
   hasAdGroup(): boolean;
   clearAdGroup(): void;
@@ -34,8 +35,8 @@ export class AdGroupAd extends jspb.Message {
   getPolicySummary(): AdGroupAdPolicySummary | undefined;
   setPolicySummary(value?: AdGroupAdPolicySummary): void;
 
-  getAdStrength(): google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrength;
-  setAdStrength(value: google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrength): void;
+  getAdStrength(): google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrengthMap[keyof google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrengthMap];
+  setAdStrength(value: google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrengthMap[keyof google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrengthMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AdGroupAd.AsObject;
@@ -50,11 +51,11 @@ export class AdGroupAd extends jspb.Message {
 export namespace AdGroupAd {
   export type AsObject = {
     resourceName: string,
-    status: google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatus,
+    status: google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatusMap[keyof google_ads_googleads_v3_enums_ad_group_ad_status_pb.AdGroupAdStatusEnum.AdGroupAdStatusMap],
     adGroup?: google_protobuf_wrappers_pb.StringValue.AsObject,
     ad?: google_ads_googleads_v3_resources_ad_pb.Ad.AsObject,
     policySummary?: AdGroupAdPolicySummary.AsObject,
-    adStrength: google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrength,
+    adStrength: google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrengthMap[keyof google_ads_googleads_v3_enums_ad_strength_pb.AdStrengthEnum.AdStrengthMap],
   }
 }
 
@@ -64,11 +65,11 @@ export class AdGroupAdPolicySummary extends jspb.Message {
   setPolicyTopicEntriesList(value: Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry>): void;
   addPolicyTopicEntries(value?: google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry, index?: number): google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry;
 
-  getReviewStatus(): google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus;
-  setReviewStatus(value: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus): void;
+  getReviewStatus(): google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap];
+  setReviewStatus(value: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap]): void;
 
-  getApprovalStatus(): google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus;
-  setApprovalStatus(value: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus): void;
+  getApprovalStatus(): google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap];
+  setApprovalStatus(value: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AdGroupAdPolicySummary.AsObject;
@@ -83,8 +84,8 @@ export class AdGroupAdPolicySummary extends jspb.Message {
 export namespace AdGroupAdPolicySummary {
   export type AsObject = {
     policyTopicEntriesList: Array<google_ads_googleads_v3_common_policy_pb.PolicyTopicEntry.AsObject>,
-    reviewStatus: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatus,
-    approvalStatus: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatus,
+    reviewStatus: google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap[keyof google_ads_googleads_v3_enums_policy_review_status_pb.PolicyReviewStatusEnum.PolicyReviewStatusMap],
+    approvalStatus: google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap[keyof google_ads_googleads_v3_enums_policy_approval_status_pb.PolicyApprovalStatusEnum.PolicyApprovalStatusMap],
   }
 }
 

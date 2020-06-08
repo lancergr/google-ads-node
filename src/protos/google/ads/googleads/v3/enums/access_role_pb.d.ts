@@ -19,12 +19,14 @@ export namespace AccessRoleEnum {
   export type AsObject = {
   }
 
-  export enum AccessRole {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ADMIN = 2,
-    STANDARD = 3,
-    READ_ONLY = 4,
+  export interface AccessRoleMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ADMIN: 2;
+    STANDARD: 3;
+    READ_ONLY: 4;
   }
+
+  export const AccessRole: AccessRoleMap;
 }
 

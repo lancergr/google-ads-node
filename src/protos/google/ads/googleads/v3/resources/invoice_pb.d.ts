@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_dates_pb from "../../../../../google/ads/googleads/v3/common/dates_pb";
 import * as google_ads_googleads_v3_enums_invoice_type_pb from "../../../../../google/ads/googleads/v3/enums/invoice_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -17,8 +18,8 @@ export class Invoice extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceType;
-  setType(value: google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceType): void;
+  getType(): google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceTypeMap[keyof google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceTypeMap];
+  setType(value: google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceTypeMap[keyof google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceTypeMap]): void;
 
   hasBillingSetup(): boolean;
   clearBillingSetup(): void;
@@ -109,7 +110,7 @@ export namespace Invoice {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceType,
+    type: google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceTypeMap[keyof google_ads_googleads_v3_enums_invoice_type_pb.InvoiceTypeEnum.InvoiceTypeMap],
     billingSetup?: google_protobuf_wrappers_pb.StringValue.AsObject,
     paymentsAccountId?: google_protobuf_wrappers_pb.StringValue.AsObject,
     paymentsProfileId?: google_protobuf_wrappers_pb.StringValue.AsObject,

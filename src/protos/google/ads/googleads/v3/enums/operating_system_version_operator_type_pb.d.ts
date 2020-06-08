@@ -19,11 +19,13 @@ export namespace OperatingSystemVersionOperatorTypeEnum {
   export type AsObject = {
   }
 
-  export enum OperatingSystemVersionOperatorType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    EQUALS_TO = 2,
-    GREATER_THAN_EQUALS_TO = 4,
+  export interface OperatingSystemVersionOperatorTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    EQUALS_TO: 2;
+    GREATER_THAN_EQUALS_TO: 4;
   }
+
+  export const OperatingSystemVersionOperatorType: OperatingSystemVersionOperatorTypeMap;
 }
 

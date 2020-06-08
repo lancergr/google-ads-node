@@ -19,11 +19,13 @@ export namespace GeoTargetConstantStatusEnum {
   export type AsObject = {
   }
 
-  export enum GeoTargetConstantStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVAL_PLANNED = 3,
+  export interface GeoTargetConstantStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVAL_PLANNED: 3;
   }
+
+  export const GeoTargetConstantStatus: GeoTargetConstantStatusMap;
 }
 

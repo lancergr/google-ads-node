@@ -19,13 +19,15 @@ export namespace TrackingCodeTypeEnum {
   export type AsObject = {
   }
 
-  export enum TrackingCodeType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    WEBPAGE = 2,
-    WEBPAGE_ONCLICK = 3,
-    CLICK_TO_CALL = 4,
-    WEBSITE_CALL = 5,
+  export interface TrackingCodeTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    WEBPAGE: 2;
+    WEBPAGE_ONCLICK: 3;
+    CLICK_TO_CALL: 4;
+    WEBSITE_CALL: 5;
   }
+
+  export const TrackingCodeType: TrackingCodeTypeMap;
 }
 

@@ -19,12 +19,14 @@ export namespace QualityScoreBucketEnum {
   export type AsObject = {
   }
 
-  export enum QualityScoreBucket {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BELOW_AVERAGE = 2,
-    AVERAGE = 3,
-    ABOVE_AVERAGE = 4,
+  export interface QualityScoreBucketMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BELOW_AVERAGE: 2;
+    AVERAGE: 3;
+    ABOVE_AVERAGE: 4;
   }
+
+  export const QualityScoreBucket: QualityScoreBucketMap;
 }
 

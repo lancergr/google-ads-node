@@ -5,6 +5,7 @@ import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_custom_interest_member_type_pb from "../../../../../google/ads/googleads/v3/enums/custom_interest_member_type_pb";
 import * as google_ads_googleads_v3_enums_custom_interest_status_pb from "../../../../../google/ads/googleads/v3/enums/custom_interest_status_pb";
 import * as google_ads_googleads_v3_enums_custom_interest_type_pb from "../../../../../google/ads/googleads/v3/enums/custom_interest_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -18,16 +19,16 @@ export class CustomInterest extends jspb.Message {
   getId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getStatus(): google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatus;
-  setStatus(value: google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatusMap[keyof google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatusMap[keyof google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatusMap]): void;
 
   hasName(): boolean;
   clearName(): void;
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestType;
-  setType(value: google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestType): void;
+  getType(): google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestTypeMap[keyof google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestTypeMap];
+  setType(value: google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestTypeMap[keyof google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestTypeMap]): void;
 
   hasDescription(): boolean;
   clearDescription(): void;
@@ -53,17 +54,17 @@ export namespace CustomInterest {
   export type AsObject = {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    status: google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatus,
+    status: google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatusMap[keyof google_ads_googleads_v3_enums_custom_interest_status_pb.CustomInterestStatusEnum.CustomInterestStatusMap],
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestType,
+    type: google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestTypeMap[keyof google_ads_googleads_v3_enums_custom_interest_type_pb.CustomInterestTypeEnum.CustomInterestTypeMap],
     description?: google_protobuf_wrappers_pb.StringValue.AsObject,
     membersList: Array<CustomInterestMember.AsObject>,
   }
 }
 
 export class CustomInterestMember extends jspb.Message {
-  getMemberType(): google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberType;
-  setMemberType(value: google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberType): void;
+  getMemberType(): google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberTypeMap[keyof google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberTypeMap];
+  setMemberType(value: google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberTypeMap[keyof google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberTypeMap]): void;
 
   hasParameter(): boolean;
   clearParameter(): void;
@@ -82,7 +83,7 @@ export class CustomInterestMember extends jspb.Message {
 
 export namespace CustomInterestMember {
   export type AsObject = {
-    memberType: google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberType,
+    memberType: google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberTypeMap[keyof google_ads_googleads_v3_enums_custom_interest_member_type_pb.CustomInterestMemberTypeEnum.CustomInterestMemberTypeMap],
     parameter?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 }

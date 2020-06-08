@@ -19,10 +19,12 @@ export namespace CampaignSharedSetErrorEnum {
   export type AsObject = {
   }
 
-  export enum CampaignSharedSetError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SHARED_SET_ACCESS_DENIED = 2,
+  export interface CampaignSharedSetErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SHARED_SET_ACCESS_DENIED: 2;
   }
+
+  export const CampaignSharedSetError: CampaignSharedSetErrorMap;
 }
 

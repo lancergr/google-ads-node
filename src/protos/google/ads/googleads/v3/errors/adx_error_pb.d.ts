@@ -19,10 +19,12 @@ export namespace AdxErrorEnum {
   export type AsObject = {
   }
 
-  export enum AdxError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    UNSUPPORTED_FEATURE = 2,
+  export interface AdxErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    UNSUPPORTED_FEATURE: 2;
   }
+
+  export const AdxError: AdxErrorMap;
 }
 

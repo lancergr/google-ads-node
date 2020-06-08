@@ -19,11 +19,13 @@ export namespace CustomInterestMemberTypeEnum {
   export type AsObject = {
   }
 
-  export enum CustomInterestMemberType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    KEYWORD = 2,
-    URL = 3,
+  export interface CustomInterestMemberTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    KEYWORD: 2;
+    URL: 3;
   }
+
+  export const CustomInterestMemberType: CustomInterestMemberTypeMap;
 }
 

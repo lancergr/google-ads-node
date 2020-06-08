@@ -19,12 +19,14 @@ export namespace ReachPlanNetworkEnum {
   export type AsObject = {
   }
 
-  export enum ReachPlanNetwork {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    YOUTUBE = 2,
-    GOOGLE_VIDEO_PARTNERS = 3,
-    YOUTUBE_AND_GOOGLE_VIDEO_PARTNERS = 4,
+  export interface ReachPlanNetworkMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    YOUTUBE: 2;
+    GOOGLE_VIDEO_PARTNERS: 3;
+    YOUTUBE_AND_GOOGLE_VIDEO_PARTNERS: 4;
   }
+
+  export const ReachPlanNetwork: ReachPlanNetworkMap;
 }
 

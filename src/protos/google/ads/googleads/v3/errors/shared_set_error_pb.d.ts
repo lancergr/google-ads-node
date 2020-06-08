@@ -19,13 +19,15 @@ export namespace SharedSetErrorEnum {
   export type AsObject = {
   }
 
-  export enum SharedSetError {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE = 2,
-    DUPLICATE_NAME = 3,
-    SHARED_SET_REMOVED = 4,
-    SHARED_SET_IN_USE = 5,
+  export interface SharedSetErrorMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE: 2;
+    DUPLICATE_NAME: 3;
+    SHARED_SET_REMOVED: 4;
+    SHARED_SET_IN_USE: 5;
   }
+
+  export const SharedSetError: SharedSetErrorMap;
 }
 

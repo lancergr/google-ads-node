@@ -19,11 +19,13 @@ export namespace LocationGroupRadiusUnitsEnum {
   export type AsObject = {
   }
 
-  export enum LocationGroupRadiusUnits {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    METERS = 2,
-    MILES = 3,
+  export interface LocationGroupRadiusUnitsMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    METERS: 2;
+    MILES: 3;
   }
+
+  export const LocationGroupRadiusUnits: LocationGroupRadiusUnitsMap;
 }
 

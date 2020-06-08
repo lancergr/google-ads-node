@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_placeholder_type_pb from "../../../../../google/ads/googleads/v3/enums/placeholder_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 
@@ -10,8 +11,8 @@ export class FeedPlaceholderView extends jspb.Message {
   getResourceName(): string;
   setResourceName(value: string): void;
 
-  getPlaceholderType(): google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType;
-  setPlaceholderType(value: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType): void;
+  getPlaceholderType(): google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap];
+  setPlaceholderType(value: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FeedPlaceholderView.AsObject;
@@ -26,7 +27,7 @@ export class FeedPlaceholderView extends jspb.Message {
 export namespace FeedPlaceholderView {
   export type AsObject = {
     resourceName: string,
-    placeholderType: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderType,
+    placeholderType: google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap[keyof google_ads_googleads_v3_enums_placeholder_type_pb.PlaceholderTypeEnum.PlaceholderTypeMap],
   }
 }
 

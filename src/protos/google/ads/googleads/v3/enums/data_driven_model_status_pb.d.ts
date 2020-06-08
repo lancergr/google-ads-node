@@ -19,13 +19,15 @@ export namespace DataDrivenModelStatusEnum {
   export type AsObject = {
   }
 
-  export enum DataDrivenModelStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AVAILABLE = 2,
-    STALE = 3,
-    EXPIRED = 4,
-    NEVER_GENERATED = 5,
+  export interface DataDrivenModelStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AVAILABLE: 2;
+    STALE: 3;
+    EXPIRED: 4;
+    NEVER_GENERATED: 5;
   }
+
+  export const DataDrivenModelStatus: DataDrivenModelStatusMap;
 }
 

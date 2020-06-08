@@ -19,11 +19,13 @@ export namespace FeedLinkStatusEnum {
   export type AsObject = {
   }
 
-  export enum FeedLinkStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    ENABLED = 2,
-    REMOVED = 3,
+  export interface FeedLinkStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    ENABLED: 2;
+    REMOVED: 3;
   }
+
+  export const FeedLinkStatus: FeedLinkStatusMap;
 }
 

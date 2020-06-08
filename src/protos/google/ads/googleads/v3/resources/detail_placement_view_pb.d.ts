@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_placement_type_pb from "../../../../../google/ads/googleads/v3/enums/placement_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -31,8 +32,8 @@ export class DetailPlacementView extends jspb.Message {
   getTargetUrl(): google_protobuf_wrappers_pb.StringValue | undefined;
   setTargetUrl(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getPlacementType(): google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementType;
-  setPlacementType(value: google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementType): void;
+  getPlacementType(): google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementTypeMap[keyof google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementTypeMap];
+  setPlacementType(value: google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementTypeMap[keyof google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): DetailPlacementView.AsObject;
@@ -51,7 +52,7 @@ export namespace DetailPlacementView {
     displayName?: google_protobuf_wrappers_pb.StringValue.AsObject,
     groupPlacementTargetUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
     targetUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    placementType: google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementType,
+    placementType: google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementTypeMap[keyof google_ads_googleads_v3_enums_placement_type_pb.PlacementTypeEnum.PlacementTypeMap],
   }
 }
 

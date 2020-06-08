@@ -12,8 +12,8 @@ export class KeywordPlanHistoricalMetrics extends jspb.Message {
   getAvgMonthlySearches(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setAvgMonthlySearches(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getCompetition(): google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevel;
-  setCompetition(value: google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevel): void;
+  getCompetition(): google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevelMap[keyof google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevelMap];
+  setCompetition(value: google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevelMap[keyof google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevelMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): KeywordPlanHistoricalMetrics.AsObject;
@@ -28,7 +28,7 @@ export class KeywordPlanHistoricalMetrics extends jspb.Message {
 export namespace KeywordPlanHistoricalMetrics {
   export type AsObject = {
     avgMonthlySearches?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    competition: google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevel,
+    competition: google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevelMap[keyof google_ads_googleads_v3_enums_keyword_plan_competition_level_pb.KeywordPlanCompetitionLevelEnum.KeywordPlanCompetitionLevelMap],
   }
 }
 

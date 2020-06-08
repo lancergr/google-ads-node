@@ -19,11 +19,13 @@ export namespace InvoiceTypeEnum {
   export type AsObject = {
   }
 
-  export enum InvoiceType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CREDIT_MEMO = 2,
-    INVOICE = 3,
+  export interface InvoiceTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CREDIT_MEMO: 2;
+    INVOICE: 3;
   }
+
+  export const InvoiceType: InvoiceTypeMap;
 }
 

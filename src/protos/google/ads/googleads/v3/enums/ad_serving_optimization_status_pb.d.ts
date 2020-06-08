@@ -19,14 +19,16 @@ export namespace AdServingOptimizationStatusEnum {
   export type AsObject = {
   }
 
-  export enum AdServingOptimizationStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OPTIMIZE = 2,
-    CONVERSION_OPTIMIZE = 3,
-    ROTATE = 4,
-    ROTATE_INDEFINITELY = 5,
-    UNAVAILABLE = 6,
+  export interface AdServingOptimizationStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OPTIMIZE: 2;
+    CONVERSION_OPTIMIZE: 3;
+    ROTATE: 4;
+    ROTATE_INDEFINITELY: 5;
+    UNAVAILABLE: 6;
   }
+
+  export const AdServingOptimizationStatus: AdServingOptimizationStatusMap;
 }
 

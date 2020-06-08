@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_distance_bucket_pb from "../../../../../google/ads/googleads/v3/enums/distance_bucket_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -11,8 +12,8 @@ export class DistanceView extends jspb.Message {
   getResourceName(): string;
   setResourceName(value: string): void;
 
-  getDistanceBucket(): google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucket;
-  setDistanceBucket(value: google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucket): void;
+  getDistanceBucket(): google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucketMap[keyof google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucketMap];
+  setDistanceBucket(value: google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucketMap[keyof google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucketMap]): void;
 
   hasMetricSystem(): boolean;
   clearMetricSystem(): void;
@@ -32,7 +33,7 @@ export class DistanceView extends jspb.Message {
 export namespace DistanceView {
   export type AsObject = {
     resourceName: string,
-    distanceBucket: google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucket,
+    distanceBucket: google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucketMap[keyof google_ads_googleads_v3_enums_distance_bucket_pb.DistanceBucketEnum.DistanceBucketMap],
     metricSystem?: google_protobuf_wrappers_pb.BoolValue.AsObject,
   }
 }

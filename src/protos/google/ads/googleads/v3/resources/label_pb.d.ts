@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_text_label_pb from "../../../../../google/ads/googleads/v3/common/text_label_pb";
 import * as google_ads_googleads_v3_enums_label_status_pb from "../../../../../google/ads/googleads/v3/enums/label_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -22,8 +23,8 @@ export class Label extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getStatus(): google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatus;
-  setStatus(value: google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatusMap[keyof google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatusMap[keyof google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatusMap]): void;
 
   hasTextLabel(): boolean;
   clearTextLabel(): void;
@@ -45,7 +46,7 @@ export namespace Label {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    status: google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatus,
+    status: google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatusMap[keyof google_ads_googleads_v3_enums_label_status_pb.LabelStatusEnum.LabelStatusMap],
     textLabel?: google_ads_googleads_v3_common_text_label_pb.TextLabel.AsObject,
   }
 }

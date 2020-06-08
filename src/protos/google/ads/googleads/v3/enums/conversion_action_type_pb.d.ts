@@ -19,17 +19,19 @@ export namespace ConversionActionTypeEnum {
   export type AsObject = {
   }
 
-  export enum ConversionActionType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AD_CALL = 2,
-    CLICK_TO_CALL = 3,
-    GOOGLE_PLAY_DOWNLOAD = 4,
-    GOOGLE_PLAY_IN_APP_PURCHASE = 5,
-    UPLOAD_CALLS = 6,
-    UPLOAD_CLICKS = 7,
-    WEBPAGE = 8,
-    WEBSITE_CALL = 9,
+  export interface ConversionActionTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AD_CALL: 2;
+    CLICK_TO_CALL: 3;
+    GOOGLE_PLAY_DOWNLOAD: 4;
+    GOOGLE_PLAY_IN_APP_PURCHASE: 5;
+    UPLOAD_CALLS: 6;
+    UPLOAD_CLICKS: 7;
+    WEBPAGE: 8;
+    WEBSITE_CALL: 9;
   }
+
+  export const ConversionActionType: ConversionActionTypeMap;
 }
 

@@ -19,10 +19,12 @@ export namespace CalloutPlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum CalloutPlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CALLOUT_TEXT = 2,
+  export interface CalloutPlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CALLOUT_TEXT: 2;
   }
+
+  export const CalloutPlaceholderField: CalloutPlaceholderFieldMap;
 }
 

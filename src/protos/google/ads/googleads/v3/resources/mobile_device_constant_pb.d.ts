@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_mobile_device_type_pb from "../../../../../google/ads/googleads/v3/enums/mobile_device_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -31,8 +32,8 @@ export class MobileDeviceConstant extends jspb.Message {
   getOperatingSystemName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setOperatingSystemName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceType;
-  setType(value: google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceType): void;
+  getType(): google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceTypeMap[keyof google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceTypeMap];
+  setType(value: google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceTypeMap[keyof google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): MobileDeviceConstant.AsObject;
@@ -51,7 +52,7 @@ export namespace MobileDeviceConstant {
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     manufacturerName?: google_protobuf_wrappers_pb.StringValue.AsObject,
     operatingSystemName?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceType,
+    type: google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceTypeMap[keyof google_ads_googleads_v3_enums_mobile_device_type_pb.MobileDeviceTypeEnum.MobileDeviceTypeMap],
   }
 }
 

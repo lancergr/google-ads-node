@@ -61,8 +61,8 @@ export class ImageAsset extends jspb.Message {
   getFileSize(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setFileSize(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getMimeType(): google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType;
-  setMimeType(value: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType): void;
+  getMimeType(): google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap];
+  setMimeType(value: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap]): void;
 
   hasFullSize(): boolean;
   clearFullSize(): void;
@@ -83,7 +83,7 @@ export namespace ImageAsset {
   export type AsObject = {
     data?: google_protobuf_wrappers_pb.BytesValue.AsObject,
     fileSize?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    mimeType: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType,
+    mimeType: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap],
     fullSize?: ImageDimension.AsObject,
   }
 }

@@ -19,11 +19,13 @@ export namespace UserListMembershipStatusEnum {
   export type AsObject = {
   }
 
-  export enum UserListMembershipStatus {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    OPEN = 2,
-    CLOSED = 3,
+  export interface UserListMembershipStatusMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    OPEN: 2;
+    CLOSED: 3;
   }
+
+  export const UserListMembershipStatus: UserListMembershipStatusMap;
 }
 

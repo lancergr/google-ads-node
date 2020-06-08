@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_manager_link_status_pb from "../../../../../google/ads/googleads/v3/enums/manager_link_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -21,8 +22,8 @@ export class CustomerManagerLink extends jspb.Message {
   getManagerLinkId(): google_protobuf_wrappers_pb.Int64Value | undefined;
   setManagerLinkId(value?: google_protobuf_wrappers_pb.Int64Value): void;
 
-  getStatus(): google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatus;
-  setStatus(value: google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatusMap[keyof google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatusMap[keyof google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatusMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CustomerManagerLink.AsObject;
@@ -39,7 +40,7 @@ export namespace CustomerManagerLink {
     resourceName: string,
     managerCustomer?: google_protobuf_wrappers_pb.StringValue.AsObject,
     managerLinkId?: google_protobuf_wrappers_pb.Int64Value.AsObject,
-    status: google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatus,
+    status: google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatusMap[keyof google_ads_googleads_v3_enums_manager_link_status_pb.ManagerLinkStatusEnum.ManagerLinkStatusMap],
   }
 }
 

@@ -19,14 +19,16 @@ export namespace AssetPerformanceLabelEnum {
   export type AsObject = {
   }
 
-  export enum AssetPerformanceLabel {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PENDING = 2,
-    LEARNING = 3,
-    LOW = 4,
-    GOOD = 5,
-    BEST = 6,
+  export interface AssetPerformanceLabelMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PENDING: 2;
+    LEARNING: 3;
+    LOW: 4;
+    GOOD: 5;
+    BEST: 6;
   }
+
+  export const AssetPerformanceLabel: AssetPerformanceLabelMap;
 }
 

@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_enums_product_bidding_category_level_pb from "../../../../../google/ads/googleads/v3/enums/product_bidding_category_level_pb";
 import * as google_ads_googleads_v3_enums_product_bidding_category_status_pb from "../../../../../google/ads/googleads/v3/enums/product_bidding_category_status_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -27,11 +28,11 @@ export class ProductBiddingCategoryConstant extends jspb.Message {
   getProductBiddingCategoryConstantParent(): google_protobuf_wrappers_pb.StringValue | undefined;
   setProductBiddingCategoryConstantParent(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getLevel(): google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevel;
-  setLevel(value: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevel): void;
+  getLevel(): google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap[keyof google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap];
+  setLevel(value: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap[keyof google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap]): void;
 
-  getStatus(): google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatus;
-  setStatus(value: google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatus): void;
+  getStatus(): google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatusMap[keyof google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatusMap];
+  setStatus(value: google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatusMap[keyof google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatusMap]): void;
 
   hasLanguageCode(): boolean;
   clearLanguageCode(): void;
@@ -59,8 +60,8 @@ export namespace ProductBiddingCategoryConstant {
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     countryCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
     productBiddingCategoryConstantParent?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    level: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevel,
-    status: google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatus,
+    level: google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap[keyof google_ads_googleads_v3_enums_product_bidding_category_level_pb.ProductBiddingCategoryLevelEnum.ProductBiddingCategoryLevelMap],
+    status: google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatusMap[keyof google_ads_googleads_v3_enums_product_bidding_category_status_pb.ProductBiddingCategoryStatusEnum.ProductBiddingCategoryStatusMap],
     languageCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
     localizedName?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }

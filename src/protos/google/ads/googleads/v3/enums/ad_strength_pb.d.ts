@@ -19,15 +19,17 @@ export namespace AdStrengthEnum {
   export type AsObject = {
   }
 
-  export enum AdStrength {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    PENDING = 2,
-    NO_ADS = 3,
-    POOR = 4,
-    AVERAGE = 5,
-    GOOD = 6,
-    EXCELLENT = 7,
+  export interface AdStrengthMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    PENDING: 2;
+    NO_ADS: 3;
+    POOR: 4;
+    AVERAGE: 5;
+    GOOD: 6;
+    EXCELLENT: 7;
   }
+
+  export const AdStrength: AdStrengthMap;
 }
 

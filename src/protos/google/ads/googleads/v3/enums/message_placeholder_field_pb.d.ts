@@ -19,14 +19,16 @@ export namespace MessagePlaceholderFieldEnum {
   export type AsObject = {
   }
 
-  export enum MessagePlaceholderField {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    BUSINESS_NAME = 2,
-    COUNTRY_CODE = 3,
-    PHONE_NUMBER = 4,
-    MESSAGE_EXTENSION_TEXT = 5,
-    MESSAGE_TEXT = 6,
+  export interface MessagePlaceholderFieldMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    BUSINESS_NAME: 2;
+    COUNTRY_CODE: 3;
+    PHONE_NUMBER: 4;
+    MESSAGE_EXTENSION_TEXT: 5;
+    MESSAGE_TEXT: 6;
   }
+
+  export const MessagePlaceholderField: MessagePlaceholderFieldMap;
 }
 

@@ -159,8 +159,8 @@ export class CallOnlyAdInfo extends jspb.Message {
   getConversionAction(): google_protobuf_wrappers_pb.StringValue | undefined;
   setConversionAction(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getConversionReportingState(): google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingState;
-  setConversionReportingState(value: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingState): void;
+  getConversionReportingState(): google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap[keyof google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap];
+  setConversionReportingState(value: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap[keyof google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CallOnlyAdInfo.AsObject;
@@ -185,7 +185,7 @@ export namespace CallOnlyAdInfo {
     disableCallConversion?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     phoneNumberVerificationUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
     conversionAction?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    conversionReportingState: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingState,
+    conversionReportingState: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap[keyof google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap],
   }
 }
 
@@ -512,8 +512,8 @@ export class ImageAdInfo extends jspb.Message {
   getPreviewImageUrl(): google_protobuf_wrappers_pb.StringValue | undefined;
   setPreviewImageUrl(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getMimeType(): google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType;
-  setMimeType(value: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType): void;
+  getMimeType(): google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap];
+  setMimeType(value: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap]): void;
 
   hasName(): boolean;
   clearName(): void;
@@ -554,7 +554,7 @@ export namespace ImageAdInfo {
     previewPixelWidth?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     previewPixelHeight?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     previewImageUrl?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    mimeType: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeType,
+    mimeType: google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap[keyof google_ads_googleads_v3_enums_mime_type_pb.MimeTypeEnum.MimeTypeMap],
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
     mediaFile?: google_protobuf_wrappers_pb.StringValue.AsObject,
     data?: google_protobuf_wrappers_pb.BytesValue.AsObject,
@@ -872,8 +872,8 @@ export class LegacyResponsiveDisplayAdInfo extends jspb.Message {
   getSquareMarketingImage(): google_protobuf_wrappers_pb.StringValue | undefined;
   setSquareMarketingImage(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getFormatSetting(): google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSetting;
-  setFormatSetting(value: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSetting): void;
+  getFormatSetting(): google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap[keyof google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap];
+  setFormatSetting(value: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap[keyof google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap]): void;
 
   hasPricePrefix(): boolean;
   clearPricePrefix(): void;
@@ -909,7 +909,7 @@ export namespace LegacyResponsiveDisplayAdInfo {
     squareLogoImage?: google_protobuf_wrappers_pb.StringValue.AsObject,
     marketingImage?: google_protobuf_wrappers_pb.StringValue.AsObject,
     squareMarketingImage?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    formatSetting: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSetting,
+    formatSetting: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap[keyof google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap],
     pricePrefix?: google_protobuf_wrappers_pb.StringValue.AsObject,
     promoText?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
@@ -1013,8 +1013,8 @@ export class LegacyAppInstallAdInfo extends jspb.Message {
   getAppId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAppId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getAppStore(): google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStore;
-  setAppStore(value: google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStore): void;
+  getAppStore(): google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStoreMap[keyof google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStoreMap];
+  setAppStore(value: google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStoreMap[keyof google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStoreMap]): void;
 
   hasHeadline(): boolean;
   clearHeadline(): void;
@@ -1044,7 +1044,7 @@ export class LegacyAppInstallAdInfo extends jspb.Message {
 export namespace LegacyAppInstallAdInfo {
   export type AsObject = {
     appId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    appStore: google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStore,
+    appStore: google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStoreMap[keyof google_ads_googleads_v3_enums_legacy_app_install_ad_app_store_pb.LegacyAppInstallAdAppStoreEnum.LegacyAppInstallAdAppStoreMap],
     headline?: google_protobuf_wrappers_pb.StringValue.AsObject,
     description1?: google_protobuf_wrappers_pb.StringValue.AsObject,
     description2?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -1127,8 +1127,8 @@ export class ResponsiveDisplayAdInfo extends jspb.Message {
   getPromoText(): google_protobuf_wrappers_pb.StringValue | undefined;
   setPromoText(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getFormatSetting(): google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSetting;
-  setFormatSetting(value: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSetting): void;
+  getFormatSetting(): google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap[keyof google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap];
+  setFormatSetting(value: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap[keyof google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ResponsiveDisplayAdInfo.AsObject;
@@ -1157,13 +1157,13 @@ export namespace ResponsiveDisplayAdInfo {
     callToActionText?: google_protobuf_wrappers_pb.StringValue.AsObject,
     pricePrefix?: google_protobuf_wrappers_pb.StringValue.AsObject,
     promoText?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    formatSetting: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSetting,
+    formatSetting: google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap[keyof google_ads_googleads_v3_enums_display_ad_format_setting_pb.DisplayAdFormatSettingEnum.DisplayAdFormatSettingMap],
   }
 }
 
 export class DisplayUploadAdInfo extends jspb.Message {
-  getDisplayUploadProductType(): google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductType;
-  setDisplayUploadProductType(value: google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductType): void;
+  getDisplayUploadProductType(): google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductTypeMap[keyof google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductTypeMap];
+  setDisplayUploadProductType(value: google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductTypeMap[keyof google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductTypeMap]): void;
 
   hasMediaBundle(): boolean;
   clearMediaBundle(): void;
@@ -1183,7 +1183,7 @@ export class DisplayUploadAdInfo extends jspb.Message {
 
 export namespace DisplayUploadAdInfo {
   export type AsObject = {
-    displayUploadProductType: google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductType,
+    displayUploadProductType: google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductTypeMap[keyof google_ads_googleads_v3_enums_display_upload_product_type_pb.DisplayUploadProductTypeEnum.DisplayUploadProductTypeMap],
     mediaBundle?: google_ads_googleads_v3_common_ad_asset_pb.AdMediaBundleAsset.AsObject,
   }
 

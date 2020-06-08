@@ -19,13 +19,15 @@ export namespace SimulationTypeEnum {
   export type AsObject = {
   }
 
-  export enum SimulationType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    CPC_BID = 2,
-    CPV_BID = 3,
-    TARGET_CPA = 4,
-    BID_MODIFIER = 5,
+  export interface SimulationTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    CPC_BID: 2;
+    CPV_BID: 3;
+    TARGET_CPA: 4;
+    BID_MODIFIER: 5;
   }
+
+  export const SimulationType: SimulationTypeMap;
 }
 

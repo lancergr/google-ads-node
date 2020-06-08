@@ -19,11 +19,13 @@ export namespace GeoTargetingTypeEnum {
   export type AsObject = {
   }
 
-  export enum GeoTargetingType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    AREA_OF_INTEREST = 2,
-    LOCATION_OF_PRESENCE = 3,
+  export interface GeoTargetingTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    AREA_OF_INTEREST: 2;
+    LOCATION_OF_PRESENCE: 3;
   }
+
+  export const GeoTargetingType: GeoTargetingTypeMap;
 }
 

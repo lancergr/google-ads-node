@@ -19,12 +19,14 @@ export namespace ReachPlanAdLengthEnum {
   export type AsObject = {
   }
 
-  export enum ReachPlanAdLength {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    SIX_SECONDS = 2,
-    FIFTEEN_OR_TWENTY_SECONDS = 3,
-    TWENTY_SECONDS_OR_MORE = 4,
+  export interface ReachPlanAdLengthMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    SIX_SECONDS: 2;
+    FIFTEEN_OR_TWENTY_SECONDS: 3;
+    TWENTY_SECONDS_OR_MORE: 4;
   }
+
+  export const ReachPlanAdLength: ReachPlanAdLengthMap;
 }
 

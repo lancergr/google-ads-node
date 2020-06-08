@@ -19,14 +19,16 @@ export namespace ProductBiddingCategoryLevelEnum {
   export type AsObject = {
   }
 
-  export enum ProductBiddingCategoryLevel {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    LEVEL1 = 2,
-    LEVEL2 = 3,
-    LEVEL3 = 4,
-    LEVEL4 = 5,
-    LEVEL5 = 6,
+  export interface ProductBiddingCategoryLevelMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    LEVEL1: 2;
+    LEVEL2: 3;
+    LEVEL3: 4;
+    LEVEL4: 5;
+    LEVEL5: 6;
   }
+
+  export const ProductBiddingCategoryLevel: ProductBiddingCategoryLevelMap;
 }
 

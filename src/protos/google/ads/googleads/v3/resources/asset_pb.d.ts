@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_ads_googleads_v3_common_asset_types_pb from "../../../../../google/ads/googleads/v3/common/asset_types_pb";
 import * as google_ads_googleads_v3_enums_asset_type_pb from "../../../../../google/ads/googleads/v3/enums/asset_type_pb";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -22,8 +23,8 @@ export class Asset extends jspb.Message {
   getName(): google_protobuf_wrappers_pb.StringValue | undefined;
   setName(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getType(): google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetType;
-  setType(value: google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetType): void;
+  getType(): google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetTypeMap[keyof google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetTypeMap];
+  setType(value: google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetTypeMap[keyof google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetTypeMap]): void;
 
   hasYoutubeVideoAsset(): boolean;
   clearYoutubeVideoAsset(): void;
@@ -61,7 +62,7 @@ export namespace Asset {
     resourceName: string,
     id?: google_protobuf_wrappers_pb.Int64Value.AsObject,
     name?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    type: google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetType,
+    type: google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetTypeMap[keyof google_ads_googleads_v3_enums_asset_type_pb.AssetTypeEnum.AssetTypeMap],
     youtubeVideoAsset?: google_ads_googleads_v3_common_asset_types_pb.YoutubeVideoAsset.AsObject,
     mediaBundleAsset?: google_ads_googleads_v3_common_asset_types_pb.MediaBundleAsset.AsObject,
     imageAsset?: google_ads_googleads_v3_common_asset_types_pb.ImageAsset.AsObject,

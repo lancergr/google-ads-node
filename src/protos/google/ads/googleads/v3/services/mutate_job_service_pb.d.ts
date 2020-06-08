@@ -7,6 +7,7 @@ import * as google_ads_googleads_v3_services_google_ads_service_pb from "../../.
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
 import * as google_api_client_pb from "../../../../../google/api/client_pb";
 import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
+import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_longrunning_operations_pb from "../../../../../google/longrunning/operations_pb";
 import * as google_rpc_status_pb from "../../../../../google/rpc/status_pb";
 

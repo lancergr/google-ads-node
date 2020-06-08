@@ -25,8 +25,8 @@ export class AppFeedItem extends jspb.Message {
   getAppId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setAppId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getAppStore(): google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStore;
-  setAppStore(value: google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStore): void;
+  getAppStore(): google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStoreMap[keyof google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStoreMap];
+  setAppStore(value: google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStoreMap[keyof google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStoreMap]): void;
 
   clearFinalUrlsList(): void;
   getFinalUrlsList(): Array<google_protobuf_wrappers_pb.StringValue>;
@@ -67,7 +67,7 @@ export namespace AppFeedItem {
   export type AsObject = {
     linkText?: google_protobuf_wrappers_pb.StringValue.AsObject,
     appId?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    appStore: google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStore,
+    appStore: google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStoreMap[keyof google_ads_googleads_v3_enums_app_store_pb.AppStoreEnum.AppStoreMap],
     finalUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     finalMobileUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     trackingUrlTemplate?: google_protobuf_wrappers_pb.StringValue.AsObject,
@@ -102,8 +102,8 @@ export class CallFeedItem extends jspb.Message {
   getCallConversionTrackingDisabled(): google_protobuf_wrappers_pb.BoolValue | undefined;
   setCallConversionTrackingDisabled(value?: google_protobuf_wrappers_pb.BoolValue): void;
 
-  getCallConversionReportingState(): google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingState;
-  setCallConversionReportingState(value: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingState): void;
+  getCallConversionReportingState(): google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap[keyof google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap];
+  setCallConversionReportingState(value: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap[keyof google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CallFeedItem.AsObject;
@@ -122,7 +122,7 @@ export namespace CallFeedItem {
     callTrackingEnabled?: google_protobuf_wrappers_pb.BoolValue.AsObject,
     callConversionAction?: google_protobuf_wrappers_pb.StringValue.AsObject,
     callConversionTrackingDisabled?: google_protobuf_wrappers_pb.BoolValue.AsObject,
-    callConversionReportingState: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingState,
+    callConversionReportingState: google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap[keyof google_ads_googleads_v3_enums_call_conversion_reporting_state_pb.CallConversionReportingStateEnum.CallConversionReportingStateMap],
   }
 }
 
@@ -335,11 +335,11 @@ export namespace TextMessageFeedItem {
 }
 
 export class PriceFeedItem extends jspb.Message {
-  getType(): google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionType;
-  setType(value: google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionType): void;
+  getType(): google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionTypeMap[keyof google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionTypeMap];
+  setType(value: google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionTypeMap[keyof google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionTypeMap]): void;
 
-  getPriceQualifier(): google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifier;
-  setPriceQualifier(value: google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifier): void;
+  getPriceQualifier(): google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifierMap[keyof google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifierMap];
+  setPriceQualifier(value: google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifierMap[keyof google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifierMap]): void;
 
   hasTrackingUrlTemplate(): boolean;
   clearTrackingUrlTemplate(): void;
@@ -373,8 +373,8 @@ export class PriceFeedItem extends jspb.Message {
 
 export namespace PriceFeedItem {
   export type AsObject = {
-    type: google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionType,
-    priceQualifier: google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifier,
+    type: google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionTypeMap[keyof google_ads_googleads_v3_enums_price_extension_type_pb.PriceExtensionTypeEnum.PriceExtensionTypeMap],
+    priceQualifier: google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifierMap[keyof google_ads_googleads_v3_enums_price_extension_price_qualifier_pb.PriceExtensionPriceQualifierEnum.PriceExtensionPriceQualifierMap],
     trackingUrlTemplate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     languageCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
     priceOfferingsList: Array<PriceOffer.AsObject>,
@@ -398,8 +398,8 @@ export class PriceOffer extends jspb.Message {
   getPrice(): google_ads_googleads_v3_common_feed_common_pb.Money | undefined;
   setPrice(value?: google_ads_googleads_v3_common_feed_common_pb.Money): void;
 
-  getUnit(): google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnit;
-  setUnit(value: google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnit): void;
+  getUnit(): google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnitMap[keyof google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnitMap];
+  setUnit(value: google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnitMap[keyof google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnitMap]): void;
 
   clearFinalUrlsList(): void;
   getFinalUrlsList(): Array<google_protobuf_wrappers_pb.StringValue>;
@@ -426,7 +426,7 @@ export namespace PriceOffer {
     header?: google_protobuf_wrappers_pb.StringValue.AsObject,
     description?: google_protobuf_wrappers_pb.StringValue.AsObject,
     price?: google_ads_googleads_v3_common_feed_common_pb.Money.AsObject,
-    unit: google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnit,
+    unit: google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnitMap[keyof google_ads_googleads_v3_enums_price_extension_price_unit_pb.PriceExtensionPriceUnitEnum.PriceExtensionPriceUnitMap],
     finalUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     finalMobileUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
   }
@@ -438,8 +438,8 @@ export class PromotionFeedItem extends jspb.Message {
   getPromotionTarget(): google_protobuf_wrappers_pb.StringValue | undefined;
   setPromotionTarget(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getDiscountModifier(): google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifier;
-  setDiscountModifier(value: google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifier): void;
+  getDiscountModifier(): google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifierMap[keyof google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifierMap];
+  setDiscountModifier(value: google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifierMap[keyof google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifierMap]): void;
 
   hasPromotionStartDate(): boolean;
   clearPromotionStartDate(): void;
@@ -451,8 +451,8 @@ export class PromotionFeedItem extends jspb.Message {
   getPromotionEndDate(): google_protobuf_wrappers_pb.StringValue | undefined;
   setPromotionEndDate(value?: google_protobuf_wrappers_pb.StringValue): void;
 
-  getOccasion(): google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasion;
-  setOccasion(value: google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasion): void;
+  getOccasion(): google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasionMap[keyof google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasionMap];
+  setOccasion(value: google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasionMap[keyof google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasionMap]): void;
 
   clearFinalUrlsList(): void;
   getFinalUrlsList(): Array<google_protobuf_wrappers_pb.StringValue>;
@@ -519,10 +519,10 @@ export class PromotionFeedItem extends jspb.Message {
 export namespace PromotionFeedItem {
   export type AsObject = {
     promotionTarget?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    discountModifier: google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifier,
+    discountModifier: google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifierMap[keyof google_ads_googleads_v3_enums_promotion_extension_discount_modifier_pb.PromotionExtensionDiscountModifierEnum.PromotionExtensionDiscountModifierMap],
     promotionStartDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
     promotionEndDate?: google_protobuf_wrappers_pb.StringValue.AsObject,
-    occasion: google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasion,
+    occasion: google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasionMap[keyof google_ads_googleads_v3_enums_promotion_extension_occasion_pb.PromotionExtensionOccasionEnum.PromotionExtensionOccasionMap],
     finalUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     finalMobileUrlsList: Array<google_protobuf_wrappers_pb.StringValue.AsObject>,
     trackingUrlTemplate?: google_protobuf_wrappers_pb.StringValue.AsObject,

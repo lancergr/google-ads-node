@@ -19,11 +19,13 @@ export namespace AppCampaignAppStoreEnum {
   export type AsObject = {
   }
 
-  export enum AppCampaignAppStore {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    APPLE_APP_STORE = 2,
-    GOOGLE_APP_STORE = 3,
+  export interface AppCampaignAppStoreMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    APPLE_APP_STORE: 2;
+    GOOGLE_APP_STORE: 3;
   }
+
+  export const AppCampaignAppStore: AppCampaignAppStoreMap;
 }
 

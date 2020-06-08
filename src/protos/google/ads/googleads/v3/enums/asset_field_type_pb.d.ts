@@ -19,15 +19,17 @@ export namespace AssetFieldTypeEnum {
   export type AsObject = {
   }
 
-  export enum AssetFieldType {
-    UNSPECIFIED = 0,
-    UNKNOWN = 1,
-    HEADLINE = 2,
-    DESCRIPTION = 3,
-    MANDATORY_AD_TEXT = 4,
-    MARKETING_IMAGE = 5,
-    MEDIA_BUNDLE = 6,
-    YOUTUBE_VIDEO = 7,
+  export interface AssetFieldTypeMap {
+    UNSPECIFIED: 0;
+    UNKNOWN: 1;
+    HEADLINE: 2;
+    DESCRIPTION: 3;
+    MANDATORY_AD_TEXT: 4;
+    MARKETING_IMAGE: 5;
+    MEDIA_BUNDLE: 6;
+    YOUTUBE_VIDEO: 7;
   }
+
+  export const AssetFieldType: AssetFieldTypeMap;
 }
 

@@ -2,6 +2,7 @@
 // file: google/ads/googleads/v3/resources/payments_account.proto
 
 import * as jspb from "google-protobuf";
+import * as google_api_field_behavior_pb from "../../../../../google/api/field_behavior_pb";
 import * as google_api_resource_pb from "../../../../../google/api/resource_pb";
 import * as google_protobuf_wrappers_pb from "google-protobuf/google/protobuf/wrappers_pb";
 import * as google_api_annotations_pb from "../../../../../google/api/annotations_pb";
@@ -35,6 +36,11 @@ export class PaymentsAccount extends jspb.Message {
   getSecondaryPaymentsProfileId(): google_protobuf_wrappers_pb.StringValue | undefined;
   setSecondaryPaymentsProfileId(value?: google_protobuf_wrappers_pb.StringValue): void;
 
+  hasPayingManagerCustomer(): boolean;
+  clearPayingManagerCustomer(): void;
+  getPayingManagerCustomer(): google_protobuf_wrappers_pb.StringValue | undefined;
+  setPayingManagerCustomer(value?: google_protobuf_wrappers_pb.StringValue): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): PaymentsAccount.AsObject;
   static toObject(includeInstance: boolean, msg: PaymentsAccount): PaymentsAccount.AsObject;
@@ -53,6 +59,7 @@ export namespace PaymentsAccount {
     currencyCode?: google_protobuf_wrappers_pb.StringValue.AsObject,
     paymentsProfileId?: google_protobuf_wrappers_pb.StringValue.AsObject,
     secondaryPaymentsProfileId?: google_protobuf_wrappers_pb.StringValue.AsObject,
+    payingManagerCustomer?: google_protobuf_wrappers_pb.StringValue.AsObject,
   }
 }
 
