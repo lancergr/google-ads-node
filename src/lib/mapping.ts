@@ -547,6 +547,35 @@ export const metrics = {
   interaction_event_types: "InteractionEventType",
 };
 
+/* .google.ads.googleads.v3.common.OfflineUserAddressInfo */
+export const offline_user_address_info = {};
+
+/* .google.ads.googleads.v3.common.UserIdentifier */
+export const user_identifier = {
+  address_info: offline_user_address_info,
+};
+
+/* .google.ads.googleads.v3.common.TransactionAttribute */
+export const transaction_attribute = {};
+
+/* .google.ads.googleads.v3.common.StoreAttribute */
+export const store_attribute = {};
+
+/* .google.ads.googleads.v3.common.UserData */
+export const user_data = {
+  user_identifiers: user_identifier,
+  transaction_attribute,
+};
+
+/* .google.ads.googleads.v3.common.CustomerMatchUserListMetadata */
+export const customer_match_user_list_metadata = {};
+
+/* .google.ads.googleads.v3.common.StoreSalesMetadata */
+export const store_sales_metadata = {};
+
+/* .google.ads.googleads.v3.common.StoreSalesThirdPartyMetadata */
+export const store_sales_third_party_metadata = {};
+
 /* .google.ads.googleads.v3.common.PolicyViolationKey */
 export const policy_violation_key = {};
 
@@ -632,11 +661,11 @@ export const target_restriction = {
 };
 
 /* .google.ads.googleads.v3.common.TargetRestrictionOperation.Operator */
-export const target_restriction_operator = {};
+export const operator = {};
 
 /* .google.ads.googleads.v3.common.TargetRestrictionOperation */
 export const target_restriction_operation = {
-  operator: target_restriction_operator,
+  operator,
   value: target_restriction,
 };
 
@@ -722,6 +751,9 @@ export const basic_user_list_info = {};
 
 /* .google.ads.googleads.v3.common.UserListActionInfo */
 export const user_list_action_info = {};
+
+/* .google.protobuf.Value */
+export const value = {};
 
 /* .google.ads.googleads.v3.resources.AccountBudget.PendingAccountBudgetProposal */
 export const pending_account_budget_proposal = {
@@ -979,8 +1011,8 @@ export const vanity_pharma = {
   vanity_pharma_text: "VanityPharmaText",
 };
 
-/* .google.ads.googleads.v3.resources.Campaign.SelectiveOptimization */
-export const selective_optimization = {};
+/* .google.ads.googleads.v3.resources.Campaign.TrackingSetting */
+export const tracking_setting = {};
 
 /* .google.ads.googleads.v3.resources.Campaign.GeoTargetTypeSetting */
 export const geo_target_type_setting = {
@@ -988,8 +1020,8 @@ export const geo_target_type_setting = {
   negative_geo_target_type: "NegativeGeoTargetType",
 };
 
-/* .google.ads.googleads.v3.resources.Campaign.TrackingSetting */
-export const tracking_setting = {};
+/* .google.ads.googleads.v3.resources.Campaign.SelectiveOptimization */
+export const selective_optimization = {};
 
 /* .google.ads.googleads.v3.resources.Campaign */
 export const campaign = {
@@ -1290,7 +1322,7 @@ export const feed_attribute = {
 };
 
 /* .google.ads.googleads.v3.resources.FeedAttributeOperation.Operator */
-export const operator = {};
+export const FeedAttributeOperation_operator = {};
 
 /* .google.ads.googleads.v3.resources.FeedAttributeOperation */
 export const feed_attribute_operation = {
@@ -1500,6 +1532,15 @@ export const mutate_job = {
   status: "MutateJobStatus",
 };
 
+/* .google.ads.googleads.v3.resources.OfflineUserDataJob */
+export const offline_user_data_job = {
+  type: "OfflineUserDataJobType",
+  status: "OfflineUserDataJobStatus",
+  failure_reason: "OfflineUserDataJobFailureReason",
+  customer_match_user_list_metadata,
+  store_sales_metadata,
+};
+
 /* .google.ads.googleads.v3.resources.OperatingSystemVersionConstant */
 export const operating_system_version_constant = {
   operator_type: "OperatingSystemVersionOperatorType",
@@ -1544,17 +1585,9 @@ export const keyword_recommendation = {
   keyword: keyword_info,
 };
 
-/* .google.ads.googleads.v3.resources.Recommendation.MaximizeClicksOptInRecommendation */
-export const maximize_clicks_opt_in_recommendation = {};
-
 /* .google.ads.googleads.v3.resources.Recommendation.TextAdRecommendation */
 export const text_ad_recommendation = {
   ad,
-};
-
-/* .google.ads.googleads.v3.resources.Recommendation.MoveUnusedBudgetRecommendation */
-export const move_unused_budget_recommendation = {
-  budget_recommendation: campaign_budget_recommendation,
 };
 
 /* .google.ads.googleads.v3.resources.Recommendation.TargetCpaOptInRecommendation.TargetCpaOptInRecommendationOption */
@@ -1568,13 +1601,21 @@ export const target_cpa_opt_in_recommendation = {
   options: target_cpa_opt_in_recommendation_option,
 };
 
+/* .google.ads.googleads.v3.resources.Recommendation.MaximizeConversionsOptInRecommendation */
+export const maximize_conversions_opt_in_recommendation = {};
+
+/* .google.ads.googleads.v3.resources.Recommendation.MaximizeClicksOptInRecommendation */
+export const maximize_clicks_opt_in_recommendation = {};
+
 /* .google.ads.googleads.v3.resources.Recommendation.CalloutExtensionRecommendation */
 export const callout_extension_recommendation = {
   recommended_extensions: callout_feed_item,
 };
 
-/* .google.ads.googleads.v3.resources.Recommendation.MaximizeConversionsOptInRecommendation */
-export const maximize_conversions_opt_in_recommendation = {};
+/* .google.ads.googleads.v3.resources.Recommendation.MoveUnusedBudgetRecommendation */
+export const move_unused_budget_recommendation = {
+  budget_recommendation: campaign_budget_recommendation,
+};
 
 /* .google.ads.googleads.v3.resources.Recommendation.EnhancedCpcOptInRecommendation */
 export const enhanced_cpc_opt_in_recommendation = {};
@@ -1588,17 +1629,17 @@ export const keyword_match_type_recommendation = {
 /* .google.ads.googleads.v3.resources.Recommendation.SearchPartnersOptInRecommendation */
 export const search_partners_opt_in_recommendation = {};
 
+/* .google.ads.googleads.v3.resources.Recommendation.CallExtensionRecommendation */
+export const call_extension_recommendation = {
+  recommended_extensions: call_feed_item,
+};
+
 /* .google.ads.googleads.v3.resources.Recommendation.OptimizeAdRotationRecommendation */
 export const optimize_ad_rotation_recommendation = {};
 
 /* .google.ads.googleads.v3.resources.Recommendation.SitelinkExtensionRecommendation */
 export const sitelink_extension_recommendation = {
   recommended_extensions: sitelink_feed_item,
-};
-
-/* .google.ads.googleads.v3.resources.Recommendation.CallExtensionRecommendation */
-export const call_extension_recommendation = {
-  recommended_extensions: call_feed_item,
 };
 
 /* .google.ads.googleads.v3.resources.Recommendation */

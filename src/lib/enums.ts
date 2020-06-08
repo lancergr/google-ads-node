@@ -146,6 +146,7 @@ export enum AdGroupType {
   "SEARCH_DYNAMIC_ADS" = 13,
   "SHOPPING_COMPARISON_LISTING_ADS" = 14,
   "PROMOTED_HOTEL_ADS" = 15,
+  "VIDEO_RESPONSIVE" = 16,
 }
 
 /**
@@ -214,6 +215,7 @@ export enum AdType {
   "DYNAMIC_HTML5_AD" = 22,
   "APP_ENGAGEMENT_AD" = 23,
   "SHOPPING_COMPARISON_LISTING_AD" = 24,
+  "VIDEO_RESPONSIVE_AD" = 30,
 }
 
 /**
@@ -786,6 +788,20 @@ export enum ConversionActionCategory {
   "SIGNUP" = 5,
   "LEAD" = 6,
   "DOWNLOAD" = 7,
+  "ADD_TO_CART" = 8,
+  "BEGIN_CHECKOUT" = 9,
+  "SUBSCRIBE_PAID" = 10,
+  "PHONE_CALL_LEAD" = 11,
+  "IMPORTED_LEAD" = 12,
+  "SUBMIT_LEAD_FORM" = 13,
+  "BOOK_APPOINTMENT" = 14,
+  "REQUEST_QUOTE" = 15,
+  "GET_DIRECTIONS" = 16,
+  "OUTBOUND_CLICK" = 17,
+  "CONTACT" = 18,
+  "ENGAGEMENT" = 19,
+  "STORE_VISIT" = 20,
+  "STORE_SALE" = 21,
 }
 
 /**
@@ -2004,6 +2020,39 @@ export enum NegativeGeoTargetType {
 }
 
 /**
+ * @name OfflineUserDataJobFailureReasonEnum.OfflineUserDataJobFailureReason
+ */
+export enum OfflineUserDataJobFailureReason {
+  "UNSPECIFIED" = 0,
+  "UNKNOWN" = 1,
+  "INSUFFICIENT_MATCHED_TRANSACTIONS" = 2,
+  "INSUFFICIENT_TRANSACTIONS" = 3,
+}
+
+/**
+ * @name OfflineUserDataJobStatusEnum.OfflineUserDataJobStatus
+ */
+export enum OfflineUserDataJobStatus {
+  "UNSPECIFIED" = 0,
+  "UNKNOWN" = 1,
+  "PENDING" = 2,
+  "RUNNING" = 3,
+  "SUCCESS" = 4,
+  "FAILED" = 5,
+}
+
+/**
+ * @name OfflineUserDataJobTypeEnum.OfflineUserDataJobType
+ */
+export enum OfflineUserDataJobType {
+  "UNSPECIFIED" = 0,
+  "UNKNOWN" = 1,
+  "STORE_SALES_UPLOAD_FIRST_PARTY" = 2,
+  "STORE_SALES_UPLOAD_THIRD_PARTY" = 3,
+  "CUSTOMER_MATCH_USER_LIST" = 4,
+}
+
+/**
  * @name OperatingSystemVersionOperatorTypeEnum.OperatingSystemVersionOperatorType
  */
 export enum OperatingSystemVersionOperatorType {
@@ -3077,6 +3126,7 @@ export enum AccountBudgetProposalError {
   "BUDGET_DATE_RANGE_INCOMPATIBLE_WITH_BILLING_SETUP" = 21,
   "NOT_AUTHORIZED" = 22,
   "INVALID_BILLING_SETUP" = 23,
+  "OVERLAPS_EXISTING_BUDGET" = 24,
 }
 
 /**
@@ -3324,6 +3374,7 @@ export enum AdGroupError {
   "AD_GROUP_TYPE_NOT_VALID_FOR_ADVERTISING_CHANNEL_TYPE" = 12,
   "ADGROUP_TYPE_NOT_SUPPORTED_FOR_CAMPAIGN_SALES_COUNTRY" = 13,
   "CANNOT_ADD_ADGROUP_OF_TYPE_DSA_TO_CAMPAIGN_WITHOUT_DSA_SETTING" = 14,
+  "PROMOTED_HOTEL_AD_GROUPS_NOT_AVAILABLE_FOR_CUSTOMER" = 15,
 }
 
 /**
@@ -3382,6 +3433,15 @@ export enum AssetError {
   "DUPLICATE_ASSET_NAME" = 4,
   "ASSET_DATA_IS_MISSING" = 5,
   "CANNOT_MODIFY_ASSET_NAME" = 6,
+}
+
+/**
+ * @name AssetLinkErrorEnum.AssetLinkError
+ */
+export enum AssetLinkError {
+  "UNSPECIFIED" = 0,
+  "UNKNOWN" = 1,
+  "PINNING_UNSUPPORTED" = 2,
 }
 
 /**
@@ -3521,6 +3581,7 @@ export enum CampaignBudgetError {
   "MONEY_AMOUNT_TOO_LARGE" = 14,
   "NEGATIVE_MONEY_AMOUNT" = 15,
   "NON_MULTIPLE_OF_MINIMUM_CURRENCY_UNIT" = 16,
+  "TOTAL_BUDGET_AMOUNT_MUST_BE_UNSET_FOR_BUDGET_PERIOD_DAILY" = 18,
 }
 
 /**
@@ -3856,6 +3917,12 @@ export enum CriterionError {
   "WEBPAGE_CRITERION_URL_EQUALS_CAN_HAVE_ONLY_ONE_CONDITION" = 94,
   "WEBPAGE_CRITERION_NOT_SUPPORTED_ON_NON_DSA_AD_GROUP" = 95,
   "CANNOT_TARGET_USER_LIST_FOR_SMART_DISPLAY_CAMPAIGNS" = 99,
+  "LISTING_SCOPE_TOO_MANY_DIMENSION_TYPES" = 100,
+  "LISTING_SCOPE_TOO_MANY_IN_OPERATORS" = 101,
+  "LISTING_SCOPE_IN_OPERATOR_NOT_SUPPORTED" = 102,
+  "DUPLICATE_LISTING_DIMENSION_TYPE" = 103,
+  "DUPLICATE_LISTING_DIMENSION_VALUE" = 104,
+  "CANNOT_SET_BIDS_ON_LISTING_GROUP_SUBDIVISION" = 105,
 }
 
 /**
@@ -3895,6 +3962,7 @@ export enum CustomerClientLinkError {
   "CLIENT_HAS_TOO_MANY_INVITATIONS" = 6,
   "CANNOT_HIDE_OR_UNHIDE_MANAGER_ACCOUNTS" = 7,
   "CUSTOMER_HAS_TOO_MANY_ACCOUNTS_AT_MANAGER" = 8,
+  "CLIENT_HAS_TOO_MANY_MANAGERS" = 9,
 }
 
 /**
@@ -4632,6 +4700,8 @@ export enum ManagerLinkError {
   "NON_OWNER_USER_CANNOT_MODIFY_LINK" = 14,
   "SUSPENDED_ACCOUNT_CANNOT_ADD_CLIENTS" = 15,
   "CLIENT_OUTSIDE_TREE" = 16,
+  "INVALID_STATUS_CHANGE" = 17,
+  "INVALID_CHANGE" = 18,
 }
 
 /**
@@ -4742,6 +4812,8 @@ export enum MutateError {
   "MUTATE_NOT_ALLOWED" = 9,
   "RESOURCE_NOT_IN_GOOGLE_ADS" = 10,
   "RESOURCE_ALREADY_EXISTS" = 11,
+  "RESOURCE_DOES_NOT_SUPPORT_VALIDATE_ONLY" = 12,
+  "RESOURCE_READ_ONLY" = 13,
 }
 
 /**
@@ -4793,6 +4865,36 @@ export enum NullError {
   "UNSPECIFIED" = 0,
   "UNKNOWN" = 1,
   "NULL_CONTENT" = 2,
+}
+
+/**
+ * @name OfflineUserDataJobErrorEnum.OfflineUserDataJobError
+ */
+export enum OfflineUserDataJobError {
+  "UNSPECIFIED" = 0,
+  "UNKNOWN" = 1,
+  "INVALID_USER_LIST_ID" = 3,
+  "INVALID_USER_LIST_TYPE" = 4,
+  "NOT_WHITELISTED_FOR_USER_ID" = 5,
+  "INCOMPATIBLE_UPLOAD_KEY_TYPE" = 6,
+  "MISSING_USER_IDENTIFIER" = 7,
+  "INVALID_MOBILE_ID_FORMAT" = 8,
+  "TOO_MANY_USER_IDENTIFIERS" = 9,
+  "NOT_WHITELISTED_FOR_STORE_SALES_DIRECT" = 10,
+  "INVALID_PARTNER_ID" = 11,
+  "INVALID_ENCODING" = 12,
+  "INVALID_COUNTRY_CODE" = 13,
+  "INCOMPATIBLE_USER_IDENTIFIER" = 14,
+  "FUTURE_TRANSACTION_TIME" = 15,
+  "INVALID_CONVERSION_ACTION" = 16,
+  "MOBILE_ID_NOT_SUPPORTED" = 17,
+  "INVALID_OPERATION_ORDER" = 18,
+  "CONFLICTING_OPERATION" = 19,
+  "EXTERNAL_UPDATE_ID_ALREADY_EXISTS" = 21,
+  "JOB_ALREADY_STARTED" = 22,
+  "REMOVE_NOT_SUPPORTED" = 23,
+  "REMOVE_ALL_NOT_SUPPORTED" = 24,
+  "INVALID_SHA256_FORMAT" = 25,
 }
 
 /**
@@ -5184,6 +5286,17 @@ export enum UrlFieldError {
   "MALFORMED_URL" = 55,
   "MISSING_HOST" = 56,
   "NULL_CUSTOM_PARAMETER_VALUE" = 57,
+}
+
+/**
+ * @name UserDataErrorEnum.UserDataError
+ */
+export enum UserDataError {
+  "UNSPECIFIED" = 0,
+  "UNKNOWN" = 1,
+  "OPERATIONS_FOR_CUSTOMER_MATCH_NOT_ALLOWED" = 2,
+  "TOO_MANY_USER_IDENTIFIERS" = 3,
+  "USER_LIST_NOT_APPLICABLE" = 4,
 }
 
 /**

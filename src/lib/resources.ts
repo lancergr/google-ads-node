@@ -1013,6 +1013,70 @@ export interface Metrics {
   view_through_conversions?: number;
 }
 
+/* .google.ads.googleads.v3.common.OfflineUserAddressInfo */
+export interface OfflineUserAddressInfo {
+  hashed_first_name?: string;
+  hashed_last_name?: string;
+  city?: string;
+  state?: string;
+  country_code?: string;
+  postal_code?: string;
+}
+
+/* .google.ads.googleads.v3.common.UserIdentifier */
+export interface UserIdentifier {
+  hashed_email?: string;
+  hashed_phone_number?: string;
+  mobile_id?: string;
+  third_party_user_id?: string;
+  address_info?: OfflineUserAddressInfo;
+}
+
+/* .google.ads.googleads.v3.common.TransactionAttribute */
+export interface TransactionAttribute {
+  transaction_date_time?: string;
+  transaction_amount_micros?: number;
+  currency_code?: string;
+  conversion_action?: string;
+  order_id?: string;
+  store_attribute?: StoreAttribute;
+  custom_value?: string;
+}
+
+/* .google.ads.googleads.v3.common.StoreAttribute */
+export interface StoreAttribute {
+  store_code?: string;
+}
+
+/* .google.ads.googleads.v3.common.UserData */
+export interface UserData {
+  user_identifiers?: UserIdentifier[];
+  transaction_attribute?: TransactionAttribute;
+}
+
+/* .google.ads.googleads.v3.common.CustomerMatchUserListMetadata */
+export interface CustomerMatchUserListMetadata {
+  user_list?: string;
+}
+
+/* .google.ads.googleads.v3.common.StoreSalesMetadata */
+export interface StoreSalesMetadata {
+  loyalty_fraction?: number;
+  transaction_upload_fraction?: number;
+  custom_key?: string;
+  third_party_metadata?: StoreSalesThirdPartyMetadata;
+}
+
+/* .google.ads.googleads.v3.common.StoreSalesThirdPartyMetadata */
+export interface StoreSalesThirdPartyMetadata {
+  advertiser_upload_date_time?: string;
+  valid_transaction_fraction?: number;
+  partner_match_fraction?: number;
+  partner_upload_fraction?: number;
+  bridge_map_version_id?: string;
+  partner_id?: number;
+}
+
 /* .google.ads.googleads.v3.common.PolicyViolationKey */
 export interface PolicyViolationKey {
   policy_name?: string;
@@ -1375,12 +1439,16 @@ export interface UserListActionInfo {
   conversion_action?: string;
   remarketing_action?: string;
 }
-export type Value =
-  | { boolean_value?: boolean }
-  | { int_64_value?: number }
-  | { float_value?: number }
-  | { double_value?: number }
-  | { string_value?: string };
+
+/* .google.protobuf.Value */
+export interface Value {
+  null_value?: undefined;
+  number_value?: number;
+  string_value?: string;
+  bool_value?: boolean;
+  struct_value?: { fields?: Value };
+  list_value?: { values?: Value[] };
+}
 
 /* .google.ads.googleads.v3.resources.AccountBudget.PendingAccountBudgetProposal */
 export interface PendingAccountBudgetProposal {
@@ -1821,9 +1889,9 @@ export interface VanityPharma {
   vanity_pharma_text?: VanityPharmaText;
 }
 
-/* .google.ads.googleads.v3.resources.Campaign.SelectiveOptimization */
-export interface SelectiveOptimization {
-  conversion_actions?: string[];
+/* .google.ads.googleads.v3.resources.Campaign.TrackingSetting */
+export interface TrackingSetting {
+  tracking_url?: string;
 }
 
 /* .google.ads.googleads.v3.resources.Campaign.GeoTargetTypeSetting */
@@ -1832,9 +1900,9 @@ export interface GeoTargetTypeSetting {
   negative_geo_target_type?: NegativeGeoTargetType;
 }
 
-/* .google.ads.googleads.v3.resources.Campaign.TrackingSetting */
-export interface TrackingSetting {
-  tracking_url?: string;
+/* .google.ads.googleads.v3.resources.Campaign.SelectiveOptimization */
+export interface SelectiveOptimization {
+  conversion_actions?: string[];
 }
 
 /* .google.ads.googleads.v3.resources.Campaign */
@@ -1871,6 +1939,7 @@ export interface Campaign {
   selective_optimization?: SelectiveOptimization;
   tracking_setting?: TrackingSetting;
   payment_mode?: PaymentMode;
+  optimization_score?: number;
   bidding_strategy?: string;
   commission?: Commission;
   manual_cpc?: ManualCpc;
@@ -2797,6 +2866,18 @@ export interface MutateJob {
   long_running_operation?: string;
 }
 
+/* .google.ads.googleads.v3.resources.OfflineUserDataJob */
+export interface OfflineUserDataJob {
+  resource_name?: string;
+  id?: number;
+  external_id?: number;
+  type?: OfflineUserDataJobType;
+  status?: OfflineUserDataJobStatus;
+  failure_reason?: OfflineUserDataJobFailureReason;
+  customer_match_user_list_metadata?: CustomerMatchUserListMetadata;
+  store_sales_metadata?: StoreSalesMetadata;
+}
+
 /* .google.ads.googleads.v3.resources.OperatingSystemVersionConstant */
 export interface OperatingSystemVersionConstant {
   resource_name?: string;
@@ -2826,6 +2907,7 @@ export interface PaymentsAccount {
   currency_code?: string;
   payments_profile_id?: string;
   secondary_payments_profile_id?: string;
+  paying_manager_customer?: string;
 }
 
 /* .google.ads.googleads.v3.resources.ProductBiddingCategoryConstant */
@@ -2891,22 +2973,11 @@ export interface KeywordRecommendation {
   recommended_cpc_bid_micros?: number;
 }
 
-/* .google.ads.googleads.v3.resources.Recommendation.MaximizeClicksOptInRecommendation */
-export interface MaximizeClicksOptInRecommendation {
-  recommended_budget_amount_micros?: number;
-}
-
 /* .google.ads.googleads.v3.resources.Recommendation.TextAdRecommendation */
 export interface TextAdRecommendation {
   ad?: Ad;
   creation_date?: string;
   auto_apply_date?: string;
-}
-
-/* .google.ads.googleads.v3.resources.Recommendation.MoveUnusedBudgetRecommendation */
-export interface MoveUnusedBudgetRecommendation {
-  excess_campaign_budget?: string;
-  budget_recommendation?: CampaignBudgetRecommendation;
 }
 
 /* .google.ads.googleads.v3.resources.Recommendation.TargetCpaOptInRecommendation.TargetCpaOptInRecommendationOption */
@@ -2923,14 +2994,25 @@ export interface TargetCpaOptInRecommendation {
   recommended_target_cpa_micros?: number;
 }
 
+/* .google.ads.googleads.v3.resources.Recommendation.MaximizeConversionsOptInRecommendation */
+export interface MaximizeConversionsOptInRecommendation {
+  recommended_budget_amount_micros?: number;
+}
+
+/* .google.ads.googleads.v3.resources.Recommendation.MaximizeClicksOptInRecommendation */
+export interface MaximizeClicksOptInRecommendation {
+  recommended_budget_amount_micros?: number;
+}
+
 /* .google.ads.googleads.v3.resources.Recommendation.CalloutExtensionRecommendation */
 export interface CalloutExtensionRecommendation {
   recommended_extensions?: CalloutFeedItem[];
 }
 
-/* .google.ads.googleads.v3.resources.Recommendation.MaximizeConversionsOptInRecommendation */
-export interface MaximizeConversionsOptInRecommendation {
-  recommended_budget_amount_micros?: number;
+/* .google.ads.googleads.v3.resources.Recommendation.MoveUnusedBudgetRecommendation */
+export interface MoveUnusedBudgetRecommendation {
+  excess_campaign_budget?: string;
+  budget_recommendation?: CampaignBudgetRecommendation;
 }
 
 /* .google.ads.googleads.v3.resources.Recommendation.EnhancedCpcOptInRecommendation */
@@ -2945,17 +3027,17 @@ export interface KeywordMatchTypeRecommendation {
 /* .google.ads.googleads.v3.resources.Recommendation.SearchPartnersOptInRecommendation */
 export interface SearchPartnersOptInRecommendation {}
 
+/* .google.ads.googleads.v3.resources.Recommendation.CallExtensionRecommendation */
+export interface CallExtensionRecommendation {
+  recommended_extensions?: CallFeedItem[];
+}
+
 /* .google.ads.googleads.v3.resources.Recommendation.OptimizeAdRotationRecommendation */
 export interface OptimizeAdRotationRecommendation {}
 
 /* .google.ads.googleads.v3.resources.Recommendation.SitelinkExtensionRecommendation */
 export interface SitelinkExtensionRecommendation {
   recommended_extensions?: SitelinkFeedItem[];
-}
-
-/* .google.ads.googleads.v3.resources.Recommendation.CallExtensionRecommendation */
-export interface CallExtensionRecommendation {
-  recommended_extensions?: CallFeedItem[];
 }
 
 /* .google.ads.googleads.v3.resources.Recommendation */
@@ -5267,6 +5349,7 @@ export interface SearchGoogleAdsResponse {
     mobile_app_category_constant?: MobileAppCategoryConstant;
     mobile_device_constant?: MobileDeviceConstant;
     mutate_job?: MutateJob;
+    offline_user_data_job?: OfflineUserDataJob;
     operating_system_version_constant?: OperatingSystemVersionConstant;
     paid_organic_search_term_view?: PaidOrganicSearchTermView;
     parental_status_view?: ParentalStatusView;
@@ -5371,6 +5454,7 @@ export interface SearchGoogleAdsResponse {
     mobile_app_category_constant?: MobileAppCategoryConstant;
     mobile_device_constant?: MobileDeviceConstant;
     mutate_job?: MutateJob;
+    offline_user_data_job?: OfflineUserDataJob;
     operating_system_version_constant?: OperatingSystemVersionConstant;
     paid_organic_search_term_view?: PaidOrganicSearchTermView;
     parental_status_view?: ParentalStatusView;
@@ -5483,6 +5567,7 @@ export interface SearchGoogleAdsStreamResponse {
     mobile_app_category_constant?: MobileAppCategoryConstant;
     mobile_device_constant?: MobileDeviceConstant;
     mutate_job?: MutateJob;
+    offline_user_data_job?: OfflineUserDataJob;
     operating_system_version_constant?: OperatingSystemVersionConstant;
     paid_organic_search_term_view?: PaidOrganicSearchTermView;
     parental_status_view?: ParentalStatusView;
@@ -5585,6 +5670,7 @@ export interface SearchGoogleAdsStreamResponse {
     mobile_app_category_constant?: MobileAppCategoryConstant;
     mobile_device_constant?: MobileDeviceConstant;
     mutate_job?: MutateJob;
+    offline_user_data_job?: OfflineUserDataJob;
     operating_system_version_constant?: OperatingSystemVersionConstant;
     paid_organic_search_term_view?: PaidOrganicSearchTermView;
     parental_status_view?: ParentalStatusView;
@@ -5689,6 +5775,7 @@ export interface GoogleAdsRow {
   mobile_app_category_constant?: MobileAppCategoryConstant;
   mobile_device_constant?: MobileDeviceConstant;
   mutate_job?: MutateJob;
+  offline_user_data_job?: OfflineUserDataJob;
   operating_system_version_constant?: OperatingSystemVersionConstant;
   paid_organic_search_term_view?: PaidOrganicSearchTermView;
   parental_status_view?: ParentalStatusView;
@@ -5723,6 +5810,7 @@ export interface MutateGoogleAdsRequest {
     ad_group_feed_operation?: AdGroupFeedOperation;
     ad_group_label_operation?: AdGroupLabelOperation;
     ad_group_operation?: AdGroupOperation;
+    ad_operation?: AdOperation;
     ad_parameter_operation?: AdParameterOperation;
     asset_operation?: AssetOperation;
     bidding_strategy_operation?: BiddingStrategyOperation;
@@ -5795,6 +5883,7 @@ export interface MutateGoogleAdsResponse {
     ad_group_label_result?: MutateAdGroupLabelResult;
     ad_group_result?: MutateAdGroupResult;
     ad_parameter_result?: MutateAdParameterResult;
+    ad_result?: MutateAdResult;
     asset_result?: MutateAssetResult;
     bidding_strategy_result?: MutateBiddingStrategyResult;
     campaign_bid_modifier_result?: MutateCampaignBidModifierResult;
@@ -5838,6 +5927,7 @@ export interface MutateOperation {
   ad_group_feed_operation?: AdGroupFeedOperation;
   ad_group_label_operation?: AdGroupLabelOperation;
   ad_group_operation?: AdGroupOperation;
+  ad_operation?: AdOperation;
   ad_parameter_operation?: AdParameterOperation;
   asset_operation?: AssetOperation;
   bidding_strategy_operation?: BiddingStrategyOperation;
@@ -5901,6 +5991,7 @@ export interface MutateOperationResponse {
   ad_group_label_result?: MutateAdGroupLabelResult;
   ad_group_result?: MutateAdGroupResult;
   ad_parameter_result?: MutateAdParameterResult;
+  ad_result?: MutateAdResult;
   asset_result?: MutateAssetResult;
   bidding_strategy_result?: MutateBiddingStrategyResult;
   campaign_bid_modifier_result?: MutateCampaignBidModifierResult;
@@ -6570,6 +6661,53 @@ export interface MutateJobResult {
   status?: { code?: number; message?: string; details?: { type_url?: string; value?: string }[] };
 }
 
+/* .google.ads.googleads.v3.services.OfflineUserDataJobService */
+export interface OfflineUserDataJobService {}
+
+/* .google.ads.googleads.v3.services.CreateOfflineUserDataJobRequest */
+export interface CreateOfflineUserDataJobRequest {
+  customer_id?: string;
+  job?: OfflineUserDataJob;
+}
+
+/* .google.ads.googleads.v3.services.CreateOfflineUserDataJobResponse */
+export interface CreateOfflineUserDataJobResponse {
+  resource_name?: string;
+}
+
+/* .google.ads.googleads.v3.services.GetOfflineUserDataJobRequest */
+export interface GetOfflineUserDataJobRequest {
+  resource_name?: string;
+}
+
+/* .google.ads.googleads.v3.services.RunOfflineUserDataJobRequest */
+export interface RunOfflineUserDataJobRequest {
+  resource_name?: string;
+}
+
+/* .google.ads.googleads.v3.services.AddOfflineUserDataJobOperationsRequest */
+export interface AddOfflineUserDataJobOperationsRequest {
+  resource_name?: string;
+  enable_partial_failure?: boolean;
+  operations?: { create?: UserData; remove?: UserData; remove_all?: boolean }[];
+}
+
+/* .google.ads.googleads.v3.services.OfflineUserDataJobOperation */
+export interface OfflineUserDataJobOperation {
+  create?: UserData;
+  remove?: UserData;
+  remove_all?: boolean;
+}
+
+/* .google.ads.googleads.v3.services.AddOfflineUserDataJobOperationsResponse */
+export interface AddOfflineUserDataJobOperationsResponse {
+  partial_failure_error?: {
+    code?: number;
+    message?: string;
+    details?: { type_url?: string; value?: string }[];
+  };
+}
+
 /* .google.ads.googleads.v3.services.OperatingSystemVersionConstantService */
 export interface OperatingSystemVersionConstantService {}
 
@@ -7085,6 +7223,27 @@ export interface GetTopicViewRequest {
   resource_name?: string;
 }
 
+/* .google.ads.googleads.v3.services.UserDataService */
+export interface UserDataService {}
+
+/* .google.ads.googleads.v3.services.UploadUserDataRequest */
+export interface UploadUserDataRequest {
+  customer_id?: string;
+  operations?: { create?: UserData }[];
+  customer_match_user_list_metadata?: CustomerMatchUserListMetadata;
+}
+
+/* .google.ads.googleads.v3.services.UserDataOperation */
+export interface UserDataOperation {
+  create?: UserData;
+}
+
+/* .google.ads.googleads.v3.services.UploadUserDataResponse */
+export interface UploadUserDataResponse {
+  upload_date_time?: string;
+  received_operations_count?: number;
+}
+
 /* .google.ads.googleads.v3.services.UserInterestService */
 export interface UserInterestService {}
 
@@ -7460,6 +7619,9 @@ import {
   MerchantCenterLinkStatus,
   MobileDeviceType,
   MutateJobStatus,
+  OfflineUserDataJobType,
+  OfflineUserDataJobStatus,
+  OfflineUserDataJobFailureReason,
   OperatingSystemVersionOperatorType,
   ProductBiddingCategoryStatus,
   TargetCpaOptInRecommendationGoal,
